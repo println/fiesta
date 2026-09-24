@@ -195,7 +195,7 @@
     <string name="settings_donate_coffee">☕ Buy me a coffee</string>
     <string name="settings_donate_footer_start">Made with</string>
     <string name="settings_donate_footer_end">in spare time</string>
-    <string name="settings_donate_coffee_url" translatable="false">https://github.com/sponsors/println</string>
+    <string name="settings_donate_coffee_url" translatable="false">https://ko-fi.com/println</string>
     <string name="settings_about_website_url">https://println.github.io/fiesta/</string>
     <string name="settings_about_license_url" translatable="false">https://github.com/println/fiesta/blob/main/LICENSE</string>
     <string name="settings_about_website_title">Website</string>

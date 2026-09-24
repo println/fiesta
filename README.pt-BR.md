@@ -115,7 +115,7 @@ Se ele já te acompanhou numa viagem, retribua com um café. Cada doação vira 
 
 <div align="center">
 
-**💖 [GitHub Sponsors](https://github.com/sponsors/println)**
+**☕ [Pagar um café](https://ko-fi.com/println)** · **💖 [GitHub Sponsors](https://github.com/sponsors/println)**
 
 Não pode doar agora? Deixar uma ⭐ no GitHub e mostrar o Fiesta para um amigo também abastece.
 

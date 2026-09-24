@@ -35,7 +35,7 @@ what already works today, which is the detail the app must not lose.
   sites today; it neither overrides nor freezes the per-site choices.
 - **PH-18** — not verified. Nobody has checked ordinary browsing against it.
 - **PH-19** — wanted for the future; nothing of it exists.
-- **PH-20** — the donation links. The screen exists; the button points to a placeholder.
+- **PH-20** — the donation links. The screen has only the Ko-fi button; GitHub Sponsors is missing.
 
 ## Shared with the car
 

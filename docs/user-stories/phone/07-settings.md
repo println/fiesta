@@ -33,4 +33,4 @@ it says so and does nothing.
 > **Then** a screen explains why donating matters to the project
 > **And** it lists the donation links, each one opening its page.
 
-**Partly there.** "Donate to Fiesta" is the last Settings entry, in the brand blue, and opens the screen with the artwork, the reasons and a "Buy me a coffee" button. The button still points to a placeholder link until the donation accounts exist.
+**Partly there.** "Donate to Fiesta" is the last Settings entry, in the brand blue, and opens the screen with the artwork, the reasons and a "Buy me a coffee" button that opens the Ko-fi page. GitHub Sponsors, the other donation link, is not on the screen yet.

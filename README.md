@@ -117,7 +117,7 @@ time:
 
 <div align="center">
 
-**💖 [GitHub Sponsors](https://github.com/sponsors/println)**
+**☕ [Buy me a coffee](https://ko-fi.com/println)** · **💖 [GitHub Sponsors](https://github.com/sponsors/println)**
 
 Can't donate right now? Leaving a ⭐ on GitHub and showing Fiesta to a friend fuels it too.
 
