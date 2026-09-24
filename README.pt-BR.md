@@ -46,8 +46,9 @@ página inicial ali mesmo. Zoom para ler do banco do motorista. E tudo isso se a
 celular, ao vivo**.
 
 ### 🛡️ Seu e só seu
-Bloqueador de anúncios e rastreadores ligado de fábrica, com controle por site. Zero
-telemetria. Os dados de cada site ficam na sua mão.
+Sem telemetria: o CarStream vinha com Firebase, o Fiesta não envia nada, para ninguém.
+Domínios conhecidos de anúncio e rastreio são bloqueados de fábrica, por site. O site em que
+você entra logado continua sabendo quem você é.
 
 ### 🧩 Pronto para qualquer site
 Plugins por site ensinam o Fiesta a falar com cada página: o que o volante faz, o que a tela
@@ -87,7 +88,7 @@ reconstruído pensando na estrada.
 | Ajustar o carro pelo celular, ao vivo | **✅** | — |
 | Navegador no celular inspirado no Firefox Focus | **✅** | — |
 | Controle dos dados de cada site | **✅** | — |
-| Zero telemetria (sem Firebase) | **✅** | — |
+| Sem telemetria (o CarStream vinha com Firebase) | **✅** | — |
 | Busca por voz na tela do app | **✅** | ✅ |
 | Navegador na tela do carro | **✅** | ✅ |
 | Vídeo em tela cheia com ajuste de proporção | **✅** | ✅ |
@@ -105,7 +106,7 @@ reconstruído pensando na estrada.
 
 </div>
 
-O Fiesta é **grátis**, **sem anúncios** e **sem rastreamento**. Ele é feito nas horas vagas, movido a café e a vontade de ver tudo funcionando na estrada.
+O Fiesta é **grátis**, **sem anúncios** e **sem telemetria**. Ele é feito nas horas vagas, movido a café e a vontade de ver tudo funcionando na estrada.
 
 Se ele já te acompanhou numa viagem, retribua com um café. Cada doação vira tempo de estrada:
 
@@ -122,6 +123,10 @@ Não pode doar agora? Deixar uma ⭐ no GitHub e mostrar o Fiesta para um amigo 
 </div>
 
 ## Antes de instalar
+
+O Fiesta é para quem já instala apps não oficiais no Android Auto: CarStream, AAAD, AA
+Browser, Fermata Auto. Se essa frase não te diz nada, o Fiesta ainda não é para você. Não há
+guia nem suporte de instalação.
 
 O Fiesta é um app **experimental**, assim como o CarStream. Ele não está na Google Play e não
 se instala como um app comum: para aparecer no Android Auto, precisa de uma instalação

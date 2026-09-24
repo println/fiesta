@@ -46,8 +46,8 @@ right there. Zoom to read from the driver's seat. And all of it can be tuned **f
 phone, live**.
 
 ### 🛡️ Yours, and only yours
-Ad and tracker blocker on by default, with per-site control. Zero telemetry. Each site's data
-stays in your hands.
+No telemetry: CarStream shipped Firebase, Fiesta sends nothing, to anyone. Known ad and
+tracking domains are blocked by default, per site. Sites you sign into still know it's you.
 
 ### 🧩 Ready for any site
 Per-site plugins teach Fiesta how to talk to each page: what the wheel does, what the screen
@@ -87,7 +87,7 @@ rebuilt with the road in mind.
 | Tune the car from the phone, live | **✅** | — |
 | Phone browser inspired by Firefox Focus | **✅** | — |
 | Control over each site's data | **✅** | — |
-| Zero telemetry (no Firebase) | **✅** | — |
+| No telemetry (CarStream shipped Firebase) | **✅** | — |
 | Voice search on the app screen | **✅** | ✅ |
 | Browser on the car screen | **✅** | ✅ |
 | Full-screen video with aspect ratio control | **✅** | ✅ |
@@ -105,7 +105,7 @@ rebuilt with the road in mind.
 
 </div>
 
-Fiesta is **free**, with **no ads** and **no tracking**. It's made in spare time, running on
+Fiesta is **free**, with **no ads** and **no telemetry**. It's made in spare time, running on
 coffee and on the joy of seeing everything work on the road.
 
 If it has kept you company on a trip, give back with a coffee. Every donation turns into road
@@ -124,6 +124,10 @@ Can't donate right now? Leaving a ⭐ on GitHub and showing Fiesta to a friend f
 </div>
 
 ## Before you install
+
+Fiesta is for people who already sideload Android Auto apps: CarStream, AAAD, AA Browser,
+Fermata Auto. If that sentence means nothing to you, Fiesta isn't for you yet. There's no
+install guide or install support.
 
 Fiesta is an **experimental** app, just like CarStream. It's not on Google Play and doesn't
 install like a regular app: to show up on Android Auto, it needs a special install. Use it at

@@ -4,20 +4,85 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Fiesta · More road. Fewer limits.</title>
-<meta name="description" content="Fiesta is a driving-first app for Android Auto: steering wheel controls, voice, background playback and a dashboard that fits your car.">
-<meta property="og:title" content="Fiesta · More road. Fewer limits.">
-<meta property="og:description" content="Hands on the wheel, eyes on the road, and freedom for your media.">
+<meta name="description" content="The CarStream update that works on Android 16. YouTube and any site on Android Auto, from the wheel and your voice. Free and open source.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://println.github.io/fiesta/">
+<link rel="alternate" hreflang="en" href="https://println.github.io/fiesta/">
+<link rel="alternate" hreflang="pt-BR" href="https://println.github.io/fiesta/pt-br/">
+<link rel="alternate" hreflang="x-default" href="https://println.github.io/fiesta/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Fiesta">
+<meta property="og:url" content="https://println.github.io/fiesta/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:title" content="Fiesta · More road. Fewer limits.">
+<meta property="og:description" content="The CarStream update that works on Android 16. YouTube and any site on Android Auto, from the wheel and your voice. Free and open source.">
 <meta property="og:image" content="https://println.github.io/fiesta/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fiesta logo over a car driving a coastal road at sunset">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fiesta · More road. Fewer limits.">
+<meta name="twitter:description" content="The CarStream update that works on Android 16. YouTube and any site on Android Auto, from the wheel and your voice. Free and open source.">
+<meta name="twitter:image:alt" content="Fiesta logo over a car driving a coastal road at sunset">
 <meta name="theme-color" content="#000913">
 <link rel="icon" href="img/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/icon.png">
-<link rel="alternate" hreflang="pt-BR" href="pt-br/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mr+Dafoe&display=swap">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://println.github.io/fiesta/#app",
+  "name": "Fiesta",
+  "alternateName": "Fiesta for Android Auto",
+  "description": "The CarStream update that works on Android 16. YouTube and any site on Android Auto, from the wheel and your voice. Free and open source.",
+  "url": "https://println.github.io/fiesta/",
+  "inLanguage": "en",
+  "image": "https://println.github.io/fiesta/img/og.jpg",
+  "screenshot": [
+    "https://println.github.io/fiesta/img/shots/car-player.webp",
+    "https://println.github.io/fiesta/img/shots/car-browser.webp",
+    "https://println.github.io/fiesta/img/shots/car-card.webp"
+  ],
+  "operatingSystem": "Android 6.0+",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Android Auto",
+  "softwareVersion": "1.0.0",
+  "datePublished": "2026-09-24",
+  "downloadUrl": "https://github.com/println/fiesta/releases/latest",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isAccessibleForFree": true,
+  "license": "https://www.apache.org/licenses/LICENSE-2.0",
+  "featureList": [
+    "YouTube and any website on the Android Auto screen",
+    "Steering wheel controls: play, pause, next and previous",
+    "Voice: \"Play X on Fiesta\" through Google Assistant",
+    "Background playback in the Android Auto media card, with the map on screen",
+    "Resumes where it stopped when you start the car",
+    "Ad and tracking domain blocker, per site",
+    "No telemetry"
+  ],
+  "isBasedOn": {
+    "@type": "SoftwareApplication",
+    "name": "CarStream",
+    "url": "https://github.com/thekirankumar/carstream-android-auto"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "println",
+    "url": "https://github.com/println"
+  },
+  "sameAs": [
+    "https://github.com/println/fiesta"
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -28,6 +93,7 @@
     <a href="#dashboard">Dashboard</a>
     <a href="#phone">Phone</a>
     <a href="#look">The look</a>
+    <a href="#faq">FAQ</a>
     <a href="#fuel">Fuel up</a>
   </div>
   <div class="nav-end">
@@ -138,15 +204,13 @@
   <div class="hero-side hero-side-right" aria-hidden="true">Video<br>Music<br>Browser<br>Voice<br>Open source<i></i></div>
   <div class="hero-content">
     <div class="hero-sky">
-      <h1><img class="hero-logo" src="img/logo.svg" alt="Fiesta"></h1>
+      <h1><img class="hero-logo" src="img/logo.svg" alt="Fiesta, the CarStream update for Android Auto"></h1>
       <p class="eyebrow">More road <i></i> Fewer limits</p>
     </div>
     <div class="hero-road">
     <p class="hero-lead">Hands on the wheel, eyes on the road, and freedom for your media. A driving-first app for Android Auto.</p>
     <div class="cta">
-      <a class="btn btn-primary" href="https://github.com/println/fiesta/releases/latest">
-        <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>Download
-      </a>
+      <a class="btn btn-primary" href="#fit">Is Fiesta for you?</a>
       <a class="btn btn-ghost" href="#drive">See it on the road</a>
     </div>
     <p class="release">v1.0.0 · <span>Akira</span></p>
@@ -158,7 +222,7 @@
 
   <section class="scene wrap">
     <figure class="scene-card">
-      <div class="bezel"><img src="img/shots/car-card.webp" alt="Android Auto media card playing Born To Be Wild by Steppenwolf through Fiesta" loading="lazy" width="304" height="390"></div>
+      <div class="bezel"><img src="img/shots/car-card.webp" alt="Android Auto media card: Fiesta playing Born To Be Wild by Steppenwolf in the background, with the map on screen" loading="lazy" width="304" height="390"></div>
     </figure>
     <div class="scene-text">
       <p class="label">The drive</p>
@@ -197,8 +261,8 @@
       </article>
     </div>
     <div class="shots shots-2">
-      <figure class="shot"><div class="bezel"><img src="img/shots/car-player.webp" alt="Android Auto now playing screen with Fiesta" loading="lazy" width="800" height="480"></div><figcaption>Now playing</figcaption></figure>
-      <figure class="shot"><div class="bezel"><img src="img/shots/car-queue.webp" alt="Playback queue on the Android Auto screen" loading="lazy" width="800" height="480"></div><figcaption>Up next</figcaption></figure>
+      <figure class="shot"><div class="bezel"><img src="img/shots/car-player.webp" alt="Fiesta on the Android Auto now playing screen: a YouTube song with pause, previous and next for the steering wheel buttons" loading="lazy" width="800" height="480"></div><figcaption>Now playing</figcaption></figure>
+      <figure class="shot"><div class="bezel"><img src="img/shots/car-queue.webp" alt="Fiesta playback queue on the Android Auto screen" loading="lazy" width="800" height="480"></div><figcaption>Up next</figcaption></figure>
     </div>
   </section>
 
@@ -210,16 +274,16 @@
         <p>The toolbar goes to the top, bottom, left or right, or hides so the page takes the whole screen and comes back with a tap on the edge. Bookmarks stay one tap away, zoom makes it readable from the driver's seat, and all of it can be tuned from your phone, live.</p>
       </header>
       <div class="car-screen">
-        <div class="bezel"><img src="img/shots/car-browser.webp" alt="Fiesta on the Android Auto screen with the toolbar on the left, playing a São Paulo radio station" loading="lazy" width="800" height="480"></div>
+        <div class="bezel"><img src="img/shots/car-browser.webp" alt="Fiesta web browser on the Android Auto screen, toolbar on the left, playing a São Paulo radio station" loading="lazy" width="800" height="480"></div>
         <p class="car-screen-caption"><span>Android Auto</span>Designed for the drive</p>
       </div>
       <div class="shots shots-3">
-        <figure class="shot"><div class="bezel"><img src="img/shots/car-bar-top.webp" alt="Toolbar on top" loading="lazy" width="800" height="480"></div><figcaption>Toolbar on top</figcaption></figure>
-        <figure class="shot"><div class="bezel"><img src="img/shots/car-bar-bottom.webp" alt="Toolbar at the bottom" loading="lazy" width="800" height="480"></div><figcaption>At the bottom</figcaption></figure>
-        <figure class="shot"><div class="bezel"><img src="img/shots/car-bar-right.webp" alt="Toolbar on the right" loading="lazy" width="800" height="480"></div><figcaption>On the right</figcaption></figure>
-        <figure class="shot"><div class="bezel"><img src="img/shots/car-bar-hidden.webp" alt="Toolbar hidden, the page takes the whole screen" loading="lazy" width="800" height="480"></div><figcaption>Hidden</figcaption></figure>
-        <figure class="shot"><div class="bezel"><img src="img/shots/car-bookmarks.webp" alt="Bookmarks bar on the car screen" loading="lazy" width="800" height="480"></div><figcaption>Bookmarks bar</figcaption></figure>
-        <figure class="shot"><div class="bezel"><img src="img/shots/car-fullscreen.webp" alt="Full-screen video with aspect ratio controls" loading="lazy" width="800" height="480"></div><figcaption>Full screen</figcaption></figure>
+        <figure class="shot"><div class="bezel"><img src="img/shots/car-bar-top.webp" alt="Fiesta browser on Android Auto with the toolbar on top" loading="lazy" width="800" height="480"></div><figcaption>Toolbar on top</figcaption></figure>
+        <figure class="shot"><div class="bezel"><img src="img/shots/car-bar-bottom.webp" alt="Fiesta browser on Android Auto with the toolbar at the bottom" loading="lazy" width="800" height="480"></div><figcaption>At the bottom</figcaption></figure>
+        <figure class="shot"><div class="bezel"><img src="img/shots/car-bar-right.webp" alt="Fiesta browser on Android Auto with the toolbar on the right" loading="lazy" width="800" height="480"></div><figcaption>On the right</figcaption></figure>
+        <figure class="shot"><div class="bezel"><img src="img/shots/car-bar-hidden.webp" alt="Toolbar hidden, the web page takes the whole Android Auto screen" loading="lazy" width="800" height="480"></div><figcaption>Hidden</figcaption></figure>
+        <figure class="shot"><div class="bezel"><img src="img/shots/car-bookmarks.webp" alt="Bookmarks bar on the Android Auto screen" loading="lazy" width="800" height="480"></div><figcaption>Bookmarks bar</figcaption></figure>
+        <figure class="shot"><div class="bezel"><img src="img/shots/car-fullscreen.webp" alt="Full-screen YouTube video on Android Auto with contain, fill and cover aspect ratio controls" loading="lazy" width="800" height="480"></div><figcaption>Full screen</figcaption></figure>
       </div>
     </div>
   </section>
@@ -228,7 +292,7 @@
     <article class="feature">
       <span class="tile"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6Z"/><path d="m8.8 12 2.2 2.2 4.3-4.4"/></svg></span>
       <h3>Yours, and only yours</h3>
-      <p>Ad and tracker blocker on by default, with per-site control. Zero telemetry. Each site's data stays in your hands.</p>
+      <p>No telemetry: CarStream shipped Firebase, Fiesta sends nothing, to anyone. Known ad and tracking domains are blocked by default, per site. Sites you sign into still know it's you.</p>
     </article>
     <article class="feature">
       <span class="tile"><svg viewBox="0 0 24 24"><path d="M9 4h3.5v2a1.8 1.8 0 1 0 3.5 0V4H20v5.5h-2a1.8 1.8 0 1 0 0 3.5h2V20h-4.5v-2a1.8 1.8 0 1 0-3.5 0v2H4v-5.5h2a1.8 1.8 0 1 0 0-3.5H4V4Z"/></svg></span>
@@ -254,7 +318,7 @@
       <figure class="device"><div class="device-screen"><img src="img/shots/phone-home.webp" alt="Fiesta home screen on the phone" loading="lazy" width="540" height="1170"></div><figcaption>Home</figcaption></figure>
       <figure class="device"><div class="device-screen"><img src="img/shots/phone-browse.webp" alt="Browsing a page on the phone" loading="lazy" width="540" height="1170"></div><figcaption>Browsing</figcaption></figure>
       <figure class="device"><div class="device-screen"><img src="img/shots/phone-shield.webp" alt="Privacy shield panel" loading="lazy" width="540" height="1170"></div><figcaption>Privacy shield</figcaption></figure>
-      <figure class="device"><div class="device-screen"><img src="img/shots/phone-youtube.webp" alt="YouTube on the phone" loading="lazy" width="540" height="1170"></div><figcaption>Your media</figcaption></figure>
+      <figure class="device"><div class="device-screen"><img src="img/shots/phone-youtube.webp" alt="YouTube in the Fiesta phone browser" loading="lazy" width="540" height="1170"></div><figcaption>Your media</figcaption></figure>
       <figure class="device"><div class="device-screen"><img src="img/shots/phone-menu.webp" alt="Browser menu" loading="lazy" width="540" height="1170"></div><figcaption>Menu</figcaption></figure>
       <figure class="device"><div class="device-screen"><img src="img/shots/phone-settings.webp" alt="Settings" loading="lazy" width="540" height="1170"></div><figcaption>Settings</figcaption></figure>
       <figure class="device"><div class="device-screen"><img src="img/shots/phone-carsettings.webp" alt="Car settings, tuned live from the phone" loading="lazy" width="540" height="1170"></div><figcaption>Car, from the phone</figcaption></figure>
@@ -307,7 +371,7 @@
           <tr><td>Resumes where it stopped when you start the car</td><td class="yes">●</td><td class="no">—</td></tr>
           <tr><td>Toolbar top, bottom, left, right or hidden</td><td class="yes">●</td><td class="no">—</td></tr>
           <tr><td>Ad and tracker blocker, per site</td><td class="yes">●</td><td class="no">—</td></tr>
-          <tr><td>Zero telemetry</td><td class="yes">●</td><td class="no">—</td></tr>
+          <tr><td>No telemetry (CarStream shipped Firebase)</td><td class="yes">●</td><td class="no">—</td></tr>
           <tr><td>Browser on the car screen</td><td class="yes">●</td><td class="yes dim">●</td></tr>
         </tbody>
       </table>
@@ -315,13 +379,58 @@
     <a class="more-link" href="https://github.com/println/fiesta#fiesta--carstream">Full comparison on GitHub →</a>
   </section>
 
+  <section class="fit" id="fit">
+    <div class="wrap fit-grid">
+      <div>
+        <p class="label">For sideloaders</p>
+        <h2>Built for a purpose, <span>not for everyone.</span></h2>
+        <p class="fit-lead">Fiesta is for people who already sideload Android Auto apps: <em>CarStream, AAAD, AA Browser, Fermata Auto</em>. If that sentence means nothing to you, Fiesta isn't for you yet.</p>
+        <p class="fit-note">Want to learn first? The <a href="https://github.com/shmykelsa/AAAD">AAAD</a> project and the <a href="https://www.reddit.com/r/AndroidAuto/">r/AndroidAuto</a> community are the place to start. Fiesta has no install guide and gives no install support.</p>
+      </div>
+      <div class="needs">
+        <p class="label">What it takes</p>
+        <ul class="checks">
+        <li>Android 6.0 or later</li>
+        <li>Android Auto projected from your phone, not Android Automotive built into the car</li>
+        <li>Installing outside the Play Store, like any sideloaded Android Auto app</li>
+        </ul>
+        <a class="btn btn-primary" href="https://github.com/println/fiesta/releases/latest">
+          <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>Download Fiesta
+        </a>
+        <p class="release">v1.0.0 · <span>Akira</span> · Free and open source</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq wrap" id="faq">
+    <header class="section-head">
+      <p class="label">FAQ</p>
+      <h2>Straight <span>answers.</span></h2>
+    </header>
+    <div class="faq-list">
+      <details><summary>What is Fiesta?</summary><p>An Android Auto app that puts YouTube and any website on the car screen, driven from the steering wheel buttons and Google Assistant. It plays in the background with the map on screen and picks up where it stopped when you start the car.</p></details>
+      <details><summary>Is it free?</summary><p>Yes. Free and open source, with no ads and no account. Donations keep it on the road, but nothing is locked behind them.</p></details>
+      <details><summary>Is this the CarStream update?</summary><p>It's CarStream, evolved. Fiesta picks up where CarStream stopped in 2018: it keeps the browser on the car screen and adds what CarStream never had, from steering wheel controls and voice to the Android Auto media card. The comparison above shows the rest.</p></details>
+      <details><summary>What can I play?</summary><p>YouTube, internet radio and any site that plays audio or video in the browser. YouTube has its own plugin, so the wheel and the media card know it inside out; other sites work through the generic one.</p></details>
+      <details><summary>Will my steering wheel buttons work?</summary><p>Yes. Play and pause from the same media buttons you use with any Android Auto app. Next and previous work wherever the site has them, and YouTube does.</p></details>
+      <details><summary>Does it work in my car?</summary><p>If your car runs Android Auto from your phone, yes: that's where Fiesta lives. Android Automotive, the Google system built into some cars that works without a phone, is a different platform and isn't supported.</p></details>
+      <details><summary>Which Android version does it need?</summary><p>Android 6.0 or later. And it's built for the phones you use today, on the latest Android tools. Where CarStream stalled in 2018, Fiesta keeps moving.</p></details>
+      <details><summary>How do I get updates?</summary><p>Every new version lands on the <a href="https://github.com/println/fiesta/releases">releases page</a>, each with a codename from the road. Install it over the one you have.</p></details>
+      <details><summary>Does it track me?</summary><p><strong>The app: no.</strong> Fiesta has no telemetry. CarStream shipped Firebase; Fiesta sends nothing, to anyone.</p><p><strong>The sites: partly.</strong> Fiesta blocks known ad and tracking domains, on by default and adjustable per site. Sites you sign into still know it's you.</p></details>
+      <details><summary>Why isn't it on Google Play?</summary><p>Google only lets approved media, messaging and navigation apps onto Android Auto, and a browser for the car screen isn't one of them. Staying off the Play Store is what lets Fiesta do what Play Store car apps can't.</p></details>
+      <details><summary>Does it need root?</summary><p>No. Fiesta runs on a regular phone. Rooted? There's an optional unlock mode for you too.</p></details>
+      <details><summary>How do I install it?</summary><p>If CarStream, AA Browser, Fermata Auto or Screen2Auto already run on your Android Auto, you're one install away: Fiesta goes in the same way, no extra steps. That's why there's no install guide or install support: Fiesta is for people who've done this before.</p></details>
+      <details><summary>Where do I report a bug?</summary><p>On <a href="https://github.com/println/fiesta/issues">GitHub Issues</a>. Bugs you can reproduce get fixed fastest: tell us what you did, what happened, your phone, Android version and car.</p></details>
+    </div>
+  </section>
+
   <section class="fuel" id="fuel">
     <img class="fuel-bg" src="img/donate.webp" alt="" loading="lazy">
     <div class="fuel-content wrap">
       <img class="fuel-icon" src="img/fuel.webp" alt="" width="160" height="154" loading="lazy">
       <p class="label">Fuel up Fiesta</p>
-      <h2>Free. No ads. <span>No tracking.</span></h2>
-      <p>Made in spare time, running on coffee and on the joy of seeing everything work on the road. Every donation turns into road time:</p>
+      <h2>Free. No ads. <span>No telemetry.</span></h2>
+      <p>If Fiesta made your drives better, help keep it on the road. It's made in spare time, running on coffee, and every donation turns into road time:</p>
       <ul class="checks">
         <li>Fixes when a site changes and something stops working</li>
         <li>New plugins and new steering wheel commands</li>
