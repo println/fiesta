@@ -179,7 +179,7 @@
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
     <string name="settings_topic_donate_title">Поддержать Fiesta</string>
     <string name="settings_topic_donate_summary">Поддержите проект</string>
-    <string name="settings_donate_title">Заправьте Fiesta ⛽</string>
+    <string name="settings_donate_title">Заправьте Fiesta</string>
     <string name="settings_donate_message">✓ Бесплатно\n✓ Без рекламы\n✓ Без слежки\n\nСоставил вам компанию в дороге? Угостите чашкой кофе.</string>
     <string name="settings_donate_coffee">☕ Угостить кофе</string>
     <string name="settings_donate_footer_start">Сделано с</string>

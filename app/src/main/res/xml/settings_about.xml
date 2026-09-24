@@ -19,12 +19,12 @@
     <PreferenceCategory android:title="@string/settings_about_project_category">
 
         <Preference
-            android:key="pref_about_github"
-            android:title="@string/settings_about_github_title"
-            android:summary="@string/settings_about_github_url">
+            android:key="pref_about_website"
+            android:title="@string/settings_about_website_title"
+            android:summary="@string/settings_about_website_url">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="@string/settings_about_github_url" />
+                android:data="@string/settings_about_website_url" />
         </Preference>
 
         <Preference

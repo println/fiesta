@@ -190,15 +190,15 @@
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
     <string name="settings_topic_donate_title">Donate to Fiesta</string>
     <string name="settings_topic_donate_summary">Support the project</string>
-    <string name="settings_donate_title">Fuel up Fiesta ⛽</string>
+    <string name="settings_donate_title">Fuel up Fiesta</string>
     <string name="settings_donate_message">✓ Free\n✓ No ads\n✓ No tracking\n\nKept you company on the road? Give back with a coffee.</string>
     <string name="settings_donate_coffee">☕ Buy me a coffee</string>
     <string name="settings_donate_footer_start">Made with</string>
     <string name="settings_donate_footer_end">in spare time</string>
     <string name="settings_donate_coffee_url" translatable="false">https://github.com/sponsors/println</string>
-    <string name="settings_about_github_url" translatable="false">https://github.com/println/fiesta</string>
+    <string name="settings_about_website_url">https://println.github.io/fiesta/</string>
     <string name="settings_about_license_url" translatable="false">https://github.com/println/fiesta/blob/main/LICENSE</string>
-    <string name="settings_about_github_title" translatable="false">GitHub</string>
+    <string name="settings_about_website_title">Website</string>
     <string name="settings_about_tagline">More road. Fewer limits.</string>
     <string name="settings_about_description">Hands on the wheel, eyes on the road and freedom for your media. A driving-first app, made for people who love to drive. Drive. Explore. Play.</string>
     <string name="settings_about_project_category">Project</string>

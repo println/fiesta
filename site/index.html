@@ -41,16 +41,98 @@
     <source srcset="img/hero-900.webp" media="(max-width: 900px)">
     <img src="img/hero.webp" alt="A car driving along a coastal road at sunset, palm trees and a city by the bay" fetchpriority="high">
   </picture>
+  <svg class="sun-glow" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <filter id="sun-blur" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="48"/></filter>
+      <clipPath id="sky"><path d="M0 0H1536V500L1100 528 1050 547 990 556 960 573 910 579 880 587 850 603 820 619 790 626 0 624Z"/></clipPath>
+    </defs>
+    <circle class="sun-halo" cx="742" cy="556" r="225" filter="url(#sun-blur)" clip-path="url(#sky)"/>
+  </svg>
   <svg class="taillights" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <defs>
       <filter id="glow" x="-100%" y="-300%" width="300%" height="700%"><feGaussianBlur stdDeviation="9"/></filter>
     </defs>
     <g filter="url(#glow)">
-      <rect x="150" y="740" width="80" height="22" rx="6"/>
-      <rect x="334" y="740" width="80" height="22" rx="6"/>
+      <rect x="158.5" y="743.5" width="34" height="5" rx="1"/>
+      <rect x="190.5" y="743.5" width="38" height="5" rx="1"/>
+      <rect x="155.5" y="750.5" width="36" height="5" rx="1"/>
+      <rect x="190.5" y="750.5" width="38" height="5" rx="1"/>
+      <rect x="152.5" y="756.5" width="39" height="5" rx="1"/>
+      <rect x="189.5" y="756.5" width="38" height="5" rx="1"/>
+      <rect x="335.5" y="742.5" width="38" height="5" rx="1"/>
+      <rect x="372.5" y="742.5" width="36" height="5" rx="1"/>
+      <rect x="335.5" y="749.5" width="38" height="5" rx="1"/>
+      <rect x="372.5" y="749.5" width="39" height="5" rx="1"/>
+      <rect x="334.5" y="755.5" width="39" height="5" rx="1"/>
+      <rect x="371.5" y="755.5" width="42" height="5" rx="1"/>
     </g>
-    <rect class="lamp" x="152" y="743" width="76" height="16" rx="3"/>
-    <rect class="lamp" x="336" y="743" width="76" height="16" rx="3"/>
+    <g class="lamp">
+      <rect x="160" y="745" width="31" height="2" rx="1"/>
+      <rect x="192" y="745" width="35" height="2" rx="1"/>
+      <rect x="157" y="752" width="33" height="2" rx="1"/>
+      <rect x="192" y="752" width="35" height="2" rx="1"/>
+      <rect x="154" y="758" width="36" height="2" rx="1"/>
+      <rect x="191" y="758" width="35" height="2" rx="1"/>
+      <rect x="337" y="744" width="35" height="2" rx="1"/>
+      <rect x="374" y="744" width="33" height="2" rx="1"/>
+      <rect x="337" y="751" width="35" height="2" rx="1"/>
+      <rect x="374" y="751" width="36" height="2" rx="1"/>
+      <rect x="336" y="757" width="36" height="2" rx="1"/>
+      <rect x="373" y="757" width="39" height="2" rx="1"/>
+    </g>
+  </svg>
+  <svg class="brake" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <filter id="brake-glow" x="-60%" y="-1000%" width="220%" height="2100%"><feGaussianBlur stdDeviation="10"/></filter>
+      <filter id="brake-halo" x="-30%" y="-600%" width="160%" height="1300%"><feGaussianBlur stdDeviation="3"/></filter>
+      <filter id="brake-soft" x="-10%" y="-200%" width="120%" height="500%"><feGaussianBlur stdDeviation="0.5"/></filter>
+    </defs>
+    <g filter="url(#brake-glow)">
+      <rect x="170" y="744.2" width="60" height="10" rx="1"/>
+      <rect x="333" y="743.2" width="62" height="10" rx="1"/>
+    </g>
+    <g filter="url(#brake-halo)">
+      <rect x="173" y="747.2" width="54" height="4" rx="1"/>
+      <rect x="336" y="746.2" width="56" height="4" rx="1"/>
+    </g>
+    <g class="brake-core" filter="url(#brake-soft)">
+      <rect x="174" y="748.2" width="52" height="2" rx="1"/>
+      <rect x="337" y="747.2" width="54" height="2" rx="1"/>
+    </g>
+  </svg>
+  <svg class="brake-flare" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <filter id="brake-flare-blur" x="-100%" y="-300%" width="300%" height="700%"><feGaussianBlur stdDeviation="9"/></filter>
+    </defs>
+    <g filter="url(#brake-flare-blur)">
+      <rect x="150" y="739" width="80" height="25" rx="6"/>
+      <rect x="332" y="738" width="84" height="25" rx="6"/>
+    </g>
+  </svg>
+  <svg class="hazard" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <filter id="hazard-glow" x="-200%" y="-600%" width="500%" height="1300%"><feGaussianBlur stdDeviation="10"/></filter>
+      <filter id="hazard-halo" x="-100%" y="-300%" width="300%" height="700%"><feGaussianBlur stdDeviation="2.5"/></filter>
+      <filter id="hazard-soft" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="0.6"/></filter>
+    </defs>
+    <g filter="url(#hazard-glow)">
+      <rect x="153" y="744" width="22" height="11" rx="1.2"/>
+      <rect x="151" y="750.6" width="22" height="11" rx="1.2"/>
+      <rect x="390" y="743" width="22" height="11" rx="1.2"/>
+      <rect x="393" y="749.6" width="22" height="11" rx="1.2"/>
+    </g>
+    <g filter="url(#hazard-halo)">
+      <rect x="156" y="747" width="16" height="5" rx="1.2"/>
+      <rect x="154" y="753.6" width="16" height="5" rx="1.2"/>
+      <rect x="393" y="746" width="16" height="5" rx="1.2"/>
+      <rect x="396" y="752.6" width="16" height="5" rx="1.2"/>
+    </g>
+    <g class="hazard-core" filter="url(#hazard-soft)">
+      <rect x="157" y="748" width="14" height="3" rx="1.2"/>
+      <rect x="155" y="754.6" width="14" height="3" rx="1.2"/>
+      <rect x="394" y="747" width="14" height="3" rx="1.2"/>
+      <rect x="397" y="753.6" width="14" height="3" rx="1.2"/>
+    </g>
   </svg>
   <div class="hero-side hero-side-left" aria-hidden="true">Drive<br>your<br>media<br>further<i></i></div>
   <div class="hero-side hero-side-right" aria-hidden="true">Video<br>Music<br>Browser<br>Voice<br>Open source<i></i></div>
@@ -212,7 +294,7 @@
     <header class="section-head">
       <p class="label">Fiesta × CarStream</p>
       <h2>Rebuilt with <span>the road in mind.</span></h2>
-      <p>Fiesta was born from <a href="https://github.com/thekirankumar/fiesta-android-auto">CarStream</a>. Here is what the road added.</p>
+      <p>Fiesta was born from <a href="https://github.com/thekirankumar/carstream-android-auto">CarStream</a>. Here is what the road added.</p>
     </header>
     <div class="table-scroll">
       <table>
@@ -236,7 +318,8 @@
   <section class="fuel" id="fuel">
     <img class="fuel-bg" src="img/donate.webp" alt="" loading="lazy">
     <div class="fuel-content wrap">
-      <p class="label">⛽ Fuel up Fiesta</p>
+      <img class="fuel-icon" src="img/fuel.webp" alt="" width="160" height="154" loading="lazy">
+      <p class="label">Fuel up Fiesta</p>
       <h2>Free. No ads. <span>No tracking.</span></h2>
       <p>Made in spare time, running on coffee and on the joy of seeing everything work on the road. Every donation turns into road time:</p>
       <ul class="checks">
@@ -265,5 +348,22 @@
   </div>
 </footer>
 
+<script>
+(() => {
+  const hazard = document.querySelector('.hazard');
+  if (!hazard || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const brake = document.querySelector('.brake');
+  const stop = () => {
+    brake.classList.add('on');
+    setTimeout(() => hazard.classList.add('blinking'), 900);
+  };
+  hazard.addEventListener('animationend', () => {
+    hazard.classList.remove('blinking');
+    brake.classList.remove('on');
+    setTimeout(stop, 8000 + Math.random() * 14000);
+  });
+  setTimeout(stop, 1600);
+})();
+</script>
 </body>
 </html>

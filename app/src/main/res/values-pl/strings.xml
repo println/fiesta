@@ -179,7 +179,7 @@
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
     <string name="settings_topic_donate_title">Wesprzyj Fiestę</string>
     <string name="settings_topic_donate_summary">Wesprzyj projekt</string>
-    <string name="settings_donate_title">Zatankuj Fiestę ⛽</string>
+    <string name="settings_donate_title">Zatankuj Fiestę</string>
     <string name="settings_donate_message">✓ Za darmo\n✓ Bez reklam\n✓ Bez śledzenia\n\nTowarzyszyła ci w drodze? Odwdzięcz się kawą.</string>
     <string name="settings_donate_coffee">☕ Postaw mi kawę</string>
     <string name="settings_donate_footer_start">Zrobione z</string>

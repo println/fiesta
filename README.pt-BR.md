@@ -16,8 +16,8 @@ Drive. Explore. Play.
 
 ---
 
-Você liga o carro, e a música volta de onde parou. Aperta o botão do volante, e a faixa pula.
-Fala "Ok Google, tocar synthwave no Fiesta", e está tocando. O mapa continua na tela, o som
+Você liga o carro e a música volta de onde parou. Aperta o botão do volante e a faixa pula.
+Fala "Ok Google, tocar synthwave no Fiesta" e está tocando. O mapa continua na tela, o som
 continua no ar.
 
 Isso é o **Fiesta**: um app **driving-first** para o Android Auto, feito para quem gosta de dirigir.
@@ -39,13 +39,13 @@ O mapa fica na frente; a trilha sonora, por trás.
 Desligou o carro no meio da música? Na próxima partida, ela volta sozinha, do mesmo ponto.
 
 ### 🧭 O painel do seu jeito
-Cada carro tem uma tela, e o Fiesta se ajusta a ela. A barra de ferramentas vai para o topo,
-a base, a esquerda ou a direita, e pode sumir para a página ocupar tudo, voltando com um toque
-na borda. A **barra de favoritos** deixa seus sites a um toque, e qualquer favorito vira
+Cada carro tem uma tela e o Fiesta se ajusta a ela. A barra de ferramentas vai para o topo,
+a base, a esquerda ou a direita e pode sumir para a página ocupar tudo, voltando com um toque
+na borda. A **barra de favoritos** deixa seus sites a um toque e qualquer favorito vira
 página inicial ali mesmo. Zoom para ler do banco do motorista. E tudo isso se ajusta **pelo
 celular, ao vivo**.
 
-### 🛡️ Seu, e só seu
+### 🛡️ Seu e só seu
 Bloqueador de anúncios e rastreadores ligado de fábrica, com controle por site. Zero
 telemetria. Os dados de cada site ficam na sua mão.
 
@@ -63,7 +63,7 @@ Cada versão leva um codinome dessa estrada. A primeira é a **1.0.0 · Akira**.
 
 ## Fiesta × CarStream
 
-O Fiesta nasceu do [CarStream](https://github.com/thekirankumar/fiesta-android-auto) e foi
+O Fiesta nasceu do [CarStream](https://github.com/thekirankumar/carstream-android-auto) e foi
 reconstruído pensando na estrada.
 
 | Recurso | **Fiesta** | CarStream |
@@ -125,7 +125,7 @@ Não pode doar agora? Deixar uma ⭐ no GitHub e mostrar o Fiesta para um amigo 
 
 O Fiesta é um app **experimental**, assim como o CarStream. Ele não está na Google Play e não
 se instala como um app comum: para aparecer no Android Auto, precisa de uma instalação
-especial. Use por sua conta e risco, e nunca mexa na tela enquanto dirige.
+especial. Use por sua conta e risco e nunca mexa na tela enquanto dirige.
 
 ## Para desenvolvedores
 
@@ -141,7 +141,7 @@ npm run e2e                    # ponta a ponta (emulador + DHU, defina ANDROID_S
 ## Créditos
 
 O Fiesta começou como um fork do
-[`thekirankumar/fiesta-android-auto`](https://github.com/thekirankumar/fiesta-android-auto).
+[`thekirankumar/carstream-android-auto`](https://github.com/thekirankumar/carstream-android-auto).
 
 - [`cprcrack/VideoEnabledWebView`](https://github.com/cprcrack/VideoEnabledWebView) — base do
   suporte a vídeo em tela cheia.

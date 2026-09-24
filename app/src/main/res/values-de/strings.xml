@@ -179,7 +179,7 @@
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
     <string name="settings_topic_donate_title">Für Fiesta spenden</string>
     <string name="settings_topic_donate_summary">Unterstütze das Projekt</string>
-    <string name="settings_donate_title">Tank Fiesta auf ⛽</string>
+    <string name="settings_donate_title">Tank Fiesta auf</string>
     <string name="settings_donate_message">✓ Kostenlos\n✓ Keine Werbung\n✓ Kein Tracking\n\nHat dich auf der Straße begleitet? Gib mit einem Kaffee etwas zurück.</string>
     <string name="settings_donate_coffee">☕ Spendier mir einen Kaffee</string>
     <string name="settings_donate_footer_start">Gemacht mit</string>

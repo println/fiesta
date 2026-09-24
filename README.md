@@ -63,7 +63,7 @@ Every version carries a codename from that road. The first one is **1.0.0 · Aki
 
 ## Fiesta × CarStream
 
-Fiesta was born from [CarStream](https://github.com/thekirankumar/fiesta-android-auto) and
+Fiesta was born from [CarStream](https://github.com/thekirankumar/carstream-android-auto) and
 rebuilt with the road in mind.
 
 | Feature | **Fiesta** | CarStream |
@@ -143,7 +143,7 @@ npm run e2e                    # end to end (emulator + DHU, set ANDROID_SDK)
 ## Credits
 
 Fiesta started as a fork of
-[`thekirankumar/fiesta-android-auto`](https://github.com/thekirankumar/fiesta-android-auto).
+[`thekirankumar/carstream-android-auto`](https://github.com/thekirankumar/carstream-android-auto).
 
 - [`cprcrack/VideoEnabledWebView`](https://github.com/cprcrack/VideoEnabledWebView) — the base
   of full-screen video support.

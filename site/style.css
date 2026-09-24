@@ -168,20 +168,76 @@ section { padding: 112px 0; }
   mix-blend-mode: screen;
   pointer-events: none;
   fill: #ff2a6d;
-  animation: ignition 1.6s ease-out .5s both, idle 3.2s ease-in-out 2.1s infinite;
+  animation: idle 3.2s ease-in-out infinite;
 }
 .taillights .lamp { fill: #ffd0e0; opacity: .55; }
-@keyframes ignition {
-  0% { opacity: 0; }
-  12% { opacity: 1; }
-  20% { opacity: .15; }
-  30% { opacity: 1; }
-  38% { opacity: .35; }
-  100% { opacity: .95; }
+.sun-glow {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  mix-blend-mode: color-burn;
+  fill: #ff9a2e;
+  animation: sunrise 2.4s ease-out .2s both;
+}
+.sun-glow .sun-halo { animation: swell 7s ease-in-out 2.6s infinite backwards; }
+@keyframes sunrise {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes swell {
+  0%, 100% { opacity: .3; }
+  50% { opacity: 0; }
 }
 @keyframes idle {
   0%, 100% { opacity: .95; }
   50% { opacity: .55; }
+}
+.hazard {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  fill: #ffc400;
+  opacity: 0;
+}
+.hazard.blinking { animation: hazard 2.1s linear; }
+.brake {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  fill: #ff0a2e;
+  opacity: 0;
+  transition: opacity .12s ease-out;
+}
+.brake.on { opacity: 1; transition-duration: .08s; }
+.brake .brake-core { fill: #ff8a96; }
+.brake-flare {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  mix-blend-mode: color-dodge;
+  pointer-events: none;
+  fill: #ff2440;
+  opacity: 0;
+  transition: opacity .12s ease-out;
+}
+.brake.on ~ .brake-flare { opacity: .9; transition-duration: .08s; }
+.hazard .hazard-core { fill: #fff27a; }
+@keyframes hazard {
+  0%, 17%, 33%, 50%, 66%, 83%, 100% { opacity: 0; }
+  2%, 15%, 35%, 48%, 68%, 81% { opacity: 1; }
 }
 .hero::before {
   content: "";
@@ -456,6 +512,7 @@ td.no { color: rgba(169, 159, 196, .4); }
 }
 .fuel-content > * { max-width: 560px; }
 .fuel h2 span { white-space: nowrap; }
+.fuel-icon { width: 120px; height: auto; margin-bottom: 20px; filter: drop-shadow(0 0 24px rgba(250, 8, 157, .45)); }
 .fuel-content > p:not(.label) { color: rgba(243, 236, 255, .85); margin: 20px 0 0; }
 .checks { list-style: none; margin: 20px 0 32px; padding: 0; }
 .checks li { position: relative; padding: 6px 0 6px 32px; }

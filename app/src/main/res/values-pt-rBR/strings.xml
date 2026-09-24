@@ -179,7 +179,7 @@
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
     <string name="settings_topic_donate_title">Doe para o Fiesta</string>
     <string name="settings_topic_donate_summary">Apoie o projeto</string>
-    <string name="settings_donate_title">Abasteça o Fiesta ⛽</string>
+    <string name="settings_donate_title">Abasteça o Fiesta</string>
     <string name="settings_donate_message">✓ Grátis\n✓ Sem anúncios\n✓ Sem rastreamento\n\nTe acompanhou na estrada? Retribua com um café.</string>
     <string name="settings_donate_coffee">☕ Pagar um café</string>
     <string name="settings_donate_footer_start">Feito com</string>
@@ -187,6 +187,8 @@
     <string name="settings_about_tagline">Mais estrada. Menos limites.</string>
     <string name="settings_about_description">Mãos no volante, olhos na estrada e liberdade para a sua multimídia. Um app driving-first, feito para quem gosta de dirigir. Drive. Explore. Play.</string>
     <string name="settings_about_project_category">Projeto</string>
+    <string name="settings_about_website_title">Site</string>
+    <string name="settings_about_website_url">https://println.github.io/fiesta/pt-br/</string>
     <string name="settings_about_credits_category">Créditos</string>
     <string name="settings_about_license_title">Licença</string>
     <string name="settings_about_license_summary">Apache License 2.0</string>

@@ -179,7 +179,7 @@
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
     <string name="settings_topic_donate_title">บริจาคให้ Fiesta</string>
     <string name="settings_topic_donate_summary">สนับสนุนโปรเจกต์</string>
-    <string name="settings_donate_title">เติมน้ำมันให้ Fiesta ⛽</string>
+    <string name="settings_donate_title">เติมน้ำมันให้ Fiesta</string>
     <string name="settings_donate_message">✓ ฟรี\n✓ ไม่มีโฆษณา\n✓ ไม่มีการติดตาม\n\nเคยเป็นเพื่อนคุณบนถนนไหม? ตอบแทนด้วยกาแฟสักแก้ว</string>
     <string name="settings_donate_coffee">☕ เลี้ยงกาแฟฉันสักแก้ว</string>
     <string name="settings_donate_footer_start">สร้างด้วย</string>
