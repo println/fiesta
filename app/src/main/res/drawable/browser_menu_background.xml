@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plano 14, Etapa 6 - mozac_browser_menu_corner_radius = 4dp.
+     Plano 16, A5: 4dp e o raio dos elementos "doorhanger" (popup_site_info),
+     nao o do menu do Focus - MenuButton.kt usa mozac_browser_menu_corner_radius
+     de fato, mas o menu do proprio Focus (BrowserMenu do android-components)
+     sai visualmente bem mais arredondado que 4dp na tela; 12dp bate com a
+     comparacao feita no emulador (ver docs/plans/15-checklist-comparacao-firefox-focus.md, V15). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="12dp" />
+    <solid android:color="@color/menuBackground" />
+</shape>

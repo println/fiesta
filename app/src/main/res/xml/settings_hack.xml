@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plano 20, Etapa 1: opcoes avancadas/experimentais que requerem root.
+     pref_unlock saiu de settings_advanced.xml. -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="pref_unlock"
+        android:title="@string/settings_unlock_title"
+        android:summary="@string/settings_unlock_summary" />
+
+</PreferenceScreen>

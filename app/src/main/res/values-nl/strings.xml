@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">WAARSCHUWING !!!</string>
+    <string name="warning_body">Video\'s kijken tijdens het rijden kan ongelukken veroorzaken. Door deze waarschuwing te negeren gaat u ermee akkoord dat u zich bewust bent van de gevolgen en daarvoor verantwoordelijk bent. Noch de ontwikkelaar van deze app, noch Google, noch de fabrikant van dit apparaat of van deze auto is aansprakelijk voor ongevallen die door uw nalatigheid ontstaan. U kunt in plaats daarvan overschakelen op afspelen op de achtergrond via het mediapictogram.</string>
+    <string name="warning_accept_button">Ik begrijp de risico\'s</string>
+    <string name="webview_back">Terug</string>
+    <string name="refresh_page">Vernieuwen</string>
+    <string name="bookmarks">Bladwijzers</string>
+    <string name="bookmarks_search_hint">Zoek in uw bladwijzers</string>
+    <string name="bookmarks_none_found">Geen bladwijzers gevonden</string>
+    <string name="bookmark_options">Bladwijzeropties</string>
+    <string name="bookmark_edit">Bewerken</string>
+    <string name="bookmark_move_up">Omhoog</string>
+    <string name="bookmark_move_down">Omlaag</string>
+    <string name="bookmark_delete">Verwijderen</string>
+    <string name="bookmark_edit_title">Bladwijzer bewerken</string>
+    <string name="bookmark_edit_name">Naam</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">Gesproken zoekopdracht</string>
+    <string name="fullscreen">Volledig scherm</string>
+    <string name="home">Home</string>
+    <string name="aspect_ratio_contain">Passend</string>
+    <string name="aspect_ratio_fill">Vullen</string>
+    <string name="aspect_ratio_cover">Bedekken</string>
+    <string name="car_fullscreen_exit">Sluiten</string>
+    <string name="car_fullscreen_hide_controls">30 s verbergen</string>
+    <string name="add_bookmark">Huidige site toevoegen</string>
+    <string name="remove_bookmark">Huidige site verwijderen</string>
+    <string name="version">Versie </string>
+    <string name="settings">Instellingen</string>
+    <string name="close">Sluiten</string>
+    <string name="car_settings_favorite">Favoriet</string>
+    <string name="car_settings_zoom_in">Inzoomen</string>
+    <string name="car_settings_zoom_out">Uitzoomen</string>
+    <string name="car_settings_bookmarks_bar">Bladwijzerbalk</string>
+    <string name="car_settings_tweaks">Aanpassingen</string>
+    <string name="car_settings_go_to_address">Naar adres gaan</string>
+    <string name="car_settings_bookmark_added">Toegevoegd aan bladwijzers</string>
+    <string name="car_settings_bookmark_removed">Verwijderd uit bladwijzers</string>
+    <string name="car_settings_bookmark_locked">Deze bladwijzer kan niet worden verwijderd</string>
+    <string name="car_settings_fullscreen_on">Volledig scherm aan</string>
+    <string name="car_settings_fullscreen_off">Volledig scherm uit</string>
+    <string name="car_settings_fullscreen_unavailable">Er wordt geen video afgespeeld</string>
+    <string name="car_settings_desktop_on">Desktopsite aan</string>
+    <string name="car_settings_desktop_off">Desktopsite uit</string>
+    <string name="car_settings_adblock_on">Advertentieblokkering aan</string>
+    <string name="car_settings_adblock_off">Advertentieblokkering uit</string>
+    <string name="car_settings_zoom_percent">Zoom: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Werkbalk: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">1 bladwijzer verwijderd</string>
+    <string name="car_settings_bookmarks_removed_many">%1$d bladwijzers verwijderd</string>
+    <string name="car_settings_jump_to_letter">Naar letter springen</string>
+    <string name="car_settings_home_set">Startpagina: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">Zoek op YouTube of typ een URL</string>
+    <string name="car_search_hint_google">Zoek op Google of typ een URL</string>
+    <string name="car_search_title_youtube">Zoeken op YouTube</string>
+    <string name="car_search_title_google">Zoeken op Google</string>
+    <string name="car_voice_listening_youtube">Luisteren voor YouTube</string>
+    <string name="car_voice_listening_google">Luisteren voor Google</string>
+    <string name="car_voice_search_error">Ik heb dat niet verstaan</string>
+    <string name="car_voice_search_no_permission">Microfoontoestemming vereist</string>
+
+    <string name="settings_resume_on_focus_title">Video automatisch hervatten</string>
+    <string name="settings_resume_on_focus_summary">Hervat het afspelen nadat de achteruitrijcamera of een andere app het scherm heeft overgenomen. Hervat alleen als de app zelf heeft gepauzeerd.</string>
+
+    <string name="settings_home_url_title">Startpagina</string>
+    <string name="settings_home_url_summary">Adres dat de Home-knop opent</string>
+
+    <string name="settings_restore_last_url_title">Verdergaan waar u gebleven was</string>
+    <string name="settings_restore_last_url_summary">Geldt alleen voor het autoscherm: keert terug naar de laatste pagina in plaats van naar de startpagina. Op de telefoon begint het startscherm altijd leeg.</string>
+
+    <string name="settings_third_party_cookies_title">Cookies van derden toestaan</string>
+    <string name="settings_third_party_cookies_summary">Nodig om aangemeld te blijven bij Google/YouTube. Werkt pas bij de volgende verbinding met de auto.</string>
+
+    <string name="settings_protected_content_title">Beveiligde inhoud toestaan (DRM)</string>
+    <string name="settings_protected_content_summary">Nodig voor streamingdiensten. Werkt mogelijk niet op het geprojecteerde scherm.</string>
+
+    <string name="settings_strip_wv_ua_title">Verbergen dat dit een WebView is</string>
+    <string name="settings_strip_wv_ua_summary">Werkt pas na het opnieuw starten van de app. Sommige diensten weigeren WebViews. Kan de opmaak van andere sites veranderen.</string>
+    <string name="settings_ad_block_title">Advertenties en trackers blokkeren</string>
+    <string name="settings_ad_block_summary">Blokkeert bekende advertentie-/trackerdomeinen op netwerkniveau, inclusief videoadvertenties van YouTube. Geen volwaardige advertentieblokkering.</string>
+    <string name="settings_search_suggestions_title">Zoeksuggesties</string>
+    <string name="settings_search_suggestions_summary">Stuurt wat u in de adresbalk typt naar de zoekmachine om suggesties te krijgen</string>
+
+    <string name="settings_car_disable_notifications_title">Meldingen uitschakelen</string>
+    <string name="settings_car_disable_notifications_summary">Schakelt pop-upmeldingen in Android Auto uit</string>
+    <string name="settings_zoom_title">Paginazoom</string>
+    <string name="settings_safety_warning_title">Veiligheidswaarschuwing tonen</string>
+    <string name="settings_safety_warning_summary">Waarschuwt voor videokijken tijdens het rijden wanneer de handrem wordt losgelaten</string>
+    <string name="error_page_title">De pagina kon niet worden geladen</string>
+    <string name="error_page_retry">Opnieuw proberen</string>
+    <string name="error_page_ssl">Ongeldig beveiligingscertificaat. De verbinding is geblokkeerd.</string>
+    <string name="error_msg_offline">Je bent offline. Controleer je verbinding en probeer het opnieuw.</string>
+    <string name="error_msg_dns">Het adres kon niet worden gevonden.</string>
+    <string name="error_msg_connection">De site heeft de verbinding geweigerd.</string>
+    <string name="error_msg_timeout">De site deed er te lang over om te reageren.</string>
+    <string name="error_msg_cleartext">Deze site staat geen onversleutelde verbinding toe.</string>
+    <string name="error_msg_scheme">Dit type link wordt niet ondersteund.</string>
+    <string name="error_msg_app_missing">Geen enkele app kan deze link openen.</string>
+    <string name="error_msg_blocked">Deze pagina is geblokkeerd door het inhoudsfilter.</string>
+    <string name="error_msg_http">De site gaf een fout terug (%1$d).</string>
+    <string name="error_msg_unknown">Er ging iets mis bij het laden van de pagina.</string>
+    <string name="error_action_back">Terug</string>
+    <string name="error_action_retry_http">Proberen via http</string>
+    <string name="error_action_open_external">Openen in de systeembrowser</string>
+    <string name="error_action_cancel_recovery">Stoppen met opnieuw proberen</string>
+    <string name="error_details">Technische details</string>
+    <string name="error_recovering">Opnieuw proberen (poging %1$d) over %2$d s</string>
+    <string name="error_reconnecting">Opnieuw verbinden…</string>
+    <string name="error_waiting_network">Wachten tot de verbinding terug is…</string>
+    <string name="browser_http_fallback_notice">Deze site ondersteunt geen https. Geopend via http.</string>
+    <string name="browser_http_fallback_keep_https">Https behouden</string>
+
+    <string name="settings_site_storage_title">Sitegegevens</string>
+    <string name="settings_site_storage_summary">Cookies en lokale opslag die door elke site zijn bewaard</string>
+    <string name="storage_cookies_count">%d cookies</string>
+    <string name="storage_no_data">geen gegevens</string>
+    <string name="storage_delete_title">Sitegegevens verwijderen?</string>
+    <string name="storage_delete_message">De cookies en lokale opslag van %1$s worden verwijderd. U wordt afgemeld bij deze site.</string>
+    <string name="storage_delete_confirm">Verwijderen</string>
+    <string name="storage_delete_all">Alles verwijderen</string>
+    <string name="storage_search_hint">Sites zoeken</string>
+    <string name="storage_empty">Nog geen sites bezocht</string>
+    <string name="storage_partial_warning">Sommige cookies kunnen bewaard blijven als de site ze onder een ander pad heeft opgeslagen.</string>
+
+    <string name="browser_url_hint">Zoek of typ een URL</string>
+    <string name="browser_erase">Wissen</string>
+    <string name="browser_send_to_car">Naar het autoscherm sturen</string>
+    <string name="browser_menu">Meer opties</string>
+    <string name="browser_site_info">Site-informatie</string>
+
+    <string name="browser_erase_done">Pagina gewist</string>
+
+    <string name="browser_connection_secure">De verbinding is beveiligd</string>
+    <string name="browser_connection_insecure">Geen beveiligde verbinding</string>
+    <string name="browser_adblock_title">Advertentie- en trackerblokkering</string>
+    <string name="browser_adblock_on">De bescherming staat AAN voor deze site</string>
+    <string name="browser_adblock_off">De bescherming staat UIT voor deze site</string>
+
+    <string name="browser_connection_secure_details">Deze site gebruikt HTTPS, een versleutelde verbinding. De WebView weigert een pagina te laden waarvan het certificaat ongeldig is.</string>
+    <string name="browser_connection_insecure_details">Deze pagina gebruikt geen versleutelde verbinding. Informatie die u ernaartoe stuurt, kan voor anderen zichtbaar zijn.</string>
+
+    <string name="browser_add_bookmark">Favoriet</string>
+    <string name="browser_open_in">Openen in…</string>
+    <string name="browser_desktop_site">Desktopsite</string>
+
+    <string name="car_media_open_browser">Fiesta openen</string>
+    <string name="browser_send_to_car_done">Naar het autoscherm gestuurd</string>
+
+    <string name="browser_send_to_car_message">Het autoscherm opent deze link. Het laadt de pagina zelf — het telefoonscherm wordt niet gespiegeld en het afspelen gaat niet mee.</string>
+    <string name="browser_send_to_car_confirm">Versturen</string>
+    <string name="browser_send_to_car_cancel">Annuleren</string>
+
+    <string name="browser_car_inactive_title">Het autoscherm is niet actief</string>
+    <string name="browser_car_inactive_message">Open de app eerst op het autoscherm en stuur de link daarna opnieuw.</string>
+    <string name="browser_car_inactive_dismiss">OK</string>
+
+    <string name="settings_topic_general_title">Algemeen</string>
+    <string name="settings_topic_general_summary">WebView-identiteit, beveiligde inhoud</string>
+    <string name="settings_topic_privacy_title">Privacy en beveiliging</string>
+    <string name="settings_topic_privacy_summary">Cookies, advertenties en trackers, zoeksuggesties, sitegegevens</string>
+    <string name="settings_topic_car_general_title">Auto — Algemeen</string>
+    <string name="settings_topic_car_general_summary">Startpagina, meldingen, zoom, veiligheidswaarschuwing, werkbalk</string>
+    <string name="settings_topic_car_youtube_title">Auto — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Laatste pagina, video hervatten, naar speler scrollen</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">Ontgrendelen op Android Auto</string>
+    <string name="settings_topic_about_title">Over</string>
+    <string name="settings_topic_about_summary">Over de app, project, credits</string>
+
+    <string name="settings_unlock_title">Ontgrendelen op Android Auto</string>
+    <string name="settings_unlock_summary">Vereist root (SuperSU of vergelijkbaar). Werkt pas na het opnieuw opstarten van de telefoon.</string>
+
+    <string name="settings_about_icons_title">Pictogrammen</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, MPL-2.0-licentie</string>
+    <string name="settings_about_font_title">Lettertype</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Doneer aan Fiesta</string>
+    <string name="settings_topic_donate_summary">Steun het project</string>
+    <string name="settings_donate_title">Tank Fiesta vol ⛽</string>
+    <string name="settings_donate_message">✓ Gratis\n✓ Geen advertenties\n✓ Geen tracking\n\nHeeft het je op de weg vergezeld? Geef iets terug met een kop koffie.</string>
+    <string name="settings_donate_coffee">☕ Trakteer me op koffie</string>
+    <string name="settings_donate_footer_start">Gemaakt met</string>
+    <string name="settings_donate_footer_end">in de vrije tijd</string>
+    <string name="settings_about_tagline">Meer weg. Minder grenzen.</string>
+    <string name="settings_about_description">Handen aan het stuur, ogen op de weg en vrijheid voor je media. Een driving-first-app, gemaakt voor wie graag rijdt. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Project</string>
+    <string name="settings_about_credits_category">Credits</string>
+    <string name="settings_about_license_title">Licentie</string>
+
+    <string name="browser_suggestion_fill">In het zoekveld invullen</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">%d tracker geblokkeerd op deze pagina</item>
+        <item quantity="other">%d trackers geblokkeerd op deze pagina</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">Geen trackers geblokkeerd op deze pagina</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">tracker geblokkeerd op deze pagina</item>
+        <item quantity="other">trackers geblokkeerd op deze pagina</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Positie van de werkbalk</string>
+    <string name="car_toolbar_position_top">Boven</string>
+    <string name="car_toolbar_position_left">Links</string>
+    <string name="car_toolbar_position_right">Rechts</string>
+    <string name="car_toolbar_position_bottom">Onder</string>
+    <string name="settings_car_realtime_category_title">Realtime-opties</string>
+    <string name="settings_car_toolbar_auto_hide_title">Werkbalk automatisch verbergen</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Verbergt de werkbalk totdat u die schermrand aanraakt</string>
+
+    <string name="settings_youtube_scroll_title">Naar de speler scrollen</string>
+    <string name="settings_youtube_scroll_summary">Scrolt de pagina automatisch zodat de speler zichtbaar is na het volgen van een link of het wisselen van video. Werkt vanaf het volgende laden van de pagina.</string>
+
+    <string name="settings_topic_plugins_title">Plug-ins</string>
+    <string name="settings_topic_plugins_summary">Stuurwielbediening en pagina-aanpassingen, per site</string>
+    <string name="plugins_title">Plug-ins</string>
+    <string name="plugins_active_section">Actief, op volgorde van prioriteit</string>
+    <string name="plugins_inactive_section">Inactief</string>
+    <string name="plugins_origin_default">Ingebouwd</string>
+    <string name="plugins_origin_installed">Geïnstalleerd</string>
+    <string name="plugins_active_switch">Actief</string>
+    <string name="plugins_delete">Verwijderen</string>
+    <string name="plugins_install">Installeren vanuit bestand</string>
+    <string name="plugins_restore_defaults">Standaardwaarden herstellen</string>
+    <string name="plugins_review_title">Plug-in beoordelen</string>
+    <string name="plugins_review_install">Installeren</string>
+    <string name="plugins_review_cancel">Annuleren</string>
+    <string name="plugins_review_files">Bestanden</string>
+    <string name="plugins_install_failed">Kan de plug-in niet installeren: %1$s</string>
+    <string name="plugins_empty">Geen plug-ins</string>
+    <string name="plugins_search_hint">Zoeken</string>
+    <string name="voice_listener_title">Spraakontvanger</string>
+    <string name="voice_listener_summary">Slechts één plug-in kan spraakopdrachten uit de auto beantwoorden.</string>
+    <string name="plugins_requires_ad_block">vereist advertentieblokkering</string>
+    <string name="plugins_delete_message">De plug-in %1$s verwijderen?</string>
+    <string name="plugins_restore_defaults_message">De ingebouwde plug-ins herstellen?</string>
+    <string name="page_plugins_events_section">Stuurwielgebeurtenissen</string>
+    <string name="page_plugins_tweaks_section">Pagina-aanpassingen</string>
+    <string name="page_plugins_car">Auto</string>
+    <string name="page_plugins_phone">Telefoon</string>
+
+    <string name="car_media_tab_home">Start</string>
+    <string name="car_media_tab_playlist">Afspeellijst</string>
+    <string name="car_media_tab_history">Geschiedenis</string>
+    <string name="car_media_queue_history">Geschiedenis</string>
+    <string name="car_media_searching_for">Zoeken naar \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">Kon \"%1$s\" niet vinden</string>
+
+</resources>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">DİKKAT !!!</string>
+    <string name="warning_body">Araç kullanırken video izlemek kazalara yol açabilir. Bu uyarıyı yok sayarak, sonuçlarının farkında olduğunuzu ve bunlardan sorumlu olduğunuzu kabul edersiniz. Bu uygulamanın geliştiricisi, Google, bu cihazın üreticisi ve bu aracın üreticisi ihmalinizden kaynaklanan kazalardan sorumlu değildir. Bunun yerine medya simgesine dokunarak arka planda oynatmaya geçebilirsiniz.</string>
+    <string name="warning_accept_button">Riskleri anlıyorum</string>
+    <string name="webview_back">Geri</string>
+    <string name="refresh_page">Yenile</string>
+    <string name="bookmarks">Yer işaretleri</string>
+    <string name="bookmarks_search_hint">Yer işaretlerinizde arayın</string>
+    <string name="bookmarks_none_found">Yer işareti bulunamadı</string>
+    <string name="bookmark_options">Yer işareti seçenekleri</string>
+    <string name="bookmark_edit">Düzenle</string>
+    <string name="bookmark_move_up">Yukarı taşı</string>
+    <string name="bookmark_move_down">Aşağı taşı</string>
+    <string name="bookmark_delete">Sil</string>
+    <string name="bookmark_edit_title">Yer işaretini düzenle</string>
+    <string name="bookmark_edit_name">Ad</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">Sesli arama</string>
+    <string name="fullscreen">Tam ekran</string>
+    <string name="home">Ana sayfa</string>
+    <string name="aspect_ratio_contain">Sığdır</string>
+    <string name="aspect_ratio_fill">Doldur</string>
+    <string name="aspect_ratio_cover">Kapla</string>
+    <string name="car_fullscreen_exit">Çık</string>
+    <string name="car_fullscreen_hide_controls">30 sn gizle</string>
+    <string name="add_bookmark">Geçerli siteyi ekle</string>
+    <string name="remove_bookmark">Geçerli siteyi kaldır</string>
+    <string name="version">Sürüm </string>
+    <string name="settings">Ayarlar</string>
+    <string name="close">Kapat</string>
+    <string name="car_settings_favorite">Favori</string>
+    <string name="car_settings_zoom_in">Yakınlaştır</string>
+    <string name="car_settings_zoom_out">Uzaklaştır</string>
+    <string name="car_settings_bookmarks_bar">Yer işaretleri çubuğu</string>
+    <string name="car_settings_tweaks">İnce ayarlar</string>
+    <string name="car_settings_go_to_address">Adrese git</string>
+    <string name="car_settings_bookmark_added">Yer işaretlerine eklendi</string>
+    <string name="car_settings_bookmark_removed">Yer işaretlerinden kaldırıldı</string>
+    <string name="car_settings_bookmark_locked">Bu yer işareti kaldırılamaz</string>
+    <string name="car_settings_fullscreen_on">Tam ekran açık</string>
+    <string name="car_settings_fullscreen_off">Tam ekran kapalı</string>
+    <string name="car_settings_fullscreen_unavailable">Oynatılan video yok</string>
+    <string name="car_settings_desktop_on">Masaüstü site açık</string>
+    <string name="car_settings_desktop_off">Masaüstü site kapalı</string>
+    <string name="car_settings_adblock_on">Reklam engelleme açık</string>
+    <string name="car_settings_adblock_off">Reklam engelleme kapalı</string>
+    <string name="car_settings_zoom_percent">Yakınlaştırma: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Araç çubuğu: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">1 yer işareti kaldırıldı</string>
+    <string name="car_settings_bookmarks_removed_many">%1$d yer işareti kaldırıldı</string>
+    <string name="car_settings_jump_to_letter">Harfe git</string>
+    <string name="car_settings_home_set">Ana sayfa: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">YouTube\'da arayın veya URL yazın</string>
+    <string name="car_search_hint_google">Google\'da arayın veya URL yazın</string>
+    <string name="car_search_title_youtube">YouTube\'da aranıyor</string>
+    <string name="car_search_title_google">Google\'da aranıyor</string>
+    <string name="car_voice_listening_youtube">YouTube için dinleniyor</string>
+    <string name="car_voice_listening_google">Google için dinleniyor</string>
+    <string name="car_voice_search_error">Duyamadım</string>
+    <string name="car_voice_search_no_permission">Mikrofon izni gerekli</string>
+
+    <string name="settings_resume_on_focus_title">Videoyu otomatik olarak sürdür</string>
+    <string name="settings_resume_on_focus_summary">Geri görüş kamerası veya başka bir uygulama ekranı devraldıktan sonra oynatmayı sürdürür. Yalnızca uygulamanın kendisi duraklattıysa sürdürür.</string>
+
+    <string name="settings_home_url_title">Ana sayfa</string>
+    <string name="settings_home_url_summary">Ana sayfa düğmesinin açtığı adres</string>
+
+    <string name="settings_restore_last_url_title">Kaldığınız yerden devam edin</string>
+    <string name="settings_restore_last_url_summary">Yalnızca araç ekranı için geçerlidir: ana sayfa yerine son sayfaya döner. Telefonda başlangıç ekranı her zaman boş açılır.</string>
+
+    <string name="settings_third_party_cookies_title">Üçüncü taraf çerezlerine izin ver</string>
+    <string name="settings_third_party_cookies_summary">Google/YouTube oturumunu korumak için gereklidir. Yalnızca araca bir sonraki bağlantıda etkili olur.</string>
+
+    <string name="settings_protected_content_title">Korumalı içeriğe izin ver (DRM)</string>
+    <string name="settings_protected_content_summary">Yayın hizmetleri için gereklidir. Yansıtılan ekranda çalışmayabilir.</string>
+
+    <string name="settings_strip_wv_ua_title">Bunun bir WebView olduğunu gizle</string>
+    <string name="settings_strip_wv_ua_summary">Etkili olması için uygulamanın yeniden başlatılması gerekir. Bazı hizmetler WebView\'ları reddeder. Diğer sitelerin düzenini değiştirebilir.</string>
+    <string name="settings_ad_block_title">Reklamları ve izleyicileri engelle</string>
+    <string name="settings_ad_block_summary">Bilinen reklam/izleyici alan adlarını ağ düzeyinde engeller; YouTube video reklamları dahildir. Tam bir reklam engelleyici değildir.</string>
+    <string name="settings_search_suggestions_title">Arama önerileri</string>
+    <string name="settings_search_suggestions_summary">Öneri almak için adres çubuğuna yazdıklarınızı arama motoruna gönderir</string>
+
+    <string name="settings_car_disable_notifications_title">Bildirimleri kapat</string>
+    <string name="settings_car_disable_notifications_summary">Android Auto\'daki açılır bildirimleri kapatır</string>
+    <string name="settings_zoom_title">Sayfa yakınlaştırması</string>
+    <string name="settings_safety_warning_title">Güvenlik uyarısını göster</string>
+    <string name="settings_safety_warning_summary">El freni bırakıldığında araç kullanırken video izlemeye karşı uyarır</string>
+    <string name="error_page_title">Sayfa yüklenemedi</string>
+    <string name="error_page_retry">Yeniden dene</string>
+    <string name="error_page_ssl">Geçersiz güvenlik sertifikası. Bağlantı engellendi.</string>
+    <string name="error_msg_offline">Çevrimdışısınız. Bağlantınızı kontrol edip tekrar deneyin.</string>
+    <string name="error_msg_dns">Adres bulunamadı.</string>
+    <string name="error_msg_connection">Site bağlantıyı reddetti.</string>
+    <string name="error_msg_timeout">Site yanıt vermekte çok gecikti.</string>
+    <string name="error_msg_cleartext">Bu site şifrelenmemiş bağlantıya izin vermiyor.</string>
+    <string name="error_msg_scheme">Bu tür bir bağlantı desteklenmiyor.</string>
+    <string name="error_msg_app_missing">Hiçbir uygulama bu bağlantıyı açamıyor.</string>
+    <string name="error_msg_blocked">Bu sayfa içerik filtresi tarafından engellendi.</string>
+    <string name="error_msg_http">Site bir hata döndürdü (%1$d).</string>
+    <string name="error_msg_unknown">Sayfa yüklenirken bir sorun oluştu.</string>
+    <string name="error_action_back">Geri</string>
+    <string name="error_action_retry_http">http ile dene</string>
+    <string name="error_action_open_external">Sistem tarayıcısında aç</string>
+    <string name="error_action_cancel_recovery">Yeniden denemeyi durdur</string>
+    <string name="error_details">Teknik ayrıntılar</string>
+    <string name="error_recovering">Yeniden deneniyor (deneme %1$d) %2$d sn sonra</string>
+    <string name="error_reconnecting">Yeniden bağlanılıyor…</string>
+    <string name="error_waiting_network">Bağlantının gelmesi bekleniyor…</string>
+    <string name="browser_http_fallback_notice">Bu site https desteklemiyor. http ile açıldı.</string>
+    <string name="browser_http_fallback_keep_https">https\'te kal</string>
+
+    <string name="settings_site_storage_title">Site verileri</string>
+    <string name="settings_site_storage_summary">Her sitenin kaydettiği çerezler ve yerel depolama</string>
+    <string name="storage_cookies_count">%d çerez</string>
+    <string name="storage_no_data">veri yok</string>
+    <string name="storage_delete_title">Site verileri silinsin mi?</string>
+    <string name="storage_delete_message">%1$s sitesinin çerezleri ve yerel depolaması kaldırılacak. Bu sitedeki oturumunuz kapatılacak.</string>
+    <string name="storage_delete_confirm">Sil</string>
+    <string name="storage_delete_all">Tümünü sil</string>
+    <string name="storage_search_hint">Site ara</string>
+    <string name="storage_empty">Henüz hiçbir site ziyaret edilmedi</string>
+    <string name="storage_partial_warning">Site çerezleri farklı bir yola kaydettiyse bazıları kalabilir.</string>
+
+    <string name="browser_url_hint">Arayın veya URL yazın</string>
+    <string name="browser_erase">Sil</string>
+    <string name="browser_send_to_car">Araç ekranına gönder</string>
+    <string name="browser_menu">Diğer seçenekler</string>
+    <string name="browser_site_info">Site bilgileri</string>
+
+    <string name="browser_erase_done">Sayfa temizlendi</string>
+
+    <string name="browser_connection_secure">Bağlantı güvenli</string>
+    <string name="browser_connection_insecure">Bağlantı güvenli değil</string>
+    <string name="browser_adblock_title">Reklam ve izleyici engelleme</string>
+    <string name="browser_adblock_on">Bu sitede korumalar AÇIK</string>
+    <string name="browser_adblock_off">Bu sitede korumalar KAPALI</string>
+
+    <string name="browser_connection_secure_details">Bu site şifreli bir bağlantı olan HTTPS kullanıyor. WebView, sertifikası geçerli olmayan bir sayfayı yüklemeyi reddeder.</string>
+    <string name="browser_connection_insecure_details">Bu sayfa şifreli bir bağlantı kullanmıyor. Ona gönderdiğiniz bilgiler başkaları tarafından görülebilir.</string>
+
+    <string name="browser_add_bookmark">Favori</string>
+    <string name="browser_open_in">Şununla aç…</string>
+    <string name="browser_desktop_site">Masaüstü site</string>
+
+    <string name="car_media_open_browser">Fiesta\'yı aç</string>
+    <string name="browser_send_to_car_done">Araç ekranına gönderildi</string>
+
+    <string name="browser_send_to_car_message">Araç ekranı bu bağlantıyı açacak. Sayfayı kendisi yükler — telefon ekranı yansıtılmaz ve oynatma aktarılmaz.</string>
+    <string name="browser_send_to_car_confirm">Gönder</string>
+    <string name="browser_send_to_car_cancel">İptal</string>
+
+    <string name="browser_car_inactive_title">Araç ekranı etkin değil</string>
+    <string name="browser_car_inactive_message">Önce uygulamayı araç ekranında açın, sonra bağlantıyı yeniden gönderin.</string>
+    <string name="browser_car_inactive_dismiss">Tamam</string>
+
+    <string name="settings_topic_general_title">Genel</string>
+    <string name="settings_topic_general_summary">WebView kimliği, korumalı içerik</string>
+    <string name="settings_topic_privacy_title">Gizlilik ve güvenlik</string>
+    <string name="settings_topic_privacy_summary">Çerezler, reklamlar ve izleyiciler, arama önerileri, site verileri</string>
+    <string name="settings_topic_car_general_title">Araç — Genel</string>
+    <string name="settings_topic_car_general_summary">Ana sayfa, bildirimler, yakınlaştırma, güvenlik uyarısı, araç çubuğu</string>
+    <string name="settings_topic_car_youtube_title">Araç — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Son sayfa, videoyu sürdürme, oynatıcıya kaydırma</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">Android Auto\'da kilidi açma</string>
+    <string name="settings_topic_about_title">Hakkında</string>
+    <string name="settings_topic_about_summary">Uygulama hakkında, proje, katkıda bulunanlar</string>
+
+    <string name="settings_unlock_title">Android Auto\'da kilidi açma</string>
+    <string name="settings_unlock_summary">Root gerektirir (SuperSU veya benzeri). Yalnızca telefon yeniden başlatıldıktan sonra etkili olur.</string>
+
+    <string name="settings_about_icons_title">Simgeler</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, MPL-2.0 lisansı</string>
+    <string name="settings_about_font_title">Yazı tipi</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Fiesta\'ya bağış yap</string>
+    <string name="settings_topic_donate_summary">Projeyi destekle</string>
+    <string name="settings_donate_title">Fiesta\'nın deposunu doldur ⛽</string>
+    <string name="settings_donate_message">✓ Ücretsiz\n✓ Reklamsız\n✓ Takipsiz\n\nYolda sana eşlik etti mi? Bir kahveyle karşılık ver.</string>
+    <string name="settings_donate_coffee">☕ Bana bir kahve ısmarla</string>
+    <string name="settings_donate_footer_start">Boş zamanlarda</string>
+    <string name="settings_donate_footer_end">ile yapıldı</string>
+    <string name="settings_about_tagline">Daha çok yol. Daha az sınır.</string>
+    <string name="settings_about_description">Eller direksiyonda, gözler yolda ve medyan için özgürlük. Sürmeyi sevenler için driving-first bir uygulama. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Proje</string>
+    <string name="settings_about_credits_category">Katkıda bulunanlar</string>
+    <string name="settings_about_license_title">Lisans</string>
+
+    <string name="browser_suggestion_fill">Arama kutusuna doldur</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">Bu sayfada %d izleyici engellendi</item>
+        <item quantity="other">Bu sayfada %d izleyici engellendi</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">Bu sayfada engellenen izleyici yok</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">izleyici bu sayfada engellendi</item>
+        <item quantity="other">izleyici bu sayfada engellendi</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Araç çubuğu konumu</string>
+    <string name="car_toolbar_position_top">Üst</string>
+    <string name="car_toolbar_position_left">Sol</string>
+    <string name="car_toolbar_position_right">Sağ</string>
+    <string name="car_toolbar_position_bottom">Alt</string>
+    <string name="settings_car_realtime_category_title">Gerçek zamanlı seçenekler</string>
+    <string name="settings_car_toolbar_auto_hide_title">Araç çubuğunu otomatik gizle</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Ekranın o kenarına dokunana kadar çubuğu gizler</string>
+
+    <string name="settings_youtube_scroll_title">Oynatıcıya kaydır</string>
+    <string name="settings_youtube_scroll_summary">Bir bağlantıyı açtıktan veya video değiştirdikten sonra oynatıcı görünür olacak şekilde sayfayı otomatik kaydırır. Bir sonraki sayfa yüklemesinde etkili olur.</string>
+
+    <string name="settings_topic_plugins_title">Eklentiler</string>
+    <string name="settings_topic_plugins_summary">Direksiyon kumandaları ve sayfa ayarları, site bazında</string>
+    <string name="plugins_title">Eklentiler</string>
+    <string name="plugins_active_section">Etkin, öncelik sırasına göre</string>
+    <string name="plugins_inactive_section">Etkin değil</string>
+    <string name="plugins_origin_default">Yerleşik</string>
+    <string name="plugins_origin_installed">Yüklendi</string>
+    <string name="plugins_active_switch">Etkin</string>
+    <string name="plugins_delete">Sil</string>
+    <string name="plugins_install">Dosyadan yükle</string>
+    <string name="plugins_restore_defaults">Varsayılanları geri yükle</string>
+    <string name="plugins_review_title">Eklentiyi incele</string>
+    <string name="plugins_review_install">Yükle</string>
+    <string name="plugins_review_cancel">İptal</string>
+    <string name="plugins_review_files">Dosyalar</string>
+    <string name="plugins_install_failed">Eklenti yüklenemedi: %1$s</string>
+    <string name="plugins_empty">Eklenti yok</string>
+    <string name="plugins_search_hint">Ara</string>
+    <string name="voice_listener_title">Ses dinleyicisi</string>
+    <string name="voice_listener_summary">Araçtan gelen sesli komutlara yalnızca bir eklenti yanıt verebilir.</string>
+    <string name="plugins_requires_ad_block">reklam engelleme gerektirir</string>
+    <string name="plugins_delete_message">%1$s eklentisi silinsin mi?</string>
+    <string name="plugins_restore_defaults_message">Yerleşik eklentiler geri yüklensin mi?</string>
+    <string name="page_plugins_events_section">Direksiyon olayları</string>
+    <string name="page_plugins_tweaks_section">Sayfa ayarları</string>
+    <string name="page_plugins_car">Araç</string>
+    <string name="page_plugins_phone">Telefon</string>
+
+    <string name="car_media_tab_home">Ana sayfa</string>
+    <string name="car_media_tab_playlist">Oynatma listesi</string>
+    <string name="car_media_tab_history">Geçmiş</string>
+    <string name="car_media_queue_history">Geçmiş</string>
+    <string name="car_media_searching_for">Aranıyor: \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">\"%1$s\" bulunamadı</string>
+
+</resources>

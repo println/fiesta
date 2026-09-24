@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">คำเตือน !!!</string>
+    <string name="warning_body">การดูวิดีโอขณะขับรถอาจทำให้เกิดอุบัติเหตุ การปิดคำเตือนนี้ถือว่าคุณรับทราบและรับผิดชอบต่อผลที่ตามมาเอง ทั้งผู้พัฒนาแอปนี้ Google ผู้ผลิตอุปกรณ์นี้ และผู้ผลิตรถยนต์คันนี้ ไม่รับผิดชอบต่ออุบัติเหตุใด ๆ ที่เกิดจากความประมาทของคุณ คุณสามารถสลับไปเล่นเบื้องหลังได้โดยแตะไอคอนสื่อแทน</string>
+    <string name="warning_accept_button">ฉันเข้าใจความเสี่ยง</string>
+    <string name="webview_back">ย้อนกลับ</string>
+    <string name="refresh_page">รีเฟรช</string>
+    <string name="bookmarks">บุ๊กมาร์ก</string>
+    <string name="bookmarks_search_hint">ค้นหาในบุ๊กมาร์กของคุณ</string>
+    <string name="bookmarks_none_found">ไม่พบบุ๊กมาร์ก</string>
+    <string name="bookmark_options">ตัวเลือกบุ๊กมาร์ก</string>
+    <string name="bookmark_edit">แก้ไข</string>
+    <string name="bookmark_move_up">เลื่อนขึ้น</string>
+    <string name="bookmark_move_down">เลื่อนลง</string>
+    <string name="bookmark_delete">ลบ</string>
+    <string name="bookmark_edit_title">แก้ไขบุ๊กมาร์ก</string>
+    <string name="bookmark_edit_name">ชื่อ</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">ค้นหาด้วยเสียง</string>
+    <string name="fullscreen">เต็มหน้าจอ</string>
+    <string name="home">หน้าแรก</string>
+    <string name="aspect_ratio_contain">พอดีกรอบ</string>
+    <string name="aspect_ratio_fill">ยืดเต็ม</string>
+    <string name="aspect_ratio_cover">ครอบเต็ม</string>
+    <string name="car_fullscreen_exit">ออก</string>
+    <string name="car_fullscreen_hide_controls">ซ่อน 30 วิ</string>
+    <string name="add_bookmark">เพิ่มเว็บไซต์ปัจจุบัน</string>
+    <string name="remove_bookmark">นำเว็บไซต์ปัจจุบันออก</string>
+    <string name="version">เวอร์ชัน </string>
+    <string name="settings">การตั้งค่า</string>
+    <string name="close">ปิด</string>
+    <string name="car_settings_favorite">รายการโปรด</string>
+    <string name="car_settings_zoom_in">ขยาย</string>
+    <string name="car_settings_zoom_out">ย่อ</string>
+    <string name="car_settings_bookmarks_bar">แถบบุ๊กมาร์ก</string>
+    <string name="car_settings_tweaks">การปรับแต่ง</string>
+    <string name="car_settings_go_to_address">ไปที่ที่อยู่</string>
+    <string name="car_settings_bookmark_added">เพิ่มลงบุ๊กมาร์กแล้ว</string>
+    <string name="car_settings_bookmark_removed">นำออกจากบุ๊กมาร์กแล้ว</string>
+    <string name="car_settings_bookmark_locked">ไม่สามารถนำบุ๊กมาร์กนี้ออกได้</string>
+    <string name="car_settings_fullscreen_on">เปิดโหมดเต็มหน้าจอ</string>
+    <string name="car_settings_fullscreen_off">ปิดโหมดเต็มหน้าจอ</string>
+    <string name="car_settings_fullscreen_unavailable">ไม่มีวิดีโอกำลังเล่น</string>
+    <string name="car_settings_desktop_on">เปิดเว็บไซต์เวอร์ชันเดสก์ท็อป</string>
+    <string name="car_settings_desktop_off">ปิดเว็บไซต์เวอร์ชันเดสก์ท็อป</string>
+    <string name="car_settings_adblock_on">เปิดการบล็อกโฆษณา</string>
+    <string name="car_settings_adblock_off">ปิดการบล็อกโฆษณา</string>
+    <string name="car_settings_zoom_percent">ซูม: %1$d%%</string>
+    <string name="car_settings_toolbar_position">แถบเครื่องมือ: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">นำบุ๊กมาร์กออก 1 รายการ</string>
+    <string name="car_settings_bookmarks_removed_many">นำบุ๊กมาร์กออก %1$d รายการ</string>
+    <string name="car_settings_jump_to_letter">ข้ามไปยังตัวอักษร</string>
+    <string name="car_settings_home_set">หน้าแรก: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">ค้นหาใน YouTube หรือพิมพ์ URL</string>
+    <string name="car_search_hint_google">ค้นหาใน Google หรือพิมพ์ URL</string>
+    <string name="car_search_title_youtube">กำลังค้นหาใน YouTube</string>
+    <string name="car_search_title_google">กำลังค้นหาใน Google</string>
+    <string name="car_voice_listening_youtube">กำลังฟังสำหรับ YouTube</string>
+    <string name="car_voice_listening_google">กำลังฟังสำหรับ Google</string>
+    <string name="car_voice_search_error">ไม่ได้ยินเสียง</string>
+    <string name="car_voice_search_no_permission">ต้องการสิทธิ์เข้าถึงไมโครโฟน</string>
+
+    <string name="settings_resume_on_focus_title">เล่นวิดีโอต่อโดยอัตโนมัติ</string>
+    <string name="settings_resume_on_focus_summary">เล่นต่อหลังจากกล้องมองหลังหรือแอปอื่นเข้าใช้หน้าจอ จะเล่นต่อเฉพาะเมื่อแอปเป็นผู้หยุดชั่วคราวเอง</string>
+
+    <string name="settings_home_url_title">หน้าแรก</string>
+    <string name="settings_home_url_summary">ที่อยู่ที่เปิดโดยปุ่มหน้าแรก</string>
+
+    <string name="settings_restore_last_url_title">ดำเนินต่อจากจุดที่ค้างไว้</string>
+    <string name="settings_restore_last_url_summary">ใช้กับหน้าจอรถเท่านั้น: กลับไปยังหน้าล่าสุดแทนหน้าแรก บนโทรศัพท์หน้าจอเริ่มต้นจะว่างเปล่าเสมอ</string>
+
+    <string name="settings_third_party_cookies_title">อนุญาตคุกกี้ของบุคคลที่สาม</string>
+    <string name="settings_third_party_cookies_summary">จำเป็นสำหรับการคงการเข้าสู่ระบบ Google/YouTube มีผลเมื่อเชื่อมต่อกับรถครั้งถัดไป</string>
+
+    <string name="settings_protected_content_title">อนุญาตเนื้อหาที่มีการป้องกัน (DRM)</string>
+    <string name="settings_protected_content_summary">จำเป็นสำหรับบริการสตรีมมิง อาจไม่ทำงานบนหน้าจอที่ฉายภาพ</string>
+
+    <string name="settings_strip_wv_ua_title">ซ่อนว่านี่คือ WebView</string>
+    <string name="settings_strip_wv_ua_summary">ต้องเริ่มแอปใหม่จึงจะมีผล บางบริการปฏิเสธ WebView อาจทำให้เลย์เอาต์ของเว็บไซต์อื่นเปลี่ยนไป</string>
+    <string name="settings_ad_block_title">บล็อกโฆษณาและตัวติดตาม</string>
+    <string name="settings_ad_block_summary">บล็อกโดเมนโฆษณา/ตัวติดตามที่รู้จักในระดับเครือข่าย รวมถึงโฆษณาวิดีโอของ YouTube ไม่ใช่ตัวบล็อกโฆษณาเต็มรูปแบบ</string>
+    <string name="settings_search_suggestions_title">คำแนะนำการค้นหา</string>
+    <string name="settings_search_suggestions_summary">ส่งสิ่งที่คุณพิมพ์ในแถบที่อยู่ไปยังเครื่องมือค้นหาเพื่อรับคำแนะนำ</string>
+
+    <string name="settings_car_disable_notifications_title">ปิดการแจ้งเตือน</string>
+    <string name="settings_car_disable_notifications_summary">ปิดการแจ้งเตือนแบบป๊อปอัปใน Android Auto</string>
+    <string name="settings_zoom_title">การซูมหน้าเว็บ</string>
+    <string name="settings_safety_warning_title">แสดงคำเตือนด้านความปลอดภัย</string>
+    <string name="settings_safety_warning_summary">เตือนเรื่องการดูวิดีโอขณะขับรถเมื่อปลดเบรกมือ</string>
+    <string name="error_page_title">ไม่สามารถโหลดหน้าเว็บได้</string>
+    <string name="error_page_retry">ลองอีกครั้ง</string>
+    <string name="error_page_ssl">ใบรับรองความปลอดภัยไม่ถูกต้อง การเชื่อมต่อถูกบล็อก</string>
+    <string name="error_msg_offline">คุณออฟไลน์อยู่ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง</string>
+    <string name="error_msg_dns">ไม่พบที่อยู่นี้</string>
+    <string name="error_msg_connection">เว็บไซต์ปฏิเสธการเชื่อมต่อ</string>
+    <string name="error_msg_timeout">เว็บไซต์ตอบสนองช้าเกินไป</string>
+    <string name="error_msg_cleartext">เว็บไซต์นี้ไม่อนุญาตการเชื่อมต่อที่ไม่เข้ารหัส</string>
+    <string name="error_msg_scheme">ไม่รองรับลิงก์ประเภทนี้</string>
+    <string name="error_msg_app_missing">ไม่มีแอปที่เปิดลิงก์นี้ได้</string>
+    <string name="error_msg_blocked">หน้านี้ถูกบล็อกโดยตัวกรองเนื้อหา</string>
+    <string name="error_msg_http">เว็บไซต์ส่งข้อผิดพลาดกลับมา (%1$d)</string>
+    <string name="error_msg_unknown">เกิดข้อผิดพลาดขณะโหลดหน้า</string>
+    <string name="error_action_back">กลับ</string>
+    <string name="error_action_retry_http">ลองผ่าน http</string>
+    <string name="error_action_open_external">เปิดในเบราว์เซอร์ของระบบ</string>
+    <string name="error_action_cancel_recovery">หยุดลองใหม่</string>
+    <string name="error_details">รายละเอียดทางเทคนิค</string>
+    <string name="error_recovering">กำลังลองใหม่ (ครั้งที่ %1$d) ใน %2$d วินาที</string>
+    <string name="error_reconnecting">กำลังเชื่อมต่อใหม่…</string>
+    <string name="error_waiting_network">กำลังรอการเชื่อมต่อกลับมา…</string>
+    <string name="browser_http_fallback_notice">เว็บไซต์นี้ไม่รองรับ https เปิดผ่าน http แล้ว</string>
+    <string name="browser_http_fallback_keep_https">คงใช้ https</string>
+
+    <string name="settings_site_storage_title">ข้อมูลเว็บไซต์</string>
+    <string name="settings_site_storage_summary">คุกกี้และที่เก็บข้อมูลในเครื่องที่แต่ละเว็บไซต์บันทึกไว้</string>
+    <string name="storage_cookies_count">คุกกี้ %d รายการ</string>
+    <string name="storage_no_data">ไม่มีข้อมูล</string>
+    <string name="storage_delete_title">ลบข้อมูลเว็บไซต์ไหม</string>
+    <string name="storage_delete_message">คุกกี้และที่เก็บข้อมูลในเครื่องของ %1$s จะถูกลบ คุณจะออกจากระบบของเว็บไซต์นี้</string>
+    <string name="storage_delete_confirm">ลบ</string>
+    <string name="storage_delete_all">ลบทั้งหมด</string>
+    <string name="storage_search_hint">ค้นหาเว็บไซต์</string>
+    <string name="storage_empty">ยังไม่ได้เข้าชมเว็บไซต์ใด</string>
+    <string name="storage_partial_warning">คุกกี้บางรายการอาจยังอยู่ หากเว็บไซต์บันทึกไว้ภายใต้เส้นทางอื่น</string>
+
+    <string name="browser_url_hint">ค้นหาหรือพิมพ์ URL</string>
+    <string name="browser_erase">ล้าง</string>
+    <string name="browser_send_to_car">ส่งไปยังหน้าจอรถ</string>
+    <string name="browser_menu">ตัวเลือกเพิ่มเติม</string>
+    <string name="browser_site_info">ข้อมูลเว็บไซต์</string>
+
+    <string name="browser_erase_done">ล้างหน้าเว็บแล้ว</string>
+
+    <string name="browser_connection_secure">การเชื่อมต่อปลอดภัย</string>
+    <string name="browser_connection_insecure">การเชื่อมต่อไม่ปลอดภัย</string>
+    <string name="browser_adblock_title">การบล็อกโฆษณาและตัวติดตาม</string>
+    <string name="browser_adblock_on">การป้องกันเปิดอยู่สำหรับเว็บไซต์นี้</string>
+    <string name="browser_adblock_off">การป้องกันปิดอยู่สำหรับเว็บไซต์นี้</string>
+
+    <string name="browser_connection_secure_details">เว็บไซต์นี้ใช้ HTTPS ซึ่งเป็นการเชื่อมต่อแบบเข้ารหัส WebView จะปฏิเสธการโหลดหน้าเว็บที่ใบรับรองไม่ถูกต้อง</string>
+    <string name="browser_connection_insecure_details">หน้านี้ไม่ได้ใช้การเชื่อมต่อแบบเข้ารหัส ข้อมูลที่คุณส่งไปอาจถูกผู้อื่นมองเห็นได้</string>
+
+    <string name="browser_add_bookmark">รายการโปรด</string>
+    <string name="browser_open_in">เปิดด้วย…</string>
+    <string name="browser_desktop_site">เว็บไซต์เวอร์ชันเดสก์ท็อป</string>
+
+    <string name="car_media_open_browser">เปิด Fiesta</string>
+    <string name="browser_send_to_car_done">ส่งไปยังหน้าจอรถแล้ว</string>
+
+    <string name="browser_send_to_car_message">หน้าจอรถจะเปิดลิงก์นี้ โดยโหลดหน้าเว็บเอง — หน้าจอโทรศัพท์จะไม่ถูกมิเรอร์ และการเล่นจะไม่ถูกโอนไป</string>
+    <string name="browser_send_to_car_confirm">ส่ง</string>
+    <string name="browser_send_to_car_cancel">ยกเลิก</string>
+
+    <string name="browser_car_inactive_title">หน้าจอรถยังไม่ทำงาน</string>
+    <string name="browser_car_inactive_message">เปิดแอปบนหน้าจอรถก่อน แล้วส่งลิงก์อีกครั้ง</string>
+    <string name="browser_car_inactive_dismiss">ตกลง</string>
+
+    <string name="settings_topic_general_title">ทั่วไป</string>
+    <string name="settings_topic_general_summary">การระบุตัวตนของ WebView เนื้อหาที่มีการป้องกัน</string>
+    <string name="settings_topic_privacy_title">ความเป็นส่วนตัวและความปลอดภัย</string>
+    <string name="settings_topic_privacy_summary">คุกกี้ โฆษณาและตัวติดตาม คำแนะนำการค้นหา ข้อมูลเว็บไซต์</string>
+    <string name="settings_topic_car_general_title">รถ — ทั่วไป</string>
+    <string name="settings_topic_car_general_summary">หน้าแรก การแจ้งเตือน การซูม คำเตือนด้านความปลอดภัย แถบเครื่องมือ</string>
+    <string name="settings_topic_car_youtube_title">รถ — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">หน้าล่าสุด การเล่นวิดีโอต่อ การเลื่อนไปยังตัวเล่น</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">ปลดล็อกบน Android Auto</string>
+    <string name="settings_topic_about_title">เกี่ยวกับ</string>
+    <string name="settings_topic_about_summary">เกี่ยวกับแอป โปรเจกต์ เครดิต</string>
+
+    <string name="settings_unlock_title">ปลดล็อกบน Android Auto</string>
+    <string name="settings_unlock_summary">ต้องใช้สิทธิ์รูท (SuperSU หรือคล้ายกัน) มีผลหลังจากรีสตาร์ทโทรศัพท์เท่านั้น</string>
+
+    <string name="settings_about_icons_title">ไอคอน</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, สัญญาอนุญาต MPL-2.0</string>
+    <string name="settings_about_font_title">แบบอักษร</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">บริจาคให้ Fiesta</string>
+    <string name="settings_topic_donate_summary">สนับสนุนโปรเจกต์</string>
+    <string name="settings_donate_title">เติมน้ำมันให้ Fiesta ⛽</string>
+    <string name="settings_donate_message">✓ ฟรี\n✓ ไม่มีโฆษณา\n✓ ไม่มีการติดตาม\n\nเคยเป็นเพื่อนคุณบนถนนไหม? ตอบแทนด้วยกาแฟสักแก้ว</string>
+    <string name="settings_donate_coffee">☕ เลี้ยงกาแฟฉันสักแก้ว</string>
+    <string name="settings_donate_footer_start">สร้างด้วย</string>
+    <string name="settings_donate_footer_end">ในเวลาว่าง</string>
+    <string name="settings_about_tagline">ถนนมากขึ้น ขีดจำกัดน้อยลง</string>
+    <string name="settings_about_description">มืออยู่บนพวงมาลัย ตาอยู่บนถนน และอิสระสำหรับสื่อของคุณ แอป driving-first สำหรับคนที่รักการขับรถ Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">โปรเจกต์</string>
+    <string name="settings_about_credits_category">เครดิต</string>
+    <string name="settings_about_license_title">สัญญาอนุญาต</string>
+
+    <string name="browser_suggestion_fill">เติมในช่องค้นหา</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="other">บล็อกตัวติดตาม %d รายการในหน้านี้</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">ไม่มีตัวติดตามถูกบล็อกในหน้านี้</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="other">รายการที่ถูกบล็อกในหน้านี้</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">ตำแหน่งแถบเครื่องมือ</string>
+    <string name="car_toolbar_position_top">ด้านบน</string>
+    <string name="car_toolbar_position_left">ด้านซ้าย</string>
+    <string name="car_toolbar_position_right">ด้านขวา</string>
+    <string name="car_toolbar_position_bottom">ด้านล่าง</string>
+    <string name="settings_car_realtime_category_title">ตัวเลือกแบบเรียลไทม์</string>
+    <string name="settings_car_toolbar_auto_hide_title">ซ่อนแถบเครื่องมืออัตโนมัติ</string>
+    <string name="settings_car_toolbar_auto_hide_summary">ซ่อนแถบไว้จนกว่าคุณจะแตะขอบหน้าจอด้านนั้น</string>
+
+    <string name="settings_youtube_scroll_title">เลื่อนไปยังตัวเล่น</string>
+    <string name="settings_youtube_scroll_summary">เลื่อนหน้าเว็บโดยอัตโนมัติเพื่อให้เห็นตัวเล่นหลังจากเปิดลิงก์หรือเปลี่ยนวิดีโอ มีผลเมื่อโหลดหน้าเว็บครั้งถัดไป</string>
+
+    <string name="settings_topic_plugins_title">ปลั๊กอิน</string>
+    <string name="settings_topic_plugins_summary">ปุ่มควบคุมบนพวงมาลัยและการปรับแต่งหน้าเว็บ แยกตามเว็บไซต์</string>
+    <string name="plugins_title">ปลั๊กอิน</string>
+    <string name="plugins_active_section">ใช้งานอยู่ เรียงตามลำดับความสำคัญ</string>
+    <string name="plugins_inactive_section">ไม่ได้ใช้งาน</string>
+    <string name="plugins_origin_default">มีมาให้</string>
+    <string name="plugins_origin_installed">ติดตั้งแล้ว</string>
+    <string name="plugins_active_switch">ใช้งานอยู่</string>
+    <string name="plugins_delete">ลบ</string>
+    <string name="plugins_install">ติดตั้งจากไฟล์</string>
+    <string name="plugins_restore_defaults">คืนค่าเริ่มต้น</string>
+    <string name="plugins_review_title">ตรวจสอบปลั๊กอิน</string>
+    <string name="plugins_review_install">ติดตั้ง</string>
+    <string name="plugins_review_cancel">ยกเลิก</string>
+    <string name="plugins_review_files">ไฟล์</string>
+    <string name="plugins_install_failed">ติดตั้งปลั๊กอินไม่สำเร็จ: %1$s</string>
+    <string name="plugins_empty">ไม่มีปลั๊กอิน</string>
+    <string name="plugins_search_hint">ค้นหา</string>
+    <string name="voice_listener_title">ตัวรับคำสั่งเสียง</string>
+    <string name="voice_listener_summary">มีเพียงปลั๊กอินเดียวที่ตอบสนองคำสั่งเสียงจากรถได้</string>
+    <string name="plugins_requires_ad_block">ต้องเปิดการบล็อกโฆษณา</string>
+    <string name="plugins_delete_message">ลบปลั๊กอิน %1$s ไหม</string>
+    <string name="plugins_restore_defaults_message">คืนค่าปลั๊กอินที่มีมาให้ไหม</string>
+    <string name="page_plugins_events_section">เหตุการณ์จากพวงมาลัย</string>
+    <string name="page_plugins_tweaks_section">การปรับแต่งหน้าเว็บ</string>
+    <string name="page_plugins_car">รถ</string>
+    <string name="page_plugins_phone">โทรศัพท์</string>
+
+    <string name="car_media_tab_home">หน้าแรก</string>
+    <string name="car_media_tab_playlist">เพลย์ลิสต์</string>
+    <string name="car_media_tab_history">ประวัติ</string>
+    <string name="car_media_queue_history">ประวัติ</string>
+    <string name="car_media_searching_for">กำลังค้นหา \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">ไม่พบ \"%1$s\"</string>
+
+</resources>

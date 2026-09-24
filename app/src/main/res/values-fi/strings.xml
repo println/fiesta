@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">VAROITUS !!!</string>
+    <string name="warning_body">Videoiden katselu ajon aikana voi aiheuttaa kolareita. Ohittamalla tämän varoituksen hyväksyt, että olet tietoinen seurauksista ja vastuussa niistä. Tämän sovelluksen kehittäjä, Google, tämän laitteen valmistaja tai tämän auton valmistaja eivät vastaa huolimattomuudestasi aiheutuneista onnettomuuksista. Voit vaihtaa taustatoistoon napauttamalla mediakuvaketta.</string>
+    <string name="warning_accept_button">Ymmärrän riskit</string>
+    <string name="webview_back">Takaisin</string>
+    <string name="refresh_page">Päivitä</string>
+    <string name="bookmarks">Kirjanmerkit</string>
+    <string name="bookmarks_search_hint">Hae kirjanmerkeistä</string>
+    <string name="bookmarks_none_found">Kirjanmerkkejä ei löytynyt</string>
+    <string name="bookmark_options">Kirjanmerkin asetukset</string>
+    <string name="bookmark_edit">Muokkaa</string>
+    <string name="bookmark_move_up">Siirrä ylös</string>
+    <string name="bookmark_move_down">Siirrä alas</string>
+    <string name="bookmark_delete">Poista</string>
+    <string name="bookmark_edit_title">Muokkaa kirjanmerkkiä</string>
+    <string name="bookmark_edit_name">Nimi</string>
+    <string name="bookmark_edit_url">URL-osoite</string>
+    <string name="voice_search">Puhehaku</string>
+    <string name="fullscreen">Koko näyttö</string>
+    <string name="home">Etusivu</string>
+    <string name="aspect_ratio_contain">Sovita</string>
+    <string name="aspect_ratio_fill">Täytä</string>
+    <string name="aspect_ratio_cover">Peitä</string>
+    <string name="car_fullscreen_exit">Poistu</string>
+    <string name="car_fullscreen_hide_controls">Piilota 30 s</string>
+    <string name="add_bookmark">Lisää nykyinen sivusto</string>
+    <string name="remove_bookmark">Poista nykyinen sivusto</string>
+    <string name="version">Versio </string>
+    <string name="settings">Asetukset</string>
+    <string name="close">Sulje</string>
+    <string name="car_settings_favorite">Suosikki</string>
+    <string name="car_settings_zoom_in">Lähennä</string>
+    <string name="car_settings_zoom_out">Loitonna</string>
+    <string name="car_settings_bookmarks_bar">Kirjanmerkkipalkki</string>
+    <string name="car_settings_tweaks">Säädöt</string>
+    <string name="car_settings_go_to_address">Siirry osoitteeseen</string>
+    <string name="car_settings_bookmark_added">Lisätty kirjanmerkkeihin</string>
+    <string name="car_settings_bookmark_removed">Poistettu kirjanmerkeistä</string>
+    <string name="car_settings_bookmark_locked">Tätä kirjanmerkkiä ei voi poistaa</string>
+    <string name="car_settings_fullscreen_on">Koko näyttö käytössä</string>
+    <string name="car_settings_fullscreen_off">Koko näyttö pois käytöstä</string>
+    <string name="car_settings_fullscreen_unavailable">Videota ei toisteta</string>
+    <string name="car_settings_desktop_on">Työpöytäsivusto käytössä</string>
+    <string name="car_settings_desktop_off">Työpöytäsivusto pois käytöstä</string>
+    <string name="car_settings_adblock_on">Mainosten esto käytössä</string>
+    <string name="car_settings_adblock_off">Mainosten esto pois käytöstä</string>
+    <string name="car_settings_zoom_percent">Zoomaus: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Työkalupalkki: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">1 kirjanmerkki poistettu</string>
+    <string name="car_settings_bookmarks_removed_many">%1$d kirjanmerkkiä poistettu</string>
+    <string name="car_settings_jump_to_letter">Siirry kirjaimeen</string>
+    <string name="car_settings_home_set">Etusivu: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">Hae YouTubesta tai kirjoita URL-osoite</string>
+    <string name="car_search_hint_google">Hae Googlesta tai kirjoita URL-osoite</string>
+    <string name="car_search_title_youtube">Haetaan YouTubesta</string>
+    <string name="car_search_title_google">Haetaan Googlesta</string>
+    <string name="car_voice_listening_youtube">Kuunnellaan YouTubea varten</string>
+    <string name="car_voice_listening_google">Kuunnellaan Googlea varten</string>
+    <string name="car_voice_search_error">En kuullut tuota</string>
+    <string name="car_voice_search_no_permission">Mikrofonin käyttöoikeus vaaditaan</string>
+
+    <string name="settings_resume_on_focus_title">Jatka videota automaattisesti</string>
+    <string name="settings_resume_on_focus_summary">Jatkaa toistoa sen jälkeen, kun peruutuskamera tai toinen sovellus on ottanut näytön haltuunsa. Jatkaa vain, jos sovellus itse keskeytti toiston.</string>
+
+    <string name="settings_home_url_title">Etusivu</string>
+    <string name="settings_home_url_summary">Osoite, jonka etusivupainike avaa</string>
+
+    <string name="settings_restore_last_url_title">Jatka siitä, mihin jäit</string>
+    <string name="settings_restore_last_url_summary">Koskee vain auton näyttöä: palaa viimeiselle sivulle etusivun sijaan. Puhelimessa aloitusnäyttö alkaa aina tyhjänä.</string>
+
+    <string name="settings_third_party_cookies_title">Salli kolmannen osapuolen evästeet</string>
+    <string name="settings_third_party_cookies_summary">Tarvitaan Google-/YouTube-kirjautumisen säilyttämiseen. Tulee voimaan vasta seuraavalla yhteydellä autoon.</string>
+
+    <string name="settings_protected_content_title">Salli suojattu sisältö (DRM)</string>
+    <string name="settings_protected_content_summary">Tarvitaan suoratoistopalveluille. Ei välttämättä toimi heijastetulla näytöllä.</string>
+
+    <string name="settings_strip_wv_ua_title">Piilota, että tämä on WebView</string>
+    <string name="settings_strip_wv_ua_summary">Vaatii sovelluksen uudelleenkäynnistyksen. Jotkin palvelut hylkäävät WebView-selaimet. Voi muuttaa muiden sivustojen asettelua.</string>
+    <string name="settings_ad_block_title">Estä mainokset ja seurantaohjelmat</string>
+    <string name="settings_ad_block_summary">Estää tunnetut mainos- ja seurantaverkkotunnukset verkkotasolla, mukaan lukien YouTuben videomainokset. Ei ole täysi mainosten estäjä.</string>
+    <string name="settings_search_suggestions_title">Hakuehdotukset</string>
+    <string name="settings_search_suggestions_summary">Lähettää osoiteriville kirjoittamasi tekstin hakukoneelle ehdotusten saamiseksi</string>
+
+    <string name="settings_car_disable_notifications_title">Poista ilmoitukset käytöstä</string>
+    <string name="settings_car_disable_notifications_summary">Poistaa ponnahdusilmoitukset käytöstä Android Autossa</string>
+    <string name="settings_zoom_title">Sivun zoomaus</string>
+    <string name="settings_safety_warning_title">Näytä turvallisuusvaroitus</string>
+    <string name="settings_safety_warning_summary">Varoittaa videoiden katselusta ajon aikana, kun käsijarru vapautetaan</string>
+    <string name="error_page_title">Sivua ei voitu ladata</string>
+    <string name="error_page_retry">Yritä uudelleen</string>
+    <string name="error_page_ssl">Virheellinen varmenne. Yhteys estettiin.</string>
+    <string name="error_msg_offline">Olet offline-tilassa. Tarkista yhteytesi ja yritä uudelleen.</string>
+    <string name="error_msg_dns">Osoitetta ei löytynyt.</string>
+    <string name="error_msg_connection">Sivusto hylkäsi yhteyden.</string>
+    <string name="error_msg_timeout">Sivusto vastasi liian hitaasti.</string>
+    <string name="error_msg_cleartext">Tämä sivusto ei salli salaamatonta yhteyttä.</string>
+    <string name="error_msg_scheme">Tämän tyyppistä linkkiä ei tueta.</string>
+    <string name="error_msg_app_missing">Mikään sovellus ei voi avata tätä linkkiä.</string>
+    <string name="error_msg_blocked">Sisältösuodatin esti tämän sivun.</string>
+    <string name="error_msg_http">Sivusto palautti virheen (%1$d).</string>
+    <string name="error_msg_unknown">Sivun lataamisessa tapahtui virhe.</string>
+    <string name="error_action_back">Takaisin</string>
+    <string name="error_action_retry_http">Yritä http:n kautta</string>
+    <string name="error_action_open_external">Avaa järjestelmän selaimessa</string>
+    <string name="error_action_cancel_recovery">Lopeta uudelleenyritykset</string>
+    <string name="error_details">Tekniset tiedot</string>
+    <string name="error_recovering">Yritetään uudelleen (yritys %1$d) %2$d s kuluttua</string>
+    <string name="error_reconnecting">Yhdistetään uudelleen…</string>
+    <string name="error_waiting_network">Odotetaan yhteyden palaamista…</string>
+    <string name="browser_http_fallback_notice">Tämä sivusto ei tue https:ää. Avattu http:n kautta.</string>
+    <string name="browser_http_fallback_keep_https">Pysy https:ssä</string>
+
+    <string name="settings_site_storage_title">Sivustojen tiedot</string>
+    <string name="settings_site_storage_summary">Kunkin sivuston tallentamat evästeet ja paikallinen tallennustila</string>
+    <string name="storage_cookies_count">%d evästettä</string>
+    <string name="storage_no_data">ei tietoja</string>
+    <string name="storage_delete_title">Poistetaanko sivuston tiedot?</string>
+    <string name="storage_delete_message">Sivuston %1$s evästeet ja paikallinen tallennustila poistetaan. Sinut kirjataan ulos tältä sivustolta.</string>
+    <string name="storage_delete_confirm">Poista</string>
+    <string name="storage_delete_all">Poista kaikki</string>
+    <string name="storage_search_hint">Hae sivustoja</string>
+    <string name="storage_empty">Yhdelläkään sivustolla ei ole vielä käyty</string>
+    <string name="storage_partial_warning">Osa evästeistä voi säilyä, jos sivusto tallensi ne eri polkuun.</string>
+
+    <string name="browser_url_hint">Hae tai kirjoita URL-osoite</string>
+    <string name="browser_erase">Tyhjennä</string>
+    <string name="browser_send_to_car">Lähetä auton näytölle</string>
+    <string name="browser_menu">Lisää vaihtoehtoja</string>
+    <string name="browser_site_info">Sivuston tiedot</string>
+
+    <string name="browser_erase_done">Sivu tyhjennetty</string>
+
+    <string name="browser_connection_secure">Yhteys on suojattu</string>
+    <string name="browser_connection_insecure">Yhteys ei ole suojattu</string>
+    <string name="browser_adblock_title">Mainosten ja seurannan esto</string>
+    <string name="browser_adblock_on">Suojaukset ovat PÄÄLLÄ tällä sivustolla</string>
+    <string name="browser_adblock_off">Suojaukset ovat POIS tällä sivustolla</string>
+
+    <string name="browser_connection_secure_details">Tämä sivusto käyttää HTTPS:ää eli salattua yhteyttä. WebView kieltäytyy lataamasta sivua, jonka varmenne ei ole kelvollinen.</string>
+    <string name="browser_connection_insecure_details">Tämä sivu ei käytä salattua yhteyttä. Sille lähettämäsi tiedot voivat näkyä muille.</string>
+
+    <string name="browser_add_bookmark">Suosikki</string>
+    <string name="browser_open_in">Avaa sovelluksessa…</string>
+    <string name="browser_desktop_site">Työpöytäsivusto</string>
+
+    <string name="car_media_open_browser">Avaa Fiesta</string>
+    <string name="browser_send_to_car_done">Lähetetty auton näytölle</string>
+
+    <string name="browser_send_to_car_message">Auton näyttö avaa tämän linkin. Se lataa sivun itse — puhelimen näyttöä ei peilata eikä toisto siirry mukana.</string>
+    <string name="browser_send_to_car_confirm">Lähetä</string>
+    <string name="browser_send_to_car_cancel">Peruuta</string>
+
+    <string name="browser_car_inactive_title">Auton näyttö ei ole aktiivinen</string>
+    <string name="browser_car_inactive_message">Avaa sovellus ensin auton näytöllä ja lähetä linkki sitten uudelleen.</string>
+    <string name="browser_car_inactive_dismiss">OK</string>
+
+    <string name="settings_topic_general_title">Yleiset</string>
+    <string name="settings_topic_general_summary">WebView-tunnistus, suojattu sisältö</string>
+    <string name="settings_topic_privacy_title">Yksityisyys ja turvallisuus</string>
+    <string name="settings_topic_privacy_summary">Evästeet, mainokset ja seuranta, hakuehdotukset, sivustojen tiedot</string>
+    <string name="settings_topic_car_general_title">Auto — Yleiset</string>
+    <string name="settings_topic_car_general_summary">Etusivu, ilmoitukset, zoomaus, turvallisuusvaroitus, työkalupalkki</string>
+    <string name="settings_topic_car_youtube_title">Auto — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Viimeisin sivu, videon jatkaminen, vieritys soittimeen</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">Lukituksen avaus Android Autossa</string>
+    <string name="settings_topic_about_title">Tietoja</string>
+    <string name="settings_topic_about_summary">Tietoja sovelluksesta, projekti, tekijät</string>
+
+    <string name="settings_unlock_title">Lukituksen avaus Android Autossa</string>
+    <string name="settings_unlock_summary">Vaatii root-oikeudet (SuperSU tai vastaava). Tulee voimaan vasta puhelimen uudelleenkäynnistyksen jälkeen.</string>
+
+    <string name="settings_about_icons_title">Kuvakkeet</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, MPL-2.0-lisenssi</string>
+    <string name="settings_about_font_title">Fontti</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Lahjoita Fiestalle</string>
+    <string name="settings_topic_donate_summary">Tue projektia</string>
+    <string name="settings_donate_title">Tankkaa Fiesta ⛽</string>
+    <string name="settings_donate_message">✓ Ilmainen\n✓ Ei mainoksia\n✓ Ei seurantaa\n\nOliko se seuranasi tiellä? Anna takaisin kahvilla.</string>
+    <string name="settings_donate_coffee">☕ Tarjoa minulle kahvi</string>
+    <string name="settings_donate_footer_start">Tehty</string>
+    <string name="settings_donate_footer_end">vapaa-ajalla</string>
+    <string name="settings_about_tagline">Enemmän tietä. Vähemmän rajoja.</string>
+    <string name="settings_about_description">Kädet ratissa, katse tiessä ja vapaus medioillesi. Driving-first-sovellus niille, jotka rakastavat ajamista. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Projekti</string>
+    <string name="settings_about_credits_category">Tekijät</string>
+    <string name="settings_about_license_title">Lisenssi</string>
+
+    <string name="browser_suggestion_fill">Täytä hakukenttään</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">%d seurantaohjelma estetty tällä sivulla</item>
+        <item quantity="other">%d seurantaohjelmaa estetty tällä sivulla</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">Tällä sivulla ei ole estetty seurantaohjelmia</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">seurantaohjelma estetty tällä sivulla</item>
+        <item quantity="other">seurantaohjelmaa estetty tällä sivulla</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Työkalupalkin sijainti</string>
+    <string name="car_toolbar_position_top">Ylhäällä</string>
+    <string name="car_toolbar_position_left">Vasemmalla</string>
+    <string name="car_toolbar_position_right">Oikealla</string>
+    <string name="car_toolbar_position_bottom">Alhaalla</string>
+    <string name="settings_car_realtime_category_title">Reaaliaikaiset asetukset</string>
+    <string name="settings_car_toolbar_auto_hide_title">Piilota työkalupalkki automaattisesti</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Piilottaa palkin, kunnes kosketat kyseistä näytön reunaa</string>
+
+    <string name="settings_youtube_scroll_title">Vieritä soittimeen</string>
+    <string name="settings_youtube_scroll_summary">Vierittää sivua automaattisesti, jotta soitin näkyy linkin avaamisen tai videon vaihtamisen jälkeen. Tulee voimaan seuraavalla sivun latauksella.</string>
+
+    <string name="settings_topic_plugins_title">Laajennukset</string>
+    <string name="settings_topic_plugins_summary">Ratin hallintapainikkeet ja sivusäädöt sivustokohtaisesti</string>
+    <string name="plugins_title">Laajennukset</string>
+    <string name="plugins_active_section">Käytössä, tärkeysjärjestyksessä</string>
+    <string name="plugins_inactive_section">Ei käytössä</string>
+    <string name="plugins_origin_default">Sisäänrakennettu</string>
+    <string name="plugins_origin_installed">Asennettu</string>
+    <string name="plugins_active_switch">Käytössä</string>
+    <string name="plugins_delete">Poista</string>
+    <string name="plugins_install">Asenna tiedostosta</string>
+    <string name="plugins_restore_defaults">Palauta oletukset</string>
+    <string name="plugins_review_title">Tarkista laajennus</string>
+    <string name="plugins_review_install">Asenna</string>
+    <string name="plugins_review_cancel">Peruuta</string>
+    <string name="plugins_review_files">Tiedostot</string>
+    <string name="plugins_install_failed">Laajennuksen asennus epäonnistui: %1$s</string>
+    <string name="plugins_empty">Ei laajennuksia</string>
+    <string name="plugins_search_hint">Hae</string>
+    <string name="voice_listener_title">Puheen vastaanottaja</string>
+    <string name="voice_listener_summary">Vain yksi laajennus voi vastata auton puhekomentoihin.</string>
+    <string name="plugins_requires_ad_block">vaatii mainosten eston</string>
+    <string name="plugins_delete_message">Poistetaanko laajennus %1$s?</string>
+    <string name="plugins_restore_defaults_message">Palautetaanko sisäänrakennetut laajennukset?</string>
+    <string name="page_plugins_events_section">Ratin tapahtumat</string>
+    <string name="page_plugins_tweaks_section">Sivusäädöt</string>
+    <string name="page_plugins_car">Auto</string>
+    <string name="page_plugins_phone">Puhelin</string>
+
+    <string name="car_media_tab_home">Koti</string>
+    <string name="car_media_tab_playlist">Soittolista</string>
+    <string name="car_media_tab_history">Historia</string>
+    <string name="car_media_queue_history">Historia</string>
+    <string name="car_media_searching_for">Haetaan: \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">Ei löytynyt: \"%1$s\"</string>
+
+</resources>

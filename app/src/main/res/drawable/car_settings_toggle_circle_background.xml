@@ -1,0 +1,22 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/car_settings_ripple">
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item android:state_activated="true">
+                <shape android:shape="oval">
+                    <solid android:color="@color/car_settings_active" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

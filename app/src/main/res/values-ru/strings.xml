@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">ВНИМАНИЕ !!!</string>
+    <string name="warning_body">Просмотр видео за рулём может привести к аварии. Отклоняя это предупреждение, вы соглашаетесь с тем, что осознаёте последствия и несёте за них ответственность. Ни разработчик этого приложения, ни Google, ни производитель этого устройства, ни производитель этого автомобиля не несут ответственности за аварии, вызванные вашей небрежностью. Вместо этого вы можете переключиться на фоновое воспроизведение, нажав значок мультимедиа.</string>
+    <string name="warning_accept_button">Я понимаю риски</string>
+    <string name="webview_back">Назад</string>
+    <string name="refresh_page">Обновить</string>
+    <string name="bookmarks">Закладки</string>
+    <string name="bookmarks_search_hint">Поиск по закладкам</string>
+    <string name="bookmarks_none_found">Закладки не найдены</string>
+    <string name="bookmark_options">Параметры закладки</string>
+    <string name="bookmark_edit">Изменить</string>
+    <string name="bookmark_move_up">Переместить вверх</string>
+    <string name="bookmark_move_down">Переместить вниз</string>
+    <string name="bookmark_delete">Удалить</string>
+    <string name="bookmark_edit_title">Изменить закладку</string>
+    <string name="bookmark_edit_name">Название</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">Голосовой поиск</string>
+    <string name="fullscreen">Полный экран</string>
+    <string name="home">Главная</string>
+    <string name="aspect_ratio_contain">Вписать</string>
+    <string name="aspect_ratio_fill">Растянуть</string>
+    <string name="aspect_ratio_cover">Заполнить</string>
+    <string name="car_fullscreen_exit">Выйти</string>
+    <string name="car_fullscreen_hide_controls">Скрыть на 30 с</string>
+    <string name="add_bookmark">Добавить текущий сайт</string>
+    <string name="remove_bookmark">Удалить текущий сайт</string>
+    <string name="version">Версия </string>
+    <string name="settings">Настройки</string>
+    <string name="close">Закрыть</string>
+    <string name="car_settings_favorite">Избранное</string>
+    <string name="car_settings_zoom_in">Увеличить</string>
+    <string name="car_settings_zoom_out">Уменьшить</string>
+    <string name="car_settings_bookmarks_bar">Панель закладок</string>
+    <string name="car_settings_tweaks">Настройки страницы</string>
+    <string name="car_settings_go_to_address">Перейти по адресу</string>
+    <string name="car_settings_bookmark_added">Добавлено в закладки</string>
+    <string name="car_settings_bookmark_removed">Удалено из закладок</string>
+    <string name="car_settings_bookmark_locked">Эту закладку нельзя удалить</string>
+    <string name="car_settings_fullscreen_on">Полный экран включён</string>
+    <string name="car_settings_fullscreen_off">Полный экран выключен</string>
+    <string name="car_settings_fullscreen_unavailable">Видео не воспроизводится</string>
+    <string name="car_settings_desktop_on">Версия для ПК включена</string>
+    <string name="car_settings_desktop_off">Версия для ПК выключена</string>
+    <string name="car_settings_adblock_on">Блокировка рекламы включена</string>
+    <string name="car_settings_adblock_off">Блокировка рекламы выключена</string>
+    <string name="car_settings_zoom_percent">Масштаб: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Панель: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">Удалена 1 закладка</string>
+    <string name="car_settings_bookmarks_removed_many">Удалено закладок: %1$d</string>
+    <string name="car_settings_jump_to_letter">Перейти к букве</string>
+    <string name="car_settings_home_set">Домашняя страница: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">Поиск в YouTube или введите URL</string>
+    <string name="car_search_hint_google">Поиск в Google или введите URL</string>
+    <string name="car_search_title_youtube">Поиск в YouTube</string>
+    <string name="car_search_title_google">Поиск в Google</string>
+    <string name="car_voice_listening_youtube">Слушаю для YouTube</string>
+    <string name="car_voice_listening_google">Слушаю для Google</string>
+    <string name="car_voice_search_error">Не удалось расслышать</string>
+    <string name="car_voice_search_no_permission">Требуется разрешение на микрофон</string>
+
+    <string name="settings_resume_on_focus_title">Автоматически возобновлять видео</string>
+    <string name="settings_resume_on_focus_summary">Возобновляет воспроизведение после того, как камера заднего вида или другое приложение заняли экран. Возобновляет только если приложение само поставило на паузу.</string>
+
+    <string name="settings_home_url_title">Домашняя страница</string>
+    <string name="settings_home_url_summary">Адрес, который открывает кнопка «Главная»</string>
+
+    <string name="settings_restore_last_url_title">Продолжить с того же места</string>
+    <string name="settings_restore_last_url_summary">Действует только для экрана автомобиля: возвращает к последней странице вместо домашней. На телефоне главный экран всегда открывается пустым.</string>
+
+    <string name="settings_third_party_cookies_title">Разрешить сторонние файлы cookie</string>
+    <string name="settings_third_party_cookies_summary">Нужно для сохранения входа в Google/YouTube. Вступит в силу только при следующем подключении к автомобилю.</string>
+
+    <string name="settings_protected_content_title">Разрешить защищённый контент (DRM)</string>
+    <string name="settings_protected_content_summary">Нужно для стриминговых сервисов. Может не работать на проецируемом экране.</string>
+
+    <string name="settings_strip_wv_ua_title">Скрывать, что это WebView</string>
+    <string name="settings_strip_wv_ua_summary">Вступает в силу после перезапуска приложения. Некоторые сервисы отказывают WebView. Может изменить вёрстку других сайтов.</string>
+    <string name="settings_ad_block_title">Блокировать рекламу и трекеры</string>
+    <string name="settings_ad_block_summary">Блокирует известные рекламные и трекерные домены на сетевом уровне, включая видеорекламу YouTube. Это не полноценный блокировщик рекламы.</string>
+    <string name="settings_search_suggestions_title">Поисковые подсказки</string>
+    <string name="settings_search_suggestions_summary">Отправляет то, что вы вводите в адресной строке, поисковой системе для получения подсказок</string>
+
+    <string name="settings_car_disable_notifications_title">Отключить уведомления</string>
+    <string name="settings_car_disable_notifications_summary">Отключает всплывающие уведомления в Android Auto</string>
+    <string name="settings_zoom_title">Масштаб страницы</string>
+    <string name="settings_safety_warning_title">Показывать предупреждение о безопасности</string>
+    <string name="settings_safety_warning_summary">Предупреждает о просмотре видео за рулём при отпускании стояночного тормоза</string>
+    <string name="error_page_title">Не удалось загрузить страницу</string>
+    <string name="error_page_retry">Повторить</string>
+    <string name="error_page_ssl">Недействительный сертификат безопасности. Соединение заблокировано.</string>
+    <string name="error_msg_offline">Вы не в сети. Проверьте подключение и повторите попытку.</string>
+    <string name="error_msg_dns">Не удалось найти адрес.</string>
+    <string name="error_msg_connection">Сайт отклонил соединение.</string>
+    <string name="error_msg_timeout">Сайт слишком долго не отвечает.</string>
+    <string name="error_msg_cleartext">Этот сайт не разрешает незашифрованное соединение.</string>
+    <string name="error_msg_scheme">Этот тип ссылок не поддерживается.</string>
+    <string name="error_msg_app_missing">Ни одно приложение не может открыть эту ссылку.</string>
+    <string name="error_msg_blocked">Эта страница заблокирована фильтром контента.</string>
+    <string name="error_msg_http">Сайт вернул ошибку (%1$d).</string>
+    <string name="error_msg_unknown">Не удалось загрузить страницу.</string>
+    <string name="error_action_back">Назад</string>
+    <string name="error_action_retry_http">Попробовать по http</string>
+    <string name="error_action_open_external">Открыть в системном браузере</string>
+    <string name="error_action_cancel_recovery">Прекратить повторные попытки</string>
+    <string name="error_details">Технические подробности</string>
+    <string name="error_recovering">Повторная попытка (попытка %1$d) через %2$d с</string>
+    <string name="error_reconnecting">Повторное подключение…</string>
+    <string name="error_waiting_network">Ожидание восстановления соединения…</string>
+    <string name="browser_http_fallback_notice">Этот сайт не поддерживает https. Открыто по http.</string>
+    <string name="browser_http_fallback_keep_https">Оставаться на https</string>
+
+    <string name="settings_site_storage_title">Данные сайтов</string>
+    <string name="settings_site_storage_summary">Файлы cookie и локальное хранилище, сохранённые каждым сайтом</string>
+    <string name="storage_cookies_count">Файлов cookie: %d</string>
+    <string name="storage_no_data">нет данных</string>
+    <string name="storage_delete_title">Удалить данные сайта?</string>
+    <string name="storage_delete_message">Файлы cookie и локальное хранилище сайта %1$s будут удалены. Вы выйдете из аккаунта на этом сайте.</string>
+    <string name="storage_delete_confirm">Удалить</string>
+    <string name="storage_delete_all">Удалить всё</string>
+    <string name="storage_search_hint">Поиск сайтов</string>
+    <string name="storage_empty">Ни один сайт ещё не посещён</string>
+    <string name="storage_partial_warning">Некоторые файлы cookie могут сохраниться, если сайт записал их по другому пути.</string>
+
+    <string name="browser_url_hint">Поиск или ввод URL</string>
+    <string name="browser_erase">Стереть</string>
+    <string name="browser_send_to_car">Отправить на экран автомобиля</string>
+    <string name="browser_menu">Дополнительно</string>
+    <string name="browser_site_info">Сведения о сайте</string>
+
+    <string name="browser_erase_done">Страница очищена</string>
+
+    <string name="browser_connection_secure">Соединение защищено</string>
+    <string name="browser_connection_insecure">Незащищённое соединение</string>
+    <string name="browser_adblock_title">Блокировка рекламы и трекеров</string>
+    <string name="browser_adblock_on">Защита ВКЛЮЧЕНА для этого сайта</string>
+    <string name="browser_adblock_off">Защита ВЫКЛЮЧЕНА для этого сайта</string>
+
+    <string name="browser_connection_secure_details">Этот сайт использует HTTPS — шифрованное соединение. WebView отказывается загружать страницу с недействительным сертификатом.</string>
+    <string name="browser_connection_insecure_details">Эта страница не использует шифрованное соединение. Отправленные ей данные могут быть видны другим.</string>
+
+    <string name="browser_add_bookmark">В избранное</string>
+    <string name="browser_open_in">Открыть в…</string>
+    <string name="browser_desktop_site">Версия для ПК</string>
+
+    <string name="car_media_open_browser">Открыть Fiesta</string>
+    <string name="browser_send_to_car_done">Отправлено на экран автомобиля</string>
+
+    <string name="browser_send_to_car_message">Экран автомобиля откроет эту ссылку. Он загружает страницу самостоятельно — экран телефона не дублируется, и воспроизведение не переносится.</string>
+    <string name="browser_send_to_car_confirm">Отправить</string>
+    <string name="browser_send_to_car_cancel">Отмена</string>
+
+    <string name="browser_car_inactive_title">Экран автомобиля не активен</string>
+    <string name="browser_car_inactive_message">Сначала откройте приложение на экране автомобиля, затем отправьте ссылку снова.</string>
+    <string name="browser_car_inactive_dismiss">ОК</string>
+
+    <string name="settings_topic_general_title">Общие</string>
+    <string name="settings_topic_general_summary">Идентификация WebView, защищённый контент</string>
+    <string name="settings_topic_privacy_title">Конфиденциальность и безопасность</string>
+    <string name="settings_topic_privacy_summary">Файлы cookie, реклама и трекеры, поисковые подсказки, данные сайтов</string>
+    <string name="settings_topic_car_general_title">Автомобиль — Общие</string>
+    <string name="settings_topic_car_general_summary">Домашняя страница, уведомления, масштаб, предупреждение о безопасности, панель инструментов</string>
+    <string name="settings_topic_car_youtube_title">Автомобиль — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Последняя страница, возобновление видео, прокрутка к плееру</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">Разблокировка в Android Auto</string>
+    <string name="settings_topic_about_title">О приложении</string>
+    <string name="settings_topic_about_summary">О приложении, проект, благодарности</string>
+
+    <string name="settings_unlock_title">Разблокировка в Android Auto</string>
+    <string name="settings_unlock_summary">Требуется root (SuperSU или аналог). Вступает в силу только после перезагрузки телефона.</string>
+
+    <string name="settings_about_icons_title">Значки</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, лицензия MPL-2.0</string>
+    <string name="settings_about_font_title">Шрифт</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Поддержать Fiesta</string>
+    <string name="settings_topic_donate_summary">Поддержите проект</string>
+    <string name="settings_donate_title">Заправьте Fiesta ⛽</string>
+    <string name="settings_donate_message">✓ Бесплатно\n✓ Без рекламы\n✓ Без слежки\n\nСоставил вам компанию в дороге? Угостите чашкой кофе.</string>
+    <string name="settings_donate_coffee">☕ Угостить кофе</string>
+    <string name="settings_donate_footer_start">Сделано с</string>
+    <string name="settings_donate_footer_end">в свободное время</string>
+    <string name="settings_about_tagline">Больше дороги. Меньше ограничений.</string>
+    <string name="settings_about_description">Руки на руле, глаза на дороге и свобода для ваших медиа. Приложение driving-first для тех, кто любит водить. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Проект</string>
+    <string name="settings_about_credits_category">Благодарности</string>
+    <string name="settings_about_license_title">Лицензия</string>
+
+    <string name="browser_suggestion_fill">Вставить в поле поиска</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">Заблокирован %d трекер на этой странице</item>
+        <item quantity="few">Заблокировано %d трекера на этой странице</item>
+        <item quantity="many">Заблокировано %d трекеров на этой странице</item>
+        <item quantity="other">Заблокировано %d трекера на этой странице</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">На этой странице трекеры не заблокированы</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">трекер заблокирован на этой странице</item>
+        <item quantity="few">трекера заблокировано на этой странице</item>
+        <item quantity="many">трекеров заблокировано на этой странице</item>
+        <item quantity="other">трекера заблокировано на этой странице</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Положение панели инструментов</string>
+    <string name="car_toolbar_position_top">Сверху</string>
+    <string name="car_toolbar_position_left">Слева</string>
+    <string name="car_toolbar_position_right">Справа</string>
+    <string name="car_toolbar_position_bottom">Снизу</string>
+    <string name="settings_car_realtime_category_title">Параметры в реальном времени</string>
+    <string name="settings_car_toolbar_auto_hide_title">Автоматически скрывать панель</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Скрывает панель, пока вы не коснётесь этого края экрана</string>
+
+    <string name="settings_youtube_scroll_title">Прокручивать к плееру</string>
+    <string name="settings_youtube_scroll_summary">Автоматически прокручивает страницу, чтобы плеер был виден, после перехода по ссылке или смены видео. Вступает в силу при следующей загрузке страницы.</string>
+
+    <string name="settings_topic_plugins_title">Плагины</string>
+    <string name="settings_topic_plugins_summary">Управление с руля и настройки страниц, для каждого сайта</string>
+    <string name="plugins_title">Плагины</string>
+    <string name="plugins_active_section">Активные, в порядке приоритета</string>
+    <string name="plugins_inactive_section">Неактивные</string>
+    <string name="plugins_origin_default">Встроенный</string>
+    <string name="plugins_origin_installed">Установленный</string>
+    <string name="plugins_active_switch">Активен</string>
+    <string name="plugins_delete">Удалить</string>
+    <string name="plugins_install">Установить из файла</string>
+    <string name="plugins_restore_defaults">Восстановить стандартные</string>
+    <string name="plugins_review_title">Проверить плагин</string>
+    <string name="plugins_review_install">Установить</string>
+    <string name="plugins_review_cancel">Отмена</string>
+    <string name="plugins_review_files">Файлы</string>
+    <string name="plugins_install_failed">Не удалось установить плагин: %1$s</string>
+    <string name="plugins_empty">Нет плагинов</string>
+    <string name="plugins_search_hint">Поиск</string>
+    <string name="voice_listener_title">Голосовой приёмник</string>
+    <string name="voice_listener_summary">Отвечать на голосовые команды из автомобиля может только один плагин.</string>
+    <string name="plugins_requires_ad_block">требуется блокировка рекламы</string>
+    <string name="plugins_delete_message">Удалить плагин %1$s?</string>
+    <string name="plugins_restore_defaults_message">Восстановить встроенные плагины?</string>
+    <string name="page_plugins_events_section">События с руля</string>
+    <string name="page_plugins_tweaks_section">Настройки страницы</string>
+    <string name="page_plugins_car">Автомобиль</string>
+    <string name="page_plugins_phone">Телефон</string>
+
+    <string name="car_media_tab_home">Главная</string>
+    <string name="car_media_tab_playlist">Плейлист</string>
+    <string name="car_media_tab_history">История</string>
+    <string name="car_media_queue_history">История</string>
+    <string name="car_media_searching_for">Поиск: \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">Не удалось найти \"%1$s\"</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:cs="urn:fiesta:search:1">
+  <ShortName>Google</ShortName>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" template="https://www.google.com/search?q={searchTerms}"/>
+  <Url type="application/x-suggestions+json"
+       template="https://suggestqueries.google.com/complete/search?client=chrome&amp;q={searchTerms}"/>
+  <cs:Id>google</cs:Id>
+  <cs:Version>1</cs:Version>
+  <cs:Host>google.com</cs:Host>
+  <cs:Host>*.google.com</cs:Host>
+</OpenSearchDescription>

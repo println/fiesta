@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">警告請注意!</string>
+    <string name="warning_body">請注意!駕駛車輛時觀看視頻可能導致車禍意外發生，若同意此警告，表示您認同並為此自行負責。本應用程式開發人員，Google以及本設備的製造商和本車製造商均不對由於您的疏忽而造成的任何事故負責。您可以通過點擊媒體圖標來切換到背景播放。</string>
+    <string name="warning_accept_button">我已了解此風險</string>
+    <string name="webview_back">返回</string>
+    <string name="refresh_page">重新整理</string>
+    <string name="bookmarks">書籤</string>
+    <string name="bookmarks_search_hint">搜尋你的書籤</string>
+    <string name="bookmarks_none_found">找不到書籤</string>
+    <string name="bookmark_options">書籤選項</string>
+    <string name="bookmark_edit">編輯</string>
+    <string name="bookmark_move_up">上移</string>
+    <string name="bookmark_move_down">下移</string>
+    <string name="bookmark_delete">刪除</string>
+    <string name="bookmark_edit_title">編輯書籤</string>
+    <string name="bookmark_edit_name">名稱</string>
+    <string name="bookmark_edit_url">網址</string>
+    <string name="voice_search">語音搜尋</string>
+    <string name="fullscreen">全螢幕</string>
+    <string name="home">首頁</string>
+    <string name="aspect_ratio_contain">符合畫面</string>
+    <string name="aspect_ratio_fill">填滿</string>
+    <string name="aspect_ratio_cover">覆蓋</string>
+    <string name="car_fullscreen_exit">結束</string>
+    <string name="car_fullscreen_hide_controls">隱藏 30 秒</string>
+    <string name="add_bookmark">加入目前網站</string>
+    <string name="remove_bookmark">移除目前網站</string>
+    <string name="version">版本 </string>
+    <string name="settings">設定</string>
+    <string name="close">關閉</string>
+    <string name="car_settings_favorite">我的最愛</string>
+    <string name="car_settings_zoom_in">放大</string>
+    <string name="car_settings_zoom_out">縮小</string>
+    <string name="car_settings_bookmarks_bar">書籤列</string>
+    <string name="car_settings_tweaks">微調</string>
+    <string name="car_settings_go_to_address">前往網址</string>
+    <string name="car_settings_bookmark_added">已加入書籤</string>
+    <string name="car_settings_bookmark_removed">已從書籤移除</string>
+    <string name="car_settings_bookmark_locked">此書籤無法移除</string>
+    <string name="car_settings_fullscreen_on">已開啟全螢幕</string>
+    <string name="car_settings_fullscreen_off">已關閉全螢幕</string>
+    <string name="car_settings_fullscreen_unavailable">目前沒有播放中的影片</string>
+    <string name="car_settings_desktop_on">已開啟電腦版網站</string>
+    <string name="car_settings_desktop_off">已關閉電腦版網站</string>
+    <string name="car_settings_adblock_on">已開啟廣告封鎖</string>
+    <string name="car_settings_adblock_off">已關閉廣告封鎖</string>
+    <string name="car_settings_zoom_percent">縮放：%1$d%%</string>
+    <string name="car_settings_toolbar_position">工具列：%1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">已移除 1 個書籤</string>
+    <string name="car_settings_bookmarks_removed_many">已移除 %1$d 個書籤</string>
+    <string name="car_settings_jump_to_letter">跳至字母</string>
+    <string name="car_settings_home_set">首頁：%1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">搜尋 YouTube 或輸入網址</string>
+    <string name="car_search_hint_google">搜尋 Google 或輸入網址</string>
+    <string name="car_search_title_youtube">正在搜尋 YouTube</string>
+    <string name="car_search_title_google">正在搜尋 Google</string>
+    <string name="car_voice_listening_youtube">正在聆聽（YouTube）</string>
+    <string name="car_voice_listening_google">正在聆聽（Google）</string>
+    <string name="car_voice_search_error">沒有聽清楚</string>
+    <string name="car_voice_search_no_permission">需要麥克風權限</string>
+
+    <string name="settings_resume_on_focus_title">自動繼續播放影片</string>
+    <string name="settings_resume_on_focus_summary">在倒車顯影或其他應用程式接管螢幕後繼續播放。僅在應用程式本身暫停時才會繼續。</string>
+
+    <string name="settings_home_url_title">首頁</string>
+    <string name="settings_home_url_summary">首頁按鈕開啟的網址</string>
+
+    <string name="settings_restore_last_url_title">從上次中斷處繼續</string>
+    <string name="settings_restore_last_url_summary">僅適用於車機螢幕：回到最後一個頁面而非首頁。在手機上，起始畫面一律是空白的。</string>
+
+    <string name="settings_third_party_cookies_title">允許第三方 Cookie</string>
+    <string name="settings_third_party_cookies_summary">保留 Google/YouTube 登入狀態所需。下次連接車機時才會生效。</string>
+
+    <string name="settings_protected_content_title">允許受保護的內容（DRM）</string>
+    <string name="settings_protected_content_summary">串流服務所需。在投影畫面上可能無法運作。</string>
+
+    <string name="settings_strip_wv_ua_title">隱藏這是 WebView 的事實</string>
+    <string name="settings_strip_wv_ua_summary">需要重新啟動應用程式才會生效。部分服務會拒絕 WebView。可能改變其他網站的版面。</string>
+    <string name="settings_ad_block_title">封鎖廣告與追蹤器</string>
+    <string name="settings_ad_block_summary">在網路層封鎖已知的廣告／追蹤網域，包含 YouTube 影片廣告。並非完整的廣告封鎖器。</string>
+    <string name="settings_search_suggestions_title">搜尋建議</string>
+    <string name="settings_search_suggestions_summary">將你在網址列輸入的內容送到搜尋引擎以取得建議</string>
+
+    <string name="settings_car_disable_notifications_title">關閉通知</string>
+    <string name="settings_car_disable_notifications_summary">關閉 Android Auto 的彈出式通知</string>
+    <string name="settings_zoom_title">頁面縮放</string>
+    <string name="settings_safety_warning_title">顯示安全警告</string>
+    <string name="settings_safety_warning_summary">放開手煞車時，警告不要在駕駛時觀看影片</string>
+    <string name="error_page_title">無法載入頁面</string>
+    <string name="error_page_retry">重試</string>
+    <string name="error_page_ssl">安全憑證無效，連線已被封鎖。</string>
+    <string name="error_msg_offline">你已離線。請檢查網路連線後再試一次。</string>
+    <string name="error_msg_dns">找不到此網址。</string>
+    <string name="error_msg_connection">網站拒絕了連線。</string>
+    <string name="error_msg_timeout">網站回應時間過長。</string>
+    <string name="error_msg_cleartext">此網站不允許未加密的連線。</string>
+    <string name="error_msg_scheme">不支援此類連結。</string>
+    <string name="error_msg_app_missing">沒有應用程式可以開啟此連結。</string>
+    <string name="error_msg_blocked">此頁面已被內容篩選器封鎖。</string>
+    <string name="error_msg_http">網站傳回了錯誤 (%1$d)。</string>
+    <string name="error_msg_unknown">載入頁面時發生錯誤。</string>
+    <string name="error_action_back">返回</string>
+    <string name="error_action_retry_http">嘗試透過 http 存取</string>
+    <string name="error_action_open_external">在系統瀏覽器中開啟</string>
+    <string name="error_action_cancel_recovery">停止重試</string>
+    <string name="error_details">技術詳細資料</string>
+    <string name="error_recovering">正在重試（第 %1$d 次），%2$d 秒後</string>
+    <string name="error_reconnecting">正在重新連線…</string>
+    <string name="error_waiting_network">正在等待網路恢復…</string>
+    <string name="browser_http_fallback_notice">此網站不支援 https，已透過 http 開啟。</string>
+    <string name="browser_http_fallback_keep_https">保持 https</string>
+
+    <string name="settings_site_storage_title">網站資料</string>
+    <string name="settings_site_storage_summary">各網站儲存的 Cookie 與本機儲存空間</string>
+    <string name="storage_cookies_count">%d 個 Cookie</string>
+    <string name="storage_no_data">沒有資料</string>
+    <string name="storage_delete_title">要刪除網站資料嗎？</string>
+    <string name="storage_delete_message">%1$s 的 Cookie 與本機儲存空間將被移除，你會從這個網站登出。</string>
+    <string name="storage_delete_confirm">刪除</string>
+    <string name="storage_delete_all">全部刪除</string>
+    <string name="storage_search_hint">搜尋網站</string>
+    <string name="storage_empty">尚未造訪任何網站</string>
+    <string name="storage_partial_warning">若網站將 Cookie 儲存在不同路徑下，部分 Cookie 可能仍會保留。</string>
+
+    <string name="browser_url_hint">搜尋或輸入網址</string>
+    <string name="browser_erase">清除</string>
+    <string name="browser_send_to_car">傳送到車機螢幕</string>
+    <string name="browser_menu">更多選項</string>
+    <string name="browser_site_info">網站資訊</string>
+
+    <string name="browser_erase_done">已清除頁面</string>
+
+    <string name="browser_connection_secure">連線是安全的</string>
+    <string name="browser_connection_insecure">連線不安全</string>
+    <string name="browser_adblock_title">廣告與追蹤器封鎖</string>
+    <string name="browser_adblock_on">此網站的防護已開啟</string>
+    <string name="browser_adblock_off">此網站的防護已關閉</string>
+
+    <string name="browser_connection_secure_details">本網站使用 HTTPS 加密連線。WebView 會拒絕載入憑證無效的頁面。</string>
+    <string name="browser_connection_insecure_details">此頁面未使用加密連線，你傳送給它的資訊可能被其他人看見。</string>
+
+    <string name="browser_add_bookmark">加入最愛</string>
+    <string name="browser_open_in">以其他應用程式開啟…</string>
+    <string name="browser_desktop_site">電腦版網站</string>
+
+    <string name="car_media_open_browser">開啟 Fiesta</string>
+    <string name="browser_send_to_car_done">已傳送到車機螢幕</string>
+
+    <string name="browser_send_to_car_message">車機螢幕將開啟這個連結。它會自行載入頁面——手機畫面不會鏡射，播放狀態也不會延續。</string>
+    <string name="browser_send_to_car_confirm">傳送</string>
+    <string name="browser_send_to_car_cancel">取消</string>
+
+    <string name="browser_car_inactive_title">車機螢幕尚未啟用</string>
+    <string name="browser_car_inactive_message">請先在車機螢幕上開啟應用程式，然後再傳送一次連結。</string>
+    <string name="browser_car_inactive_dismiss">確定</string>
+
+    <string name="settings_topic_general_title">一般</string>
+    <string name="settings_topic_general_summary">WebView 識別、受保護的內容</string>
+    <string name="settings_topic_privacy_title">隱私權與安全性</string>
+    <string name="settings_topic_privacy_summary">Cookie、廣告與追蹤器、搜尋建議、網站資料</string>
+    <string name="settings_topic_car_general_title">車機 — 一般</string>
+    <string name="settings_topic_car_general_summary">首頁、通知、縮放、安全警告、工具列</string>
+    <string name="settings_topic_car_youtube_title">車機 — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">最後頁面、影片繼續播放、捲動至播放器</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">在 Android Auto 解除限制</string>
+    <string name="settings_topic_about_title">關於</string>
+    <string name="settings_topic_about_summary">關於應用程式、專案、致謝</string>
+
+    <string name="settings_unlock_title">在 Android Auto 解除限制</string>
+    <string name="settings_unlock_summary">需要 root（SuperSU 或類似工具）。重新啟動手機後才會生效。</string>
+
+    <string name="settings_about_icons_title">圖示</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components，MPL-2.0 授權</string>
+    <string name="settings_about_font_title">字型</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter)，SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">捐助 Fiesta</string>
+    <string name="settings_topic_donate_summary">支持這個專案</string>
+    <string name="settings_donate_title">為 Fiesta 加油 ⛽</string>
+    <string name="settings_donate_message">✓ 免費\n✓ 無廣告\n✓ 無追蹤\n\n它曾在路上陪伴你嗎？請我喝杯咖啡作為回報吧。</string>
+    <string name="settings_donate_coffee">☕ 請我喝杯咖啡</string>
+    <string name="settings_donate_footer_start">用</string>
+    <string name="settings_donate_footer_end">在業餘時間製作</string>
+    <string name="settings_about_tagline">更多道路，更少限制。</string>
+    <string name="settings_about_description">手握方向盤，眼看前方路，媒體隨心享。一款為熱愛駕駛的人打造的駕駛優先應用程式。Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">專案</string>
+    <string name="settings_about_credits_category">致謝</string>
+    <string name="settings_about_license_title">授權條款</string>
+
+    <string name="browser_suggestion_fill">填入搜尋框</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="other">此頁面已封鎖 %d 個追蹤器</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">此頁面沒有封鎖任何追蹤器</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="other">個追蹤器已在此頁面被封鎖</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">工具列位置</string>
+    <string name="car_toolbar_position_top">上方</string>
+    <string name="car_toolbar_position_left">左側</string>
+    <string name="car_toolbar_position_right">右側</string>
+    <string name="car_toolbar_position_bottom">下方</string>
+    <string name="settings_car_realtime_category_title">即時選項</string>
+    <string name="settings_car_toolbar_auto_hide_title">自動隱藏工具列</string>
+    <string name="settings_car_toolbar_auto_hide_summary">隱藏工具列，直到你觸碰螢幕的該側邊緣</string>
+
+    <string name="settings_youtube_scroll_title">捲動至播放器</string>
+    <string name="settings_youtube_scroll_summary">在開啟連結或切換影片後自動捲動頁面，讓播放器保持可見。下次載入頁面時生效。</string>
+
+    <string name="settings_topic_plugins_title">外掛程式</string>
+    <string name="settings_topic_plugins_summary">方向盤控制與頁面微調，依網站區分</string>
+    <string name="plugins_title">外掛程式</string>
+    <string name="plugins_active_section">啟用中，依優先順序排列</string>
+    <string name="plugins_inactive_section">未啟用</string>
+    <string name="plugins_origin_default">內建</string>
+    <string name="plugins_origin_installed">已安裝</string>
+    <string name="plugins_active_switch">啟用</string>
+    <string name="plugins_delete">刪除</string>
+    <string name="plugins_install">從檔案安裝</string>
+    <string name="plugins_restore_defaults">還原預設值</string>
+    <string name="plugins_review_title">檢視外掛程式</string>
+    <string name="plugins_review_install">安裝</string>
+    <string name="plugins_review_cancel">取消</string>
+    <string name="plugins_review_files">檔案</string>
+    <string name="plugins_install_failed">無法安裝外掛程式：%1$s</string>
+    <string name="plugins_empty">沒有外掛程式</string>
+    <string name="plugins_search_hint">搜尋</string>
+    <string name="voice_listener_title">語音接收器</string>
+    <string name="voice_listener_summary">只有一個外掛程式能回應車機的語音指令。</string>
+    <string name="plugins_requires_ad_block">需要開啟廣告封鎖</string>
+    <string name="plugins_delete_message">要刪除外掛程式 %1$s 嗎？</string>
+    <string name="plugins_restore_defaults_message">要還原內建的外掛程式嗎？</string>
+    <string name="page_plugins_events_section">方向盤事件</string>
+    <string name="page_plugins_tweaks_section">頁面微調</string>
+    <string name="page_plugins_car">車機</string>
+    <string name="page_plugins_phone">手機</string>
+
+    <string name="car_media_tab_home">首頁</string>
+    <string name="car_media_tab_playlist">播放清單</string>
+    <string name="car_media_tab_history">記錄</string>
+    <string name="car_media_queue_history">記錄</string>
+    <string name="car_media_searching_for">正在搜尋 \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">找不到 \"%1$s\"</string>
+
+</resources>

@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { localProperties.load(it) }
+}
+def releaseKeystore = localProperties.getProperty('fiesta.keystore')
+
+android {
+    namespace "proto.media.fiesta"
+    lintOptions {
+        abortOnError false
+    }
+    buildFeatures {
+        buildConfig true
+    }
+    compileSdkVersion 36
+    defaultConfig {
+        applicationId "stream.qorvanel.media"
+        minSdkVersion 23
+        targetSdkVersion 34
+        versionCode 48
+        versionName "1.0.0"
+        buildConfigField "String", "VERSION_CODENAME", "\"Akira\""
+        vectorDrawables.useSupportLibrary = true
+    }
+    signingConfigs {
+        if (releaseKeystore) {
+            release {
+                storeFile file(releaseKeystore)
+                storePassword localProperties.getProperty('fiesta.keystore.password')
+                keyAlias localProperties.getProperty('fiesta.keystore.alias')
+                keyPassword localProperties.getProperty('fiesta.keystore.keyPassword')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig releaseKeystore ? signingConfigs.release : signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        // This went in on 2019-05-25 because okhttp3-4.0.0-alpha01 contains Java 8 bytecode.
+        // The error message for this kindly offered the alternative of setting minSdkVersion to 26,
+        // which would be pretty not kind to users with slightly older phones, so let's not do that,
+        // and just set these compatibility flags instead.
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    // dexOptions/jumboMode (workaround para "Cannot merge new index 65536 into
+    // a non-jumbo instruction!") removido no AGP 8 - a DSL some e o dexer
+    // atual ja lida com isso sozinho (Estagio 2.6 do plano de migracao).
+    // (Duplicate class android.support.v4.app.INotificationSideChannel* entre
+    // support-compat e androidx.core - ver dependencySubstitution no
+    // build.gradle raiz - packagingOptions.exclude NAO resolve isso, o
+    // checkDebugDuplicateClasses do AGP ignora packagingOptions.)
+}
+
+// kotlinx-coroutines (pulled in by AndroidX) upgrades this to 23.x, where @Nullable is
+// TYPE_USE; kapt stubs then declare "@Nullable byte[]" and Realm 10's processor rejects
+// Bookmark.thumbnail. The annotations have no runtime effect.
+configurations.configureEach {
+    resolutionStrategy.force 'org.jetbrains:annotations:13.0'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:2.2.21"
+
+    testImplementation 'junit:junit:4.13.2'
+
+    // AndroidX comes FIRST on purpose. appcompat-v7 and androidx.appcompat ship
+    // internal layouts under the same names (abc_screen_simple, abc_screen_content_include,
+    // ...) and resource merging keeps only one: the one from the library declared
+    // earlier. With support-v7 first, AppCompatActivity.setContentView inflated the
+    // support-v7 abc_screen_content_include and crashed with
+    // "android.support.v7.widget.ContentFrameLayout cannot be cast to
+    // androidx.appcompat.widget.ContentFrameLayout". The car island uses no abc_*
+    // layout (only Toolbar/RecyclerView/CardView widgets), so AndroidX wins here.
+    implementation 'androidx.appcompat:appcompat:1.8.0'
+    implementation 'androidx.core:core:1.18.0'
+    implementation 'androidx.fragment:fragment:1.9.0'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.2'
+    // Not 1.14: its styles set buttonGravity="center_vertical", and the car island's
+    // appcompat-v7 26.1.0 redeclares that attr with only top/bottom, failing resource linking.
+    implementation 'com.google.android.material:material:1.13.0'
+    implementation 'androidx.preference:preference:1.2.1'
+
+    // Ilha do carro (features/domain/car, ver FRONTEIRA.md): aauto-sdk
+    // espera android.support.v4.app.FragmentManager no contrato binario -
+    // premissa 1 do plano de migracao, nao trocar por AndroidX nem por
+    // Jetifier. support-v4 already carrega fragment/media-compat/compat.
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.github.zagum:SpeechRecognitionView:1.2.2'
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.github.martoreto:aauto-sdk:v4.7'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    // Pinado na versao que a faixa dinamica "1.0.0.+" ja resolvia hoje
+    // (conferido em baseline-deps.txt) - fixar sem trocar comportamento.
+    implementation 'eu.chainfire:libsuperuser:1.0.0.201811281328'
+}

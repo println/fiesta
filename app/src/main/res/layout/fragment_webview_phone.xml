@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brandBackground"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- browser_toolbar_height / mozac_browser_toolbar_default_toolbar_height -->
+        <LinearLayout
+            android:id="@+id/url_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_erase"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/browser_erase"
+                android:padding="12dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/mozac_ic_delete" />
+
+            <!-- mozac_browser_toolbar_displaytoolbar.xml: altura 40dp, marginTop 8dp,
+                 marginHorizontal 8dp, tanto para o fundo quanto para a OriginView -->
+            <LinearLayout
+                android:id="@+id/url_pill"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/toolbar_url_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_shield"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/browser_site_info"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/mozac_ic_shield" />
+
+                <proto.media.fiesta.features.domain.phone.browser.UrlEditText
+                    android:id="@+id/edittext_url"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/browser_url_hint"
+                    android:imeOptions="actionGo"
+                    android:inputType="textUri"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/urlBarHintText"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btn_clear"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@null"
+                    android:contentDescription="@string/browser_erase"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/mozac_ic_clear" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_send_to_car"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/browser_send_to_car"
+                android:padding="12dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/mozac_ic_add_to_home_screen" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_overflow"
+                android:layout_width="40dp"
+                android:layout_height="56dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/browser_menu"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:srcCompat="@drawable/mozac_ic_menu" />
+
+        </LinearLayout>
+
+        <!-- Starts gone: an empty 3dp track reads as a grey divider on the home screen. -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/home_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/home_artwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_artwork" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/home_artwork"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/home_sky_fade" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/wordmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingStart="56dp"
+                    android:paddingEnd="56dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/web_view_slot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- clickable so the scrim absorbs touches instead of leaking to the WebView. -->
+            <View
+                android:id="@+id/edit_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:clickable="true"
+                android:focusable="false"
+                android:visibility="gone" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/suggestions_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:background="@color/background"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_suggestion_row" android:id="@+id/suggestion_row_0" />
+                    <include layout="@layout/item_suggestion_row" android:id="@+id/suggestion_row_1" />
+                    <include layout="@layout/item_suggestion_row" android:id="@+id/suggestion_row_2" />
+                    <include layout="@layout/item_suggestion_row" android:id="@+id/suggestion_row_3" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- Last child: drawn over the container to cover the whole screen. -->
+    <FrameLayout
+        android:id="@+id/full_screen_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

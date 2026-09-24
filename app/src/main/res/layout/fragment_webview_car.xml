@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:clipChildren="false">
+
+    <proto.media.fiesta.support.webviewex.video.FullscreenVideoContainer
+        android:id="@+id/full_screen_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/toolbar_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_dark_gray"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/home_button"
+                    android:layout_width="@dimen/car_toolbar_thickness"
+                    android:layout_height="@dimen/car_toolbar_thickness"
+                    android:layout_gravity="center"
+                    android:background="@drawable/highlighting_drawable"
+                    style="@style/ToolbarButton"
+                    android:src="@drawable/ic_car_home"
+                    android:text="@string/home" />
+
+                <ImageButton
+                    android:id="@+id/voice_button"
+                    android:layout_width="@dimen/car_toolbar_thickness"
+                    android:layout_height="@dimen/car_toolbar_thickness"
+                    android:layout_gravity="center"
+                    android:background="@drawable/highlighting_drawable"
+                    style="@style/ToolbarButton"
+                    android:src="@drawable/ic_car_voice"
+                    android:text="@string/voice_search" />
+
+                <ImageButton
+                    android:id="@+id/refresh_button"
+                    android:layout_width="@dimen/car_toolbar_thickness"
+                    android:layout_height="@dimen/car_toolbar_thickness"
+                    android:layout_gravity="center"
+                    android:background="@drawable/highlighting_drawable"
+                    style="@style/ToolbarButton"
+                    android:src="@drawable/ic_car_refresh"
+                    android:text="@string/refresh_page" />
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="@dimen/car_toolbar_thickness"
+                    android:layout_height="@dimen/car_toolbar_thickness"
+                    android:layout_gravity="center"
+                    android:background="@drawable/highlighting_drawable"
+                    style="@style/ToolbarButton"
+                    android:src="@drawable/ic_car_back"
+                    android:text="@string/webview_back" />
+
+                <ImageButton
+                    android:id="@+id/settings_button"
+                    android:layout_width="@dimen/car_toolbar_thickness"
+                    android:layout_height="@dimen/car_toolbar_thickness"
+                    android:layout_gravity="center"
+                    android:background="@drawable/highlighting_drawable"
+                    style="@style/ToolbarButton"
+                    android:src="@drawable/ic_car_settings"
+                    android:text="@string/settings" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/webview_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/web_view_slot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/car_favorites_bar"
+                android:layout_width="@dimen/car_favorites_bar_width"
+                android:layout_height="match_parent"
+                android:background="@color/very_dark_gray"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/car_favorites_bar_side_padding"
+                android:paddingEnd="@dimen/car_favorites_bar_side_padding"
+                android:paddingTop="@dimen/car_favorite_monogram_spacing" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:indeterminate="true" />
+
+            <proto.media.fiesta.features.domain.car.browser.CarEditText
+                android:id="@+id/fake_edittext"
+                android:layout_width="1px"
+                android:layout_height="1px"
+                android:imeOptions="actionDone"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/menu_bubble"
+        android:layout_width="@dimen/car_menu_bubble_size"
+        android:layout_height="@dimen/car_menu_bubble_size"
+        android:background="@drawable/car_menu_bubble_background"
+        android:contentDescription="@null"
+        android:paddingLeft="@dimen/car_menu_bubble_icon_padding"
+        android:paddingTop="16dp"
+        android:paddingRight="@dimen/car_menu_bubble_icon_padding"
+        android:paddingBottom="20dp"
+        android:src="@drawable/ic_menu_open"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fullscreen_corner_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/car_fullscreen_menu_margin"
+        android:background="@drawable/car_fullscreen_menu_background"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/aspect_ratio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/aspect_ratio_contain"
+                style="@style/CarFullscreenMenuOption"
+                android:drawableTop="@drawable/ic_aspect_ratio"
+                android:text="@string/aspect_ratio_contain" />
+
+            <RadioButton
+                android:id="@+id/aspect_ratio_fill"
+                style="@style/CarFullscreenMenuOption"
+                android:drawableTop="@drawable/ic_aspect_ratio"
+                android:text="@string/aspect_ratio_fill" />
+
+            <RadioButton
+                android:id="@+id/aspect_ratio_cover"
+                style="@style/CarFullscreenMenuOption"
+                android:drawableTop="@drawable/ic_aspect_ratio"
+                android:text="@string/aspect_ratio_cover" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/hide_fullscreen_controls_button"
+            style="@style/CarFullscreenMenuOption"
+            android:layout_marginStart="10dp"
+            android:drawableTop="@drawable/ic_car_hide_controls"
+            android:text="@string/car_fullscreen_hide_controls" />
+
+        <Button
+            android:id="@+id/exit_fullscreen_button"
+            style="@style/CarFullscreenMenuOption"
+            android:drawableTop="@drawable/ic_exit_fullscreen"
+            android:text="@string/car_fullscreen_exit" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/overlay_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/settings_panel_outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:elevation="8dp"
+        android:visibility="gone" />
+
+    <include layout="@layout/car_settings_panel" />
+
+    <include layout="@layout/car_settings_screen" />
+
+    <TextView
+        android:id="@+id/car_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:alpha="0"
+        android:background="@drawable/car_toast_background"
+        android:elevation="16dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</FrameLayout>

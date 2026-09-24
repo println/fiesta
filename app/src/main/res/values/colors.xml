@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brandPrimary">#FFFA089D</color>
+    <color name="brandSecondary">#FF02CCFE</color>
+    <color name="brandAuxPurple">#FF6825B0</color>
+    <color name="brandAuxAmber">#FFFCA056</color>
+    <color name="brandBackground">#FF000913</color>
+    <color name="brandBackgroundElevated">#FF0A2F4B</color>
+    <color name="artworkSky">#FF100428</color>
+    <color name="artworkSkyTransparent">#00100428</color>
+
+    <color name="color1">@color/brandPrimary</color>
+    <color name="color2">@color/brandSecondary</color>
+    <color name="color3">@color/brandAuxPurple</color>
+    <color name="color4">@color/brandAuxAmber</color>
+    <color name="color5">@color/brandSecondary</color>
+    <color name="very_dark_gray">@color/brandBackground</color>
+    <color name="color_highlight">#AAFA089D</color>
+    <color name="color_active">@color/brandPrimary</color>
+    <color name="colorSecondary">@color/brandSecondary</color>
+
+    <color name="background">@color/brandBackground</color>
+    <color name="editOverlayScrim">#CC000913</color>
+    <color name="clearButtonCircleBackground">#3DFFFFFF</color>
+    <color name="toolbarUrlBackground">@color/brandBackgroundElevated</color>
+    <color name="menuBackground">@color/brandBackgroundElevated</color>
+    <color name="divider">@color/brandBackgroundElevated</color>
+    <color name="primaryText">#FFFCFCFC</color>
+    <color name="secondaryText">#FFC0C0C0</color>
+    <color name="urlBarHintText">@color/secondaryText</color>
+    <color name="removeButtonText">@color/brandPrimary</color>
+
+    <!-- Not every usage tints mozac icons; a black fill made nav buttons and the shield invisible. -->
+    <color name="mozac_ui_icons_fill">@color/primaryText</color>
+
+    <array name="car_favorite_monogram_palette">
+        <item>@color/brandPrimary</item>
+        <item>@color/brandAuxPurple</item>
+        <item>@color/brandSecondary</item>
+        <item>@color/brandAuxAmber</item>
+        <item>@color/brandBackgroundElevated</item>
+    </array>
+
+</resources>
