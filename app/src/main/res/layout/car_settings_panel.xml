@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_panel"
+    android:layout_width="340dp"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/car_settings_panel_margin"
+    android:background="@drawable/car_settings_panel_background"
+    android:clickable="true"
+    android:elevation="8dp"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="24dp"
+            android:text="@string/settings"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/settings_panel_close"
+            style="@style/CarSettingsHeaderButton"
+            android:contentDescription="@string/close"
+            android:src="@drawable/ic_car_close" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/settings_panel_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/settings_open_go_to_address"
+                style="@style/CarSettingsRow"
+                android:drawableStart="@drawable/ic_car_globe"
+                android:drawableEnd="@drawable/ic_car_chevron_right"
+                android:drawablePadding="16dp"
+                android:text="@string/car_settings_go_to_address" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <Button
+                    android:id="@+id/car_settings_favorite_button"
+                    style="@style/CarSettingsTonalButton"
+                    android:drawableTop="@drawable/ic_car_favorite"
+                    android:text="@string/car_settings_favorite" />
+
+                <Button
+                    android:id="@+id/car_settings_fullscreen_button"
+                    style="@style/CarSettingsTonalButton"
+                    android:drawableTop="@drawable/ic_car_expand"
+                    android:drawableTint="@color/car_settings_on_active"
+                    android:text="@string/fullscreen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <Button
+                    android:id="@+id/car_settings_zoom_out_button"
+                    style="@style/CarSettingsTonalButton"
+                    android:drawableTop="@drawable/ic_car_zoom_out"
+                    android:drawableTint="@color/car_settings_on_active"
+                    android:text="@string/car_settings_zoom_out" />
+
+                <Button
+                    android:id="@+id/car_settings_zoom_reset_button"
+                    style="@style/CarSettingsTonalButton"
+                    android:paddingTop="8dp"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/car_settings_zoom_in_button"
+                    style="@style/CarSettingsTonalButton"
+                    android:drawableTop="@drawable/ic_car_zoom_in"
+                    android:drawableTint="@color/car_settings_on_active"
+                    android:text="@string/car_settings_zoom_in" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <Switch
+                android:id="@+id/car_settings_desktop_switch"
+                style="@style/CarSettingsRow"
+                android:text="@string/browser_desktop_site" />
+
+            <Switch
+                android:id="@+id/car_settings_adblock_switch"
+                style="@style/CarSettingsRow"
+                android:text="@string/settings_ad_block_title" />
+
+            <Switch
+                android:id="@+id/car_settings_bookmarks_bar_switch"
+                style="@style/CarSettingsRow"
+                android:text="@string/car_settings_bookmarks_bar" />
+
+            <TextView
+                android:id="@+id/settings_open_bookmarks"
+                style="@style/CarSettingsRow"
+                android:drawableEnd="@drawable/ic_car_chevron_right"
+                android:text="@string/bookmarks" />
+
+            <TextView
+                style="@style/CarSettingsSectionLabel"
+                android:text="@string/settings_car_toolbar_position_title" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <RadioButton
+                    android:id="@+id/car_settings_toolbar_position_left"
+                    style="@style/CarSettingsRadio"
+                    android:contentDescription="@string/car_toolbar_position_left"
+                    android:drawableTop="@drawable/ic_car_dock_left" />
+
+                <RadioButton
+                    android:id="@+id/car_settings_toolbar_position_right"
+                    style="@style/CarSettingsRadio"
+                    android:contentDescription="@string/car_toolbar_position_right"
+                    android:drawableTop="@drawable/ic_car_dock_right" />
+
+                <RadioButton
+                    android:id="@+id/car_settings_toolbar_position_top"
+                    style="@style/CarSettingsRadio"
+                    android:contentDescription="@string/car_toolbar_position_top"
+                    android:drawableTop="@drawable/ic_car_toolbar_top" />
+
+                <RadioButton
+                    android:id="@+id/car_settings_toolbar_position_bottom"
+                    style="@style/CarSettingsRadio"
+                    android:contentDescription="@string/car_toolbar_position_bottom"
+                    android:drawableTop="@drawable/ic_car_dock_bottom" />
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/car_settings_toolbar_auto_hide_switch"
+                style="@style/CarSettingsRow"
+                android:text="@string/settings_car_toolbar_auto_hide_title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/car_settings_divider" />
+
+            <TextView
+                android:id="@+id/settings_open_tweaks"
+                style="@style/CarSettingsRow"
+                android:drawableEnd="@drawable/ic_car_chevron_right"
+                android:text="@string/car_settings_tweaks" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">ВНИМАНИЕ !!!</string>
+    <string name="warning_body">Гледането на видеа по време на шофиране може да причини катастрофи. Като отхвърляте това предупреждение, вие се съгласявате, че сте наясно с последиците и носите отговорност за тях. Нито разработчикът на това приложение, нито Google, нито производителят на това устройство или на този автомобил носят отговорност за произшествия, причинени от вашата небрежност. Вместо това можете да превключите към възпроизвеждане на заден план чрез иконата за мултимедия.</string>
+    <string name="warning_accept_button">Разбирам рисковете</string>
+    <string name="webview_back">Назад</string>
+    <string name="refresh_page">Опресняване</string>
+    <string name="bookmarks">Отметки</string>
+    <string name="bookmarks_search_hint">Търсене в отметките</string>
+    <string name="bookmarks_none_found">Няма намерени отметки</string>
+    <string name="bookmark_options">Опции за отметката</string>
+    <string name="bookmark_edit">Редактиране</string>
+    <string name="bookmark_move_up">Преместване нагоре</string>
+    <string name="bookmark_move_down">Преместване надолу</string>
+    <string name="bookmark_delete">Изтриване</string>
+    <string name="bookmark_edit_title">Редактиране на отметката</string>
+    <string name="bookmark_edit_name">Име</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">Гласово търсене</string>
+    <string name="fullscreen">Цял екран</string>
+    <string name="home">Начало</string>
+    <string name="aspect_ratio_contain">Побиране</string>
+    <string name="aspect_ratio_fill">Запълване</string>
+    <string name="aspect_ratio_cover">Покриване</string>
+    <string name="car_fullscreen_exit">Изход</string>
+    <string name="car_fullscreen_hide_controls">Скриване за 30 с</string>
+    <string name="add_bookmark">Добавяне на текущия сайт</string>
+    <string name="remove_bookmark">Премахване на текущия сайт</string>
+    <string name="version">Версия </string>
+    <string name="settings">Настройки</string>
+    <string name="close">Затваряне</string>
+    <string name="car_settings_favorite">Любими</string>
+    <string name="car_settings_zoom_in">Увеличаване</string>
+    <string name="car_settings_zoom_out">Намаляване</string>
+    <string name="car_settings_bookmarks_bar">Лента с отметки</string>
+    <string name="car_settings_tweaks">Настройки на страницата</string>
+    <string name="car_settings_go_to_address">Към адрес</string>
+    <string name="car_settings_bookmark_added">Добавено в отметките</string>
+    <string name="car_settings_bookmark_removed">Премахнато от отметките</string>
+    <string name="car_settings_bookmark_locked">Тази отметка не може да бъде премахната</string>
+    <string name="car_settings_fullscreen_on">Цял екран — включен</string>
+    <string name="car_settings_fullscreen_off">Цял екран — изключен</string>
+    <string name="car_settings_fullscreen_unavailable">Не се възпроизвежда видео</string>
+    <string name="car_settings_desktop_on">Версия за компютър — включена</string>
+    <string name="car_settings_desktop_off">Версия за компютър — изключена</string>
+    <string name="car_settings_adblock_on">Блокирането на реклами е включено</string>
+    <string name="car_settings_adblock_off">Блокирането на реклами е изключено</string>
+    <string name="car_settings_zoom_percent">Мащаб: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Лента: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">Премахната е 1 отметка</string>
+    <string name="car_settings_bookmarks_removed_many">Премахнати отметки: %1$d</string>
+    <string name="car_settings_jump_to_letter">Към буква</string>
+    <string name="car_settings_home_set">Начална страница: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">Търсете в YouTube или въведете URL</string>
+    <string name="car_search_hint_google">Търсете в Google или въведете URL</string>
+    <string name="car_search_title_youtube">Търсене в YouTube</string>
+    <string name="car_search_title_google">Търсене в Google</string>
+    <string name="car_voice_listening_youtube">Слушам за YouTube</string>
+    <string name="car_voice_listening_google">Слушам за Google</string>
+    <string name="car_voice_search_error">Не успях да чуя</string>
+    <string name="car_voice_search_no_permission">Необходимо е разрешение за микрофона</string>
+
+    <string name="settings_resume_on_focus_title">Автоматично възобновяване на видеото</string>
+    <string name="settings_resume_on_focus_summary">Възобновява възпроизвеждането, след като камерата за задно виждане или друго приложение поеме екрана. Възобновява само ако самото приложение го е поставило на пауза.</string>
+
+    <string name="settings_home_url_title">Начална страница</string>
+    <string name="settings_home_url_summary">Адресът, който отваря бутонът „Начало“</string>
+
+    <string name="settings_restore_last_url_title">Продължаване откъдето сте спрели</string>
+    <string name="settings_restore_last_url_summary">Важи само за екрана на автомобила: връща последната страница вместо началната. На телефона началният екран винаги започва празен.</string>
+
+    <string name="settings_third_party_cookies_title">Разрешаване на бисквитки от трети страни</string>
+    <string name="settings_third_party_cookies_summary">Нужно за запазване на влизането в Google/YouTube. Влиза в сила при следващото свързване с автомобила.</string>
+
+    <string name="settings_protected_content_title">Разрешаване на защитено съдържание (DRM)</string>
+    <string name="settings_protected_content_summary">Нужно за стрийминг услугите. Може да не работи на проектирания екран.</string>
+
+    <string name="settings_strip_wv_ua_title">Скриване, че това е WebView</string>
+    <string name="settings_strip_wv_ua_summary">Влиза в сила след рестартиране на приложението. Някои услуги отказват WebView. Може да промени оформлението на други сайтове.</string>
+    <string name="settings_ad_block_title">Блокиране на реклами и тракери</string>
+    <string name="settings_ad_block_summary">Блокира известни рекламни и проследяващи домейни на мрежово ниво, включително видеорекламите в YouTube. Не е пълноценен блокер на реклами.</string>
+    <string name="settings_search_suggestions_title">Предложения при търсене</string>
+    <string name="settings_search_suggestions_summary">Изпраща въведеното в адресната лента към търсачката, за да получи предложения</string>
+
+    <string name="settings_car_disable_notifications_title">Изключване на известията</string>
+    <string name="settings_car_disable_notifications_summary">Изключва изскачащите известия в Android Auto</string>
+    <string name="settings_zoom_title">Мащаб на страницата</string>
+    <string name="settings_safety_warning_title">Показване на предупреждение за безопасност</string>
+    <string name="settings_safety_warning_summary">Предупреждава за гледане на видеа по време на шофиране, когато ръчната спирачка бъде освободена</string>
+    <string name="error_page_title">Страницата не можа да бъде заредена</string>
+    <string name="error_page_retry">Повторен опит</string>
+    <string name="error_page_ssl">Невалиден сертификат за сигурност. Връзката беше блокирана.</string>
+    <string name="error_msg_offline">Нямате връзка. Проверете връзката си и опитайте отново.</string>
+    <string name="error_msg_dns">Адресът не беше намерен.</string>
+    <string name="error_msg_connection">Сайтът отказа връзката.</string>
+    <string name="error_msg_timeout">Сайтът отговори твърде бавно.</string>
+    <string name="error_msg_cleartext">Този сайт не позволява некриптирана връзка.</string>
+    <string name="error_msg_scheme">Този тип връзка не се поддържа.</string>
+    <string name="error_msg_app_missing">Никое приложение не може да отвори тази връзка.</string>
+    <string name="error_msg_blocked">Тази страница е блокирана от филтъра за съдържание.</string>
+    <string name="error_msg_http">Сайтът върна грешка (%1$d).</string>
+    <string name="error_msg_unknown">Нещо се обърка при зареждането на страницата.</string>
+    <string name="error_action_back">Назад</string>
+    <string name="error_action_retry_http">Опитай през http</string>
+    <string name="error_action_open_external">Отвори в системния браузър</string>
+    <string name="error_action_cancel_recovery">Спри повторните опити</string>
+    <string name="error_details">Технически подробности</string>
+    <string name="error_recovering">Повторен опит (опит %1$d) след %2$d с</string>
+    <string name="error_reconnecting">Повторно свързване…</string>
+    <string name="error_waiting_network">Изчакване на връзката да се възстанови…</string>
+    <string name="browser_http_fallback_notice">Този сайт не поддържа https. Отворен през http.</string>
+    <string name="browser_http_fallback_keep_https">Остани на https</string>
+
+    <string name="settings_site_storage_title">Данни на сайтовете</string>
+    <string name="settings_site_storage_summary">Бисквитки и локално хранилище, запазени от всеки сайт</string>
+    <string name="storage_cookies_count">Бисквитки: %d</string>
+    <string name="storage_no_data">няма данни</string>
+    <string name="storage_delete_title">Да се изтрият ли данните на сайта?</string>
+    <string name="storage_delete_message">Бисквитките и локалното хранилище за %1$s ще бъдат премахнати. Ще излезете от профила си в този сайт.</string>
+    <string name="storage_delete_confirm">Изтриване</string>
+    <string name="storage_delete_all">Изтриване на всичко</string>
+    <string name="storage_search_hint">Търсене на сайтове</string>
+    <string name="storage_empty">Все още няма посетени сайтове</string>
+    <string name="storage_partial_warning">Някои бисквитки може да останат, ако сайтът ги е записал под друг път.</string>
+
+    <string name="browser_url_hint">Търсете или въведете URL</string>
+    <string name="browser_erase">Изтриване</string>
+    <string name="browser_send_to_car">Изпращане към екрана на автомобила</string>
+    <string name="browser_menu">Още опции</string>
+    <string name="browser_site_info">Информация за сайта</string>
+
+    <string name="browser_erase_done">Страницата е изчистена</string>
+
+    <string name="browser_connection_secure">Връзката е защитена</string>
+    <string name="browser_connection_insecure">Връзката не е защитена</string>
+    <string name="browser_adblock_title">Блокиране на реклами и тракери</string>
+    <string name="browser_adblock_on">Защитите са ВКЛЮЧЕНИ за този сайт</string>
+    <string name="browser_adblock_off">Защитите са ИЗКЛЮЧЕНИ за този сайт</string>
+
+    <string name="browser_connection_secure_details">Този сайт използва HTTPS — шифрована връзка. WebView отказва да зареди страница с невалиден сертификат.</string>
+    <string name="browser_connection_insecure_details">Тази страница не използва шифрована връзка. Информацията, която ѝ изпращате, може да бъде видима за други.</string>
+
+    <string name="browser_add_bookmark">В любими</string>
+    <string name="browser_open_in">Отваряне в…</string>
+    <string name="browser_desktop_site">Версия за компютър</string>
+
+    <string name="car_media_open_browser">Отваряне на Fiesta</string>
+    <string name="browser_send_to_car_done">Изпратено към екрана на автомобила</string>
+
+    <string name="browser_send_to_car_message">Екранът на автомобила ще отвори тази връзка. Той зарежда страницата сам — екранът на телефона не се дублира и възпроизвеждането не се прехвърля.</string>
+    <string name="browser_send_to_car_confirm">Изпращане</string>
+    <string name="browser_send_to_car_cancel">Отказ</string>
+
+    <string name="browser_car_inactive_title">Екранът на автомобила не е активен</string>
+    <string name="browser_car_inactive_message">Първо отворете приложението на екрана на автомобила, след това изпратете връзката отново.</string>
+    <string name="browser_car_inactive_dismiss">ОК</string>
+
+    <string name="settings_topic_general_title">Общи</string>
+    <string name="settings_topic_general_summary">Идентичност на WebView, защитено съдържание</string>
+    <string name="settings_topic_privacy_title">Поверителност и сигурност</string>
+    <string name="settings_topic_privacy_summary">Бисквитки, реклами и тракери, предложения при търсене, данни на сайтовете</string>
+    <string name="settings_topic_car_general_title">Автомобил — Общи</string>
+    <string name="settings_topic_car_general_summary">Начална страница, известия, мащаб, предупреждение за безопасност, лента с инструменти</string>
+    <string name="settings_topic_car_youtube_title">Автомобил — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Последна страница, възобновяване на видеото, превъртане до плейъра</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">Отключване в Android Auto</string>
+    <string name="settings_topic_about_title">Относно</string>
+    <string name="settings_topic_about_summary">За приложението, проект, благодарности</string>
+
+    <string name="settings_unlock_title">Отключване в Android Auto</string>
+    <string name="settings_unlock_summary">Изисква root (SuperSU или подобен). Влиза в сила след рестартиране на телефона.</string>
+
+    <string name="settings_about_icons_title">Икони</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, лиценз MPL-2.0</string>
+    <string name="settings_about_font_title">Шрифт</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Дарете за Fiesta</string>
+    <string name="settings_topic_donate_summary">Подкрепете проекта</string>
+    <string name="settings_donate_title">Заредете Fiesta ⛽</string>
+    <string name="settings_donate_message">✓ Безплатно\n✓ Без реклами\n✓ Без проследяване\n\nПравил ви е компания на пътя? Почерпете с кафе.</string>
+    <string name="settings_donate_coffee">☕ Почерпи ме с кафе</string>
+    <string name="settings_donate_footer_start">Направено с</string>
+    <string name="settings_donate_footer_end">в свободното време</string>
+    <string name="settings_about_tagline">Повече път. По-малко граници.</string>
+    <string name="settings_about_description">Ръце на волана, очи на пътя и свобода за вашата мултимедия. Приложение driving-first за тези, които обичат да карат. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Проект</string>
+    <string name="settings_about_credits_category">Благодарности</string>
+    <string name="settings_about_license_title">Лиценз</string>
+
+    <string name="browser_suggestion_fill">Попълване в полето за търсене</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">Блокиран е %d тракер на тази страница</item>
+        <item quantity="other">Блокирани са %d тракера на тази страница</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">На тази страница няма блокирани тракери</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">тракер блокиран на тази страница</item>
+        <item quantity="other">тракера блокирани на тази страница</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Позиция на лентата с инструменти</string>
+    <string name="car_toolbar_position_top">Отгоре</string>
+    <string name="car_toolbar_position_left">Отляво</string>
+    <string name="car_toolbar_position_right">Отдясно</string>
+    <string name="car_toolbar_position_bottom">Отдолу</string>
+    <string name="settings_car_realtime_category_title">Опции в реално време</string>
+    <string name="settings_car_toolbar_auto_hide_title">Автоматично скриване на лентата</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Скрива лентата, докато не докоснете този ръб на екрана</string>
+
+    <string name="settings_youtube_scroll_title">Превъртане до плейъра</string>
+    <string name="settings_youtube_scroll_summary">Автоматично превърта страницата, за да е видим плейърът, след отваряне на връзка или смяна на видеото. Влиза в сила при следващото зареждане на страница.</string>
+
+    <string name="settings_topic_plugins_title">Плъгини</string>
+    <string name="settings_topic_plugins_summary">Управление от волана и настройки на страниците, за всеки сайт</string>
+    <string name="plugins_title">Плъгини</string>
+    <string name="plugins_active_section">Активни, по приоритет</string>
+    <string name="plugins_inactive_section">Неактивни</string>
+    <string name="plugins_origin_default">Вграден</string>
+    <string name="plugins_origin_installed">Инсталиран</string>
+    <string name="plugins_active_switch">Активен</string>
+    <string name="plugins_delete">Изтриване</string>
+    <string name="plugins_install">Инсталиране от файл</string>
+    <string name="plugins_restore_defaults">Възстановяване по подразбиране</string>
+    <string name="plugins_review_title">Преглед на плъгина</string>
+    <string name="plugins_review_install">Инсталиране</string>
+    <string name="plugins_review_cancel">Отказ</string>
+    <string name="plugins_review_files">Файлове</string>
+    <string name="plugins_install_failed">Плъгинът не можа да бъде инсталиран: %1$s</string>
+    <string name="plugins_empty">Няма плъгини</string>
+    <string name="plugins_search_hint">Търсене</string>
+    <string name="voice_listener_title">Гласов приемник</string>
+    <string name="voice_listener_summary">Само един плъгин може да отговаря на гласови команди от автомобила.</string>
+    <string name="plugins_requires_ad_block">изисква блокиране на реклами</string>
+    <string name="plugins_delete_message">Да се изтрие ли плъгинът %1$s?</string>
+    <string name="plugins_restore_defaults_message">Да се възстановят ли вградените плъгини?</string>
+    <string name="page_plugins_events_section">Събития от волана</string>
+    <string name="page_plugins_tweaks_section">Настройки на страницата</string>
+    <string name="page_plugins_car">Автомобил</string>
+    <string name="page_plugins_phone">Телефон</string>
+
+    <string name="car_media_tab_home">Начало</string>
+    <string name="car_media_tab_playlist">Плейлист</string>
+    <string name="car_media_tab_history">История</string>
+    <string name="car_media_queue_history">История</string>
+    <string name="car_media_searching_for">Търсене на \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">Не може да се намери \"%1$s\"</string>
+
+</resources>

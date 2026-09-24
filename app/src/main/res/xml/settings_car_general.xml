@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plano 20, Etapa 1: configuracoes do carro - navegacao e interface.
+     pref_home_url saiu de Geral (s ve no carro). pref_disable_notifications,
+     pref_zoom e pref_safety_warning vieram de settings_car.xml. -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="pref_home_url"
+        android:defaultValue="https://m.youtube.com"
+        android:title="@string/settings_home_url_title"
+        android:summary="@string/settings_home_url_summary"
+        android:inputType="textUri"
+        android:selectAllOnFocus="true" />
+
+    <CheckBoxPreference
+        android:key="pref_disable_notifications"
+        android:defaultValue="false"
+        android:title="@string/settings_car_disable_notifications_title"
+        android:summary="@string/settings_car_disable_notifications_summary" />
+
+    <CheckBoxPreference
+        android:key="pref_safety_warning"
+        android:defaultValue="false"
+        android:title="@string/settings_safety_warning_title"
+        android:summary="@string/settings_safety_warning_summary" />
+
+    <PreferenceCategory android:title="@string/settings_car_realtime_category_title">
+
+        <ListPreference
+            android:key="pref_zoom"
+            android:defaultValue="100"
+            android:title="@string/settings_zoom_title"
+            android:summary="%s"
+            android:entries="@array/zoom_names"
+            android:entryValues="@array/zoom_values" />
+
+        <ListPreference
+            android:key="pref_car_toolbar_position"
+            android:defaultValue="left"
+            android:title="@string/settings_car_toolbar_position_title"
+            android:summary="%s"
+            android:entries="@array/car_toolbar_position_names"
+            android:entryValues="@array/car_toolbar_position_values" />
+
+        <CheckBoxPreference
+            android:key="pref_car_toolbar_auto_hide"
+            android:defaultValue="false"
+            android:title="@string/settings_car_toolbar_auto_hide_title"
+            android:summary="@string/settings_car_toolbar_auto_hide_summary" />
+
+        <CheckBoxPreference
+            android:key="pref_car_bookmarks_bar"
+            android:defaultValue="false"
+            android:title="@string/car_settings_bookmarks_bar" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

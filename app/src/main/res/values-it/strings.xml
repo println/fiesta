@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">ATTENZIONE !!!</string>
+    <string name="warning_body">Guardare video mentre si guida può causare incidenti. Ignorando questo avviso, dichiari di esserne consapevole e di essere responsabile delle conseguenze. Né lo sviluppatore di questa app, né Google, né il produttore di questo dispositivo, né il costruttore di questa automobile sono responsabili di incidenti dovuti alla tua negligenza. In alternativa puoi passare alla riproduzione in background toccando l\'icona dei contenuti multimediali.</string>
+    <string name="warning_accept_button">Comprendo i rischi</string>
+    <string name="webview_back">Indietro</string>
+    <string name="refresh_page">Aggiorna</string>
+    <string name="bookmarks">Preferiti</string>
+    <string name="bookmarks_search_hint">Cerca nei tuoi preferiti</string>
+    <string name="bookmarks_none_found">Nessun preferito trovato</string>
+    <string name="bookmark_options">Opzioni del preferito</string>
+    <string name="bookmark_edit">Modifica</string>
+    <string name="bookmark_move_up">Sposta su</string>
+    <string name="bookmark_move_down">Sposta giù</string>
+    <string name="bookmark_delete">Elimina</string>
+    <string name="bookmark_edit_title">Modifica preferito</string>
+    <string name="bookmark_edit_name">Nome</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">Ricerca vocale</string>
+    <string name="fullscreen">Schermo intero</string>
+    <string name="home">Home</string>
+    <string name="aspect_ratio_contain">Adatta</string>
+    <string name="aspect_ratio_fill">Riempi</string>
+    <string name="aspect_ratio_cover">Copri</string>
+    <string name="car_fullscreen_exit">Esci</string>
+    <string name="car_fullscreen_hide_controls">Nascondi 30s</string>
+    <string name="add_bookmark">Aggiungi sito corrente</string>
+    <string name="remove_bookmark">Rimuovi sito corrente</string>
+    <string name="version">Versione </string>
+    <string name="settings">Impostazioni</string>
+    <string name="close">Chiudi</string>
+    <string name="car_settings_favorite">Preferito</string>
+    <string name="car_settings_zoom_in">Ingrandisci</string>
+    <string name="car_settings_zoom_out">Riduci</string>
+    <string name="car_settings_bookmarks_bar">Barra dei preferiti</string>
+    <string name="car_settings_tweaks">Regolazioni</string>
+    <string name="car_settings_go_to_address">Vai all\'indirizzo</string>
+    <string name="car_settings_bookmark_added">Aggiunto ai preferiti</string>
+    <string name="car_settings_bookmark_removed">Rimosso dai preferiti</string>
+    <string name="car_settings_bookmark_locked">Questo preferito non può essere rimosso</string>
+    <string name="car_settings_fullscreen_on">Schermo intero attivo</string>
+    <string name="car_settings_fullscreen_off">Schermo intero disattivato</string>
+    <string name="car_settings_fullscreen_unavailable">Nessun video in riproduzione</string>
+    <string name="car_settings_desktop_on">Sito desktop attivo</string>
+    <string name="car_settings_desktop_off">Sito desktop disattivato</string>
+    <string name="car_settings_adblock_on">Blocco annunci attivo</string>
+    <string name="car_settings_adblock_off">Blocco annunci disattivato</string>
+    <string name="car_settings_zoom_percent">Zoom: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Barra: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">1 preferito rimosso</string>
+    <string name="car_settings_bookmarks_removed_many">%1$d preferiti rimossi</string>
+    <string name="car_settings_jump_to_letter">Vai alla lettera</string>
+    <string name="car_settings_home_set">Pagina iniziale: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">Cerca su YouTube o digita un URL</string>
+    <string name="car_search_hint_google">Cerca su Google o digita un URL</string>
+    <string name="car_search_title_youtube">Ricerca su YouTube</string>
+    <string name="car_search_title_google">Ricerca su Google</string>
+    <string name="car_voice_listening_youtube">In ascolto per YouTube</string>
+    <string name="car_voice_listening_google">In ascolto per Google</string>
+    <string name="car_voice_search_error">Non ho sentito bene</string>
+    <string name="car_voice_search_no_permission">Autorizzazione al microfono necessaria</string>
+
+    <string name="settings_resume_on_focus_title">Riprendi il video automaticamente</string>
+    <string name="settings_resume_on_focus_summary">Riprende la riproduzione dopo che la telecamera posteriore o un\'altra app ha preso lo schermo. Riprende solo se è stata l\'app stessa a mettere in pausa.</string>
+
+    <string name="settings_home_url_title">Pagina iniziale</string>
+    <string name="settings_home_url_summary">Indirizzo aperto dal pulsante Home</string>
+
+    <string name="settings_restore_last_url_title">Riprendi da dove avevi lasciato</string>
+    <string name="settings_restore_last_url_summary">Vale solo per lo schermo dell\'auto: torna all\'ultima pagina invece che alla pagina iniziale. Sul telefono la schermata iniziale parte sempre vuota.</string>
+
+    <string name="settings_third_party_cookies_title">Consenti i cookie di terze parti</string>
+    <string name="settings_third_party_cookies_summary">Necessario per mantenere l\'accesso a Google/YouTube. Ha effetto solo alla prossima connessione con l\'auto.</string>
+
+    <string name="settings_protected_content_title">Consenti i contenuti protetti (DRM)</string>
+    <string name="settings_protected_content_summary">Necessario per i servizi di streaming. Potrebbe non funzionare sullo schermo proiettato.</string>
+
+    <string name="settings_strip_wv_ua_title">Nascondi che si tratta di un WebView</string>
+    <string name="settings_strip_wv_ua_summary">Richiede il riavvio dell\'app per avere effetto. Alcuni servizi rifiutano i WebView. Può cambiare l\'impaginazione di altri siti.</string>
+    <string name="settings_ad_block_title">Blocca annunci e tracker</string>
+    <string name="settings_ad_block_summary">Blocca a livello di rete i domini noti di annunci/tracker, inclusi gli annunci video di YouTube. Non è un blocco annunci completo.</string>
+    <string name="settings_search_suggestions_title">Suggerimenti di ricerca</string>
+    <string name="settings_search_suggestions_summary">Invia al motore di ricerca ciò che digiti nella barra degli indirizzi per ottenere suggerimenti</string>
+
+    <string name="settings_car_disable_notifications_title">Disattiva le notifiche</string>
+    <string name="settings_car_disable_notifications_summary">Disattiva le notifiche in evidenza in Android Auto</string>
+    <string name="settings_zoom_title">Zoom della pagina</string>
+    <string name="settings_safety_warning_title">Mostra l\'avviso di sicurezza</string>
+    <string name="settings_safety_warning_summary">Avvisa sui rischi di guardare video alla guida quando il freno a mano viene rilasciato</string>
+    <string name="error_page_title">Impossibile caricare la pagina</string>
+    <string name="error_page_retry">Riprova</string>
+    <string name="error_page_ssl">Certificato di sicurezza non valido. La connessione è stata bloccata.</string>
+    <string name="error_msg_offline">Sei offline. Controlla la connessione e riprova.</string>
+    <string name="error_msg_dns">Impossibile trovare l\'indirizzo.</string>
+    <string name="error_msg_connection">Il sito ha rifiutato la connessione.</string>
+    <string name="error_msg_timeout">Il sito ha impiegato troppo tempo a rispondere.</string>
+    <string name="error_msg_cleartext">Questo sito non consente connessioni non cifrate.</string>
+    <string name="error_msg_scheme">Questo tipo di link non è supportato.</string>
+    <string name="error_msg_app_missing">Nessuna app può aprire questo link.</string>
+    <string name="error_msg_blocked">Questa pagina è stata bloccata dal filtro dei contenuti.</string>
+    <string name="error_msg_http">Il sito ha restituito un errore (%1$d).</string>
+    <string name="error_msg_unknown">Qualcosa è andato storto durante il caricamento della pagina.</string>
+    <string name="error_action_back">Indietro</string>
+    <string name="error_action_retry_http">Riprova con http</string>
+    <string name="error_action_open_external">Apri nel browser di sistema</string>
+    <string name="error_action_cancel_recovery">Interrompi i tentativi</string>
+    <string name="error_details">Dettagli tecnici</string>
+    <string name="error_recovering">Nuovo tentativo (tentativo %1$d) tra %2$d s</string>
+    <string name="error_reconnecting">Riconnessione…</string>
+    <string name="error_waiting_network">In attesa del ritorno della connessione…</string>
+    <string name="browser_http_fallback_notice">Questo sito non supporta https. Aperto tramite http.</string>
+    <string name="browser_http_fallback_keep_https">Mantieni https</string>
+
+    <string name="settings_site_storage_title">Dati dei siti</string>
+    <string name="settings_site_storage_summary">Cookie e archiviazione locale salvati da ciascun sito</string>
+    <string name="storage_cookies_count">%d cookie</string>
+    <string name="storage_no_data">nessun dato</string>
+    <string name="storage_delete_title">Eliminare i dati del sito?</string>
+    <string name="storage_delete_message">I cookie e l\'archiviazione locale di %1$s verranno rimossi. Verrai disconnesso da questo sito.</string>
+    <string name="storage_delete_confirm">Elimina</string>
+    <string name="storage_delete_all">Elimina tutto</string>
+    <string name="storage_search_hint">Cerca siti</string>
+    <string name="storage_empty">Nessun sito visitato finora</string>
+    <string name="storage_partial_warning">Alcuni cookie possono sopravvivere se il sito li ha salvati in un percorso diverso.</string>
+
+    <string name="browser_url_hint">Cerca o digita un URL</string>
+    <string name="browser_erase">Cancella</string>
+    <string name="browser_send_to_car">Invia allo schermo dell\'auto</string>
+    <string name="browser_menu">Altre opzioni</string>
+    <string name="browser_site_info">Informazioni sul sito</string>
+
+    <string name="browser_erase_done">Pagina cancellata</string>
+
+    <string name="browser_connection_secure">La connessione è sicura</string>
+    <string name="browser_connection_insecure">Connessione non sicura</string>
+    <string name="browser_adblock_title">Blocco di annunci e tracker</string>
+    <string name="browser_adblock_on">Le protezioni sono ATTIVE per questo sito</string>
+    <string name="browser_adblock_off">Le protezioni sono DISATTIVATE per questo sito</string>
+
+    <string name="browser_connection_secure_details">Questo sito usa HTTPS, una connessione cifrata. Il WebView si rifiuta di caricare una pagina il cui certificato non è valido.</string>
+    <string name="browser_connection_insecure_details">Questa pagina non usa una connessione cifrata. Le informazioni che le invii potrebbero essere visibili ad altri.</string>
+
+    <string name="browser_add_bookmark">Preferito</string>
+    <string name="browser_open_in">Apri in…</string>
+    <string name="browser_desktop_site">Sito desktop</string>
+
+    <string name="car_media_open_browser">Apri Fiesta</string>
+    <string name="browser_send_to_car_done">Inviato allo schermo dell\'auto</string>
+
+    <string name="browser_send_to_car_message">Lo schermo dell\'auto aprirà questo link. Carica la pagina per conto suo: lo schermo del telefono non viene duplicato e la riproduzione non viene trasferita.</string>
+    <string name="browser_send_to_car_confirm">Invia</string>
+    <string name="browser_send_to_car_cancel">Annulla</string>
+
+    <string name="browser_car_inactive_title">Lo schermo dell\'auto non è attivo</string>
+    <string name="browser_car_inactive_message">Apri prima l\'app sullo schermo dell\'auto, poi invia di nuovo il link.</string>
+    <string name="browser_car_inactive_dismiss">OK</string>
+
+    <string name="settings_topic_general_title">Generali</string>
+    <string name="settings_topic_general_summary">Identità del WebView, contenuti protetti</string>
+    <string name="settings_topic_privacy_title">Privacy e sicurezza</string>
+    <string name="settings_topic_privacy_summary">Cookie, annunci e tracker, suggerimenti di ricerca, dati dei siti</string>
+    <string name="settings_topic_car_general_title">Auto — Generali</string>
+    <string name="settings_topic_car_general_summary">Pagina iniziale, notifiche, zoom, avviso di sicurezza, barra degli strumenti</string>
+    <string name="settings_topic_car_youtube_title">Auto — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Ultima pagina, ripresa del video, scorrimento al player</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">Sblocco su Android Auto</string>
+    <string name="settings_topic_about_title">Informazioni</string>
+    <string name="settings_topic_about_summary">Informazioni sull\'app, progetto, crediti</string>
+
+    <string name="settings_unlock_title">Sblocco su Android Auto</string>
+    <string name="settings_unlock_summary">Richiede il root (SuperSU o simili). Ha effetto solo dopo il riavvio del telefono.</string>
+
+    <string name="settings_about_icons_title">Icone</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, licenza MPL-2.0</string>
+    <string name="settings_about_font_title">Carattere</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Dona a Fiesta</string>
+    <string name="settings_topic_donate_summary">Sostieni il progetto</string>
+    <string name="settings_donate_title">Fai il pieno a Fiesta ⛽</string>
+    <string name="settings_donate_message">✓ Gratis\n✓ Senza pubblicità\n✓ Senza tracciamento\n\nTi ha accompagnato in strada? Ricambia con un caffè.</string>
+    <string name="settings_donate_coffee">☕ Offrimi un caffè</string>
+    <string name="settings_donate_footer_start">Fatto con</string>
+    <string name="settings_donate_footer_end">nel tempo libero</string>
+    <string name="settings_about_tagline">Più strada. Meno limiti.</string>
+    <string name="settings_about_description">Mani sul volante, occhi sulla strada e libertà per i tuoi media. Un\'app driving-first, fatta per chi ama guidare. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Progetto</string>
+    <string name="settings_about_credits_category">Crediti</string>
+    <string name="settings_about_license_title">Licenza</string>
+
+    <string name="browser_suggestion_fill">Inserisci nel campo di ricerca</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">%d tracker bloccato in questa pagina</item>
+        <item quantity="other">%d tracker bloccati in questa pagina</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">Nessun tracker bloccato in questa pagina</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">tracker bloccato in questa pagina</item>
+        <item quantity="other">tracker bloccati in questa pagina</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Posizione della barra degli strumenti</string>
+    <string name="car_toolbar_position_top">In alto</string>
+    <string name="car_toolbar_position_left">A sinistra</string>
+    <string name="car_toolbar_position_right">A destra</string>
+    <string name="car_toolbar_position_bottom">In basso</string>
+    <string name="settings_car_realtime_category_title">Opzioni in tempo reale</string>
+    <string name="settings_car_toolbar_auto_hide_title">Nascondi automaticamente la barra</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Nasconde la barra finché non tocchi quel bordo dello schermo</string>
+
+    <string name="settings_youtube_scroll_title">Scorri fino al player</string>
+    <string name="settings_youtube_scroll_summary">Scorre la pagina automaticamente per rendere visibile il player dopo aver seguito un link o cambiato video. Ha effetto dal prossimo caricamento di pagina.</string>
+
+    <string name="settings_topic_plugins_title">Plugin</string>
+    <string name="settings_topic_plugins_summary">Comandi al volante e regolazioni di pagina, per sito</string>
+    <string name="plugins_title">Plugin</string>
+    <string name="plugins_active_section">Attivi, in ordine di priorità</string>
+    <string name="plugins_inactive_section">Inattivi</string>
+    <string name="plugins_origin_default">Integrato</string>
+    <string name="plugins_origin_installed">Installato</string>
+    <string name="plugins_active_switch">Attivo</string>
+    <string name="plugins_delete">Elimina</string>
+    <string name="plugins_install">Installa da file</string>
+    <string name="plugins_restore_defaults">Ripristina i predefiniti</string>
+    <string name="plugins_review_title">Esamina il plugin</string>
+    <string name="plugins_review_install">Installa</string>
+    <string name="plugins_review_cancel">Annulla</string>
+    <string name="plugins_review_files">File</string>
+    <string name="plugins_install_failed">Impossibile installare il plugin: %1$s</string>
+    <string name="plugins_empty">Nessun plugin</string>
+    <string name="plugins_search_hint">Cerca</string>
+    <string name="voice_listener_title">Ricevitore vocale</string>
+    <string name="voice_listener_summary">Solo un plugin può rispondere ai comandi vocali dell\'auto.</string>
+    <string name="plugins_requires_ad_block">richiede il blocco annunci</string>
+    <string name="plugins_delete_message">Eliminare il plugin %1$s?</string>
+    <string name="plugins_restore_defaults_message">Ripristinare i plugin integrati?</string>
+    <string name="page_plugins_events_section">Eventi del volante</string>
+    <string name="page_plugins_tweaks_section">Regolazioni di pagina</string>
+    <string name="page_plugins_car">Auto</string>
+    <string name="page_plugins_phone">Telefono</string>
+
+    <string name="car_media_tab_home">Home</string>
+    <string name="car_media_tab_playlist">Playlist</string>
+    <string name="car_media_tab_history">Cronologia</string>
+    <string name="car_media_queue_history">Cronologia</string>
+    <string name="car_media_searching_for">Ricerca di \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">Impossibile trovare \"%1$s\"</string>
+
+</resources>

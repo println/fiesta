@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">ACHTUNG !!!</string>
+    <string name="warning_body">Videos während der Fahrt anzusehen kann Unfälle verursachen. Wenn Sie diese Warnung ignorieren, erklären Sie sich damit einverstanden, dass Sie sich der Folgen bewusst sind und dafür verantwortlich sind. Weder der Entwickler dieser App noch Google noch der Hersteller dieses Geräts oder dieses Fahrzeugs haften für Unfälle, die durch Ihre Fahrlässigkeit entstehen. Sie können stattdessen über das Medien-Symbol zur Hintergrundwiedergabe wechseln.</string>
+    <string name="warning_accept_button">Ich verstehe die Risiken</string>
+    <string name="webview_back">Zurück</string>
+    <string name="refresh_page">Aktualisieren</string>
+    <string name="bookmarks">Lesezeichen</string>
+    <string name="bookmarks_search_hint">Lesezeichen durchsuchen</string>
+    <string name="bookmarks_none_found">Keine Lesezeichen gefunden</string>
+    <string name="bookmark_options">Lesezeichen-Optionen</string>
+    <string name="bookmark_edit">Bearbeiten</string>
+    <string name="bookmark_move_up">Nach oben</string>
+    <string name="bookmark_move_down">Nach unten</string>
+    <string name="bookmark_delete">Löschen</string>
+    <string name="bookmark_edit_title">Lesezeichen bearbeiten</string>
+    <string name="bookmark_edit_name">Name</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">Sprachsuche</string>
+    <string name="fullscreen">Vollbild</string>
+    <string name="home">Startseite</string>
+    <string name="aspect_ratio_contain">Einpassen</string>
+    <string name="aspect_ratio_fill">Füllen</string>
+    <string name="aspect_ratio_cover">Ausfüllen</string>
+    <string name="car_fullscreen_exit">Beenden</string>
+    <string name="car_fullscreen_hide_controls">30 s ausblenden</string>
+    <string name="add_bookmark">Aktuelle Seite hinzufügen</string>
+    <string name="remove_bookmark">Aktuelle Seite entfernen</string>
+    <string name="version">Version </string>
+    <string name="settings">Einstellungen</string>
+    <string name="close">Schließen</string>
+    <string name="car_settings_favorite">Favorit</string>
+    <string name="car_settings_zoom_in">Vergrößern</string>
+    <string name="car_settings_zoom_out">Verkleinern</string>
+    <string name="car_settings_bookmarks_bar">Lesezeichenleiste</string>
+    <string name="car_settings_tweaks">Anpassungen</string>
+    <string name="car_settings_go_to_address">Zur Adresse gehen</string>
+    <string name="car_settings_bookmark_added">Zu den Lesezeichen hinzugefügt</string>
+    <string name="car_settings_bookmark_removed">Aus den Lesezeichen entfernt</string>
+    <string name="car_settings_bookmark_locked">Dieses Lesezeichen kann nicht entfernt werden</string>
+    <string name="car_settings_fullscreen_on">Vollbild ein</string>
+    <string name="car_settings_fullscreen_off">Vollbild aus</string>
+    <string name="car_settings_fullscreen_unavailable">Kein Video in Wiedergabe</string>
+    <string name="car_settings_desktop_on">Desktop-Ansicht ein</string>
+    <string name="car_settings_desktop_off">Desktop-Ansicht aus</string>
+    <string name="car_settings_adblock_on">Werbeblocker ein</string>
+    <string name="car_settings_adblock_off">Werbeblocker aus</string>
+    <string name="car_settings_zoom_percent">Zoom: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Leiste: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">1 Lesezeichen entfernt</string>
+    <string name="car_settings_bookmarks_removed_many">%1$d Lesezeichen entfernt</string>
+    <string name="car_settings_jump_to_letter">Zu Buchstabe springen</string>
+    <string name="car_settings_home_set">Startseite: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">Auf YouTube suchen oder URL eingeben</string>
+    <string name="car_search_hint_google">Bei Google suchen oder URL eingeben</string>
+    <string name="car_search_title_youtube">Suche auf YouTube</string>
+    <string name="car_search_title_google">Suche bei Google</string>
+    <string name="car_voice_listening_youtube">Höre zu für YouTube</string>
+    <string name="car_voice_listening_google">Höre zu für Google</string>
+    <string name="car_voice_search_error">Das habe ich nicht verstanden</string>
+    <string name="car_voice_search_no_permission">Mikrofonberechtigung erforderlich</string>
+
+    <string name="settings_resume_on_focus_title">Video automatisch fortsetzen</string>
+    <string name="settings_resume_on_focus_summary">Setzt die Wiedergabe fort, nachdem die Rückfahrkamera oder eine andere App den Bildschirm übernommen hat. Wird nur fortgesetzt, wenn die App selbst pausiert hat.</string>
+
+    <string name="settings_home_url_title">Startseite</string>
+    <string name="settings_home_url_summary">Adresse, die die Startseiten-Schaltfläche öffnet</string>
+
+    <string name="settings_restore_last_url_title">Dort weitermachen, wo Sie aufgehört haben</string>
+    <string name="settings_restore_last_url_summary">Gilt nur für den Fahrzeugbildschirm: kehrt zur letzten Seite statt zur Startseite zurück. Auf dem Telefon startet der Startbildschirm immer leer.</string>
+
+    <string name="settings_third_party_cookies_title">Cookies von Drittanbietern zulassen</string>
+    <string name="settings_third_party_cookies_summary">Nötig, um die Anmeldung bei Google/YouTube zu behalten. Wird erst bei der nächsten Verbindung mit dem Fahrzeug wirksam.</string>
+
+    <string name="settings_protected_content_title">Geschützte Inhalte zulassen (DRM)</string>
+    <string name="settings_protected_content_summary">Nötig für Streamingdienste. Funktioniert auf dem projizierten Bildschirm möglicherweise nicht.</string>
+
+    <string name="settings_strip_wv_ua_title">Verbergen, dass dies ein WebView ist</string>
+    <string name="settings_strip_wv_ua_summary">Wird erst nach einem Neustart der App wirksam. Manche Dienste lehnen WebViews ab. Kann das Layout anderer Seiten verändern.</string>
+    <string name="settings_ad_block_title">Werbung und Tracker blockieren</string>
+    <string name="settings_ad_block_summary">Blockiert bekannte Werbe-/Tracker-Domains auf Netzwerkebene, einschließlich YouTube-Videowerbung. Kein vollwertiger Werbeblocker.</string>
+    <string name="settings_search_suggestions_title">Suchvorschläge</string>
+    <string name="settings_search_suggestions_summary">Sendet Ihre Eingaben in der Adressleiste an die Suchmaschine, um Vorschläge zu erhalten</string>
+
+    <string name="settings_car_disable_notifications_title">Benachrichtigungen deaktivieren</string>
+    <string name="settings_car_disable_notifications_summary">Deaktiviert eingeblendete Benachrichtigungen in Android Auto</string>
+    <string name="settings_zoom_title">Seitenzoom</string>
+    <string name="settings_safety_warning_title">Sicherheitswarnung anzeigen</string>
+    <string name="settings_safety_warning_summary">Warnt davor, beim Fahren Videos anzusehen, wenn die Handbremse gelöst wird</string>
+    <string name="error_page_title">Die Seite konnte nicht geladen werden</string>
+    <string name="error_page_retry">Erneut versuchen</string>
+    <string name="error_page_ssl">Ungültiges Sicherheitszertifikat. Die Verbindung wurde blockiert.</string>
+    <string name="error_msg_offline">Sie sind offline. Prüfen Sie Ihre Verbindung und versuchen Sie es erneut.</string>
+    <string name="error_msg_dns">Die Adresse wurde nicht gefunden.</string>
+    <string name="error_msg_connection">Die Website hat die Verbindung abgelehnt.</string>
+    <string name="error_msg_timeout">Die Website hat zu lange nicht geantwortet.</string>
+    <string name="error_msg_cleartext">Diese Website erlaubt keine unverschlüsselte Verbindung.</string>
+    <string name="error_msg_scheme">Diese Art von Link wird nicht unterstützt.</string>
+    <string name="error_msg_app_missing">Keine App kann diesen Link öffnen.</string>
+    <string name="error_msg_blocked">Diese Seite wurde vom Inhaltsfilter blockiert.</string>
+    <string name="error_msg_http">Die Website hat einen Fehler zurückgegeben (%1$d).</string>
+    <string name="error_msg_unknown">Beim Laden der Seite ist etwas schiefgelaufen.</string>
+    <string name="error_action_back">Zurück</string>
+    <string name="error_action_retry_http">Über http versuchen</string>
+    <string name="error_action_open_external">Im System-Browser öffnen</string>
+    <string name="error_action_cancel_recovery">Nicht mehr versuchen</string>
+    <string name="error_details">Technische Details</string>
+    <string name="error_recovering">Neuer Versuch (Versuch %1$d) in %2$d s</string>
+    <string name="error_reconnecting">Verbindung wird wiederhergestellt…</string>
+    <string name="error_waiting_network">Warten auf die Verbindung…</string>
+    <string name="browser_http_fallback_notice">Diese Website unterstützt kein https. Über http geöffnet.</string>
+    <string name="browser_http_fallback_keep_https">Bei https bleiben</string>
+
+    <string name="settings_site_storage_title">Website-Daten</string>
+    <string name="settings_site_storage_summary">Von jeder Website gespeicherte Cookies und lokale Daten</string>
+    <string name="storage_cookies_count">%d Cookies</string>
+    <string name="storage_no_data">keine Daten</string>
+    <string name="storage_delete_title">Website-Daten löschen?</string>
+    <string name="storage_delete_message">Cookies und lokale Daten von %1$s werden entfernt. Sie werden von dieser Website abgemeldet.</string>
+    <string name="storage_delete_confirm">Löschen</string>
+    <string name="storage_delete_all">Alle löschen</string>
+    <string name="storage_search_hint">Websites suchen</string>
+    <string name="storage_empty">Noch keine Websites besucht</string>
+    <string name="storage_partial_warning">Einige Cookies können erhalten bleiben, wenn die Website sie unter einem anderen Pfad gespeichert hat.</string>
+
+    <string name="browser_url_hint">Suchen oder URL eingeben</string>
+    <string name="browser_erase">Löschen</string>
+    <string name="browser_send_to_car">An den Fahrzeugbildschirm senden</string>
+    <string name="browser_menu">Weitere Optionen</string>
+    <string name="browser_site_info">Website-Informationen</string>
+
+    <string name="browser_erase_done">Seite gelöscht</string>
+
+    <string name="browser_connection_secure">Die Verbindung ist sicher</string>
+    <string name="browser_connection_insecure">Keine sichere Verbindung</string>
+    <string name="browser_adblock_title">Werbe- und Tracker-Blockierung</string>
+    <string name="browser_adblock_on">Der Schutz ist für diese Website EIN</string>
+    <string name="browser_adblock_off">Der Schutz ist für diese Website AUS</string>
+
+    <string name="browser_connection_secure_details">Diese Website verwendet HTTPS, eine verschlüsselte Verbindung. Das WebView weigert sich, eine Seite mit ungültigem Zertifikat zu laden.</string>
+    <string name="browser_connection_insecure_details">Diese Seite verwendet keine verschlüsselte Verbindung. Daten, die Sie an sie senden, könnten für andere sichtbar sein.</string>
+
+    <string name="browser_add_bookmark">Favorit</string>
+    <string name="browser_open_in">Öffnen mit…</string>
+    <string name="browser_desktop_site">Desktop-Ansicht</string>
+
+    <string name="car_media_open_browser">Fiesta öffnen</string>
+    <string name="browser_send_to_car_done">An den Fahrzeugbildschirm gesendet</string>
+
+    <string name="browser_send_to_car_message">Der Fahrzeugbildschirm öffnet diesen Link. Er lädt die Seite selbst — der Telefonbildschirm wird nicht gespiegelt und die Wiedergabe wird nicht übernommen.</string>
+    <string name="browser_send_to_car_confirm">Senden</string>
+    <string name="browser_send_to_car_cancel">Abbrechen</string>
+
+    <string name="browser_car_inactive_title">Der Fahrzeugbildschirm ist nicht aktiv</string>
+    <string name="browser_car_inactive_message">Öffnen Sie die App zuerst auf dem Fahrzeugbildschirm und senden Sie den Link dann erneut.</string>
+    <string name="browser_car_inactive_dismiss">OK</string>
+
+    <string name="settings_topic_general_title">Allgemein</string>
+    <string name="settings_topic_general_summary">WebView-Identität, geschützte Inhalte</string>
+    <string name="settings_topic_privacy_title">Datenschutz und Sicherheit</string>
+    <string name="settings_topic_privacy_summary">Cookies, Werbung und Tracker, Suchvorschläge, Website-Daten</string>
+    <string name="settings_topic_car_general_title">Fahrzeug — Allgemein</string>
+    <string name="settings_topic_car_general_summary">Startseite, Benachrichtigungen, Zoom, Sicherheitswarnung, Symbolleiste</string>
+    <string name="settings_topic_car_youtube_title">Fahrzeug — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Letzte Seite, Videowiederaufnahme, Scrollen zum Player</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">In Android Auto entsperren</string>
+    <string name="settings_topic_about_title">Über</string>
+    <string name="settings_topic_about_summary">Über die App, Projekt, Danksagungen</string>
+
+    <string name="settings_unlock_title">In Android Auto entsperren</string>
+    <string name="settings_unlock_summary">Erfordert Root (SuperSU o. Ä.). Wird erst nach einem Neustart des Telefons wirksam.</string>
+
+    <string name="settings_about_icons_title">Symbole</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, MPL-2.0-Lizenz</string>
+    <string name="settings_about_font_title">Schriftart</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Für Fiesta spenden</string>
+    <string name="settings_topic_donate_summary">Unterstütze das Projekt</string>
+    <string name="settings_donate_title">Tank Fiesta auf ⛽</string>
+    <string name="settings_donate_message">✓ Kostenlos\n✓ Keine Werbung\n✓ Kein Tracking\n\nHat dich auf der Straße begleitet? Gib mit einem Kaffee etwas zurück.</string>
+    <string name="settings_donate_coffee">☕ Spendier mir einen Kaffee</string>
+    <string name="settings_donate_footer_start">Gemacht mit</string>
+    <string name="settings_donate_footer_end">in der Freizeit</string>
+    <string name="settings_about_tagline">Mehr Straße. Weniger Grenzen.</string>
+    <string name="settings_about_description">Hände am Lenkrad, Augen auf der Straße und Freiheit für deine Medien. Eine Driving-first-App für alle, die gerne fahren. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Projekt</string>
+    <string name="settings_about_credits_category">Danksagungen</string>
+    <string name="settings_about_license_title">Lizenz</string>
+
+    <string name="browser_suggestion_fill">In das Suchfeld einfügen</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">%d Tracker auf dieser Seite blockiert</item>
+        <item quantity="other">%d Tracker auf dieser Seite blockiert</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">Keine Tracker auf dieser Seite blockiert</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">Tracker auf dieser Seite blockiert</item>
+        <item quantity="other">Tracker auf dieser Seite blockiert</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Position der Symbolleiste</string>
+    <string name="car_toolbar_position_top">Oben</string>
+    <string name="car_toolbar_position_left">Links</string>
+    <string name="car_toolbar_position_right">Rechts</string>
+    <string name="car_toolbar_position_bottom">Unten</string>
+    <string name="settings_car_realtime_category_title">Echtzeit-Optionen</string>
+    <string name="settings_car_toolbar_auto_hide_title">Symbolleiste automatisch ausblenden</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Blendet die Leiste aus, bis Sie diesen Bildschirmrand berühren</string>
+
+    <string name="settings_youtube_scroll_title">Zum Player scrollen</string>
+    <string name="settings_youtube_scroll_summary">Scrollt die Seite automatisch, sodass der Player sichtbar ist, nachdem Sie einem Link gefolgt sind oder das Video gewechselt haben. Wird beim nächsten Seitenaufbau wirksam.</string>
+
+    <string name="settings_topic_plugins_title">Plugins</string>
+    <string name="settings_topic_plugins_summary">Lenkradsteuerung und Seitenanpassungen, pro Website</string>
+    <string name="plugins_title">Plugins</string>
+    <string name="plugins_active_section">Aktiv, in Prioritätsreihenfolge</string>
+    <string name="plugins_inactive_section">Inaktiv</string>
+    <string name="plugins_origin_default">Integriert</string>
+    <string name="plugins_origin_installed">Installiert</string>
+    <string name="plugins_active_switch">Aktiv</string>
+    <string name="plugins_delete">Löschen</string>
+    <string name="plugins_install">Aus Datei installieren</string>
+    <string name="plugins_restore_defaults">Standard wiederherstellen</string>
+    <string name="plugins_review_title">Plugin prüfen</string>
+    <string name="plugins_review_install">Installieren</string>
+    <string name="plugins_review_cancel">Abbrechen</string>
+    <string name="plugins_review_files">Dateien</string>
+    <string name="plugins_install_failed">Plugin konnte nicht installiert werden: %1$s</string>
+    <string name="plugins_empty">Keine Plugins</string>
+    <string name="plugins_search_hint">Suchen</string>
+    <string name="voice_listener_title">Sprachempfänger</string>
+    <string name="voice_listener_summary">Nur ein Plugin kann auf Sprachbefehle aus dem Fahrzeug reagieren.</string>
+    <string name="plugins_requires_ad_block">erfordert Werbeblocker</string>
+    <string name="plugins_delete_message">Das Plugin %1$s löschen?</string>
+    <string name="plugins_restore_defaults_message">Die integrierten Plugins wiederherstellen?</string>
+    <string name="page_plugins_events_section">Lenkrad-Ereignisse</string>
+    <string name="page_plugins_tweaks_section">Seitenanpassungen</string>
+    <string name="page_plugins_car">Fahrzeug</string>
+    <string name="page_plugins_phone">Telefon</string>
+
+    <string name="car_media_tab_home">Start</string>
+    <string name="car_media_tab_playlist">Playlist</string>
+    <string name="car_media_tab_history">Verlauf</string>
+    <string name="car_media_queue_history">Verlauf</string>
+    <string name="car_media_searching_for">Suche nach \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">\"%1$s\" konnte nicht gefunden werden</string>
+
+</resources>

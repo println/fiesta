@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plano 14, Etapa 8. pref_third_party_cookies, pref_protected_content e
+     pref_ad_block movidos de settings.xml (mesmas key/defaultValue/strings).
+     pref_site_storage continua abrindo SiteStorageActivity (listener em
+     SettingsPhoneFragment). -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_third_party_cookies"
+        android:defaultValue="true"
+        android:title="@string/settings_third_party_cookies_title"
+        android:summary="@string/settings_third_party_cookies_summary" />
+
+    <CheckBoxPreference
+        android:key="pref_ad_block"
+        android:defaultValue="true"
+        android:title="@string/settings_ad_block_title"
+        android:summary="@string/settings_ad_block_summary" />
+
+    <!-- Plano 16, A23: comeca ligado, sem o dialogo de primeira execucao que
+         o Focus usa ("Show search suggestions?") - decisao registrada em
+         docs/plans/15-checklist-comparacao-firefox-focus.md, C15. -->
+    <CheckBoxPreference
+        android:key="pref_search_suggestions"
+        android:defaultValue="true"
+        android:title="@string/settings_search_suggestions_title"
+        android:summary="@string/settings_search_suggestions_summary" />
+
+    <Preference
+        android:key="pref_site_storage"
+        android:title="@string/settings_site_storage_title"
+        android:summary="@string/settings_site_storage_summary" />
+
+</PreferenceScreen>

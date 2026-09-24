@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="zoom_names" translatable="false">
+        <item>200%</item>
+        <item>190%</item>
+        <item>180%</item>
+        <item>170%</item>
+        <item>160%</item>
+        <item>150%</item>
+        <item>140%</item>
+        <item>130%</item>
+        <item>120%</item>
+        <item>110%</item>
+        <item>100%</item>
+        <item>90%</item>
+        <item>80%</item>
+        <item>70%</item>
+        <item>60%</item>
+        <item>50%</item>
+    </string-array>
+    <string-array name="zoom_values" translatable="false">
+        <item>200</item>
+        <item>190</item>
+        <item>180</item>
+        <item>170</item>
+        <item>160</item>
+        <item>150</item>
+        <item>140</item>
+        <item>130</item>
+        <item>120</item>
+        <item>110</item>
+        <item>100</item>
+        <item>90</item>
+        <item>80</item>
+        <item>70</item>
+        <item>60</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="car_toolbar_position_values" translatable="false">
+        <item>top</item>
+        <item>left</item>
+        <item>right</item>
+        <item>bottom</item>
+    </string-array>
+    <string-array name="car_toolbar_position_names">
+        <item>@string/car_toolbar_position_top</item>
+        <item>@string/car_toolbar_position_left</item>
+        <item>@string/car_toolbar_position_right</item>
+        <item>@string/car_toolbar_position_bottom</item>
+    </string-array>
+</resources>

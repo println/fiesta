@@ -1,0 +1,16 @@
+package proto.media.fiesta.support.webviewex.navigation
+
+object UserAgentPolicy {
+
+    const val DESKTOP_USER_AGENT =
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 " +
+            "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+    private const val WEBVIEW_MARKER = "; wv"
+
+    fun userAgentFor(wantDesktop: Boolean, stripWebViewMarker: Boolean, defaultUserAgent: String): String = when {
+        wantDesktop -> DESKTOP_USER_AGENT
+        stripWebViewMarker -> defaultUserAgent.replace(WEBVIEW_MARKER, "")
+        else -> defaultUserAgent
+    }
+}

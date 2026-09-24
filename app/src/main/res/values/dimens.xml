@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Plano 21: espessura da barra do carro e lado do botao quadrado. -->
+    <dimen name="car_toolbar_thickness">76dp</dimen>
+    <dimen name="car_toolbar_button_spacing">24dp</dimen>
+    <dimen name="car_settings_panel_margin">12dp</dimen>
+    <dimen name="car_settings_jump_key_margin">4dp</dimen>
+    <dimen name="car_search_engine_circle_size">52dp</dimen>
+    <dimen name="car_search_engine_icon_padding">12dp</dimen>
+    <dimen name="car_menu_bubble_size">64dp</dimen>
+    <dimen name="car_menu_bubble_icon_padding">18dp</dimen>
+    <dimen name="car_menu_bubble_margin">12dp</dimen>
+    <dimen name="car_favorites_bar_width">56dp</dimen>
+    <dimen name="car_favorite_monogram_size">48dp</dimen>
+    <dimen name="car_favorite_monogram_spacing">12dp</dimen>
+    <dimen name="car_favorites_bar_side_padding">4dp</dimen>
+    <dimen name="car_fullscreen_menu_margin">12dp</dimen>
+</resources>

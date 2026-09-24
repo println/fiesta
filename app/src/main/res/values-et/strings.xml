@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">HOIATUS !!!</string>
+    <string name="warning_body">Videote vaatamine sõites võib põhjustada liiklusõnnetusi. Selle hoiatuse eiramisega nõustud, et oled tagajärgedest teadlik ja vastutad nende eest. Ei selle rakenduse arendaja, Google, selle seadme tootja ega selle auto tootja ei vastuta sinu hooletusest põhjustatud õnnetuste eest. Selle asemel saad meediaikoonile vajutades lülituda taustaesitusele.</string>
+    <string name="warning_accept_button">Mõistan riske</string>
+    <string name="webview_back">Tagasi</string>
+    <string name="refresh_page">Värskenda</string>
+    <string name="bookmarks">Järjehoidjad</string>
+    <string name="bookmarks_search_hint">Otsi oma järjehoidjatest</string>
+    <string name="bookmarks_none_found">Järjehoidjaid ei leitud</string>
+    <string name="bookmark_options">Järjehoidja valikud</string>
+    <string name="bookmark_edit">Muuda</string>
+    <string name="bookmark_move_up">Liiguta üles</string>
+    <string name="bookmark_move_down">Liiguta alla</string>
+    <string name="bookmark_delete">Kustuta</string>
+    <string name="bookmark_edit_title">Muuda järjehoidjat</string>
+    <string name="bookmark_edit_name">Nimi</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">Häälotsing</string>
+    <string name="fullscreen">Täisekraan</string>
+    <string name="home">Avaleht</string>
+    <string name="aspect_ratio_contain">Mahuta</string>
+    <string name="aspect_ratio_fill">Täida</string>
+    <string name="aspect_ratio_cover">Kata</string>
+    <string name="car_fullscreen_exit">Välju</string>
+    <string name="car_fullscreen_hide_controls">Peida 30 s</string>
+    <string name="add_bookmark">Lisa praegune sait</string>
+    <string name="remove_bookmark">Eemalda praegune sait</string>
+    <string name="version">Versioon </string>
+    <string name="settings">Seaded</string>
+    <string name="close">Sulge</string>
+    <string name="car_settings_favorite">Lemmik</string>
+    <string name="car_settings_zoom_in">Suurenda</string>
+    <string name="car_settings_zoom_out">Vähenda</string>
+    <string name="car_settings_bookmarks_bar">Järjehoidjariba</string>
+    <string name="car_settings_tweaks">Kohandused</string>
+    <string name="car_settings_go_to_address">Mine aadressile</string>
+    <string name="car_settings_bookmark_added">Lisatud järjehoidjatesse</string>
+    <string name="car_settings_bookmark_removed">Eemaldatud järjehoidjatest</string>
+    <string name="car_settings_bookmark_locked">Seda järjehoidjat ei saa eemaldada</string>
+    <string name="car_settings_fullscreen_on">Täisekraan sees</string>
+    <string name="car_settings_fullscreen_off">Täisekraan väljas</string>
+    <string name="car_settings_fullscreen_unavailable">Ühtki videot ei esitata</string>
+    <string name="car_settings_desktop_on">Arvutiversioon sees</string>
+    <string name="car_settings_desktop_off">Arvutiversioon väljas</string>
+    <string name="car_settings_adblock_on">Reklaamiblokeerija sees</string>
+    <string name="car_settings_adblock_off">Reklaamiblokeerija väljas</string>
+    <string name="car_settings_zoom_percent">Suurendus: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Tööriistariba: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">1 järjehoidja eemaldatud</string>
+    <string name="car_settings_bookmarks_removed_many">%1$d järjehoidjat eemaldatud</string>
+    <string name="car_settings_jump_to_letter">Hüppa tähele</string>
+    <string name="car_settings_home_set">Avaleht: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">Otsi YouTube\'ist või sisesta URL</string>
+    <string name="car_search_hint_google">Otsi Google\'ist või sisesta URL</string>
+    <string name="car_search_title_youtube">Otsin YouTube\'ist</string>
+    <string name="car_search_title_google">Otsin Google\'ist</string>
+    <string name="car_voice_listening_youtube">Kuulan YouTube\'i jaoks</string>
+    <string name="car_voice_listening_google">Kuulan Google\'i jaoks</string>
+    <string name="car_voice_search_error">Ma ei kuulnud seda</string>
+    <string name="car_voice_search_no_permission">Vajalik on mikrofoni luba</string>
+
+    <string name="settings_resume_on_focus_title">Jätka videot automaatselt</string>
+    <string name="settings_resume_on_focus_summary">Jätkab esitust pärast seda, kui tagurduskaamera või mõni muu rakendus on ekraani üle võtnud. Jätkab ainult siis, kui rakendus ise selle peatas.</string>
+
+    <string name="settings_home_url_title">Avaleht</string>
+    <string name="settings_home_url_summary">Aadress, mille avab avalehe nupp</string>
+
+    <string name="settings_restore_last_url_title">Jätka sealt, kus pooleli jäid</string>
+    <string name="settings_restore_last_url_summary">Kehtib ainult auto ekraanile: naaseb avalehe asemel viimasele lehele. Telefonis algab avakuva alati tühjalt.</string>
+
+    <string name="settings_third_party_cookies_title">Luba kolmandate osapoolte küpsised</string>
+    <string name="settings_third_party_cookies_summary">Vajalik Google\'i/YouTube\'i sisselogimise säilitamiseks. Jõustub alles järgmisel ühendusel autoga.</string>
+
+    <string name="settings_protected_content_title">Luba kaitstud sisu (DRM)</string>
+    <string name="settings_protected_content_summary">Vajalik voogedastusteenuste jaoks. Ei pruugi projitseeritud ekraanil töötada.</string>
+
+    <string name="settings_strip_wv_ua_title">Peida, et tegemist on WebView\'ga</string>
+    <string name="settings_strip_wv_ua_summary">Jõustumiseks tuleb rakendus taaskäivitada. Mõned teenused keelduvad WebView\'dest. Võib muuta teiste saitide paigutust.</string>
+    <string name="settings_ad_block_title">Blokeeri reklaamid ja jälitajad</string>
+    <string name="settings_ad_block_summary">Blokeerib võrgutasemel teadaolevad reklaami- ja jälitusdomeenid, sealhulgas YouTube\'i videoreklaamid. Pole täielik reklaamiblokeerija.</string>
+    <string name="settings_search_suggestions_title">Otsingusoovitused</string>
+    <string name="settings_search_suggestions_summary">Saadab aadressiribale kirjutatu otsingumootorile, et saada soovitusi</string>
+
+    <string name="settings_car_disable_notifications_title">Keela teavitused</string>
+    <string name="settings_car_disable_notifications_summary">Keelab hüpikteavitused Android Autos</string>
+    <string name="settings_zoom_title">Lehe suurendus</string>
+    <string name="settings_safety_warning_title">Näita ohutushoiatust</string>
+    <string name="settings_safety_warning_summary">Hoiatab videote vaatamise eest sõites, kui käsipidur vabastatakse</string>
+    <string name="error_page_title">Lehte ei õnnestunud laadida</string>
+    <string name="error_page_retry">Proovi uuesti</string>
+    <string name="error_page_ssl">Kehtetu turvasertifikaat. Ühendus blokeeriti.</string>
+    <string name="error_msg_offline">Oled võrguühenduseta. Kontrolli ühendust ja proovi uuesti.</string>
+    <string name="error_msg_dns">Aadressi ei leitud.</string>
+    <string name="error_msg_connection">Sait keeldus ühendusest.</string>
+    <string name="error_msg_timeout">Sait vastas liiga aeglaselt.</string>
+    <string name="error_msg_cleartext">See sait ei luba krüpteerimata ühendust.</string>
+    <string name="error_msg_scheme">Seda tüüpi linki ei toetata.</string>
+    <string name="error_msg_app_missing">Ükski rakendus ei saa seda linki avada.</string>
+    <string name="error_msg_blocked">Sisufilter blokeeris selle lehe.</string>
+    <string name="error_msg_http">Sait tagastas vea (%1$d).</string>
+    <string name="error_msg_unknown">Lehe laadimisel läks midagi valesti.</string>
+    <string name="error_action_back">Tagasi</string>
+    <string name="error_action_retry_http">Proovi http kaudu</string>
+    <string name="error_action_open_external">Ava süsteemi brauseris</string>
+    <string name="error_action_cancel_recovery">Lõpeta uuesti proovimine</string>
+    <string name="error_details">Tehnilised üksikasjad</string>
+    <string name="error_recovering">Uus katse (katse %1$d) %2$d s pärast</string>
+    <string name="error_reconnecting">Ühendan uuesti…</string>
+    <string name="error_waiting_network">Ootan ühenduse taastumist…</string>
+    <string name="browser_http_fallback_notice">See sait ei toeta https-i. Avati http kaudu.</string>
+    <string name="browser_http_fallback_keep_https">Jää https-i juurde</string>
+
+    <string name="settings_site_storage_title">Saitide andmed</string>
+    <string name="settings_site_storage_summary">Iga saidi salvestatud küpsised ja kohalik salvestusruum</string>
+    <string name="storage_cookies_count">%d küpsist</string>
+    <string name="storage_no_data">andmed puuduvad</string>
+    <string name="storage_delete_title">Kas kustutada saidi andmed?</string>
+    <string name="storage_delete_message">Saidi %1$s küpsised ja kohalik salvestusruum eemaldatakse. Sind logitakse sellelt saidilt välja.</string>
+    <string name="storage_delete_confirm">Kustuta</string>
+    <string name="storage_delete_all">Kustuta kõik</string>
+    <string name="storage_search_hint">Otsi saite</string>
+    <string name="storage_empty">Ühtki saiti pole veel külastatud</string>
+    <string name="storage_partial_warning">Mõned küpsised võivad alles jääda, kui sait salvestas need teise teekonna alla.</string>
+
+    <string name="browser_url_hint">Otsi või sisesta URL</string>
+    <string name="browser_erase">Kustuta</string>
+    <string name="browser_send_to_car">Saada auto ekraanile</string>
+    <string name="browser_menu">Rohkem valikuid</string>
+    <string name="browser_site_info">Saidi teave</string>
+
+    <string name="browser_erase_done">Leht tühjendatud</string>
+
+    <string name="browser_connection_secure">Ühendus on turvaline</string>
+    <string name="browser_connection_insecure">Ühendus pole turvaline</string>
+    <string name="browser_adblock_title">Reklaamide ja jälitajate blokeerimine</string>
+    <string name="browser_adblock_on">Kaitsed on sellel saidil SEES</string>
+    <string name="browser_adblock_off">Kaitsed on sellel saidil VÄLJAS</string>
+
+    <string name="browser_connection_secure_details">See sait kasutab HTTPS-i ehk krüpteeritud ühendust. WebView keeldub laadimast lehte, mille sertifikaat pole kehtiv.</string>
+    <string name="browser_connection_insecure_details">See leht ei kasuta krüpteeritud ühendust. Teave, mille talle saadad, võib olla teistele nähtav.</string>
+
+    <string name="browser_add_bookmark">Lemmik</string>
+    <string name="browser_open_in">Ava rakenduses…</string>
+    <string name="browser_desktop_site">Arvutiversioon</string>
+
+    <string name="car_media_open_browser">Ava Fiesta</string>
+    <string name="browser_send_to_car_done">Saadetud auto ekraanile</string>
+
+    <string name="browser_send_to_car_message">Auto ekraan avab selle lingi. See laadib lehe ise — telefoni ekraani ei peegeldata ja esitus ei kandu üle.</string>
+    <string name="browser_send_to_car_confirm">Saada</string>
+    <string name="browser_send_to_car_cancel">Tühista</string>
+
+    <string name="browser_car_inactive_title">Auto ekraan pole aktiivne</string>
+    <string name="browser_car_inactive_message">Ava esmalt rakendus auto ekraanil ja saada siis link uuesti.</string>
+    <string name="browser_car_inactive_dismiss">OK</string>
+
+    <string name="settings_topic_general_title">Üldine</string>
+    <string name="settings_topic_general_summary">WebView\'i identiteet, kaitstud sisu</string>
+    <string name="settings_topic_privacy_title">Privaatsus ja turvalisus</string>
+    <string name="settings_topic_privacy_summary">Küpsised, reklaamid ja jälitajad, otsingusoovitused, saitide andmed</string>
+    <string name="settings_topic_car_general_title">Auto — Üldine</string>
+    <string name="settings_topic_car_general_summary">Avaleht, teavitused, suurendus, ohutushoiatus, tööriistariba</string>
+    <string name="settings_topic_car_youtube_title">Auto — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Viimane leht, video jätkamine, kerimine mängijani</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">Avamine Android Autos</string>
+    <string name="settings_topic_about_title">Teave</string>
+    <string name="settings_topic_about_summary">Rakendusest, projekt, tänuavaldused</string>
+
+    <string name="settings_unlock_title">Avamine Android Autos</string>
+    <string name="settings_unlock_summary">Nõuab root-õigusi (SuperSU või sarnane). Jõustub alles pärast telefoni taaskäivitamist.</string>
+
+    <string name="settings_about_icons_title">Ikoonid</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, MPL-2.0 litsents</string>
+    <string name="settings_about_font_title">Font</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Anneta Fiestale</string>
+    <string name="settings_topic_donate_summary">Toeta projekti</string>
+    <string name="settings_donate_title">Tangi Fiesta täis ⛽</string>
+    <string name="settings_donate_message">✓ Tasuta\n✓ Reklaamideta\n✓ Jälgimiseta\n\nOli see sulle teel seltsiks? Tänu kohviga.</string>
+    <string name="settings_donate_coffee">☕ Osta mulle kohv</string>
+    <string name="settings_donate_footer_start">Tehtud</string>
+    <string name="settings_donate_footer_end">vabal ajal</string>
+    <string name="settings_about_tagline">Rohkem teed. Vähem piire.</string>
+    <string name="settings_about_description">Käed roolil, silmad teel ja vabadus sinu meediale. Driving-first rakendus neile, kes armastavad sõita. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Projekt</string>
+    <string name="settings_about_credits_category">Tänuavaldused</string>
+    <string name="settings_about_license_title">Litsents</string>
+
+    <string name="browser_suggestion_fill">Täida otsinguväljale</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">%d jälitaja blokeeritud sellel lehel</item>
+        <item quantity="other">%d jälitajat blokeeritud sellel lehel</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">Sellel lehel pole ühtki jälitajat blokeeritud</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">jälitaja blokeeritud sellel lehel</item>
+        <item quantity="other">jälitajat blokeeritud sellel lehel</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Tööriistariba asukoht</string>
+    <string name="car_toolbar_position_top">Üleval</string>
+    <string name="car_toolbar_position_left">Vasakul</string>
+    <string name="car_toolbar_position_right">Paremal</string>
+    <string name="car_toolbar_position_bottom">All</string>
+    <string name="settings_car_realtime_category_title">Reaalajas valikud</string>
+    <string name="settings_car_toolbar_auto_hide_title">Peida tööriistariba automaatselt</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Peidab riba, kuni puudutad seda ekraani serva</string>
+
+    <string name="settings_youtube_scroll_title">Keri mängijani</string>
+    <string name="settings_youtube_scroll_summary">Kerib lehte automaatselt, et mängija oleks nähtav pärast lingi avamist või video vahetamist. Jõustub järgmisel lehe laadimisel.</string>
+
+    <string name="settings_topic_plugins_title">Pluginad</string>
+    <string name="settings_topic_plugins_summary">Rooliratta juhtnupud ja lehekohandused, saidipõhiselt</string>
+    <string name="plugins_title">Pluginad</string>
+    <string name="plugins_active_section">Aktiivsed, tähtsuse järjekorras</string>
+    <string name="plugins_inactive_section">Mitteaktiivsed</string>
+    <string name="plugins_origin_default">Sisseehitatud</string>
+    <string name="plugins_origin_installed">Paigaldatud</string>
+    <string name="plugins_active_switch">Aktiivne</string>
+    <string name="plugins_delete">Kustuta</string>
+    <string name="plugins_install">Paigalda failist</string>
+    <string name="plugins_restore_defaults">Taasta vaikeseaded</string>
+    <string name="plugins_review_title">Vaata plugin üle</string>
+    <string name="plugins_review_install">Paigalda</string>
+    <string name="plugins_review_cancel">Tühista</string>
+    <string name="plugins_review_files">Failid</string>
+    <string name="plugins_install_failed">Plugina paigaldamine ebaõnnestus: %1$s</string>
+    <string name="plugins_empty">Pluginaid pole</string>
+    <string name="plugins_search_hint">Otsi</string>
+    <string name="voice_listener_title">Hääle vastuvõtja</string>
+    <string name="voice_listener_summary">Auto häälkäsklustele saab vastata ainult üks plugin.</string>
+    <string name="plugins_requires_ad_block">nõuab reklaamiblokeerijat</string>
+    <string name="plugins_delete_message">Kas kustutada plugin %1$s?</string>
+    <string name="plugins_restore_defaults_message">Kas taastada sisseehitatud pluginad?</string>
+    <string name="page_plugins_events_section">Rooliratta sündmused</string>
+    <string name="page_plugins_tweaks_section">Lehekohandused</string>
+    <string name="page_plugins_car">Auto</string>
+    <string name="page_plugins_phone">Telefon</string>
+
+    <string name="car_media_tab_home">Avaleht</string>
+    <string name="car_media_tab_playlist">Esitusloend</string>
+    <string name="car_media_tab_history">Ajalugu</string>
+    <string name="car_media_queue_history">Ajalugu</string>
+    <string name="car_media_searching_for">Otsin: \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">Ei leidnud: \"%1$s\"</string>
+
+</resources>

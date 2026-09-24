@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">ADVARSEL !!!</string>
+    <string name="warning_body">At se video under kørsel kan forårsage ulykker. Ved at afvise denne advarsel accepterer du, at du er bevidst om og ansvarlig for konsekvenserne. Hverken udvikleren af denne app, Google, producenten af dette udstyr eller producenten af denne bil er ansvarlig for ulykker forårsaget af din uagtsomhed. Du kan i stedet skifte til baggrundsafspilning ved at trykke på medieikonet.</string>
+    <string name="warning_accept_button">Jeg forstår risikoen</string>
+    <string name="webview_back">Tilbage</string>
+    <string name="refresh_page">Opdater</string>
+    <string name="bookmarks">Bogmærker</string>
+    <string name="bookmarks_search_hint">Søg i dine bogmærker</string>
+    <string name="bookmarks_none_found">Ingen bogmærker fundet</string>
+    <string name="bookmark_options">Indstillinger for bogmærke</string>
+    <string name="bookmark_edit">Rediger</string>
+    <string name="bookmark_move_up">Flyt op</string>
+    <string name="bookmark_move_down">Flyt ned</string>
+    <string name="bookmark_delete">Slet</string>
+    <string name="bookmark_edit_title">Rediger bogmærke</string>
+    <string name="bookmark_edit_name">Navn</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">Stemmesøgning</string>
+    <string name="fullscreen">Fuld skærm</string>
+    <string name="home">Start</string>
+    <string name="aspect_ratio_contain">Tilpas</string>
+    <string name="aspect_ratio_fill">Udfyld</string>
+    <string name="aspect_ratio_cover">Dæk</string>
+    <string name="car_fullscreen_exit">Afslut</string>
+    <string name="car_fullscreen_hide_controls">Skjul 30 s</string>
+    <string name="add_bookmark">Tilføj aktuelt websted</string>
+    <string name="remove_bookmark">Fjern aktuelt websted</string>
+    <string name="version">Version </string>
+    <string name="settings">Indstillinger</string>
+    <string name="close">Luk</string>
+    <string name="car_settings_favorite">Favorit</string>
+    <string name="car_settings_zoom_in">Zoom ind</string>
+    <string name="car_settings_zoom_out">Zoom ud</string>
+    <string name="car_settings_bookmarks_bar">Bogmærkelinje</string>
+    <string name="car_settings_tweaks">Justeringer</string>
+    <string name="car_settings_go_to_address">Gå til adresse</string>
+    <string name="car_settings_bookmark_added">Føjet til bogmærker</string>
+    <string name="car_settings_bookmark_removed">Fjernet fra bogmærker</string>
+    <string name="car_settings_bookmark_locked">Dette bogmærke kan ikke fjernes</string>
+    <string name="car_settings_fullscreen_on">Fuld skærm slået til</string>
+    <string name="car_settings_fullscreen_off">Fuld skærm slået fra</string>
+    <string name="car_settings_fullscreen_unavailable">Ingen video afspilles</string>
+    <string name="car_settings_desktop_on">Computerversion slået til</string>
+    <string name="car_settings_desktop_off">Computerversion slået fra</string>
+    <string name="car_settings_adblock_on">Annonceblokering slået til</string>
+    <string name="car_settings_adblock_off">Annonceblokering slået fra</string>
+    <string name="car_settings_zoom_percent">Zoom: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Værktøjslinje: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">1 bogmærke fjernet</string>
+    <string name="car_settings_bookmarks_removed_many">%1$d bogmærker fjernet</string>
+    <string name="car_settings_jump_to_letter">Gå til bogstav</string>
+    <string name="car_settings_home_set">Startside: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">Søg på YouTube, eller indtast en URL</string>
+    <string name="car_search_hint_google">Søg på Google, eller indtast en URL</string>
+    <string name="car_search_title_youtube">Søger på YouTube</string>
+    <string name="car_search_title_google">Søger på Google</string>
+    <string name="car_voice_listening_youtube">Lytter til YouTube</string>
+    <string name="car_voice_listening_google">Lytter til Google</string>
+    <string name="car_voice_search_error">Jeg hørte det ikke</string>
+    <string name="car_voice_search_no_permission">Tilladelse til mikrofon er påkrævet</string>
+
+    <string name="settings_resume_on_focus_title">Genoptag video automatisk</string>
+    <string name="settings_resume_on_focus_summary">Genoptager afspilningen, efter at bakkameraet eller en anden app har overtaget skærmen. Genoptager kun, hvis appen selv satte den på pause.</string>
+
+    <string name="settings_home_url_title">Startside</string>
+    <string name="settings_home_url_summary">Adressen, som startknappen åbner</string>
+
+    <string name="settings_restore_last_url_title">Fortsæt, hvor du slap</string>
+    <string name="settings_restore_last_url_summary">Gælder kun bilskærmen: vender tilbage til den sidste side i stedet for startsiden. På telefonen starter startskærmen altid tom.</string>
+
+    <string name="settings_third_party_cookies_title">Tillad tredjepartscookies</string>
+    <string name="settings_third_party_cookies_summary">Nødvendigt for at bevare login til Google/YouTube. Træder først i kraft ved næste forbindelse til bilen.</string>
+
+    <string name="settings_protected_content_title">Tillad beskyttet indhold (DRM)</string>
+    <string name="settings_protected_content_summary">Nødvendigt for streamingtjenester. Virker muligvis ikke på den projicerede skærm.</string>
+
+    <string name="settings_strip_wv_ua_title">Skjul, at dette er en WebView</string>
+    <string name="settings_strip_wv_ua_summary">Kræver genstart af appen for at træde i kraft. Nogle tjenester afviser WebViews. Kan ændre layoutet på andre websteder.</string>
+    <string name="settings_ad_block_title">Bloker annoncer og sporing</string>
+    <string name="settings_ad_block_summary">Blokerer kendte annonce-/sporingsdomæner på netværksniveau, herunder videoannoncer på YouTube. Ikke en komplet annonceblokering.</string>
+    <string name="settings_search_suggestions_title">Søgeforslag</string>
+    <string name="settings_search_suggestions_summary">Sender det, du skriver i adresselinjen, til søgemaskinen for at få forslag</string>
+
+    <string name="settings_car_disable_notifications_title">Slå notifikationer fra</string>
+    <string name="settings_car_disable_notifications_summary">Slår pop op-notifikationer fra i Android Auto</string>
+    <string name="settings_zoom_title">Sidezoom</string>
+    <string name="settings_safety_warning_title">Vis sikkerhedsadvarsel</string>
+    <string name="settings_safety_warning_summary">Advarer om at se video under kørsel, når håndbremsen slippes</string>
+    <string name="error_page_title">Siden kunne ikke indlæses</string>
+    <string name="error_page_retry">Prøv igen</string>
+    <string name="error_page_ssl">Ugyldigt sikkerhedscertifikat. Forbindelsen blev blokeret.</string>
+    <string name="error_msg_offline">Du er offline. Tjek din forbindelse, og prøv igen.</string>
+    <string name="error_msg_dns">Adressen kunne ikke findes.</string>
+    <string name="error_msg_connection">Webstedet afviste forbindelsen.</string>
+    <string name="error_msg_timeout">Webstedet var for længe om at svare.</string>
+    <string name="error_msg_cleartext">Dette websted tillader ikke en ukrypteret forbindelse.</string>
+    <string name="error_msg_scheme">Denne type link understøttes ikke.</string>
+    <string name="error_msg_app_missing">Ingen app kan åbne dette link.</string>
+    <string name="error_msg_blocked">Denne side blev blokeret af indholdsfilteret.</string>
+    <string name="error_msg_http">Webstedet returnerede en fejl (%1$d).</string>
+    <string name="error_msg_unknown">Noget gik galt under indlæsning af siden.</string>
+    <string name="error_action_back">Tilbage</string>
+    <string name="error_action_retry_http">Prøv via http</string>
+    <string name="error_action_open_external">Åbn i systemets browser</string>
+    <string name="error_action_cancel_recovery">Stop med at prøve igen</string>
+    <string name="error_details">Tekniske detaljer</string>
+    <string name="error_recovering">Prøver igen (forsøg %1$d) om %2$d s</string>
+    <string name="error_reconnecting">Genopretter forbindelse…</string>
+    <string name="error_waiting_network">Venter på, at forbindelsen vender tilbage…</string>
+    <string name="browser_http_fallback_notice">Dette websted understøtter ikke https. Åbnet via http.</string>
+    <string name="browser_http_fallback_keep_https">Bliv på https</string>
+
+    <string name="settings_site_storage_title">Webstedsdata</string>
+    <string name="settings_site_storage_summary">Cookies og lokalt lager gemt af hvert websted</string>
+    <string name="storage_cookies_count">%d cookies</string>
+    <string name="storage_no_data">ingen data</string>
+    <string name="storage_delete_title">Slet webstedsdata?</string>
+    <string name="storage_delete_message">Cookies og lokalt lager for %1$s bliver fjernet. Du bliver logget ud af dette websted.</string>
+    <string name="storage_delete_confirm">Slet</string>
+    <string name="storage_delete_all">Slet alle</string>
+    <string name="storage_search_hint">Søg efter websteder</string>
+    <string name="storage_empty">Ingen websteder besøgt endnu</string>
+    <string name="storage_partial_warning">Nogle cookies kan overleve, hvis webstedet har gemt dem under en anden sti.</string>
+
+    <string name="browser_url_hint">Søg, eller indtast en URL</string>
+    <string name="browser_erase">Slet</string>
+    <string name="browser_send_to_car">Send til bilskærmen</string>
+    <string name="browser_menu">Flere muligheder</string>
+    <string name="browser_site_info">Oplysninger om webstedet</string>
+
+    <string name="browser_erase_done">Siden er ryddet</string>
+
+    <string name="browser_connection_secure">Forbindelsen er sikker</string>
+    <string name="browser_connection_insecure">Ikke en sikker forbindelse</string>
+    <string name="browser_adblock_title">Blokering af annoncer og sporing</string>
+    <string name="browser_adblock_on">Beskyttelsen er SLÅET TIL for dette websted</string>
+    <string name="browser_adblock_off">Beskyttelsen er SLÅET FRA for dette websted</string>
+
+    <string name="browser_connection_secure_details">Dette websted bruger HTTPS, en krypteret forbindelse. WebView nægter at indlæse en side, hvis certifikat ikke er gyldigt.</string>
+    <string name="browser_connection_insecure_details">Denne side bruger ikke en krypteret forbindelse. Oplysninger, du sender til den, kan være synlige for andre.</string>
+
+    <string name="browser_add_bookmark">Favorit</string>
+    <string name="browser_open_in">Åbn i…</string>
+    <string name="browser_desktop_site">Computerversion</string>
+
+    <string name="car_media_open_browser">Åbn Fiesta</string>
+    <string name="browser_send_to_car_done">Sendt til bilskærmen</string>
+
+    <string name="browser_send_to_car_message">Bilskærmen åbner dette link. Den indlæser siden selv — telefonens skærm spejles ikke, og afspilningen følger ikke med.</string>
+    <string name="browser_send_to_car_confirm">Send</string>
+    <string name="browser_send_to_car_cancel">Annuller</string>
+
+    <string name="browser_car_inactive_title">Bilskærmen er ikke aktiv</string>
+    <string name="browser_car_inactive_message">Åbn først appen på bilskærmen, og send så linket igen.</string>
+    <string name="browser_car_inactive_dismiss">OK</string>
+
+    <string name="settings_topic_general_title">Generelt</string>
+    <string name="settings_topic_general_summary">WebView-identitet, beskyttet indhold</string>
+    <string name="settings_topic_privacy_title">Privatliv og sikkerhed</string>
+    <string name="settings_topic_privacy_summary">Cookies, annoncer og sporing, søgeforslag, webstedsdata</string>
+    <string name="settings_topic_car_general_title">Bil — Generelt</string>
+    <string name="settings_topic_car_general_summary">Startside, notifikationer, zoom, sikkerhedsadvarsel, værktøjslinje</string>
+    <string name="settings_topic_car_youtube_title">Bil — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Sidste side, genoptagelse af video, rulning til afspilleren</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">Lås op i Android Auto</string>
+    <string name="settings_topic_about_title">Om</string>
+    <string name="settings_topic_about_summary">Om appen, projekt, krediteringer</string>
+
+    <string name="settings_unlock_title">Lås op i Android Auto</string>
+    <string name="settings_unlock_summary">Kræver root (SuperSU eller lignende). Træder først i kraft efter genstart af telefonen.</string>
+
+    <string name="settings_about_icons_title">Ikoner</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, MPL-2.0-licens</string>
+    <string name="settings_about_font_title">Skrifttype</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Donér til Fiesta</string>
+    <string name="settings_topic_donate_summary">Støt projektet</string>
+    <string name="settings_donate_title">Tank Fiesta op ⛽</string>
+    <string name="settings_donate_message">✓ Gratis\n✓ Ingen reklamer\n✓ Ingen sporing\n\nHar den holdt dig med selskab på vejen? Giv igen med en kop kaffe.</string>
+    <string name="settings_donate_coffee">☕ Giv mig en kop kaffe</string>
+    <string name="settings_donate_footer_start">Lavet med</string>
+    <string name="settings_donate_footer_end">i fritiden</string>
+    <string name="settings_about_tagline">Mere vej. Færre grænser.</string>
+    <string name="settings_about_description">Hænderne på rattet, øjnene på vejen og frihed til dine medier. En driving-first-app til dem, der elsker at køre. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Projekt</string>
+    <string name="settings_about_credits_category">Krediteringer</string>
+    <string name="settings_about_license_title">Licens</string>
+
+    <string name="browser_suggestion_fill">Indsæt i søgefeltet</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">%d sporingsenhed blokeret på denne side</item>
+        <item quantity="other">%d sporingsenheder blokeret på denne side</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">Ingen sporingsenheder blokeret på denne side</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">sporingsenhed blokeret på denne side</item>
+        <item quantity="other">sporingsenheder blokeret på denne side</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Værktøjslinjens placering</string>
+    <string name="car_toolbar_position_top">Øverst</string>
+    <string name="car_toolbar_position_left">Venstre</string>
+    <string name="car_toolbar_position_right">Højre</string>
+    <string name="car_toolbar_position_bottom">Nederst</string>
+    <string name="settings_car_realtime_category_title">Indstillinger i realtid</string>
+    <string name="settings_car_toolbar_auto_hide_title">Skjul værktøjslinjen automatisk</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Skjuler værktøjslinjen, indtil du rører den kant af skærmen</string>
+
+    <string name="settings_youtube_scroll_title">Rul til afspilleren</string>
+    <string name="settings_youtube_scroll_summary">Ruller automatisk siden, så afspilleren er synlig, efter du har fulgt et link eller skiftet video. Træder i kraft ved næste indlæsning af siden.</string>
+
+    <string name="settings_topic_plugins_title">Plugins</string>
+    <string name="settings_topic_plugins_summary">Rattbetjening og sidejusteringer, pr. websted</string>
+    <string name="plugins_title">Plugins</string>
+    <string name="plugins_active_section">Aktive, i prioriteret rækkefølge</string>
+    <string name="plugins_inactive_section">Inaktive</string>
+    <string name="plugins_origin_default">Indbygget</string>
+    <string name="plugins_origin_installed">Installeret</string>
+    <string name="plugins_active_switch">Aktiv</string>
+    <string name="plugins_delete">Slet</string>
+    <string name="plugins_install">Installer fra fil</string>
+    <string name="plugins_restore_defaults">Gendan standarder</string>
+    <string name="plugins_review_title">Gennemse plugin</string>
+    <string name="plugins_review_install">Installer</string>
+    <string name="plugins_review_cancel">Annuller</string>
+    <string name="plugins_review_files">Filer</string>
+    <string name="plugins_install_failed">Pluginnet kunne ikke installeres: %1$s</string>
+    <string name="plugins_empty">Ingen plugins</string>
+    <string name="plugins_search_hint">Søg</string>
+    <string name="voice_listener_title">Stemmemodtager</string>
+    <string name="voice_listener_summary">Kun ét plugin kan besvare stemmekommandoer fra bilen.</string>
+    <string name="plugins_requires_ad_block">kræver annonceblokering</string>
+    <string name="plugins_delete_message">Slet pluginnet %1$s?</string>
+    <string name="plugins_restore_defaults_message">Gendan de indbyggede plugins?</string>
+    <string name="page_plugins_events_section">Rathændelser</string>
+    <string name="page_plugins_tweaks_section">Sidejusteringer</string>
+    <string name="page_plugins_car">Bil</string>
+    <string name="page_plugins_phone">Telefon</string>
+
+    <string name="car_media_tab_home">Hjem</string>
+    <string name="car_media_tab_playlist">Afspilningsliste</string>
+    <string name="car_media_tab_history">Historik</string>
+    <string name="car_media_queue_history">Historik</string>
+    <string name="car_media_searching_for">Søger efter \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">Kunne ikke finde \"%1$s\"</string>
+
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">POZOR !!!</string>
+    <string name="warning_body">Sledování videí za jízdy může způsobit dopravní nehodu. Zavřením tohoto upozornění potvrzujete, že si jste vědomi následků a nesete za ně odpovědnost. Ani vývojář této aplikace, ani Google, ani výrobce tohoto zařízení, ani výrobce tohoto vozu neodpovídají za nehody způsobené vaší nedbalostí. Místo toho můžete přepnout na přehrávání na pozadí klepnutím na ikonu médií.</string>
+    <string name="warning_accept_button">Rozumím rizikům</string>
+    <string name="webview_back">Zpět</string>
+    <string name="refresh_page">Obnovit</string>
+    <string name="bookmarks">Záložky</string>
+    <string name="bookmarks_search_hint">Hledat v záložkách</string>
+    <string name="bookmarks_none_found">Nebyly nalezeny žádné záložky</string>
+    <string name="bookmark_options">Možnosti záložky</string>
+    <string name="bookmark_edit">Upravit</string>
+    <string name="bookmark_move_up">Posunout nahoru</string>
+    <string name="bookmark_move_down">Posunout dolů</string>
+    <string name="bookmark_delete">Smazat</string>
+    <string name="bookmark_edit_title">Upravit záložku</string>
+    <string name="bookmark_edit_name">Název</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">Hlasové vyhledávání</string>
+    <string name="fullscreen">Celá obrazovka</string>
+    <string name="home">Domů</string>
+    <string name="aspect_ratio_contain">Vejít se</string>
+    <string name="aspect_ratio_fill">Vyplnit</string>
+    <string name="aspect_ratio_cover">Pokrýt</string>
+    <string name="car_fullscreen_exit">Ukončit</string>
+    <string name="car_fullscreen_hide_controls">Skrýt na 30 s</string>
+    <string name="add_bookmark">Přidat aktuální web</string>
+    <string name="remove_bookmark">Odebrat aktuální web</string>
+    <string name="version">Verze </string>
+    <string name="settings">Nastavení</string>
+    <string name="close">Zavřít</string>
+    <string name="car_settings_favorite">Oblíbené</string>
+    <string name="car_settings_zoom_in">Přiblížit</string>
+    <string name="car_settings_zoom_out">Oddálit</string>
+    <string name="car_settings_bookmarks_bar">Lišta záložek</string>
+    <string name="car_settings_tweaks">Úpravy</string>
+    <string name="car_settings_go_to_address">Přejít na adresu</string>
+    <string name="car_settings_bookmark_added">Přidáno do záložek</string>
+    <string name="car_settings_bookmark_removed">Odebráno ze záložek</string>
+    <string name="car_settings_bookmark_locked">Tuto záložku nelze odebrat</string>
+    <string name="car_settings_fullscreen_on">Celá obrazovka zapnuta</string>
+    <string name="car_settings_fullscreen_off">Celá obrazovka vypnuta</string>
+    <string name="car_settings_fullscreen_unavailable">Nepřehrává se žádné video</string>
+    <string name="car_settings_desktop_on">Verze pro počítač zapnuta</string>
+    <string name="car_settings_desktop_off">Verze pro počítač vypnuta</string>
+    <string name="car_settings_adblock_on">Blokování reklam zapnuto</string>
+    <string name="car_settings_adblock_off">Blokování reklam vypnuto</string>
+    <string name="car_settings_zoom_percent">Přiblížení: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Lišta: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">Odebrána 1 záložka</string>
+    <string name="car_settings_bookmarks_removed_many">Odebráno záložek: %1$d</string>
+    <string name="car_settings_jump_to_letter">Přejít na písmeno</string>
+    <string name="car_settings_home_set">Domovská stránka: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">Hledejte na YouTube nebo zadejte URL</string>
+    <string name="car_search_hint_google">Hledejte na Googlu nebo zadejte URL</string>
+    <string name="car_search_title_youtube">Hledání na YouTube</string>
+    <string name="car_search_title_google">Hledání na Googlu</string>
+    <string name="car_voice_listening_youtube">Poslouchám pro YouTube</string>
+    <string name="car_voice_listening_google">Poslouchám pro Google</string>
+    <string name="car_voice_search_error">Nerozuměl jsem</string>
+    <string name="car_voice_search_no_permission">Je potřeba oprávnění k mikrofonu</string>
+
+    <string name="settings_resume_on_focus_title">Automaticky obnovit video</string>
+    <string name="settings_resume_on_focus_summary">Obnoví přehrávání poté, co obrazovku převezme couvací kamera nebo jiná aplikace. Obnoví jen tehdy, pokud přehrávání pozastavila sama aplikace.</string>
+
+    <string name="settings_home_url_title">Domovská stránka</string>
+    <string name="settings_home_url_summary">Adresa, kterou otevírá tlačítko Domů</string>
+
+    <string name="settings_restore_last_url_title">Pokračovat, kde jste skončili</string>
+    <string name="settings_restore_last_url_summary">Platí jen pro obrazovku vozu: vrátí se na poslední stránku místo na domovskou. V telefonu začíná úvodní obrazovka vždy prázdná.</string>
+
+    <string name="settings_third_party_cookies_title">Povolit soubory cookie třetích stran</string>
+    <string name="settings_third_party_cookies_summary">Potřebné pro zachování přihlášení ke Googlu/YouTube. Projeví se až při příštím připojení k vozu.</string>
+
+    <string name="settings_protected_content_title">Povolit chráněný obsah (DRM)</string>
+    <string name="settings_protected_content_summary">Potřebné pro streamovací služby. Na promítané obrazovce nemusí fungovat.</string>
+
+    <string name="settings_strip_wv_ua_title">Skrýt, že jde o WebView</string>
+    <string name="settings_strip_wv_ua_summary">Projeví se až po restartu aplikace. Některé služby WebView odmítají. Může změnit rozvržení jiných webů.</string>
+    <string name="settings_ad_block_title">Blokovat reklamy a sledovací prvky</string>
+    <string name="settings_ad_block_summary">Blokuje známé reklamní a sledovací domény na úrovni sítě, včetně videoreklam na YouTube. Není to plnohodnotný blokátor reklam.</string>
+    <string name="settings_search_suggestions_title">Návrhy vyhledávání</string>
+    <string name="settings_search_suggestions_summary">Odesílá to, co píšete v adresním řádku, vyhledávači, aby získal návrhy</string>
+
+    <string name="settings_car_disable_notifications_title">Vypnout oznámení</string>
+    <string name="settings_car_disable_notifications_summary">Vypne vyskakující oznámení v Android Auto</string>
+    <string name="settings_zoom_title">Přiblížení stránky</string>
+    <string name="settings_safety_warning_title">Zobrazovat bezpečnostní upozornění</string>
+    <string name="settings_safety_warning_summary">Upozorní na sledování videí za jízdy při uvolnění ruční brzdy</string>
+    <string name="error_page_title">Stránku se nepodařilo načíst</string>
+    <string name="error_page_retry">Zkusit znovu</string>
+    <string name="error_page_ssl">Neplatný bezpečnostní certifikát. Připojení bylo zablokováno.</string>
+    <string name="error_msg_offline">Jste offline. Zkontrolujte připojení a zkuste to znovu.</string>
+    <string name="error_msg_dns">Adresu se nepodařilo najít.</string>
+    <string name="error_msg_connection">Web odmítl připojení.</string>
+    <string name="error_msg_timeout">Web odpovídal příliš dlouho.</string>
+    <string name="error_msg_cleartext">Tento web nepovoluje nešifrované připojení.</string>
+    <string name="error_msg_scheme">Tento typ odkazu není podporován.</string>
+    <string name="error_msg_app_missing">Tento odkaz nemůže otevřít žádná aplikace.</string>
+    <string name="error_msg_blocked">Tuto stránku zablokoval filtr obsahu.</string>
+    <string name="error_msg_http">Web vrátil chybu (%1$d).</string>
+    <string name="error_msg_unknown">Při načítání stránky se něco pokazilo.</string>
+    <string name="error_action_back">Zpět</string>
+    <string name="error_action_retry_http">Zkusit přes http</string>
+    <string name="error_action_open_external">Otevřít v systémovém prohlížeči</string>
+    <string name="error_action_cancel_recovery">Přestat opakovat</string>
+    <string name="error_details">Technické podrobnosti</string>
+    <string name="error_recovering">Opakuji (pokus %1$d) za %2$d s</string>
+    <string name="error_reconnecting">Připojuji znovu…</string>
+    <string name="error_waiting_network">Čekám na obnovení připojení…</string>
+    <string name="browser_http_fallback_notice">Tento web nepodporuje https. Otevřeno přes http.</string>
+    <string name="browser_http_fallback_keep_https">Zůstat na https</string>
+
+    <string name="settings_site_storage_title">Data webů</string>
+    <string name="settings_site_storage_summary">Soubory cookie a místní úložiště uložené každým webem</string>
+    <string name="storage_cookies_count">Souborů cookie: %d</string>
+    <string name="storage_no_data">žádná data</string>
+    <string name="storage_delete_title">Smazat data webu?</string>
+    <string name="storage_delete_message">Soubory cookie a místní úložiště webu %1$s budou odstraněny. Budete z tohoto webu odhlášeni.</string>
+    <string name="storage_delete_confirm">Smazat</string>
+    <string name="storage_delete_all">Smazat vše</string>
+    <string name="storage_search_hint">Hledat weby</string>
+    <string name="storage_empty">Zatím nebyl navštíven žádný web</string>
+    <string name="storage_partial_warning">Některé soubory cookie mohou zůstat, pokud je web uložil pod jinou cestou.</string>
+
+    <string name="browser_url_hint">Hledejte nebo zadejte URL</string>
+    <string name="browser_erase">Vymazat</string>
+    <string name="browser_send_to_car">Odeslat na obrazovku vozu</string>
+    <string name="browser_menu">Další možnosti</string>
+    <string name="browser_site_info">Informace o webu</string>
+
+    <string name="browser_erase_done">Stránka vymazána</string>
+
+    <string name="browser_connection_secure">Připojení je zabezpečené</string>
+    <string name="browser_connection_insecure">Nezabezpečené připojení</string>
+    <string name="browser_adblock_title">Blokování reklam a sledovacích prvků</string>
+    <string name="browser_adblock_on">Ochrana je pro tento web ZAPNUTÁ</string>
+    <string name="browser_adblock_off">Ochrana je pro tento web VYPNUTÁ</string>
+
+    <string name="browser_connection_secure_details">Tento web používá HTTPS, tedy šifrované připojení. WebView odmítne načíst stránku, jejíž certifikát není platný.</string>
+    <string name="browser_connection_insecure_details">Tato stránka nepoužívá šifrované připojení. Informace, které jí odešlete, mohou být viditelné pro ostatní.</string>
+
+    <string name="browser_add_bookmark">Oblíbené</string>
+    <string name="browser_open_in">Otevřít v…</string>
+    <string name="browser_desktop_site">Verze pro počítač</string>
+
+    <string name="car_media_open_browser">Otevřít Fiesta</string>
+    <string name="browser_send_to_car_done">Odesláno na obrazovku vozu</string>
+
+    <string name="browser_send_to_car_message">Obrazovka vozu otevře tento odkaz. Stránku načte sama — obrazovka telefonu se nezrcadlí a přehrávání se nepřenáší.</string>
+    <string name="browser_send_to_car_confirm">Odeslat</string>
+    <string name="browser_send_to_car_cancel">Zrušit</string>
+
+    <string name="browser_car_inactive_title">Obrazovka vozu není aktivní</string>
+    <string name="browser_car_inactive_message">Nejprve otevřete aplikaci na obrazovce vozu a poté odkaz odešlete znovu.</string>
+    <string name="browser_car_inactive_dismiss">OK</string>
+
+    <string name="settings_topic_general_title">Obecné</string>
+    <string name="settings_topic_general_summary">Identita WebView, chráněný obsah</string>
+    <string name="settings_topic_privacy_title">Soukromí a zabezpečení</string>
+    <string name="settings_topic_privacy_summary">Soubory cookie, reklamy a sledovací prvky, návrhy vyhledávání, data webů</string>
+    <string name="settings_topic_car_general_title">Vůz — Obecné</string>
+    <string name="settings_topic_car_general_summary">Domovská stránka, oznámení, přiblížení, bezpečnostní upozornění, panel nástrojů</string>
+    <string name="settings_topic_car_youtube_title">Vůz — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Poslední stránka, obnovení videa, posun k přehrávači</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">Odemknutí v Android Auto</string>
+    <string name="settings_topic_about_title">O aplikaci</string>
+    <string name="settings_topic_about_summary">O aplikaci, projekt, poděkování</string>
+
+    <string name="settings_unlock_title">Odemknutí v Android Auto</string>
+    <string name="settings_unlock_summary">Vyžaduje root (SuperSU nebo podobné). Projeví se až po restartu telefonu.</string>
+
+    <string name="settings_about_icons_title">Ikony</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, licence MPL-2.0</string>
+    <string name="settings_about_font_title">Písmo</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Podpořte Fiestu</string>
+    <string name="settings_topic_donate_summary">Podpořte projekt</string>
+    <string name="settings_donate_title">Natankujte Fiestu ⛽</string>
+    <string name="settings_donate_message">✓ Zdarma\n✓ Bez reklam\n✓ Bez sledování\n\nDoprovázela vás na cestě? Oplaťte to kávou.</string>
+    <string name="settings_donate_coffee">☕ Kupte mi kávu</string>
+    <string name="settings_donate_footer_start">Vyrobeno s</string>
+    <string name="settings_donate_footer_end">ve volném čase</string>
+    <string name="settings_about_tagline">Víc silnice. Méně omezení.</string>
+    <string name="settings_about_description">Ruce na volantu, oči na silnici a svoboda pro vaše média. Aplikace driving-first pro ty, kdo rádi řídí. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Projekt</string>
+    <string name="settings_about_credits_category">Poděkování</string>
+    <string name="settings_about_license_title">Licence</string>
+
+    <string name="browser_suggestion_fill">Vyplnit do pole hledání</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">Na této stránce byl zablokován %d sledovací prvek</item>
+        <item quantity="few">Na této stránce byly zablokovány %d sledovací prvky</item>
+        <item quantity="many">Na této stránce bylo zablokováno %d sledovacího prvku</item>
+        <item quantity="other">Na této stránce bylo zablokováno %d sledovacích prvků</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">Na této stránce nebyly zablokovány žádné sledovací prvky</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">sledovací prvek zablokován na této stránce</item>
+        <item quantity="few">sledovací prvky zablokovány na této stránce</item>
+        <item quantity="many">sledovacího prvku zablokováno na této stránce</item>
+        <item quantity="other">sledovacích prvků zablokováno na této stránce</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Poloha panelu nástrojů</string>
+    <string name="car_toolbar_position_top">Nahoře</string>
+    <string name="car_toolbar_position_left">Vlevo</string>
+    <string name="car_toolbar_position_right">Vpravo</string>
+    <string name="car_toolbar_position_bottom">Dole</string>
+    <string name="settings_car_realtime_category_title">Možnosti v reálném čase</string>
+    <string name="settings_car_toolbar_auto_hide_title">Automaticky skrývat panel nástrojů</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Skryje panel, dokud se nedotknete tohoto okraje obrazovky</string>
+
+    <string name="settings_youtube_scroll_title">Posunout k přehrávači</string>
+    <string name="settings_youtube_scroll_summary">Automaticky posune stránku tak, aby byl přehrávač vidět po otevření odkazu nebo změně videa. Projeví se při příštím načtení stránky.</string>
+
+    <string name="settings_topic_plugins_title">Pluginy</string>
+    <string name="settings_topic_plugins_summary">Ovládání na volantu a úpravy stránek, pro každý web</string>
+    <string name="plugins_title">Pluginy</string>
+    <string name="plugins_active_section">Aktivní, v pořadí priority</string>
+    <string name="plugins_inactive_section">Neaktivní</string>
+    <string name="plugins_origin_default">Vestavěný</string>
+    <string name="plugins_origin_installed">Nainstalovaný</string>
+    <string name="plugins_active_switch">Aktivní</string>
+    <string name="plugins_delete">Smazat</string>
+    <string name="plugins_install">Nainstalovat ze souboru</string>
+    <string name="plugins_restore_defaults">Obnovit výchozí</string>
+    <string name="plugins_review_title">Zkontrolovat plugin</string>
+    <string name="plugins_review_install">Nainstalovat</string>
+    <string name="plugins_review_cancel">Zrušit</string>
+    <string name="plugins_review_files">Soubory</string>
+    <string name="plugins_install_failed">Plugin se nepodařilo nainstalovat: %1$s</string>
+    <string name="plugins_empty">Žádné pluginy</string>
+    <string name="plugins_search_hint">Hledat</string>
+    <string name="voice_listener_title">Hlasový příjemce</string>
+    <string name="voice_listener_summary">Na hlasové příkazy z vozu může odpovídat jen jeden plugin.</string>
+    <string name="plugins_requires_ad_block">vyžaduje blokování reklam</string>
+    <string name="plugins_delete_message">Smazat plugin %1$s?</string>
+    <string name="plugins_restore_defaults_message">Obnovit vestavěné pluginy?</string>
+    <string name="page_plugins_events_section">Události volantu</string>
+    <string name="page_plugins_tweaks_section">Úpravy stránky</string>
+    <string name="page_plugins_car">Vůz</string>
+    <string name="page_plugins_phone">Telefon</string>
+
+    <string name="car_media_tab_home">Domů</string>
+    <string name="car_media_tab_playlist">Playlist</string>
+    <string name="car_media_tab_history">Historie</string>
+    <string name="car_media_queue_history">Historie</string>
+    <string name="car_media_searching_for">Hledání \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">Nelze najít \"%1$s\"</string>
+
+</resources>

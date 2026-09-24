@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_title">ATENȚIE !!!</string>
+    <string name="warning_body">Vizionarea de clipuri video în timpul condusului poate provoca accidente. Ignorând acest avertisment, sunteți de acord că sunteți conștient și răspunzător de consecințe. Nici dezvoltatorul acestei aplicații, nici Google, nici producătorul acestui echipament și nici producătorul acestei mașini nu răspund pentru accidentele cauzate de neglijența dumneavoastră. Puteți trece în schimb la redarea în fundal apăsând pictograma media.</string>
+    <string name="warning_accept_button">Înțeleg riscurile</string>
+    <string name="webview_back">Înapoi</string>
+    <string name="refresh_page">Reîmprospătează</string>
+    <string name="bookmarks">Marcaje</string>
+    <string name="bookmarks_search_hint">Caută în marcajele tale</string>
+    <string name="bookmarks_none_found">Niciun marcaj găsit</string>
+    <string name="bookmark_options">Opțiuni pentru marcaj</string>
+    <string name="bookmark_edit">Editează</string>
+    <string name="bookmark_move_up">Mută în sus</string>
+    <string name="bookmark_move_down">Mută în jos</string>
+    <string name="bookmark_delete">Șterge</string>
+    <string name="bookmark_edit_title">Editează marcajul</string>
+    <string name="bookmark_edit_name">Nume</string>
+    <string name="bookmark_edit_url">URL</string>
+    <string name="voice_search">Căutare vocală</string>
+    <string name="fullscreen">Ecran complet</string>
+    <string name="home">Acasă</string>
+    <string name="aspect_ratio_contain">Încadrează</string>
+    <string name="aspect_ratio_fill">Umple</string>
+    <string name="aspect_ratio_cover">Acoperă</string>
+    <string name="car_fullscreen_exit">Ieși</string>
+    <string name="car_fullscreen_hide_controls">Ascunde 30 s</string>
+    <string name="add_bookmark">Adaugă site-ul curent</string>
+    <string name="remove_bookmark">Elimină site-ul curent</string>
+    <string name="version">Versiunea </string>
+    <string name="settings">Setări</string>
+    <string name="close">Închide</string>
+    <string name="car_settings_favorite">Favorit</string>
+    <string name="car_settings_zoom_in">Mărește</string>
+    <string name="car_settings_zoom_out">Micșorează</string>
+    <string name="car_settings_bookmarks_bar">Bara de marcaje</string>
+    <string name="car_settings_tweaks">Ajustări</string>
+    <string name="car_settings_go_to_address">Mergi la adresă</string>
+    <string name="car_settings_bookmark_added">Adăugat la marcaje</string>
+    <string name="car_settings_bookmark_removed">Eliminat din marcaje</string>
+    <string name="car_settings_bookmark_locked">Acest marcaj nu poate fi eliminat</string>
+    <string name="car_settings_fullscreen_on">Ecran complet activat</string>
+    <string name="car_settings_fullscreen_off">Ecran complet dezactivat</string>
+    <string name="car_settings_fullscreen_unavailable">Niciun clip video în redare</string>
+    <string name="car_settings_desktop_on">Site pentru desktop activat</string>
+    <string name="car_settings_desktop_off">Site pentru desktop dezactivat</string>
+    <string name="car_settings_adblock_on">Blocarea reclamelor activată</string>
+    <string name="car_settings_adblock_off">Blocarea reclamelor dezactivată</string>
+    <string name="car_settings_zoom_percent">Zoom: %1$d%%</string>
+    <string name="car_settings_toolbar_position">Bară: %1$s</string>
+    <string name="car_settings_zoom_label">%1$d%%</string>
+    <string name="car_settings_bookmark_removed_one">1 marcaj eliminat</string>
+    <string name="car_settings_bookmarks_removed_many">%1$d marcaje eliminate</string>
+    <string name="car_settings_jump_to_letter">Mergi la literă</string>
+    <string name="car_settings_home_set">Pagina de pornire: %1$s</string>
+    <string name="car_settings_jump_label">A–Z</string>
+    <string name="car_search_hint_youtube">Caută pe YouTube sau scrie un URL</string>
+    <string name="car_search_hint_google">Caută pe Google sau scrie un URL</string>
+    <string name="car_search_title_youtube">Se caută pe YouTube</string>
+    <string name="car_search_title_google">Se caută pe Google</string>
+    <string name="car_voice_listening_youtube">Ascult pentru YouTube</string>
+    <string name="car_voice_listening_google">Ascult pentru Google</string>
+    <string name="car_voice_search_error">Nu am auzit</string>
+    <string name="car_voice_search_no_permission">Este necesară permisiunea pentru microfon</string>
+
+    <string name="settings_resume_on_focus_title">Reia automat clipul video</string>
+    <string name="settings_resume_on_focus_summary">Reia redarea după ce camera de mers înapoi sau altă aplicație preia ecranul. Reia doar dacă aplicația însăși a pus pauză.</string>
+
+    <string name="settings_home_url_title">Pagina de pornire</string>
+    <string name="settings_home_url_summary">Adresa deschisă de butonul Acasă</string>
+
+    <string name="settings_restore_last_url_title">Continuă de unde ai rămas</string>
+    <string name="settings_restore_last_url_summary">Se aplică doar ecranului mașinii: revine la ultima pagină în loc de pagina de pornire. Pe telefon, ecranul de pornire începe întotdeauna gol.</string>
+
+    <string name="settings_third_party_cookies_title">Permite cookie-urile terților</string>
+    <string name="settings_third_party_cookies_summary">Necesar pentru păstrarea autentificării Google/YouTube. Are efect doar la următoarea conectare la mașină.</string>
+
+    <string name="settings_protected_content_title">Permite conținutul protejat (DRM)</string>
+    <string name="settings_protected_content_summary">Necesar pentru serviciile de streaming. S-ar putea să nu funcționeze pe ecranul proiectat.</string>
+
+    <string name="settings_strip_wv_ua_title">Ascunde faptul că este un WebView</string>
+    <string name="settings_strip_wv_ua_summary">Necesită repornirea aplicației pentru a avea efect. Unele servicii resping WebView-urile. Poate schimba aspectul altor site-uri.</string>
+    <string name="settings_ad_block_title">Blochează reclamele și urmăritoarele</string>
+    <string name="settings_ad_block_summary">Blochează la nivel de rețea domeniile cunoscute de reclame/urmăritoare, inclusiv reclamele video de pe YouTube. Nu este un blocant complet de reclame.</string>
+    <string name="settings_search_suggestions_title">Sugestii de căutare</string>
+    <string name="settings_search_suggestions_summary">Trimite motorului de căutare ceea ce scrii în bara de adrese pentru a primi sugestii</string>
+
+    <string name="settings_car_disable_notifications_title">Dezactivează notificările</string>
+    <string name="settings_car_disable_notifications_summary">Dezactivează notificările pop-up din Android Auto</string>
+    <string name="settings_zoom_title">Zoomul paginii</string>
+    <string name="settings_safety_warning_title">Afișează avertismentul de siguranță</string>
+    <string name="settings_safety_warning_summary">Avertizează despre vizionarea de clipuri video la volan când se eliberează frâna de mână</string>
+    <string name="error_page_title">Pagina nu a putut fi încărcată</string>
+    <string name="error_page_retry">Reîncearcă</string>
+    <string name="error_page_ssl">Certificat de securitate nevalid. Conexiunea a fost blocată.</string>
+    <string name="error_msg_offline">Ești offline. Verifică conexiunea și încearcă din nou.</string>
+    <string name="error_msg_dns">Adresa nu a putut fi găsită.</string>
+    <string name="error_msg_connection">Site-ul a refuzat conexiunea.</string>
+    <string name="error_msg_timeout">Site-ul a răspuns prea greu.</string>
+    <string name="error_msg_cleartext">Acest site nu permite o conexiune necriptată.</string>
+    <string name="error_msg_scheme">Acest tip de link nu este acceptat.</string>
+    <string name="error_msg_app_missing">Nicio aplicație nu poate deschide acest link.</string>
+    <string name="error_msg_blocked">Această pagină a fost blocată de filtrul de conținut.</string>
+    <string name="error_msg_http">Site-ul a returnat o eroare (%1$d).</string>
+    <string name="error_msg_unknown">Ceva nu a mers bine la încărcarea paginii.</string>
+    <string name="error_action_back">Înapoi</string>
+    <string name="error_action_retry_http">Încearcă prin http</string>
+    <string name="error_action_open_external">Deschide în browserul sistemului</string>
+    <string name="error_action_cancel_recovery">Nu mai încerca</string>
+    <string name="error_details">Detalii tehnice</string>
+    <string name="error_recovering">Se reîncearcă (încercarea %1$d) în %2$d s</string>
+    <string name="error_reconnecting">Se reconectează…</string>
+    <string name="error_waiting_network">Se așteaptă revenirea conexiunii…</string>
+    <string name="browser_http_fallback_notice">Acest site nu acceptă https. Deschis prin http.</string>
+    <string name="browser_http_fallback_keep_https">Rămâi pe https</string>
+
+    <string name="settings_site_storage_title">Datele site-urilor</string>
+    <string name="settings_site_storage_summary">Cookie-uri și stocare locală salvate de fiecare site</string>
+    <string name="storage_cookies_count">%d cookie-uri</string>
+    <string name="storage_no_data">fără date</string>
+    <string name="storage_delete_title">Ștergi datele site-ului?</string>
+    <string name="storage_delete_message">Cookie-urile și stocarea locală pentru %1$s vor fi eliminate. Vei fi deconectat de pe acest site.</string>
+    <string name="storage_delete_confirm">Șterge</string>
+    <string name="storage_delete_all">Șterge tot</string>
+    <string name="storage_search_hint">Caută site-uri</string>
+    <string name="storage_empty">Niciun site vizitat încă</string>
+    <string name="storage_partial_warning">Unele cookie-uri pot rămâne dacă site-ul le-a salvat pe o altă cale.</string>
+
+    <string name="browser_url_hint">Caută sau scrie un URL</string>
+    <string name="browser_erase">Șterge</string>
+    <string name="browser_send_to_car">Trimite pe ecranul mașinii</string>
+    <string name="browser_menu">Mai multe opțiuni</string>
+    <string name="browser_site_info">Informații despre site</string>
+
+    <string name="browser_erase_done">Pagină ștearsă</string>
+
+    <string name="browser_connection_secure">Conexiunea este securizată</string>
+    <string name="browser_connection_insecure">Conexiune nesecurizată</string>
+    <string name="browser_adblock_title">Blocarea reclamelor și a urmăritoarelor</string>
+    <string name="browser_adblock_on">Protecțiile sunt ACTIVE pentru acest site</string>
+    <string name="browser_adblock_off">Protecțiile sunt INACTIVE pentru acest site</string>
+
+    <string name="browser_connection_secure_details">Acest site folosește HTTPS, o conexiune criptată. WebView refuză să încarce o pagină al cărei certificat nu este valid.</string>
+    <string name="browser_connection_insecure_details">Această pagină nu folosește o conexiune criptată. Informațiile pe care i le trimiți ar putea fi vizibile pentru alții.</string>
+
+    <string name="browser_add_bookmark">Favorit</string>
+    <string name="browser_open_in">Deschide în…</string>
+    <string name="browser_desktop_site">Site pentru desktop</string>
+
+    <string name="car_media_open_browser">Deschide Fiesta</string>
+    <string name="browser_send_to_car_done">Trimis pe ecranul mașinii</string>
+
+    <string name="browser_send_to_car_message">Ecranul mașinii va deschide acest link. Încarcă pagina pe cont propriu — ecranul telefonului nu este oglindit, iar redarea nu se transferă.</string>
+    <string name="browser_send_to_car_confirm">Trimite</string>
+    <string name="browser_send_to_car_cancel">Anulează</string>
+
+    <string name="browser_car_inactive_title">Ecranul mașinii nu este activ</string>
+    <string name="browser_car_inactive_message">Deschide mai întâi aplicația pe ecranul mașinii, apoi trimite din nou linkul.</string>
+    <string name="browser_car_inactive_dismiss">OK</string>
+
+    <string name="settings_topic_general_title">General</string>
+    <string name="settings_topic_general_summary">Identitatea WebView, conținut protejat</string>
+    <string name="settings_topic_privacy_title">Confidențialitate și securitate</string>
+    <string name="settings_topic_privacy_summary">Cookie-uri, reclame și urmăritoare, sugestii de căutare, datele site-urilor</string>
+    <string name="settings_topic_car_general_title">Mașină — General</string>
+    <string name="settings_topic_car_general_summary">Pagina de pornire, notificări, zoom, avertisment de siguranță, bara de instrumente</string>
+    <string name="settings_topic_car_youtube_title">Mașină — YouTube</string>
+    <string name="settings_topic_car_youtube_summary">Ultima pagină, reluarea clipului, derularea la player</string>
+    <string name="settings_topic_hack_title">Hack</string>
+    <string name="settings_topic_hack_summary">Deblocare în Android Auto</string>
+    <string name="settings_topic_about_title">Despre</string>
+    <string name="settings_topic_about_summary">Despre aplicație, proiect, credite</string>
+
+    <string name="settings_unlock_title">Deblocare în Android Auto</string>
+    <string name="settings_unlock_summary">Necesită root (SuperSU sau similar). Are efect doar după repornirea telefonului.</string>
+
+    <string name="settings_about_icons_title">Pictograme</string>
+    <string name="settings_about_icons_summary">mozilla-mobile/android-components, licență MPL-2.0</string>
+    <string name="settings_about_font_title">Font</string>
+    <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
+    <string name="settings_topic_donate_title">Donează pentru Fiesta</string>
+    <string name="settings_topic_donate_summary">Susține proiectul</string>
+    <string name="settings_donate_title">Alimentează Fiesta ⛽</string>
+    <string name="settings_donate_message">✓ Gratuit\n✓ Fără reclame\n✓ Fără urmărire\n\nȚi-a ținut companie la drum? Răsplătește cu o cafea.</string>
+    <string name="settings_donate_coffee">☕ Cumpără-mi o cafea</string>
+    <string name="settings_donate_footer_start">Făcut cu</string>
+    <string name="settings_donate_footer_end">în timpul liber</string>
+    <string name="settings_about_tagline">Mai mult drum. Mai puține limite.</string>
+    <string name="settings_about_description">Mâinile pe volan, ochii pe drum și libertate pentru media ta. O aplicație driving-first, pentru cei care iubesc să conducă. Drive. Explore. Play.</string>
+    <string name="settings_about_project_category">Proiect</string>
+    <string name="settings_about_credits_category">Credite</string>
+    <string name="settings_about_license_title">Licență</string>
+
+    <string name="browser_suggestion_fill">Completează în caseta de căutare</string>
+
+    <plurals name="browser_blocked_count">
+        <item quantity="one">%d urmăritor blocat pe această pagină</item>
+        <item quantity="few">%d urmăritoare blocate pe această pagină</item>
+        <item quantity="other">%d de urmăritoare blocate pe această pagină</item>
+    </plurals>
+
+    <string name="browser_blocked_count_label_zero">Niciun urmăritor blocat pe această pagină</string>
+    <plurals name="browser_blocked_count_label">
+        <item quantity="one">urmăritor blocat pe această pagină</item>
+        <item quantity="few">urmăritoare blocate pe această pagină</item>
+        <item quantity="other">de urmăritoare blocate pe această pagină</item>
+    </plurals>
+
+    <string name="settings_car_toolbar_position_title">Poziția barei de instrumente</string>
+    <string name="car_toolbar_position_top">Sus</string>
+    <string name="car_toolbar_position_left">Stânga</string>
+    <string name="car_toolbar_position_right">Dreapta</string>
+    <string name="car_toolbar_position_bottom">Jos</string>
+    <string name="settings_car_realtime_category_title">Opțiuni în timp real</string>
+    <string name="settings_car_toolbar_auto_hide_title">Ascunde automat bara de instrumente</string>
+    <string name="settings_car_toolbar_auto_hide_summary">Ascunde bara până când atingi acea margine a ecranului</string>
+
+    <string name="settings_youtube_scroll_title">Derulează până la player</string>
+    <string name="settings_youtube_scroll_summary">Derulează automat pagina pentru ca playerul să fie vizibil după ce urmezi un link sau schimbi clipul. Are efect la următoarea încărcare a paginii.</string>
+
+    <string name="settings_topic_plugins_title">Pluginuri</string>
+    <string name="settings_topic_plugins_summary">Comenzi de pe volan și ajustări de pagină, pentru fiecare site</string>
+    <string name="plugins_title">Pluginuri</string>
+    <string name="plugins_active_section">Active, în ordinea priorității</string>
+    <string name="plugins_inactive_section">Inactive</string>
+    <string name="plugins_origin_default">Încorporat</string>
+    <string name="plugins_origin_installed">Instalat</string>
+    <string name="plugins_active_switch">Activ</string>
+    <string name="plugins_delete">Șterge</string>
+    <string name="plugins_install">Instalează dintr-un fișier</string>
+    <string name="plugins_restore_defaults">Restaurează valorile implicite</string>
+    <string name="plugins_review_title">Verifică pluginul</string>
+    <string name="plugins_review_install">Instalează</string>
+    <string name="plugins_review_cancel">Anulează</string>
+    <string name="plugins_review_files">Fișiere</string>
+    <string name="plugins_install_failed">Pluginul nu a putut fi instalat: %1$s</string>
+    <string name="plugins_empty">Niciun plugin</string>
+    <string name="plugins_search_hint">Caută</string>
+    <string name="voice_listener_title">Receptor vocal</string>
+    <string name="voice_listener_summary">Doar un plugin poate răspunde comenzilor vocale din mașină.</string>
+    <string name="plugins_requires_ad_block">necesită blocarea reclamelor</string>
+    <string name="plugins_delete_message">Ștergi pluginul %1$s?</string>
+    <string name="plugins_restore_defaults_message">Restaurezi pluginurile încorporate?</string>
+    <string name="page_plugins_events_section">Evenimente de la volan</string>
+    <string name="page_plugins_tweaks_section">Ajustări de pagină</string>
+    <string name="page_plugins_car">Mașină</string>
+    <string name="page_plugins_phone">Telefon</string>
+
+    <string name="car_media_tab_home">Acasă</string>
+    <string name="car_media_tab_playlist">Listă de redare</string>
+    <string name="car_media_tab_history">Istoric</string>
+    <string name="car_media_queue_history">Istoric</string>
+    <string name="car_media_searching_for">Se caută \"%1$s\"</string>
+    <string name="car_media_voice_search_failed">Nu s-a putut găsi \"%1$s\"</string>
+
+</resources>

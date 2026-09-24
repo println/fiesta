@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bookmarks_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationContentDescription="@string/webview_back"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="@string/bookmarks"
+        app:titleTextColor="@color/primaryText" />
+
+    <EditText
+        android:id="@+id/bookmarks_search"
+        style="@style/SearchField"
+        android:hint="@string/bookmarks_search_hint" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookmarks_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/bookmarks_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/bookmarks_none_found"
+        android:textColor="@color/secondaryText"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

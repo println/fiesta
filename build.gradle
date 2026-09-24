@@ -1,0 +1,59 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.13.2'
+        // Realm 10.x: migracao Kotlin/AndroidX, Estagio 2.4. A linha 4.3.3 so
+        // era servida pelo mirror aliyun (Bintray desligado em 2021); a 10.x
+        // esta em Maven Central e tambem resolve o minSdk (exige >= 16).
+        classpath "io.realm:realm-gradle-plugin:10.19.0"
+        // AndroidX 2025+ ships Kotlin 2.1 metadata, which a 1.9 compiler cannot read.
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.21'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        // jcenter.bintray.com esta fora do ar desde 2021 (jcenter() sozinho
+        // nao resolve mais nada); este mirror aliyun ainda e a unica fonte de
+        // libsuperuser.
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        // local-repo/: ver comentario junto da dependencySubstitution abaixo.
+        maven { url uri("$rootDir/local-repo") }
+    }
+
+    configurations.all {
+        resolutionStrategy.dependencySubstitution {
+            // com.android.support:support-compat (que a ilha precisa, via
+            // support-v4/appcompat-v7/recyclerview-v7, para o Fragment que o
+            // aauto-sdk exige em binario - premissa 1) embute
+            // android.support.v4.app.INotificationSideChannel*, a MESMA classe
+            // que androidx.core (Estagio 3) tambem embute de proposito, para
+            // compat binaria do lado do NotificationManagerCompat antigo.
+            // Nenhum dos dois lados deste projeto usa side channel de
+            // notificacao (nao ha NotificationListenerService aqui) - e um
+            // duplicate class real e permanente (confirmado: acontece em toda
+            // versao testada de androidx.core, nao e questao de pinar
+            // versao), sem exclude de Gradle que resolva porque nao ha aresta
+            // de dependencia entre os dois - sao artefatos irmaos, cada um
+            // com sua propria copia da classe. A saida foi gerar uma copia
+            // local de support-compat-27.0.0 com essas 3 classes removidas
+            // (script: ver historico do commit) e substituir toda resolucao
+            // de com.android.support:support-compat por ela.
+            substitute(module('com.android.support:support-compat'))
+                    .using(module('com.android.support:support-compat:27.0.0-nonschan'))
+                    .because('remove duplicate android.support.v4.app.INotificationSideChannel* vs androidx.core (ver comentario acima)')
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

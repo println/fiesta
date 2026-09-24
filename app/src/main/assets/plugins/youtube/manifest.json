@@ -1,0 +1,27 @@
+{
+  "id": "youtube",
+  "name": "YouTube",
+  "version": 1,
+  "voice": { "resource": "/results?search_query={searchTerms}", "script": "voice-search.js" },
+  "rules": [
+    {
+      "match": ["https://youtube.com/shorts/*", "https://*.youtube.com/shorts/*"],
+      "events": "shorts.events.js"
+    },
+    {
+      "match": ["https://youtube.com/watch?*", "https://*.youtube.com/watch?*"],
+      "events": "watch.events.js"
+    },
+    {
+      "match": ["https://youtube.com/*", "https://*.youtube.com/*"],
+      "tweaks": [
+        { "script": "unmute-player.tweak.js", "runAt": "ready", "rerun": "urlChange", "env": "car" },
+        { "script": "ad-prune.tweak.js", "runAt": "start", "requires": "adblock", "env": "both" },
+        {
+          "script": "player-scroll.tweak.js", "runAt": "loaded", "rerun": "urlChange", "env": "car",
+          "option": { "key": "pref_youtube_scroll_to_player", "default": true }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:cs="urn:fiesta:search:1">
+  <ShortName>YouTube</ShortName>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" template="https://www.youtube.com/results?search_query={searchTerms}"/>
+  <Url type="application/x-suggestions+json"
+       template="https://suggestqueries.google.com/complete/search?client=firefox&amp;ds=yt&amp;q={searchTerms}"/>
+  <cs:Id>youtube</cs:Id>
+  <cs:Version>1</cs:Version>
+  <cs:Host>youtube.com</cs:Host>
+  <cs:Host>*.youtube.com</cs:Host>
+  <cs:Host>youtu.be</cs:Host>
+</OpenSearchDescription>

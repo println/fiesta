@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="car_settings_panel">@color/brandBackground</color>
+    <color name="car_settings_tonal">@color/brandBackgroundElevated</color>
+    <color name="car_settings_active">@color/brandSecondary</color>
+    <color name="car_settings_ripple">#33FFFFFF</color>
+    <color name="car_settings_divider">@color/brandBackgroundElevated</color>
+    <color name="car_settings_text_secondary">@color/secondaryText</color>
+
+    <style name="ThemeOverlay.CarSettings" parent="">
+        <item name="colorAccent">@color/car_settings_active</item>
+        <item name="colorControlActivated">@color/car_settings_active</item>
+    </style>
+
+    <style name="CarSettingsRow">
+        <item name="android:theme">@style/ThemeOverlay.CarSettings</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/car_settings_item_background</item>
+    </style>
+
+    <style name="CarSettingsSectionLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/car_settings_text_secondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CarSettingsTonalButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:textColor">@color/car_settings_on_active</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/car_settings_tonal_background</item>
+    </style>
+
+    <style name="CarSettingsRadio">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableTint">@color/car_settings_on_active</item>
+        <item name="android:background">@drawable/car_settings_radio_background</item>
+    </style>
+
+    <style name="CarFullscreenMenuOption">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_marginStart">2dp</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/car_settings_on_active</item>
+        <item name="android:drawableTint">@color/car_settings_on_active</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/car_fullscreen_menu_option_background</item>
+    </style>
+
+    <style name="CarSettingsHeaderButton">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/car_settings_circle_background</item>
+    </style>
+</resources>
