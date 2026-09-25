@@ -38,6 +38,23 @@ async function navigateTo(url) {
   page.close();
 }
 
+async function playAndPauseMutedVideoOnThePage() {
+  const page = await pageSession(/./);
+  await page.evaluate(`(async () => {
+    const canvas = document.createElement('canvas');
+    canvas.getContext('2d').fillRect(0, 0, 10, 10);
+    const video = document.createElement('video');
+    video.muted = true;
+    video.srcObject = canvas.captureStream();
+    document.body.appendChild(video);
+    await video.play();
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+    video.pause();
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+  })()`);
+  page.close();
+}
+
 async function focusHeldByFiesta() {
   const dump = await shell('dumpsys audio');
   const stack = dump.slice(dump.indexOf('Audio Focus stack entries'), dump.indexOf('No external focus policy'));
@@ -48,6 +65,22 @@ function noTitle(description) {
   return description === null || description === 'null';
 }
 
+async function assertLeftMediaForPlainPage(car, mark, what) {
+  const stopped = await car.waitUntil(() => car.sessionState(), (state) => state.state === PlaybackStateCompat.STOPPED, {
+    what: `${what} stopping the session`
+  });
+  assert.ok(noTitle(stopped.description), `${what}: no title`);
+  assert.equal(stopped.queueSize, 0, `${what}: no queue`);
+
+  await car.log.waitFor(/CarPlayer: left media for a plain page/, { from: mark, timeout: 30_000 });
+  assert.deepEqual(car.linesSince(mark, /focus is held by someone else|CarPlayer: paused$/), [], `${what}: no pause, no focus request`);
+  assert.equal(await focusHeldByFiesta(), false, `${what}: Fiesta is not on the audio focus stack`);
+
+  const prefs = await car.carPrefs();
+  assert.equal(prefs.playbackInterrupted, false, `${what}: nothing to resume later`);
+  return prefs;
+}
+
 test('PL-7: a plain page is stopped, asks for no focus, and does not resume on its own', async () => {
   const car = await CarSession.start();
   try {
@@ -56,32 +89,28 @@ test('PL-7: a plain page is stopped, asks for no focus, and does not resume on i
       what: 'the video playing before leaving it'
     });
 
-    const mark = car.log.mark();
+    let mark = car.log.mark();
     await navigateTo('https://www.google.com');
-    const stopped = await car.waitUntil(() => car.sessionState(), (state) => state.state === PlaybackStateCompat.STOPPED, {
-      what: 'the session stopping on a plain page'
-    });
-    assert.ok(noTitle(stopped.description), 'no title for a plain page');
-    assert.equal(stopped.queueSize, 0, 'no queue for a plain page');
+    let prefs = await assertLeftMediaForPlainPage(car, mark, 'google.com');
+    assert.ok(!prefs.recentlyPlayedUrls.some((url) => url.includes('google.com')), 'google.com is not in the history');
 
-    await car.log.waitFor(/CarPlayer: left media for a plain page/, { from: mark, timeout: 20_000 });
-    assert.deepEqual(car.linesSince(mark, /focus is held by someone else/), [], 'never asks for the audio focus');
-    assert.equal(await focusHeldByFiesta(), false, 'Fiesta is not on the audio focus stack');
-
-    const prefs = await car.carPrefs();
-    assert.equal(prefs.playbackInterrupted, false, 'a plain page does not resume playback later');
+    mark = car.log.mark();
+    await playAndPauseMutedVideoOnThePage();
+    assert.deepEqual(car.linesSince(mark, /CarPlayer: (playing|paused)$|focus is held by someone else/), [], 'a muted video on a plain page is not playback');
+    assert.equal((await car.sessionState()).state, PlaybackStateCompat.STOPPED, 'a muted video keeps the plain page stopped');
+    assert.equal((await car.carPrefs()).playbackInterrupted, false, 'a muted video leaves nothing to resume');
 
     await navigateTo(config.videoUrl);
     await car.waitForMedia((m) => m.found && !m.paused, { what: 'playback resuming after going back to the video' });
-    await car.waitUntil(() => car.sessionState(), (state) => state.state === PlaybackStateCompat.PLAYING, {
-      what: 'the session playing again with the video metadata'
+    const playing = await car.waitUntil(() => car.sessionState(), (state) => state.state === PlaybackStateCompat.PLAYING, {
+      what: 'the session playing again'
     });
+    assert.ok(!noTitle(playing.description), 'a page where media plays shows up with its title');
 
+    mark = car.log.mark();
     await navigateTo('https://www.youtube.com/@ancap_su/videos');
-    const channelPage = await car.waitUntil(() => car.sessionState(), (state) => state.state === PlaybackStateCompat.STOPPED, {
-      what: 'a channel videos page, with nothing playing, is stopped'
-    });
-    assert.ok(noTitle(channelPage.description), 'no title for a page whose media never starts by itself');
+    prefs = await assertLeftMediaForPlainPage(car, mark, 'a channel videos page');
+    assert.ok(!prefs.recentlyPlayedUrls.some((url) => url.includes('/@ancap_su')), 'the channel page is not in the history');
   } finally {
     await car.stop();
   }

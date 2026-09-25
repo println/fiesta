@@ -1,7 +1,7 @@
 import { execFile } from 'node:child_process';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { promisify } from 'node:util';
-import { Logcat, prefValue, readPrefs, shell } from './adb.mjs';
+import { Logcat, prefValue, readPrefs, shell, unescapeXml } from './adb.mjs';
 import { config } from './config.mjs';
 import { pageSession } from './devtools.mjs';
 import { HeadUnit } from './dhu.mjs';
@@ -153,7 +153,8 @@ export class CarSession {
     return {
       videoTime: Number(prefValue(xml, 'video_time')),
       videoTimeUrl: prefValue(xml, 'video_time_url')?.replaceAll('&amp;', '&'),
-      playbackInterrupted: prefValue(xml, 'playback_interrupted') === 'true'
+      playbackInterrupted: prefValue(xml, 'playback_interrupted') === 'true',
+      recentlyPlayedUrls: JSON.parse(unescapeXml(prefValue(xml, 'recently_played') ?? '[]')).map((entry) => entry.pageUrl)
     };
   }
 

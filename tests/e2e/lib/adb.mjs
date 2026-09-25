@@ -25,6 +25,10 @@ export function prefValue(xml, name) {
   return match ? (match[1] ?? match[2]) : null;
 }
 
+export function unescapeXml(text) {
+  return text.replaceAll('&quot;', '"').replaceAll('&apos;', "'").replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&amp;', '&');
+}
+
 export class Logcat {
   constructor(tags) {
     this.lines = [];
