@@ -72,7 +72,9 @@ class AndroidAutoBrowseTree(private val context: Context, server: MediaServer) :
     }
 
     override fun onRootBrowsed(rootId: String) {
-        if (rootId == CAR_ROOT_ID) CarPlayer.resumeInterruptedPlayback()
+        if (rootId != CAR_ROOT_ID) return
+        PlaybackBrowserService.onCarEntered(context)
+        CarPlayer.resumeInterruptedPlayback()
     }
 
     private fun tab(id: String, titleRes: Int, iconRes: Int): MediaBrowserCompat.MediaItem {

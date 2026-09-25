@@ -113,6 +113,13 @@ test('losing the car stops the music, and reconnecting plays it again from where
     const prefs = await car.carPrefs();
     assert.equal(prefs.playbackInterrupted, true, 'marked for resuming');
     assert.ok(prefs.videoTime >= before.time - TRUSTED_POSITION_STEP_SECONDS, `saved ${prefs.videoTime}s, was at ${before.time}s`);
+    assert.equal((await car.sessionState()).active, false, 'no media session on the phone without the car');
+    assert.equal(await car.notificationShown(), false, 'no playback notification on the phone without the car');
+
+    const pressed = car.log.mark();
+    await shell('cmd media_session dispatch play');
+    await car.log.waitFor(/ignored outside the car/, { from: pressed, timeout: 5_000 });
+    assert.deepEqual(car.linesSince(pressed, /CarPlayer: command play/), [], 'a play key on the phone does not play without the car');
 
     const reconnected = car.log.mark();
     await car.reconnect();

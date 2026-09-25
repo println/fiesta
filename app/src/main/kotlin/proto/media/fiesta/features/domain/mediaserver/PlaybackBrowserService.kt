@@ -115,7 +115,24 @@ class PlaybackBrowserService : MediaBrowserServiceCompat() {
 
         fun obtainMediaSession(context: Context): PlaybackSession = obtainPlayback(context).session
 
+        private var inCar = true
+
+        fun onCarLeft(context: Context) {
+            inCar = false
+            obtainMediaSession(context).isActive = false
+            cancelPlaybackNotification(context)
+        }
+
+        fun onCarEntered(context: Context) {
+            val session = obtainMediaSession(context)
+            if (inCar) return
+            inCar = true
+            session.isActive = true
+            updatePlaybackNotification(context)
+        }
+
         fun updatePlaybackNotification(context: Context, force: Boolean = false) {
+            if (!inCar) return
             val playback = obtainPlayback(context)
             val service = instance
             if (service != null) {

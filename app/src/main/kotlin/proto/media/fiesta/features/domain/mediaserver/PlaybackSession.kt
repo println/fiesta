@@ -57,6 +57,12 @@ class PlaybackSession(private val context: Context, server: MediaServer, private
     var artwork: Bitmap? = null
         private set
 
+    var isActive: Boolean
+        get() = session.isActive
+        set(value) {
+            session.isActive = value
+        }
+
     private val openBrowserAction = PlaybackStateCompat.CustomAction.Builder(
         OPEN_BROWSER_ID,
         context.getString(R.string.car_media_open_browser),
@@ -74,6 +80,7 @@ class PlaybackSession(private val context: Context, server: MediaServer, private
     private val session = MediaSessionCompat(context, TAG).apply {
         setCallback(object : MediaSessionCompat.Callback() {
             override fun onMediaButtonEvent(mediaButtonEvent: Intent): Boolean {
+                if (!isActive) return ignoredOutsideTheCar("media button")
                 val event = mediaButtonEvent.getParcelableExtra<KeyEvent>(Intent.EXTRA_KEY_EVENT)
                 Log.d(TAG, "Media button: $event")
                 if (event == null || !isTrackKey(event.keyCode)) {
@@ -84,7 +91,10 @@ class PlaybackSession(private val context: Context, server: MediaServer, private
             }
 
             override fun onPlay() {
-                if (admitsFromCaller(MediaCommandDto.Play)) play()
+                when {
+                    !isActive -> ignoredOutsideTheCar("play")
+                    admitsFromCaller(MediaCommandDto.Play) -> play()
+                }
             }
 
             override fun onPause() {
@@ -95,9 +105,13 @@ class PlaybackSession(private val context: Context, server: MediaServer, private
                 if (admitsFromCaller(MediaCommandDto.Stop)) handle.stop()
             }
 
-            override fun onSkipToNext() = skipToNext()
+            override fun onSkipToNext() {
+                if (isActive) skipToNext() else ignoredOutsideTheCar("skip to next")
+            }
 
-            override fun onSkipToPrevious() = skipToPrevious()
+            override fun onSkipToPrevious() {
+                if (isActive) skipToPrevious() else ignoredOutsideTheCar("skip to previous")
+            }
 
             override fun onFastForward() = handle.fastForward()
 
@@ -110,11 +124,16 @@ class PlaybackSession(private val context: Context, server: MediaServer, private
 
             override fun onPlayFromSearch(query: String?, extras: Bundle?) {
                 Log.d(TAG, "playFromSearch from ${caller()}")
-                if (query.isNullOrBlank()) play() else playFromSearch(query)
+                when {
+                    !isActive -> ignoredOutsideTheCar("play from search")
+                    query.isNullOrBlank() -> play()
+                    else -> playFromSearch(query)
+                }
             }
 
             override fun onPlayFromMediaId(mediaId: String?, extras: Bundle?) {
                 when {
+                    !isActive -> ignoredOutsideTheCar("play from media id")
                     mediaId == OPEN_BROWSER_ID -> host.openBrowser()
                     mediaId == NOW_PLAYING_ID -> play()
                     mediaId?.startsWith(QUEUE_ITEM_PREFIX) == true ->
@@ -122,13 +141,20 @@ class PlaybackSession(private val context: Context, server: MediaServer, private
                 }
             }
 
-            override fun onSkipToQueueItem(id: Long) = skipToQueuePosition(id)
+            override fun onSkipToQueueItem(id: Long) {
+                if (isActive) skipToQueuePosition(id) else ignoredOutsideTheCar("skip to queue item")
+            }
 
             override fun onCustomAction(action: String?, extras: Bundle?) {
                 if (action == OPEN_BROWSER_ID) host.openBrowser()
             }
         })
         isActive = true
+    }
+
+    private fun ignoredOutsideTheCar(command: String): Boolean {
+        Log.d(TAG, "$command ignored outside the car")
+        return true
     }
 
     private fun admitsFromCaller(command: MediaCommandDto): Boolean {
