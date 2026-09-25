@@ -84,7 +84,7 @@ class SessionLifecycleTest {
         assertNotSame(car, phone)
         assertEquals("phone", phone.state.renderer.id)
         assertEquals("", phone.state.track.title)
-        assertEquals(Playback.STOPPED, phone.state.playback)
+        assertEquals(Playback.NONE, phone.state.playback)
     }
 
     @Test

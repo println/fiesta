@@ -56,10 +56,7 @@ test('the end of a track starts the next one without publishing a pause', async 
       { timeout: 60_000, what: 'the next track playing' }
     );
     assert.ok(next.url !== before.url);
-    // A track change to another URL can briefly read as a plain page until the next video's
-    // audio is detected (PL-7): that schedules a destroy that the next reading always cancels,
-    // but must never confirm an actual pause.
-    assert.deepEqual(car.linesSince(mark, /CarPlayer: paused$/), []);
+    assert.deepEqual(car.linesSince(mark, /destroying in|CarPlayer: paused$|left media/), []);
     const saved = car.linesSince(mark, /CarPlayer: saving .* at \d+s/);
     saved.forEach((line) => {
       const [, url, seconds] = line.match(/saving (\S+) at (\d+)s/);

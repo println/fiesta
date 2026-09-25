@@ -147,13 +147,36 @@ test('a track stays a track after it is paused, on the same URL', () => {
   page.close();
 });
 
-test('leaving a track for another URL, paused, is not a track any more', () => {
+test('a track changing to another URL stays a track while the next one starts', () => {
   const { page, media } = playingPage();
   readingAfterMediaEvent(page, media);
   media.paused = true;
   page.navigateTo('https://m.youtube.com/watch?v=other');
   const reading = readingAfterMediaEvent(page, media);
+  assert.equal(reading.isTrack, true);
+  page.close();
+});
+
+test('leaving a track for another URL where nothing plays is not a track once the change is over', () => {
+  const { page, media } = playingPage();
+  readingAfterMediaEvent(page, media);
+  media.paused = true;
+  page.navigateTo('https://m.youtube.com/@channel/videos');
+  readingAfterMediaEvent(page, media);
+  page.advanceClock(15000);
+  const reading = readingAfterMediaEvent(page, media);
   assert.equal(reading.isTrack, false);
+  page.close();
+});
+
+test('the next track playing ends the change and stays a track', () => {
+  const { page, media } = playingPage();
+  readingAfterMediaEvent(page, media);
+  page.navigateTo('https://m.youtube.com/watch?v=other');
+  readingAfterMediaEvent(page, media);
+  page.advanceClock(15000);
+  const reading = readingAfterMediaEvent(page, media);
+  assert.equal(reading.isTrack, true);
   page.close();
 });
 

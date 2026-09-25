@@ -10,8 +10,10 @@
   var lastQueueJson = null;
   var capturedActionHandlers = {};
   var CAPTURED_ACTION_BY_EVENT = { nextClick: 'nexttrack', previousClick: 'previoustrack', seekTo: 'seekto' };
+  var TRACK_CHANGE_GRACE_MILLIS = 15000;
   var stickyUrl = null;
   var wasEverAudibleOnThisUrl = false;
+  var trackCarriedUntil = 0;
 
   function publishHandlers() {
     if (!window.fiestaplugins) { return; }
@@ -67,11 +69,12 @@
 
   function isTrack(media) {
     if (location.href !== stickyUrl) {
+      if (wasEverAudibleOnThisUrl) { trackCarriedUntil = Date.now() + TRACK_CHANGE_GRACE_MILLIS; }
       stickyUrl = location.href;
       wasEverAudibleOnThisUrl = false;
     }
     if (media && isAudible(media)) { wasEverAudibleOnThisUrl = true; }
-    return (!!media && isAudible(media)) || siteSaysPlaying() || wasEverAudibleOnThisUrl;
+    return wasEverAudibleOnThisUrl || siteSaysPlaying() || Date.now() < trackCarriedUntil;
   }
 
   function currentMetadata() {

@@ -363,7 +363,9 @@ Todo script de eventos roda depois de `assets/plugins/fiesta-runtime.js`, que ex
   "pausado" mesmo sem poder controlar. A leitura também traz `isTrack` (Plano 58): verdadeiro
   se o elemento eleito está audível agora, ou o site diz `playbackState === 'playing'`, ou algum
   elemento já foi audível nesta mesma `location.href` (pegajoso por URL, zerado só na troca de
-  `href` — `fiesta.reset()` não mexe nisso). Ter `<video>`/`<audio>` na página não basta, nem
+  `href` — `fiesta.reset()` não mexe nisso). Trocar de `href` saindo de uma faixa mantém
+  `isTrack` por até 15 s, para a troca de faixa do YouTube não virar página comum até o áudio
+  do próximo vídeo começar. Ter `<video>`/`<audio>` na página não basta, nem
   `mediaSession.metadata`/handlers do site, nem `fiesta.on`/`setAvailable` do plugin `generic`:
   uma página sem nada tocando é `isTrack: false`, mesmo cheia de prévias mudas (o exemplo é a
   página de vídeos de um canal do YouTube). `MediaReadingJson` (`shared/media`) faz o parse do
