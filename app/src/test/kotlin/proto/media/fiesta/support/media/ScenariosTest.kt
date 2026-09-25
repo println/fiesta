@@ -92,25 +92,59 @@ class ScenariosTest {
     }
 
     @Test
-    fun `a page without media is still a track for every client, but not audible`() {
+    fun `a plain page is stopped, with no track and not audible`() {
         session.report(RendererEventDto.AvailabilityChanged(RendererAvailability.READY))
         session.report(RendererEventDto.Read(pageWithoutMedia(title = "Eleição", host = "news.example")))
 
         clients.forEach {
-            assertEquals(MediaStateDto.Playback.PLAYING, it.last.playback)
-            assertEquals("Eleição", it.last.track.title)
-            assertEquals("news.example", it.last.track.artist)
+            assertEquals(MediaStateDto.Playback.STOPPED, it.last.playback)
+            assertEquals("", it.last.track.title)
+            assertEquals("", it.last.track.artist)
             assertFalse(it.last.audible)
-            assertFalse(MediaAction.SEEK_TO in it.last.capabilities)
-            assertFalse(MediaAction.SKIP_TO_NEXT in it.last.capabilities)
             assertEquals(0L, it.last.progress.durationMillis)
         }
     }
 
     @Test
-    fun `browsing history is published as the queue to both clients`() {
+    fun `an echo of Play on a plain page does not publish playing`() {
         session.report(RendererEventDto.AvailabilityChanged(RendererAvailability.READY))
         session.report(RendererEventDto.Read(pageWithoutMedia()))
+
+        fromCard.play()
+
+        clients.forEach { assertEquals(MediaStateDto.Playback.STOPPED, it.last.playback) }
+    }
+
+    @Test
+    fun `preparing and an error both win over a plain page`() {
+        session.report(RendererEventDto.AvailabilityChanged(RendererAvailability.READY))
+        session.report(RendererEventDto.Read(pageWithoutMedia()))
+
+        session.report(RendererEventDto.Preparing("bossa nova"))
+        assertEquals(MediaStateDto.Playback.CONNECTING, card.last.playback)
+
+        session.report(RendererEventDto.Failed("No connection"))
+        assertEquals(MediaStateDto.Playback.ERROR, card.last.playback)
+    }
+
+    @Test
+    fun `leaving a track for a plain page and back publishes the new metadata as playing`() {
+        session.report(RendererEventDto.AvailabilityChanged(RendererAvailability.READY))
+        session.report(RendererEventDto.Read(playingVideo(title = "Tiny Desk")))
+        session.report(RendererEventDto.Read(pageWithoutMedia()))
+
+        assertEquals(MediaStateDto.Playback.STOPPED, card.last.playback)
+
+        session.report(RendererEventDto.Read(playingVideo(title = "Another one")))
+
+        assertEquals(MediaStateDto.Playback.PLAYING, card.last.playback)
+        assertEquals("Another one", card.last.track.title)
+    }
+
+    @Test
+    fun `browsing history is published as the queue to both clients`() {
+        session.report(RendererEventDto.AvailabilityChanged(RendererAvailability.READY))
+        session.report(RendererEventDto.Read(playingVideo()))
         session.report(RendererEventDto.QueueRead(history()))
 
         clients.forEach {

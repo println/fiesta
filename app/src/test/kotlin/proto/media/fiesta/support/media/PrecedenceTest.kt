@@ -111,10 +111,10 @@ class PrecedenceTest {
     }
 
     @Test
-    fun `an absent renderer with nothing known is none, not paused`() {
+    fun `an absent renderer with nothing known is stopped, not paused`() {
         session.report(RendererEventDto.AvailabilityChanged(RendererAvailability.ABSENT))
 
-        assertEquals(Playback.NONE, client.last.playback)
+        assertEquals(Playback.STOPPED, client.last.playback)
     }
 
     @Test

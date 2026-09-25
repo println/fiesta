@@ -14,6 +14,7 @@ data class MediaReadingDto(
     val canSkipNext: Boolean,
     val canSkipPrevious: Boolean,
     val trackId: String = "",
+    val isTrack: Boolean = false,
     val pageUrl: String = ""
 ) {
     val trackIdentity: String

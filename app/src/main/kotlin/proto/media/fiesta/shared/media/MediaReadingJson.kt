@@ -8,8 +8,9 @@ object MediaReadingJson {
     fun parse(json: String): MediaReadingDto? = try {
         val obj = JSONObject(json)
         val empty = MediaReadingDto.EMPTY
+        val hasMedia = obj.optBoolean("hasMedia", empty.hasMedia)
         MediaReadingDto(
-            hasMedia = obj.optBoolean("hasMedia", empty.hasMedia),
+            hasMedia = hasMedia,
             playing = obj.optBoolean("playing", empty.playing),
             positionSeconds = obj.optDouble("positionSeconds", empty.positionSeconds),
             durationSeconds = obj.optDouble("durationSeconds", empty.durationSeconds),
@@ -20,6 +21,7 @@ object MediaReadingJson {
             canSkipNext = obj.optBoolean("canSkipNext", empty.canSkipNext),
             canSkipPrevious = obj.optBoolean("canSkipPrevious", empty.canSkipPrevious),
             trackId = obj.optString("trackId", empty.trackId),
+            isTrack = obj.optBoolean("isTrack", hasMedia),
             pageUrl = obj.optString("pageUrl", empty.pageUrl)
         )
     } catch (e: Exception) {

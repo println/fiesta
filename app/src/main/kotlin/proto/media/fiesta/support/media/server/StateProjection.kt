@@ -82,6 +82,14 @@ internal object StateProjection {
                 capabilities = restricted
             )
         }
+        if (!reading.isTrack) {
+            return base.copy(
+                playback = MediaStateDto.Playback.STOPPED,
+                track = MediaTrackDto.EMPTY,
+                progress = MediaProgressDto.NONE.copy(updatedAtMillis = nowMillis),
+                audible = false
+            )
+        }
         if (availability == RendererAvailability.STARTING) {
             return base.copy(
                 playback = MediaStateDto.Playback.CONNECTING,
