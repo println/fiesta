@@ -112,7 +112,7 @@ touched and nothing starts when I open it: it does not show up in the player.
 > **Then** it is as if I had pressed stop: the player stops, Fiesta does not ask for the audio
 > focus, and it does not resume that playback on its own later.
 
-**Not there yet.**
+**There, and it does what I want.**
 
 How the player, the WebView and the media server fit together is in
 [the media server](02-media-server.md).

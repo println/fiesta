@@ -20,10 +20,9 @@ server everything goes through. Ids are `PL-<n>` for the player and `MS-<n>` for
 | MS-6 The pieces talk through the server's contract | [The media server](02-media-server.md) |
 | MS-7 The media server is a library of its own | [The media server](02-media-server.md) |
 
-PL-1 to PL-6 are all there and doing what the user wants.
+PL-1 to PL-7 are all there and doing what the user wants.
 
 ## Not met yet
 
-- **PL-7** — every page shows up as playing, media or not. See `docs/plans/58-player-so-exibe-midia.md`.
 - **MS-4** — on start, the decision to play again is taken on the renderer's side, not by the
   server.
