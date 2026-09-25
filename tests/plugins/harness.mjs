@@ -103,6 +103,7 @@ export function startPage({ fixture, url = 'https://m.youtube.com/', plugin = nu
     mediaSession: window.navigator.mediaSession,
     setSiteMetadata: (metadata) => { window.navigator.mediaSession.metadata = metadata; },
     fireMediaEvent: (media, type) => media.dispatchEvent(new window.Event(type, { bubbles: true })),
+    navigateTo: (href) => dom.reconfigure({ url: href }),
     waitFor: async (predicate, timeoutMs = 2000) => {
       const deadline = Date.now() + timeoutMs;
       while (Date.now() < deadline) {

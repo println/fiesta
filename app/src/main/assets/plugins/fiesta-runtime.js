@@ -10,6 +10,8 @@
   var lastQueueJson = null;
   var capturedActionHandlers = {};
   var CAPTURED_ACTION_BY_EVENT = { nextClick: 'nexttrack', previousClick: 'previoustrack', seekTo: 'seekto' };
+  var stickyUrl = null;
+  var wasEverAudibleOnThisUrl = false;
 
   function publishHandlers() {
     if (!window.fiestaplugins) { return; }
@@ -59,6 +61,19 @@
     return { title: metadata.title || '', artist: metadata.artist || '', artwork: artwork ? artwork.src : '' };
   }
 
+  function siteSaysPlaying() {
+    return !!(navigator.mediaSession && navigator.mediaSession.playbackState === 'playing');
+  }
+
+  function isTrack(media) {
+    if (location.href !== stickyUrl) {
+      stickyUrl = location.href;
+      wasEverAudibleOnThisUrl = false;
+    }
+    if (media && isAudible(media)) { wasEverAudibleOnThisUrl = true; }
+    return (!!media && isAudible(media)) || siteSaysPlaying() || wasEverAudibleOnThisUrl;
+  }
+
   function currentMetadata() {
     var provided = (metadataProvider && metadataProvider()) || {};
     var fromSite = navigatorMetadata() || {};
@@ -74,11 +89,11 @@
   function buildReading() {
     var media = electActiveMedia();
     var metadata = currentMetadata();
+    var track = isTrack(media);
     if (!media) {
-      var playingWithoutElement = navigator.mediaSession && navigator.mediaSession.playbackState === 'playing';
       return {
         hasMedia: false,
-        playing: !!playingWithoutElement,
+        playing: siteSaysPlaying(),
         positionSeconds: 0,
         durationSeconds: 0,
         playbackRate: 1,
@@ -88,6 +103,7 @@
         canSkipNext: canSkipNext(),
         canSkipPrevious: canSkipPrevious(),
         trackId: metadata.id || '',
+        isTrack: track,
         pageUrl: location.href
       };
     }
@@ -103,6 +119,7 @@
       canSkipNext: canSkipNext(),
       canSkipPrevious: canSkipPrevious(),
       trackId: metadata.id || '',
+      isTrack: track,
       pageUrl: location.href
     };
   }
