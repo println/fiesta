@@ -121,7 +121,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
         }
     }
     private var ui: UiCallbacks = NullUiCallbacks
-    private var wasReadingPlaying = false
+    private var wasPlayingTrack = false
     private var pauseAwaitingVerdict: Boolean? = null
     private var commandAdmittedWithOrigin: MediaCommandDto? = null
     private var searchEngines: SearchEngineSelector? = null
@@ -284,7 +284,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
 
     private fun resetAfterViewDestroyed() {
         pluginInjector.onViewDestroyed()
-        wasReadingPlaying = false
+        wasPlayingTrack = false
         forgetPauseAwaitingVerdict()
         pendingPlay = false
         cancelVoiceSearch()
@@ -527,16 +527,18 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
         lastReadingWasTrack = reading.isTrack
         if (reading.isTrack) mediaUrls += reading.pageUrl
         val commandBeforeReading = mediaSession.pendingCommand
-        val wasPlaying = wasReadingPlaying
-        val stopping = !reading.playing && wasPlaying
+        val playingTrack = reading.playing && reading.isTrack
+        val wasPlaying = wasPlayingTrack
+        val stopping = !playingTrack && wasPlaying
         if (stopping && !leavingMedia && playback.verdict == PlaybackVerdict.INTERRUPTED) {
             mediaSession.report(RendererEventDto.Interrupted(true))
         }
+        if (leavingMedia) publishQueue()
         mediaSession.report(RendererEventDto.Read(reading))
-        wasReadingPlaying = reading.playing
+        wasPlayingTrack = playingTrack
         when {
             leavingMedia -> onLeftMedia()
-            reading.playing && !wasPlaying -> onReadingStartedPlaying()
+            playingTrack && !wasPlaying -> onReadingStartedPlaying()
             stopping -> {
                 Log.d(TAG, "reading stopped: hasMedia=${reading.hasMedia} position=${reading.positionSeconds} url=${reading.pageUrl}")
                 awaitVerdictForPause(commandedByUs = commandBeforeReading == MediaCommandDto.Pause, playback)
@@ -559,7 +561,6 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
         handler.removeCallbacks(saveWhilePlaying)
         saveState()
         scheduleIdleDestroy()
-        publishQueue()
     }
 
     private fun positionOf(reading: MediaReadingDto, playback: PlaybackSnapshot): Int =
