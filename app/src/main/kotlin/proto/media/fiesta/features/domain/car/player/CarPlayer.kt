@@ -137,6 +137,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
         }
     private var pageQueue = MediaQueueDto.EMPTY
     private var historyQueue = MediaQueueDto.EMPTY
+    private var mediaUrls = mutableSetOf<String>()
     private var recentlyPlayedEntries = emptyList<QueueEntryDto>()
     private var voiceSearch: VoiceSearchRequest? = null
     private var pendingVoiceScript: Pair<String, String>? = null
@@ -228,7 +229,12 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
     }
 
     private fun publishQueue() {
-        mediaSession.report(RendererEventDto.QueueRead(QueueResolution.resolve(pageQueue, historyQueue, previousTrack())))
+        val queue = if (lastReadingWasTrack) {
+            QueueResolution.resolve(pageQueue, historyQueue, previousTrack())
+        } else {
+            MediaQueueDto.EMPTY
+        }
+        mediaSession.report(RendererEventDto.QueueRead(queue))
     }
 
     fun attach(container: ViewGroup, activity: Context, ui: UiCallbacks) {
@@ -291,6 +297,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
         publishAvailability()
         historyQueue = MediaQueueDto.EMPTY
         pageQueue = MediaQueueDto.EMPTY
+        mediaUrls = mutableSetOf()
         publishQueue()
     }
 
@@ -518,6 +525,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
         readingSeenForDocument = true
         val leavingMedia = lastReadingWasTrack && !reading.isTrack
         lastReadingWasTrack = reading.isTrack
+        if (reading.isTrack) mediaUrls += reading.pageUrl
         val commandBeforeReading = mediaSession.pendingCommand
         val wasPlaying = wasReadingPlaying
         val stopping = !reading.playing && wasPlaying
@@ -551,6 +559,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
         handler.removeCallbacks(saveWhilePlaying)
         saveState()
         scheduleIdleDestroy()
+        publishQueue()
     }
 
     private fun positionOf(reading: MediaReadingDto, playback: PlaybackSnapshot): Int =
@@ -780,7 +789,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
 
     private fun browsingHistory(): MediaQueueDto {
         if (!browser.hasView) return MediaQueueDto.EMPTY
-        val history = browser.history
+        val history = QueueResolution.toMediaOnly(browser.history, mediaUrls)
         val entries = history.entries.map { entry ->
             val host = hostOf(entry.url) ?: ""
             QueueEntryDto(
