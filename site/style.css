@@ -272,6 +272,15 @@ section { padding: 112px 0; }
   animation: flicker 5s ease-in-out 1.4s both;
 }
 h1 { margin: 0; line-height: 0; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
 .eyebrow {
   display: flex;
   justify-content: center;
