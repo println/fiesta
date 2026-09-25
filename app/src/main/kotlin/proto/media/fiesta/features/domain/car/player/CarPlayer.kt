@@ -148,6 +148,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
 
     private var pageLoadingComplete = false
     private var lastReadingHasMedia = false
+    private var lastReadingWasTrack = false
     private var readingSeenForDocument = false
     private var lateVoiceSearchFailure: Runnable? = null
     private var lastRecordedTrackIdentity = ""
@@ -283,6 +284,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
         cancelVoiceSearch()
         lastPositionSeconds = -1
         lastReadingHasMedia = false
+        lastReadingWasTrack = false
         readingSeenForDocument = false
         pageLoadingComplete = false
         lastRecordedTrackIdentity = ""
@@ -514,30 +516,41 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
         }
         lastReadingHasMedia = reading.hasMedia
         readingSeenForDocument = true
+        val leavingMedia = lastReadingWasTrack && !reading.isTrack
+        lastReadingWasTrack = reading.isTrack
         val commandBeforeReading = mediaSession.pendingCommand
         val wasPlaying = wasReadingPlaying
         val stopping = !reading.playing && wasPlaying
-        if (stopping && playback.verdict == PlaybackVerdict.INTERRUPTED) {
+        if (stopping && !leavingMedia && playback.verdict == PlaybackVerdict.INTERRUPTED) {
             mediaSession.report(RendererEventDto.Interrupted(true))
         }
         mediaSession.report(RendererEventDto.Read(reading))
         wasReadingPlaying = reading.playing
         when {
+            leavingMedia -> onLeftMedia()
             reading.playing && !wasPlaying -> onReadingStartedPlaying()
             stopping -> {
                 Log.d(TAG, "reading stopped: hasMedia=${reading.hasMedia} position=${reading.positionSeconds} url=${reading.pageUrl}")
                 awaitVerdictForPause(commandedByUs = commandBeforeReading == MediaCommandDto.Pause, playback)
             }
         }
-        if (reading.hasMedia && reading.playing && reading.trackIdentity != lastRecordedTrackIdentity &&
-            RecentlyPlayed.isWorthRecording(reading.positionSeconds, reading.durationSeconds)
-        ) {
+        if (RecentlyPlayed.shouldRecord(reading, lastRecordedTrackIdentity)) {
             lastRecordedTrackIdentity = reading.trackIdentity
             recentlyPlayed.record(reading)
             recentlyPlayedEntries = recentlyPlayed.excluding(reading.trackIdentity)
             publishHistory()
             publishQueue()
         }
+    }
+
+    private fun onLeftMedia() {
+        Log.d(TAG, "left media for a plain page")
+        forgetPauseAwaitingVerdict()
+        focusRegain.cancel()
+        stateStore.playbackInterrupted = false
+        handler.removeCallbacks(saveWhilePlaying)
+        saveState()
+        scheduleIdleDestroy()
     }
 
     private fun positionOf(reading: MediaReadingDto, playback: PlaybackSnapshot): Int =
