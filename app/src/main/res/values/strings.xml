@@ -195,7 +195,7 @@
     <string name="settings_donate_reason_no_ads">No ads</string>
     <string name="settings_donate_reason_no_telemetry">No telemetry</string>
     <string name="settings_donate_purpose">Donations pay for fixes when a site changes, new plugins and testing in a real car.</string>
-    <string name="settings_donate_page">Pick how to fuel up ↗</string>
+    <string name="settings_donate_page">Pick how to fuel up</string>
     <string name="settings_donate_page_a11y">Pick how to fuel up, opens in the browser</string>
     <string name="settings_donate_no_browser">No browser found to open the page</string>
     <string name="settings_donate_footer_start">Made with</string>

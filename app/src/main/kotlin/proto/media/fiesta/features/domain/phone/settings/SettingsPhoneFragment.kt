@@ -65,15 +65,15 @@ class SettingsPhoneFragment : PreferenceFragment() {
     }
 
     private fun titleWithIcon(title: CharSequence, iconRes: Int): CharSequence =
-        textWithLeadingIcon(title, iconRes, resources.getColor(R.color.primaryText, activity.theme))
+        textWithLeadingIcon(title, iconRes, resources.getColor(R.color.primaryText, activity.theme), ImageSpan.ALIGN_BOTTOM)
 
-    private fun textWithLeadingIcon(text: CharSequence, iconRes: Int, tintColor: Int): CharSequence {
+    private fun textWithLeadingIcon(text: CharSequence, iconRes: Int, tintColor: Int, alignment: Int): CharSequence {
         val icon = resources.getDrawable(iconRes, activity.theme).mutate()
         val size = (resources.displayMetrics.density * ICON_SIZE_DP).toInt()
         icon.setBounds(0, 0, size, size)
         icon.setTint(tintColor)
         return SpannableString("  $text").apply {
-            setSpan(ImageSpan(icon, ImageSpan.ALIGN_BOTTOM), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            setSpan(ImageSpan(icon, alignment), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         }
     }
 
@@ -157,7 +157,8 @@ class SettingsPhoneFragment : PreferenceFragment() {
         textWithLeadingIcon(
             getString(textRes),
             R.drawable.donate_reason_check,
-            resources.getColor(R.color.brandSecondary, activity.theme)
+            resources.getColor(R.color.brandSecondary, activity.theme),
+            ImageSpan.ALIGN_BASELINE
         )
 
     private fun openDonatePage() {

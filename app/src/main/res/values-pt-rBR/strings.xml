@@ -184,7 +184,7 @@
     <string name="settings_donate_reason_no_ads">Sem anúncios</string>
     <string name="settings_donate_reason_no_telemetry">Sem telemetria</string>
     <string name="settings_donate_purpose">As doações pagam correções quando um site muda, novos plugins e testes em carro de verdade.</string>
-    <string name="settings_donate_page">Escolher como abastecer ↗</string>
+    <string name="settings_donate_page">Escolher como abastecer</string>
     <string name="settings_donate_page_a11y">Escolher como abastecer, abre no navegador</string>
     <string name="settings_donate_no_browser">Nenhum navegador encontrado para abrir a página</string>
     <string name="settings_donate_footer_start">Feito com</string>
