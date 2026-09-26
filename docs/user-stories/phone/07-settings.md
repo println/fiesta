@@ -30,7 +30,17 @@ it says so and does nothing.
 > **Given** the Settings screen
 > **Then** there is a donate entry
 > **When** I open it
-> **Then** a screen explains why donating matters to the project
-> **And** it lists the donation links, each one opening its page.
+> **Then** a screen explains why donating matters
+> **When** I tap its button
+> **Then** the donate page opens in my phone's default browser, not inside Fiesta,
+> **and** it lists the donation links, each one opening its page.
 
-**Partly there.** "Donate to Fiesta" is the last Settings entry, in the brand blue, and opens the screen with the artwork, the reasons and a "Buy me a coffee" button that opens the Ko-fi page. GitHub Sponsors, the other donation link, is not on the screen yet.
+> **Given** my phone is in Portuguese
+> **When** I tap the button
+> **Then** the Portuguese donate page opens.
+
+> **Given** my phone is in any other language, like English or Spanish
+> **When** I tap the button
+> **Then** the English donate page opens.
+
+**Partly there.** The screen is there; its button opens Ko-fi instead of the donate page.
