@@ -16,7 +16,9 @@ class AndroidAutoConnectionSignal(context: Context) : CarConnectionSignal {
     override fun observe(listener: (connected: Boolean) -> Unit): AutoCloseable {
         val receiver = object : BroadcastReceiver() {
             override fun onReceive(context: Context, intent: Intent) {
-                isConnected()?.let(listener)
+                // Android Auto's provider stops answering once the car is gone, so an update
+                // that can no longer be read is a disconnection.
+                listener(isConnected() ?: false)
             }
         }
         val filter = IntentFilter(ACTION_CAR_CONNECTION_UPDATED)

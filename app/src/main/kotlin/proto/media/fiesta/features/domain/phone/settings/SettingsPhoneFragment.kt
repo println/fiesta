@@ -1,19 +1,26 @@
 package proto.media.fiesta.features.domain.phone.settings
+
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.SharedPreferences
+import android.net.Uri
 import android.os.Bundle
 import android.preference.CheckBoxPreference
 import android.preference.ListPreference
 import android.preference.Preference
 import android.preference.PreferenceFragment
 import android.text.SpannableString
+import android.text.SpannableStringBuilder
 import android.text.Spanned
 import android.text.style.ForegroundColorSpan
 import android.text.style.ImageSpan
 import android.view.View
 import android.widget.ListView
+import android.widget.Toast
+import androidx.core.os.ConfigurationCompat
 import proto.media.fiesta.BuildConfig
 import proto.media.fiesta.R
+import proto.media.fiesta.features.domain.core.settings.DonatePage
 import proto.media.fiesta.features.domain.core.settings.SettingsUtils
 import proto.media.fiesta.features.domain.phone.browser.SiteStorageActivity
 import proto.media.fiesta.features.domain.phone.plugins.PluginsPhoneActivity
@@ -58,13 +65,16 @@ class SettingsPhoneFragment : PreferenceFragment() {
         }
     }
 
-    private fun titleWithIcon(title: CharSequence, iconRes: Int): CharSequence {
+    private fun titleWithIcon(title: CharSequence, iconRes: Int): CharSequence =
+        textWithLeadingIcon(title, iconRes, resources.getColor(R.color.primaryText, activity.theme), ImageSpan.ALIGN_BOTTOM)
+
+    private fun textWithLeadingIcon(text: CharSequence, iconRes: Int, tintColor: Int, alignment: Int): CharSequence {
         val icon = resources.getDrawable(iconRes, activity.theme).mutate()
         val size = (resources.displayMetrics.density * ICON_SIZE_DP).toInt()
         icon.setBounds(0, 0, size, size)
-        icon.setTint(resources.getColor(R.color.primaryText, activity.theme))
-        return SpannableString("  $title").apply {
-            setSpan(ImageSpan(icon, ImageSpan.ALIGN_BOTTOM), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        icon.setTint(tintColor)
+        return SpannableString("  $text").apply {
+            setSpan(ImageSpan(icon, alignment), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         }
     }
 
@@ -97,6 +107,14 @@ class SettingsPhoneFragment : PreferenceFragment() {
                 true
             }
 
+        findPreference("pref_donate_page")?.onPreferenceClickListener =
+            Preference.OnPreferenceClickListener {
+                openDonatePage()
+                true
+            }
+
+        setupDonateHeader()
+
         findPreference("pref_app_version")?.let { appVersion ->
             appVersion.title = getString(R.string.version).trim() + " " + BuildConfig.VERSION_NAME + " · " + BuildConfig.VERSION_CODENAME
         }
@@ -121,6 +139,37 @@ class SettingsPhoneFragment : PreferenceFragment() {
         bindTopic("topic_hack", R.xml.settings_hack, R.string.settings_topic_hack_title)
         bindTopic("topic_donate", R.xml.settings_donate, R.string.settings_topic_donate_title)
         bindTopic("topic_about", R.xml.settings_about, R.string.settings_topic_about_title)
+    }
+
+    private fun setupDonateHeader() {
+        val header = findPreference("pref_donate_header") ?: return
+        val reasons = listOf(
+            R.string.settings_donate_reason_free,
+            R.string.settings_donate_reason_no_ads,
+            R.string.settings_donate_reason_no_telemetry
+        )
+        header.summary = SpannableStringBuilder().apply {
+            reasons.forEach { append(donateReasonLine(it)).append("\n") }
+            append("\n").append(getString(R.string.settings_donate_purpose))
+        }
+    }
+
+    private fun donateReasonLine(textRes: Int): CharSequence =
+        textWithLeadingIcon(
+            getString(textRes),
+            R.drawable.donate_reason_check,
+            resources.getColor(R.color.brandSecondary, activity.theme),
+            ImageSpan.ALIGN_BASELINE
+        )
+
+    private fun openDonatePage() {
+        val language = ConfigurationCompat.getLocales(resources.configuration)[0]?.language.orEmpty()
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(DonatePage.urlFor(language)))
+        try {
+            startActivity(intent)
+        } catch (e: ActivityNotFoundException) {
+            Toast.makeText(activity, R.string.settings_donate_no_browser, Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun highlightDonateTopic() {

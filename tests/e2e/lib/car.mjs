@@ -169,10 +169,16 @@ export class CarSession {
       actions: state ? Number(state[3]) : 0,
       customActions: state ? state[4] : '',
       activeItemId: state ? Number(state[5]) : null,
+      active: /active=true/.test(block),
       description: block.match(/description=(.*)/)?.[1] ?? null,
       queueTitle: queue?.[1] ?? null,
       queueSize: queue ? Number(queue[2]) : 0
     };
+  }
+
+  async notificationShown() {
+    const dump = await shell('dumpsys notification --noredact');
+    return dump.includes(`pkg=${config.packageName}`);
   }
 
   linesSince(mark, pattern) {

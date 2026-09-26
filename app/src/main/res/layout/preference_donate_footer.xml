@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:contentDescription="@string/settings_donate_footer_a11y"
+    android:focusable="true"
     android:gravity="center"
     android:orientation="horizontal"
     android:paddingTop="24dp"
@@ -10,6 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
         android:text="@string/settings_donate_footer_start"
         android:textColor="@color/secondaryText"
         android:textSize="14sp" />
@@ -25,6 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
         android:text="@string/settings_donate_footer_end"
         android:textColor="@color/secondaryText"
         android:textSize="14sp" />

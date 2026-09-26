@@ -8,7 +8,7 @@ class CarService : CarActivityService() {
 
     override fun onCreate() {
         super.onCreate()
-        PlaybackBrowserService.obtainMediaSession(this)
+        PlaybackBrowserService.onCarEntered(this)
     }
 
     override fun getCarActivity(): Class<out CarActivity> = MainCarActivity::class.java

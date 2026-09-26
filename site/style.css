@@ -605,6 +605,36 @@ td.no { color: rgba(169, 159, 196, .4); }
   filter: drop-shadow(0 0 4px var(--blue));
 }
 
+.donate-art { position: relative; }
+.donate-art img { width: 100%; height: auto; max-height: 32vh; object-fit: cover; object-position: 50% 45%; }
+.donate-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 9, 19, .6) 0%, rgba(0, 9, 19, 0) 35%, rgba(0, 9, 19, 0) 55%, var(--bg) 100%);
+}
+.donate-content { max-width: calc(560px + 2 * var(--gutter)); margin: 0 auto; padding: 4px var(--gutter) 72px; }
+.donate h1 { font-size: clamp(2rem, 6vw, 3.1rem); line-height: 1.08; font-weight: 700; letter-spacing: -.02em; }
+.donate h1 span {
+  background: var(--neon);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.donate-lead { margin: 10px 0 0; font-size: 1.05rem; color: rgba(243, 236, 255, .85); }
+.donate-block { padding: 0; margin-top: 32px; }
+.donate-block .checks { margin: 0; }
+.donate-buttons { display: grid; gap: 12px; }
+.donate-buttons .btn { justify-content: center; min-height: 48px; }
+.donate .btn:focus-visible { outline-color: var(--blue); }
+.btn-donate {
+  color: #fff;
+  background: linear-gradient(90deg, #C8067D, #C21BC8);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .12) inset, 0 10px 36px -8px rgba(200, 6, 125, .8);
+}
+.btn-donate:hover { box-shadow: 0 0 0 1px rgba(255, 255, 255, .2) inset, 0 14px 44px -6px rgba(200, 6, 125, .95); }
+.donate-note { margin: 12px 0 0; font-size: .9rem; color: var(--muted); }
+
 .footer { padding: 56px 0 40px; border-top: 1px solid rgba(255, 255, 255, .06); }
 .footer-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 32px; }
 .footer-logo { height: 34px; width: auto; }
@@ -648,6 +678,12 @@ td.no { color: rgba(169, 159, 196, .4); }
   th:not(:first-child), td:not(:first-child) { width: 76px; }
   .footer-row { justify-content: center; text-align: center; }
   .footer-tags { justify-content: center; }
+}
+
+@media (min-width: 720px) {
+  .donate-content { padding-top: 16px; }
+  .donate-buttons { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .donate-star { grid-column: 1 / -1; }
 }
 
 @media (prefers-reduced-motion: reduce) {
