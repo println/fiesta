@@ -79,6 +79,8 @@
 
     <string name="settings_protected_content_title">Allow protected content (DRM)</string>
     <string name="settings_protected_content_summary">Needed for streaming services. May not work on the projected screen.</string>
+    <string name="settings_update_notice_title">Check for new versions</string>
+    <string name="settings_update_notice_summary">When the app opens, tells you if there is a new version</string>
     <string name="update_available_title">New version available</string>
     <string name="update_available_message">Fiesta %1$s is available.</string>
     <string name="update_available_download">Download</string>
@@ -174,7 +176,7 @@
     <string name="browser_car_inactive_dismiss">OK</string>
 
     <string name="settings_topic_general_title">General</string>
-    <string name="settings_topic_general_summary">WebView identity, protected content</string>
+    <string name="settings_topic_general_summary">WebView identity, protected content, new versions</string>
     <string name="settings_topic_privacy_title">Privacy and security</string>
     <string name="settings_topic_privacy_summary">Cookies, ads and trackers, search suggestions, site data</string>
     <string name="settings_topic_car_general_title">Car — General</string>

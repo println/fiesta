@@ -65,6 +65,11 @@ it says so and does nothing.
 > **When** I open the app again
 > **Then** no dialog shows and the app does not contact GitHub.
 
+> **Given** Settings → General
+> **Then** "Check for new versions" is there, unticked after "Don't show again"
+> **When** I tick it
+> **Then** the dialog comes back when a newer release is out.
+
 > **Given** I am in the car
 > **Then** nothing about new versions shows on the car screen.
 

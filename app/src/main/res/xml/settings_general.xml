@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Plano 20, Etapa 1: Geral para preferencias de compatibilidade (WebView,
-     conteudo protegido). Home page, resume e restore saem daqui. -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <CheckBoxPreference
@@ -14,5 +12,11 @@
         android:defaultValue="true"
         android:title="@string/settings_protected_content_title"
         android:summary="@string/settings_protected_content_summary" />
+
+    <CheckBoxPreference
+        android:key="pref_update_notice"
+        android:defaultValue="true"
+        android:title="@string/settings_update_notice_title"
+        android:summary="@string/settings_update_notice_summary" />
 
 </PreferenceScreen>

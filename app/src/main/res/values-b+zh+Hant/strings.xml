@@ -158,7 +158,7 @@
     <string name="browser_car_inactive_dismiss">確定</string>
 
     <string name="settings_topic_general_title">一般</string>
-    <string name="settings_topic_general_summary">WebView 識別、受保護的內容</string>
+    <string name="settings_topic_general_summary">WebView 識別、受保護的內容、新版本</string>
     <string name="settings_topic_privacy_title">隱私權與安全性</string>
     <string name="settings_topic_privacy_summary">Cookie、廣告與追蹤器、搜尋建議、網站資料</string>
     <string name="settings_topic_car_general_title">車機 — 一般</string>
