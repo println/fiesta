@@ -25,6 +25,7 @@ object SettingsUtils {
     const val KEY_YOUTUBE_SCROLL_TO_PLAYER = "pref_youtube_scroll_to_player"
     const val KEY_DEFAULT_FAVORITES_SEEDED = "pref_default_favorites_seeded"
     const val KEY_VOICE_PLUGIN = "pref_voice_plugin"
+    const val KEY_UPDATE_NOTICE = "pref_update_notice"
 
     const val DEFAULT_HOME_URL = "https://m.youtube.com"
 
@@ -32,104 +33,94 @@ object SettingsUtils {
         return PreferenceManager.getDefaultSharedPreferences(context)
     }
 
-    @JvmStatic
     fun isDisabledNotifications(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_DISABLE_NOTIFICATIONS, false)
     }
 
-    @JvmStatic
     fun getZoomPercent(context: Context): Int {
         val value = prefs(context).getString(KEY_ZOOM, "100")
         return value?.toIntOrNull() ?: 100
     }
 
-    @JvmStatic
     fun setZoomPercent(context: Context, percent: Int) {
         prefs(context).edit().putString(KEY_ZOOM, percent.toString()).apply()
     }
 
-    @JvmStatic
     fun isSafetyWarningEnabled(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_SAFETY_WARNING, false)
     }
 
-    @JvmStatic
     fun isThirdPartyCookiesAllowed(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_THIRD_PARTY_COOKIES, true)
     }
 
-    @JvmStatic
     fun isProtectedContentAllowed(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_PROTECTED_CONTENT, true)
     }
 
-    @JvmStatic
     fun isResumeOnFocus(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_RESUME_ON_FOCUS, true)
     }
 
-    @JvmStatic
     fun getHomeUrl(context: Context): String {
         val url = prefs(context).getString(KEY_HOME_URL, DEFAULT_HOME_URL)
         return if (url.isNullOrEmpty()) DEFAULT_HOME_URL else url
     }
 
-    @JvmStatic
     fun setHomeUrl(context: Context, url: String) {
         prefs(context).edit().putString(KEY_HOME_URL, url).apply()
     }
 
-    @JvmStatic
     fun isRestoreLastUrl(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_RESTORE_LAST_URL, true)
     }
 
-    @JvmStatic
     fun isStripWebViewUserAgent(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_STRIP_WV_UA, false)
     }
 
-    @JvmStatic
     fun isAdBlockEnabled(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_AD_BLOCK, true)
     }
 
-    @JvmStatic
     fun setAdBlockEnabled(context: Context, enabled: Boolean) {
         prefs(context).edit().putBoolean(KEY_AD_BLOCK, enabled).apply()
     }
 
-    @JvmStatic
     fun isSearchSuggestionsEnabled(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_SEARCH_SUGGESTIONS, true)
     }
 
-    @JvmStatic
+    fun isUpdateNoticeEnabled(context: Context): Boolean {
+        return prefs(context).getBoolean(KEY_UPDATE_NOTICE, true)
+    }
+
+    fun disableUpdateNotice(context: Context) {
+        prefs(context).edit().putBoolean(KEY_UPDATE_NOTICE, false).apply()
+    }
+
+
+
     fun getCarToolbarPosition(context: Context): String {
         return prefs(context).getString(KEY_CAR_TOOLBAR_POSITION, "left")!!
     }
 
-    @JvmStatic
     fun setCarToolbarPosition(context: Context, position: String) {
         prefs(context).edit().putString(KEY_CAR_TOOLBAR_POSITION, position).apply()
     }
 
-    @JvmStatic
     fun isCarToolbarAutoHide(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_CAR_TOOLBAR_AUTO_HIDE, false)
     }
 
-    @JvmStatic
     fun setCarToolbarAutoHide(context: Context, enabled: Boolean) {
         prefs(context).edit().putBoolean(KEY_CAR_TOOLBAR_AUTO_HIDE, enabled).apply()
     }
 
-    @JvmStatic
     fun isCarBookmarksBarVisible(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_CAR_BOOKMARKS_BAR, false)
     }
 
-    @JvmStatic
     fun setCarBookmarksBarVisible(context: Context, visible: Boolean) {
         prefs(context).edit().putBoolean(KEY_CAR_BOOKMARKS_BAR, visible).apply()
     }
@@ -148,41 +139,33 @@ object SettingsUtils {
         prefs(context).edit().remove(KEY_CAR_MENU_BUBBLE_X).remove(KEY_CAR_MENU_BUBBLE_Y).apply()
     }
 
-    @JvmStatic
     fun isYoutubeScrollToPlayerEnabled(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_YOUTUBE_SCROLL_TO_PLAYER, true)
     }
 
-    @JvmStatic
     fun getVoicePluginId(context: Context): String? =
         prefs(context).getString(KEY_VOICE_PLUGIN, null)?.takeIf { it.isNotEmpty() }
 
-    @JvmStatic
     fun setVoicePluginId(context: Context, pluginId: String?) {
         prefs(context).edit().putString(KEY_VOICE_PLUGIN, pluginId.orEmpty()).apply()
     }
 
-    @JvmStatic
     fun isPluginOptionEnabled(context: Context, key: String, default: Boolean): Boolean {
         return prefs(context).getBoolean(key, default)
     }
 
-    @JvmStatic
     fun setPluginOptionEnabled(context: Context, key: String, enabled: Boolean) {
         prefs(context).edit().putBoolean(key, enabled).apply()
     }
 
-    @JvmStatic
     fun setYoutubeScrollToPlayerEnabled(context: Context, enabled: Boolean) {
         prefs(context).edit().putBoolean(KEY_YOUTUBE_SCROLL_TO_PLAYER, enabled).apply()
     }
 
-    @JvmStatic
     fun areDefaultFavoritesSeeded(context: Context): Boolean {
         return prefs(context).getBoolean(KEY_DEFAULT_FAVORITES_SEEDED, false)
     }
 
-    @JvmStatic
     fun markDefaultFavoritesSeeded(context: Context) {
         prefs(context).edit().putBoolean(KEY_DEFAULT_FAVORITES_SEEDED, true).apply()
     }
