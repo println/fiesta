@@ -14,4 +14,18 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://println.github.io/fiesta/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://println.github.io/fiesta/"/>
   </url>
+  <url>
+    <loc>https://println.github.io/fiesta/donate.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://println.github.io/fiesta/donate.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://println.github.io/fiesta/pt-br/donate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://println.github.io/fiesta/donate.html"/>
+  </url>
+  <url>
+    <loc>https://println.github.io/fiesta/pt-br/donate.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://println.github.io/fiesta/donate.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://println.github.io/fiesta/pt-br/donate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://println.github.io/fiesta/donate.html"/>
+  </url>
 </urlset>
