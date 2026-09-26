@@ -1,5 +1,6 @@
 package proto.media.fiesta.features.domain.core.media
 
+import proto.media.fiesta.support.media.dto.MediaReadingDto
 import proto.media.fiesta.support.media.dto.QueueEntryDto
 
 import org.junit.Assert.assertEquals
@@ -63,5 +64,29 @@ class RecentlyPlayedTest {
     fun `an unknown duration falls back to half a minute`() {
         assertFalse(RecentlyPlayed.isWorthRecording(positionSeconds = 29.0, durationSeconds = 0.0))
         assertTrue(RecentlyPlayed.isWorthRecording(positionSeconds = 31.0, durationSeconds = 0.0))
+    }
+
+    private fun reading(isTrack: Boolean, positionSeconds: Double = 60.0, trackId: String = "track") =
+        MediaReadingDto.EMPTY.copy(isTrack = isTrack, positionSeconds = positionSeconds, trackId = trackId)
+
+    @Test
+    fun `a plain page is never worth recording`() {
+        assertFalse(RecentlyPlayed.shouldRecord(reading(isTrack = false), lastRecordedIdentity = ""))
+    }
+
+    @Test
+    fun `a track already recorded is not recorded again`() {
+        val current = reading(isTrack = true, trackId = "track")
+        assertFalse(RecentlyPlayed.shouldRecord(current, lastRecordedIdentity = current.trackIdentity))
+    }
+
+    @Test
+    fun `a track skipped through is not recorded even if it is a track`() {
+        assertFalse(RecentlyPlayed.shouldRecord(reading(isTrack = true, positionSeconds = 3.0), lastRecordedIdentity = ""))
+    }
+
+    @Test
+    fun `a new track worth recording is recorded`() {
+        assertTrue(RecentlyPlayed.shouldRecord(reading(isTrack = true, positionSeconds = 60.0), lastRecordedIdentity = ""))
     }
 }

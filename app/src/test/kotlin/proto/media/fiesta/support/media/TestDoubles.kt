@@ -98,7 +98,8 @@ fun playingVideo(
     durationSeconds: Double = 212.0,
     playing: Boolean = true,
     canSkipNext: Boolean = true,
-    canSkipPrevious: Boolean = true
+    canSkipPrevious: Boolean = true,
+    isTrack: Boolean = true
 ) = MediaReadingDto.EMPTY.copy(
     hasMedia = true,
     playing = playing,
@@ -110,6 +111,7 @@ fun playingVideo(
     artworkUrl = "https://example.invalid/art.jpg",
     canSkipNext = canSkipNext,
     canSkipPrevious = canSkipPrevious,
+    isTrack = isTrack,
     pageUrl = "https://www.youtube.com/watch?v=abc"
 )
 

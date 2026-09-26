@@ -88,6 +88,18 @@ internal object StateProjection {
                 capabilities = restricted
             )
         }
+        if (!reading.isTrack) {
+            return base.copy(
+                playback = if (reading == MediaReadingDto.EMPTY) {
+                    MediaStateDto.Playback.NONE
+                } else {
+                    MediaStateDto.Playback.STOPPED
+                },
+                track = MediaTrackDto.EMPTY,
+                progress = MediaProgressDto.NONE.copy(updatedAtMillis = nowMillis),
+                audible = false
+            )
+        }
         if (echo != null && nowMillis < echo.expiresAtMillis) {
             return base.copy(
                 playback = if (echo.expectsPlaying) {

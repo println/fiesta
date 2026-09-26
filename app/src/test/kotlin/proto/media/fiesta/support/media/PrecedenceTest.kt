@@ -92,6 +92,14 @@ class PrecedenceTest {
     }
 
     @Test
+    fun `starting from a plain page connects instead of stopping`() {
+        session.report(RendererEventDto.Read(pageWithoutMedia()))
+        session.report(RendererEventDto.AvailabilityChanged(RendererAvailability.STARTING))
+
+        assertEquals(Playback.CONNECTING, client.last.playback)
+    }
+
+    @Test
     fun `starting wins over an optimistic command`() {
         session.report(RendererEventDto.Read(playingVideo(playing = false)))
         server.connect(RecordingClient()).play()

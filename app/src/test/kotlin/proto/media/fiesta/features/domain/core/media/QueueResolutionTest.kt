@@ -3,6 +3,8 @@ package proto.media.fiesta.features.domain.core.media
 import proto.media.fiesta.support.media.dto.MediaQueueDto
 import proto.media.fiesta.support.media.dto.QueueEntryDto
 import proto.media.fiesta.support.media.dto.QueueShape
+import proto.media.fiesta.support.webviewex.BrowserHistory
+import proto.media.fiesta.support.webviewex.HistoryEntry
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
@@ -10,6 +12,44 @@ import org.junit.Test
 class QueueResolutionTest {
 
     private fun entry(id: Long) = QueueEntryDto(id, "title$id", "subtitle$id", "")
+
+    private fun historyEntry(index: Int, url: String) = HistoryEntry(rawIndex = index, url = url, title = "title$index")
+
+    @Test
+    fun `only the entries seen as media are kept`() {
+        val history = BrowserHistory(
+            entries = listOf(historyEntry(0, "https://plain.example/"), historyEntry(1, "https://media.example/")),
+            currentPosition = 1
+        )
+
+        val filtered = QueueResolution.toMediaOnly(history, mediaUrls = setOf("https://media.example/"))
+
+        assertEquals(listOf("https://media.example/"), filtered.entries.map { it.url })
+        assertEquals(0, filtered.currentPosition)
+    }
+
+    @Test
+    fun `the cursor is unknown when the current page is not media`() {
+        val history = BrowserHistory(
+            entries = listOf(historyEntry(0, "https://media.example/"), historyEntry(1, "https://plain.example/")),
+            currentPosition = 1
+        )
+
+        val filtered = QueueResolution.toMediaOnly(history, mediaUrls = setOf("https://media.example/"))
+
+        assertEquals(listOf("https://media.example/"), filtered.entries.map { it.url })
+        assertEquals(-1, filtered.currentPosition)
+    }
+
+    @Test
+    fun `with nothing ever seen as media the history is empty`() {
+        val history = BrowserHistory(entries = listOf(historyEntry(0, "https://plain.example/")), currentPosition = 0)
+
+        val filtered = QueueResolution.toMediaOnly(history, mediaUrls = emptySet())
+
+        assertEquals(emptyList<HistoryEntry>(), filtered.entries)
+        assertEquals(-1, filtered.currentPosition)
+    }
 
     @Test
     fun `list shape replaces the whole queue with the page playlist`() {
