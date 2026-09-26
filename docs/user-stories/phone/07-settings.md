@@ -44,3 +44,28 @@ it says so and does nothing.
 > **Then** the English donate page opens.
 
 **Partly there.** The button opens the donate page in the default browser, in Portuguese or in English; the page is not published on the site yet.
+
+## PH-21 — Know when a new version is out
+
+> **As a** phone user
+> **I want** the app to tell me when a new version is out
+> **So that** I don't have to check GitHub to stay up to date.
+
+> **Given** a newer release is published on GitHub
+> **When** I open the app on the phone
+> **Then** a dialog says which version is out, with "Download", "Cancel" and a "Don't show again" box
+> **When** I tap "Download"
+> **Then** the new APK downloads through my phone's browser
+> **and** the app itself never installs anything.
+
+> **When** I tap "Cancel"
+> **Then** the dialog closes, and it shows again the next time I open the app.
+
+> **Given** I tick "Don't show again" in that dialog
+> **When** I open the app again
+> **Then** no dialog shows and the app does not contact GitHub.
+
+> **Given** I am in the car
+> **Then** nothing about new versions shows on the car screen.
+
+**Today, and it is what I want.**

@@ -76,6 +76,11 @@
 
     <string name="settings_protected_content_title">Permitir conteúdo protegido (DRM)</string>
     <string name="settings_protected_content_summary">Necessário para serviços de streaming. Pode não funcionar na tela projetada.</string>
+    <string name="update_available_title">Nova versão disponível</string>
+    <string name="update_available_message">O Fiesta %1$s está disponível.</string>
+    <string name="update_available_download">Baixar</string>
+    <string name="update_dont_show_again">Não avisar mais</string>
+    <string name="update_no_browser">Nenhum navegador encontrado para abrir a página</string>
 
     <string name="settings_strip_wv_ua_title">Ocultar que isto é um WebView</string>
     <string name="settings_strip_wv_ua_summary">Exige reiniciar o aplicativo para ter efeito. Alguns serviços recusam WebViews. Pode mudar o layout de outros sites.</string>

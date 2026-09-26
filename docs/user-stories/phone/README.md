@@ -26,6 +26,7 @@ what already works today, which is the detail the app must not lose.
 | PH-18 Browse without redirect errors | [Browsing](01-browsing.md) |
 | PH-19 Speak to the assistant on the phone and have the car obey | [Driving the car from the phone](05-car-from-phone.md) |
 | PH-20 Donate from Settings | [Settings](07-settings.md) |
+| PH-21 Know when a new version is out | [Settings](07-settings.md) |
 
 ## Not met yet
 

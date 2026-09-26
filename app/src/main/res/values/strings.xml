@@ -79,6 +79,11 @@
 
     <string name="settings_protected_content_title">Allow protected content (DRM)</string>
     <string name="settings_protected_content_summary">Needed for streaming services. May not work on the projected screen.</string>
+    <string name="update_available_title">New version available</string>
+    <string name="update_available_message">Fiesta %1$s is available.</string>
+    <string name="update_available_download">Download</string>
+    <string name="update_dont_show_again">Don\'t show again</string>
+    <string name="update_no_browser">No browser found to open the page</string>
 
     <string name="settings_strip_wv_ua_title">Hide that this is a WebView</string>
     <string name="settings_strip_wv_ua_summary">Requires restarting the app to take effect. Some services refuse WebViews. May change the layout of other sites.</string>

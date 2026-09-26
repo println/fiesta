@@ -46,8 +46,8 @@
   position: absolute;
   left: 40%;
   top: 50%;
-  width: max(100cqw, 100cqh * 1673 / 940);
-  aspect-ratio: 1673 / 940;
+  width: max(100cqw, 100cqh * 1376 / 768);
+  aspect-ratio: 1376 / 768;
   transform: translate(-40%, -50%);
   background: url(hero.webp) 0 0 / 100% 100%;
 }

@@ -8,28 +8,28 @@
   const GTR_LIGHTS = `
     <div class="gtr-scene" aria-hidden="true">
       <div class="gtr-frame">
-        <svg class="taillights gtr" viewBox="0 0 1673 940">
-          <defs><filter id="gtr-glow" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="5"/></filter></defs>
-          <g filter="url(#gtr-glow)"><circle cx="193" cy="664.5" r="13.2" stroke-width="7"/><circle cx="225.5" cy="666.5" r="11.5" stroke-width="7"/><circle cx="385.5" cy="666.5" r="12" stroke-width="7"/><circle cx="420.5" cy="664.5" r="13.5" stroke-width="7"/></g>
-          <g class="lamp"><circle cx="193" cy="664.5" r="13.2" stroke-width="1.6"/><circle cx="225.5" cy="666.5" r="11.5" stroke-width="1.6"/><circle cx="385.5" cy="666.5" r="12" stroke-width="1.6"/><circle cx="420.5" cy="664.5" r="13.5" stroke-width="1.6"/></g>
+        <svg class="taillights gtr" viewBox="0 0 1376 768">
+          <defs><filter id="gtr-glow" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="4"/></filter></defs>
+          <g filter="url(#gtr-glow)"><circle cx="159.3" cy="544.5" r="11.3" stroke-width="6"/><circle cx="186" cy="545.5" r="9.5" stroke-width="6"/><circle cx="317.5" cy="545.5" r="10" stroke-width="6"/><circle cx="346.5" cy="544.5" r="11.3" stroke-width="6"/></g>
+          <g class="lamp"><circle cx="159.3" cy="544.5" r="11.3" stroke-width="1.4"/><circle cx="186" cy="545.5" r="9.5" stroke-width="1.4"/><circle cx="317.5" cy="545.5" r="10" stroke-width="1.4"/><circle cx="346.5" cy="544.5" r="11.3" stroke-width="1.4"/></g>
         </svg>
-        <svg class="brake gtr" viewBox="0 0 1673 940">
+        <svg class="brake gtr" viewBox="0 0 1376 768">
           <defs>
-            <filter id="gtr-brake-glow" x="-50%" y="-300%" width="200%" height="700%"><feGaussianBlur stdDeviation="8"/></filter>
-            <filter id="gtr-brake-halo" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="2"/></filter>
+            <filter id="gtr-brake-glow" x="-50%" y="-300%" width="200%" height="700%"><feGaussianBlur stdDeviation="6.5"/></filter>
+            <filter id="gtr-brake-halo" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="1.7"/></filter>
           </defs>
-          <g filter="url(#gtr-brake-glow)"><circle cx="193" cy="664.5" r="13.2" stroke-width="12"/><circle cx="225.5" cy="666.5" r="11.5" stroke-width="12"/><circle cx="385.5" cy="666.5" r="12" stroke-width="12"/><circle cx="420.5" cy="664.5" r="13.5" stroke-width="12"/><rect x="283" y="638" width="40" height="8" rx="2"/></g>
-          <g filter="url(#gtr-brake-halo)"><circle cx="193" cy="664.5" r="13.2" stroke-width="4"/><circle cx="225.5" cy="666.5" r="11.5" stroke-width="4"/><circle cx="385.5" cy="666.5" r="12" stroke-width="4"/><circle cx="420.5" cy="664.5" r="13.5" stroke-width="4"/></g>
-          <g class="brake-core"><circle cx="193" cy="664.5" r="13.2" stroke-width="2"/><circle cx="225.5" cy="666.5" r="11.5" stroke-width="2"/><circle cx="385.5" cy="666.5" r="12" stroke-width="2"/><circle cx="420.5" cy="664.5" r="13.5" stroke-width="2"/><rect x="286" y="641" width="34" height="3" rx="1"/></g>
+          <g filter="url(#gtr-brake-glow)"><circle cx="159.3" cy="544.5" r="11.3" stroke-width="10"/><circle cx="186" cy="545.5" r="9.5" stroke-width="10"/><circle cx="317.5" cy="545.5" r="10" stroke-width="10"/><circle cx="346.5" cy="544.5" r="11.3" stroke-width="10"/><rect x="233" y="522" width="33" height="7" rx="2"/></g>
+          <g filter="url(#gtr-brake-halo)"><circle cx="159.3" cy="544.5" r="11.3" stroke-width="3.5"/><circle cx="186" cy="545.5" r="9.5" stroke-width="3.5"/><circle cx="317.5" cy="545.5" r="10" stroke-width="3.5"/><circle cx="346.5" cy="544.5" r="11.3" stroke-width="3.5"/></g>
+          <g class="brake-core"><circle cx="159.3" cy="544.5" r="11.3" stroke-width="1.7"/><circle cx="186" cy="545.5" r="9.5" stroke-width="1.7"/><circle cx="317.5" cy="545.5" r="10" stroke-width="1.7"/><circle cx="346.5" cy="544.5" r="11.3" stroke-width="1.7"/><rect x="236" y="524.5" width="27" height="2.5" rx="1"/></g>
         </svg>
-        <svg class="hazard gtr" viewBox="0 0 1673 940">
+        <svg class="hazard gtr" viewBox="0 0 1376 768">
           <defs>
-            <filter id="gtr-hazard-glow" x="-50%" y="-300%" width="200%" height="700%"><feGaussianBlur stdDeviation="7"/></filter>
-            <filter id="gtr-hazard-halo" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="2"/></filter>
+            <filter id="gtr-hazard-glow" x="-50%" y="-300%" width="200%" height="700%"><feGaussianBlur stdDeviation="6"/></filter>
+            <filter id="gtr-hazard-halo" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="1.7"/></filter>
           </defs>
-          <g filter="url(#gtr-hazard-glow)"><circle cx="193" cy="664.5" r="13.2" stroke-width="10"/><circle cx="420.5" cy="664.5" r="13.5" stroke-width="10"/></g>
-          <g filter="url(#gtr-hazard-halo)"><circle cx="193" cy="664.5" r="13.2" stroke-width="4"/><circle cx="420.5" cy="664.5" r="13.5" stroke-width="4"/></g>
-          <g class="hazard-core"><circle cx="193" cy="664.5" r="13.2" stroke-width="2"/><circle cx="420.5" cy="664.5" r="13.5" stroke-width="2"/></g>
+          <g filter="url(#gtr-hazard-glow)"><circle cx="159.3" cy="544.5" r="11.3" stroke-width="8"/><circle cx="346.5" cy="544.5" r="11.3" stroke-width="8"/></g>
+          <g filter="url(#gtr-hazard-halo)"><circle cx="159.3" cy="544.5" r="11.3" stroke-width="3.5"/><circle cx="346.5" cy="544.5" r="11.3" stroke-width="3.5"/></g>
+          <g class="hazard-core"><circle cx="159.3" cy="544.5" r="11.3" stroke-width="1.7"/><circle cx="346.5" cy="544.5" r="11.3" stroke-width="1.7"/></g>
         </svg>
       </div>
     </div>
