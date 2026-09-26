@@ -1,10 +1,19 @@
 package proto.media.fiesta.features.domain.core.media
 
+import proto.media.fiesta.support.media.config.MediaDefaults
 import proto.media.fiesta.support.media.dto.MediaQueueDto
 import proto.media.fiesta.support.media.dto.QueueEntryDto
 import proto.media.fiesta.support.media.dto.QueueShape
+import proto.media.fiesta.support.webviewex.BrowserHistory
 
 object QueueResolution {
+
+    fun toMediaOnly(history: BrowserHistory, mediaUrls: Set<String>): BrowserHistory {
+        val currentUrl = history.entries.getOrNull(history.currentPosition)?.url
+        val kept = history.entries.filter { it.url in mediaUrls }
+        val position = kept.indexOfFirst { it.url == currentUrl }
+        return BrowserHistory(kept, if (position >= 0) position else MediaDefaults.UNKNOWN_CURSOR)
+    }
 
     fun resolve(
         pageQueue: MediaQueueDto,

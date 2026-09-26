@@ -87,5 +87,32 @@ On YouTube, videos and shorts have no playlist, so nothing shows for them.
 
 **There, and it does what I want.**
 
+## PL-7 — The player only shows media
+
+> **As a** driver
+> **I want** the player to show only pages that have media
+> **So that** the sites I just browse, like google.com, do not show up as if they were playing.
+
+> **Given** a page with no media, like google.com
+> **Then** the player shows nothing as playing: no title, no image, nothing on the home screen,
+> nothing in the queue or in the history.
+
+A page is media when media plays on it — by itself when I open it, or because I told it to play.
+Having media that *could* play is not enough. A YouTube channel's videos page, like
+`https://www.youtube.com/@ancap_su/videos`, is full of videos, but they only preview when
+touched and nothing starts when I open it: it does not show up in the player.
+
+> **Given** a page with media that does not start by itself
+> **When** I open it
+> **Then** it does not show up in the player;
+> **and** once I make it play, it does.
+
+> **Given** something is playing
+> **When** I go to a page with no media
+> **Then** it is as if I had pressed stop: the player stops, Fiesta does not ask for the audio
+> focus, and it does not resume that playback on its own later.
+
+**There, and it does what I want.**
+
 How the player, the WebView and the media server fit together is in
 [the media server](02-media-server.md).

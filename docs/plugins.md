@@ -360,8 +360,16 @@ Todo script de eventos roda depois de `assets/plugins/fiesta-runtime.js`, que ex
   leitura via `mediacontrol.onReading(json)` sempre que ela muda, e no mínimo a cada 5s enquanto
   há mídia. Sem elemento ativo mas com `navigator.mediaSession.playbackState === 'playing'`
   (vídeo dentro de iframe), a leitura reporta tocando sem posição - o card para de mentir
-  "pausado" mesmo sem poder controlar. `MediaReadingJson` (`shared/media`) faz o parse do lado
-  Kotlin; `core/media` (`NowPlaying`/`NowPlayingProjection`) é quem decide o que publicar.
+  "pausado" mesmo sem poder controlar. A leitura também traz `isTrack` (Plano 58): verdadeiro
+  se o elemento eleito está audível agora, ou o site diz `playbackState === 'playing'`, ou algum
+  elemento já foi audível nesta mesma `location.href` (pegajoso por URL, zerado só na troca de
+  `href` — `fiesta.reset()` não mexe nisso). Trocar de `href` saindo de uma faixa mantém
+  `isTrack` por até 15 s, para a troca de faixa do YouTube não virar página comum até o áudio
+  do próximo vídeo começar. Ter `<video>`/`<audio>` na página não basta, nem
+  `mediaSession.metadata`/handlers do site, nem `fiesta.on`/`setAvailable` do plugin `generic`:
+  uma página sem nada tocando é `isTrack: false`, mesmo cheia de prévias mudas (o exemplo é a
+  página de vídeos de um canal do YouTube). `MediaReadingJson` (`shared/media`) faz o parse do
+  lado Kotlin; `core/media` (`NowPlaying`/`NowPlayingProjection`) é quem decide o que publicar.
 - `fiesta.toast(texto)` — toast do Android.
 - `fiesta.setInterval(fn, ms)` — como `window.setInterval`, mas o timer é limpo
   automaticamente por `fiesta.reset()` quando o plugin de eventos troca.

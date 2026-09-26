@@ -56,7 +56,7 @@ test('the end of a track starts the next one without publishing a pause', async 
       { timeout: 60_000, what: 'the next track playing' }
     );
     assert.ok(next.url !== before.url);
-    assert.deepEqual(car.linesSince(mark, /destroying in|CarPlayer: paused$/), []);
+    assert.deepEqual(car.linesSince(mark, /destroying in|CarPlayer: paused$|left media/), []);
     const saved = car.linesSince(mark, /CarPlayer: saving .* at \d+s/);
     saved.forEach((line) => {
       const [, url, seconds] = line.match(/saving (\S+) at (\d+)s/);

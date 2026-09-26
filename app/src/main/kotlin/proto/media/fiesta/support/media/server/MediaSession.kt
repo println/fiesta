@@ -166,7 +166,8 @@ class MediaSession internal constructor(
             artworkUrl = snapshot.track.artworkUrl,
             trackId = snapshot.track.identity,
             positionSeconds = snapshot.positionMillis / MediaDefaults.MILLIS_PER_SECOND.toDouble(),
-            durationSeconds = snapshot.durationMillis / MediaDefaults.MILLIS_PER_SECOND.toDouble()
+            durationSeconds = snapshot.durationMillis / MediaDefaults.MILLIS_PER_SECOND.toDouble(),
+            isTrack = snapshot.track.title.isNotEmpty()
         )
         queue = snapshot.queue
     }

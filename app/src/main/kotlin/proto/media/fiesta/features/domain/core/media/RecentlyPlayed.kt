@@ -1,5 +1,6 @@
 package proto.media.fiesta.features.domain.core.media
 
+import proto.media.fiesta.support.media.dto.MediaReadingDto
 import proto.media.fiesta.support.media.dto.QueueEntryDto
 
 object RecentlyPlayed {
@@ -9,6 +10,11 @@ object RecentlyPlayed {
 
     fun idFor(trackIdentity: String): Long =
         -(trackIdentity.hashCode().toLong() and 0x7fffffffL) - 2
+
+    fun shouldRecord(reading: MediaReadingDto, lastRecordedIdentity: String): Boolean =
+        reading.isTrack &&
+            reading.trackIdentity != lastRecordedIdentity &&
+            isWorthRecording(reading.positionSeconds, reading.durationSeconds)
 
     fun isWorthRecording(positionSeconds: Double, durationSeconds: Double): Boolean =
         positionSeconds >= thresholdFor(durationSeconds)

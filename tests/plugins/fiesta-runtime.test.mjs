@@ -113,3 +113,108 @@ test('a page with no media at all still reads as not playing', () => {
   assert.equal(reading.playing, false);
   page.close();
 });
+
+test('a page with no media is not a track', () => {
+  const page = startPage({});
+  page.fiesta.setAvailable({});
+  const reading = page.lastReading();
+  assert.equal(reading.isTrack, false);
+  page.close();
+});
+
+test('a muted video playing is not a track', () => {
+  const page = startPage({});
+  const media = page.addMedia({});
+  media.muted = true;
+  const reading = readingAfterMediaEvent(page, media);
+  assert.equal(reading.isTrack, false);
+  page.close();
+});
+
+test('an audible video playing is a track', () => {
+  const { page, media } = playingPage();
+  const reading = readingAfterMediaEvent(page, media);
+  assert.equal(reading.isTrack, true);
+  page.close();
+});
+
+test('a track stays a track after it is paused, on the same URL', () => {
+  const { page, media } = playingPage();
+  readingAfterMediaEvent(page, media);
+  media.paused = true;
+  const reading = readingAfterMediaEvent(page, media);
+  assert.equal(reading.isTrack, true);
+  page.close();
+});
+
+test('a track changing to another URL stays a track while the next one starts', () => {
+  const { page, media } = playingPage();
+  readingAfterMediaEvent(page, media);
+  media.paused = true;
+  page.navigateTo('https://m.youtube.com/watch?v=other');
+  const reading = readingAfterMediaEvent(page, media);
+  assert.equal(reading.isTrack, true);
+  page.close();
+});
+
+test('leaving a track for another URL where nothing plays is not a track once the change is over', () => {
+  const { page, media } = playingPage();
+  readingAfterMediaEvent(page, media);
+  media.paused = true;
+  page.navigateTo('https://m.youtube.com/@channel/videos');
+  readingAfterMediaEvent(page, media);
+  page.advanceClock(15000);
+  const reading = readingAfterMediaEvent(page, media);
+  assert.equal(reading.isTrack, false);
+  page.close();
+});
+
+test('the next track playing ends the change and stays a track', () => {
+  const { page, media } = playingPage();
+  readingAfterMediaEvent(page, media);
+  page.navigateTo('https://m.youtube.com/watch?v=other');
+  readingAfterMediaEvent(page, media);
+  page.advanceClock(15000);
+  const reading = readingAfterMediaEvent(page, media);
+  assert.equal(reading.isTrack, true);
+  page.close();
+});
+
+test('the site reporting playbackState playing is a track even without an element', () => {
+  const page = startPage({});
+  page.mediaSession.playbackState = 'playing';
+  page.fiesta.setAvailable({});
+  const reading = page.lastReading();
+  assert.equal(reading.isTrack, true);
+  page.close();
+});
+
+test('site metadata and action handlers with nothing actually playing is not a track', () => {
+  const page = startPage({});
+  page.setSiteMetadata({ title: 'A channel', artist: 'Someone', artwork: [] });
+  page.mediaSession.setActionHandler('nexttrack', () => {});
+  page.fiesta.setAvailable({});
+  const reading = page.lastReading();
+  assert.equal(reading.isTrack, false);
+  page.close();
+});
+
+test('the generic plugin registering handlers with nothing playing is not a track', () => {
+  const page = startPage({});
+  page.fiesta.on('nextClick', () => {});
+  page.fiesta.setAvailable({ next: true, previous: true });
+  const reading = page.lastReading();
+  assert.equal(reading.isTrack, false);
+  page.close();
+});
+
+test('a channel videos page, full of muted previews, is not a track', () => {
+  const page = startPage({});
+  page.addMedia({ width: 200, height: 120, paused: true });
+  page.addMedia({ width: 200, height: 120, paused: true });
+  const mutedPreview = page.addMedia({ width: 200, height: 120 });
+  mutedPreview.muted = true;
+  const reading = readingAfterMediaEvent(page, mutedPreview);
+  assert.equal(reading.isTrack, false);
+  page.close();
+});
