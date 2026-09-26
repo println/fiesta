@@ -158,7 +158,7 @@
     <string name="browser_car_inactive_dismiss">Tamam</string>
 
     <string name="settings_topic_general_title">Genel</string>
-    <string name="settings_topic_general_summary">WebView kimliği, korumalı içerik</string>
+    <string name="settings_topic_general_summary">WebView kimliği, korumalı içerik, yeni sürümler</string>
     <string name="settings_topic_privacy_title">Gizlilik ve güvenlik</string>
     <string name="settings_topic_privacy_summary">Çerezler, reklamlar ve izleyiciler, arama önerileri, site verileri</string>
     <string name="settings_topic_car_general_title">Araç — Genel</string>

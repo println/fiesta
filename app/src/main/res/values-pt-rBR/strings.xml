@@ -76,6 +76,8 @@
 
     <string name="settings_protected_content_title">Permitir conteúdo protegido (DRM)</string>
     <string name="settings_protected_content_summary">Necessário para serviços de streaming. Pode não funcionar na tela projetada.</string>
+    <string name="settings_update_notice_title">Verificar novas versões</string>
+    <string name="settings_update_notice_summary">Ao abrir o app, avisa se há versão nova</string>
     <string name="update_available_title">Nova versão disponível</string>
     <string name="update_available_message">O Fiesta %1$s está disponível.</string>
     <string name="update_available_download">Baixar</string>
@@ -163,7 +165,7 @@
     <string name="browser_car_inactive_dismiss">OK</string>
 
     <string name="settings_topic_general_title">Geral</string>
-    <string name="settings_topic_general_summary">Identidade do WebView, conteúdo protegido</string>
+    <string name="settings_topic_general_summary">Identidade do WebView, conteúdo protegido, novas versões</string>
     <string name="settings_topic_privacy_title">Privacidade e segurança</string>
     <string name="settings_topic_privacy_summary">Cookies, anúncios e rastreadores, sugestões de pesquisa, dados dos sites</string>
     <string name="settings_topic_car_general_title">Carro — Geral</string>
