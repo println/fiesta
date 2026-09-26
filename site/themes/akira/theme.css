@@ -1,0 +1,161 @@
+:root.akira {
+  --bg: 8, 11, 22;
+  --bg-raised: 14, 21, 40;
+  --night: 24, 40, 72;
+  --line: rgba(96, 128, 184, .2);
+  --primary: 230, 0, 18;
+  --primary-deep: 150, 0, 12;
+  --secondary: 242, 230, 206;
+  --tertiary: 44, 72, 130;
+  --highlight: 212, 162, 76;
+  --donate: 196, 0, 15;
+  --neon: linear-gradient(90deg, #E60012, #FF4D1A 50%, #F2E6CE);
+  --text: 240, 236, 230;
+  --muted: 150, 160, 178;
+  --bezel: #141c2c, #05070d 55%, #0d1322;
+  --device: #161f30, #06080e 50%, #0f1524;
+}
+.akira .hero::before {
+  background:
+    linear-gradient(180deg, rgba(var(--bg), .5) 0%, rgba(var(--bg), 0) 26%, rgba(var(--bg), 0) 62%, rgba(var(--bg), .7) 80%, rgb(var(--bg)) 100%),
+    repeating-linear-gradient(transparent 0 2px, rgba(0, 0, 0, .38) 2px 4px);
+}
+.akira .hero-logo { filter: drop-shadow(0 2px 10px rgba(var(--bg), .85)) drop-shadow(0 0 22px rgba(var(--primary), .55)); }
+.palette .akira-switch {
+  --c: var(--bg);
+  display: grid;
+  place-items: center;
+  font-size: 1.15rem;
+  color: #E60012;
+  text-shadow: 0 0 8px rgba(230, 0, 18, .7);
+  cursor: pointer;
+  user-select: none;
+}
+.akira-switch:focus-visible { outline: 2px solid rgb(var(--secondary)); outline-offset: 4px; }
+.akira .akira-switch { box-shadow: 0 0 0 3px rgb(var(--bg)), 0 0 0 4px rgba(var(--primary), .6), 0 0 18px -2px rgb(var(--primary)); }
+.gtr-scene {
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  container-type: size;
+}
+.akira .gtr-scene { display: block; }
+.gtr-frame {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  width: max(100cqw, 100cqh * 1673 / 940);
+  aspect-ratio: 1673 / 940;
+  transform: translate(-40%, -50%);
+  background: url(hero.webp) 0 0 / 100% 100%;
+}
+.akira :is(.hero-bg, .sun-glow, .taillights, .brake, .brake-flare, .hazard):not(.gtr) { display: none; }
+.gtr circle { fill: none; stroke: currentColor; }
+.akira .gtr.taillights { color: #ff1a2e; }
+.akira .gtr .lamp { color: #ffc2c8; opacity: .6; }
+.akira .gtr.brake { color: #ff0a2e; }
+.akira .gtr .brake-core { color: #fff0f2; }
+.akira .gtr .brake-core rect { fill: #ff2a3a; }
+.akira .gtr.hazard { color: #ffc400; }
+.akira .gtr .hazard-core { color: #fff27a; }
+.akira .hero-side {
+  padding: 16px 14px;
+  border-radius: 12px;
+  background: rgba(var(--bg), .6);
+  backdrop-filter: blur(8px);
+}
+.akira .hero-side::before {
+  display: block;
+  margin-bottom: 18px;
+  writing-mode: vertical-rl;
+  font-size: 1.5rem;
+  letter-spacing: .3em;
+  color: rgb(var(--primary));
+  text-shadow: 0 1px 3px rgb(var(--bg)), 0 0 14px rgba(var(--primary), .6);
+}
+.akira .hero-side-left::before { content: "アキラ"; }
+.akira .hero-side-right::before { content: "湾岸"; margin-left: auto; }
+
+.akira-flash {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #000;
+  pointer-events: none;
+  animation: akira-thunder 4s linear forwards;
+}
+.akira-flash::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(230, 0, 18, .55), transparent 62%);
+  opacity: 0;
+  animation: akira-halo 4s ease-out forwards;
+}
+.akira-flash span {
+  grid-area: 1 / 1;
+  font: 700 min(72vh, 78vw)/1 "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Noto Serif JP", "MS Mincho", serif;
+  opacity: 0;
+}
+.akira-flash .glyph { animation: akira-glyph 4s ease-out forwards; }
+.akira-flash .glow {
+  color: #e60012;
+  filter: blur(22px);
+  text-shadow: 0 0 60px rgb(230, 0, 18), 0 0 180px rgba(230, 0, 18, .85);
+  animation: akira-glow 4s linear forwards;
+}
+@keyframes akira-thunder {
+  0% { opacity: 0; background: #000; }
+  4.12%, 29.88% { opacity: 1; background: #000; }
+  30.12%, 30.88% { background: #eef3ff; }
+  31.13%, 32.12% { background: #000; }
+  32.38%, 33.38% { background: #9a0012; }
+  33.62%, 91.75% { opacity: 1; background: #07080e; }
+  100% { opacity: 0; background: #07080e; }
+}
+@keyframes akira-halo {
+  0%, 29.75% { opacity: 0; transform: scale(.8); }
+  30.12% { opacity: 1; transform: scale(1.35); }
+  37.12% { opacity: .5; transform: scale(1); }
+  42.5% { opacity: .85; transform: scale(1.25); }
+  48.75% { opacity: .3; transform: scale(.95); }
+  62.5% { opacity: .5; transform: scale(1.1); }
+  66.5% { opacity: .2; transform: scale(.92); }
+  68.25% { opacity: .32; transform: scale(1.04); }
+  73.75% { opacity: .12; transform: scale(.92); }
+  85%, 100% { opacity: 0; transform: scale(.9); }
+}
+@keyframes akira-glyph {
+  0% { opacity: 0; filter: blur(28px); transform: scale(1.18); color: #6a000c; text-shadow: none; }
+  29.7% { opacity: .38; filter: blur(9px); transform: scale(1.04); color: #6a000c; text-shadow: none; }
+  30.12% { opacity: 1; filter: blur(0); transform: scale(1); color: #fff; text-shadow: 0 0 40px #fff, 0 0 120px #fff; }
+  37.12% { color: #e60012; text-shadow: 0 0 10px rgba(230, 0, 18, .6); }
+  65% { color: #a8000f; }
+  82.5% { color: #50030a; }
+  92.79% { color: #1c0508; }
+  100% { opacity: 1; filter: blur(0); transform: scale(1); color: #07080e; text-shadow: none; }
+}
+@keyframes akira-glow {
+  0%, 29.7% { opacity: 0; color: #e60012; }
+  30.12% { opacity: 1; color: #fff; }
+  37.12% { opacity: .55; color: #e60012; }
+  40% { opacity: .4; }
+  42.5% { opacity: .95; }
+  48.75% { opacity: .3; }
+  60% { opacity: .25; }
+  62.5% { opacity: .6; }
+  66.5% { opacity: .2; }
+  68.25% { opacity: .4; }
+  73.75% { opacity: .12; }
+  82.5% { opacity: .03; }
+  100% { opacity: 0; color: #e60012; }
+}
+
+@media (max-width: 900px) {
+  .gtr-frame { background-image: url(hero-900.webp); }
+}

@@ -29,7 +29,9 @@
 <link rel="icon" href="../img/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../img/icon.png">
 <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../themes/night-drive/theme.css">
 <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../themes/akira/theme.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -87,7 +89,7 @@
 <body>
 
 <nav class="nav">
-  <a class="nav-logo" href="#top"><img src="../img/logo.svg" alt="Fiesta"></a>
+  <a class="nav-logo" href="#top"><img src="../img/logo.svg" data-akira-src="../themes/akira/logo.svg" alt="Fiesta"></a>
   <div class="nav-links">
     <a href="#drive">Recursos</a>
     <a href="#dashboard">Painel</a>
@@ -204,7 +206,7 @@
   <div class="hero-side hero-side-right" aria-hidden="true">Vídeo<br>Música<br>Navegador<br>Voz<br>Código aberto<i></i></div>
   <div class="hero-content">
     <div class="hero-sky">
-      <h1><img class="hero-logo" src="../img/logo.svg" alt=""><span class="visually-hidden">Fiesta: YouTube e qualquer site no Android Auto, o CarStream atualizado para o Android 16</span></h1>
+      <h1><img class="hero-logo" src="../img/logo.svg" data-akira-src="../themes/akira/logo.svg" alt=""><span class="visually-hidden">Fiesta: YouTube e qualquer site no Android Auto, o CarStream atualizado para o Android 16</span></h1>
       <p class="eyebrow">Mais estrada <i></i> Menos limites</p>
     </div>
     <div class="hero-road">
@@ -334,7 +336,7 @@
         <h2>Night Drive.</h2>
         <p>Estradas à noite, cultura <strong>JDM</strong> e <strong>retrofuturismo</strong>, com influências de Akira, Midnight Club, Enduro, synthwave e Vice City. Neon, velocidade e liberdade: uma estética inspirada no passado, feita para a estrada.</p>
         <div class="palette" aria-label="Paleta">
-          <span style="--c:#FA089D"></span><span style="--c:#6825B0"></span><span style="--c:#02CCFE"></span><span style="--c:#FCA056"></span><span style="--c:#0A2F4B"></span>
+          <span></span><span></span><span></span><span></span><span></span><span class="akira-switch" role="button" tabindex="0" aria-pressed="false" aria-label="Tema Akira">夜</span>
         </div>
       </div>
       <div class="codenames">
@@ -425,9 +427,9 @@
   </section>
 
   <section class="fuel" id="fuel">
-    <img class="fuel-bg" src="../img/donate.webp" alt="" loading="lazy">
+    <img class="fuel-bg" src="../img/donate.webp" data-akira-src="../themes/akira/donate.webp" alt="" loading="lazy">
     <div class="fuel-content wrap">
-      <img class="fuel-icon" src="../img/fuel.webp" alt="" width="160" height="154" loading="lazy">
+      <img class="fuel-icon" src="../img/fuel.webp" data-akira-src="../themes/akira/fuel.webp" alt="" width="160" height="154" loading="lazy">
       <p class="label">Abasteça o Fiesta</p>
       <h2>Grátis. Sem anúncios. <span>Sem telemetria.</span></h2>
       <p>Se o Fiesta melhorou as suas viagens, ajude a mantê-lo na estrada. Ele é feito nas horas vagas, movido a café, e cada doação vira tempo de estrada:</p>
@@ -449,7 +451,7 @@
 
 <footer class="footer">
   <div class="wrap footer-row">
-    <img class="footer-logo" src="../img/logo.svg" alt="Fiesta">
+    <img class="footer-logo" src="../img/logo.svg" data-akira-src="../themes/akira/logo.svg" alt="Fiesta">
     <p class="footer-tags">Código aberto <i></i> Android Auto <i></i> De motoristas, para motoristas</p>
     <p class="footer-end">Mais estrada pela frente</p>
   </div>
@@ -461,20 +463,20 @@
 
 <script>
 (() => {
-  const hazard = document.querySelector('.hazard');
-  if (!hazard || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const brake = document.querySelector('.brake');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const toggleAll = (selector, className, on) => document.querySelectorAll(selector).forEach(element => element.classList.toggle(className, on));
   const stop = () => {
-    brake.classList.add('on');
-    setTimeout(() => hazard.classList.add('blinking'), 900);
+    toggleAll('.brake', 'on', true);
+    setTimeout(() => toggleAll('.hazard', 'blinking', true), 900);
+    setTimeout(() => {
+      toggleAll('.hazard', 'blinking', false);
+      toggleAll('.brake', 'on', false);
+      setTimeout(stop, 8000 + Math.random() * 14000);
+    }, 3000);
   };
-  hazard.addEventListener('animationend', () => {
-    hazard.classList.remove('blinking');
-    brake.classList.remove('on');
-    setTimeout(stop, 8000 + Math.random() * 14000);
-  });
   setTimeout(stop, 1600);
 })();
 </script>
+<script src="../themes/akira/theme.js"></script>
 </body>
 </html>
