@@ -35,8 +35,7 @@ what already works today, which is the detail the app must not lose.
   sites today; it neither overrides nor freezes the per-site choices.
 - **PH-18** — not verified. Nobody has checked ordinary browsing against it.
 - **PH-19** — wanted for the future; nothing of it exists.
-- **PH-20** — the donate button still opens Ko-fi; it should open the donate page in the default
-  browser, in the phone's language.
+- **PH-20** — the donate page is not published on the site yet; the button already opens it.
 
 ## Shared with the car
 

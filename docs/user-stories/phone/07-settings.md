@@ -43,4 +43,4 @@ it says so and does nothing.
 > **When** I tap the button
 > **Then** the English donate page opens.
 
-**Partly there.** The screen is there; its button opens Ko-fi instead of the donate page.
+**Partly there.** The button opens the donate page in the default browser, in Portuguese or in English; the page is not published on the site yet.

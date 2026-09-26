@@ -1,4 +1,5 @@
 package proto.media.fiesta.features.domain.phone.settings
+
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.SharedPreferences
