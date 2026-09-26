@@ -180,8 +180,6 @@
     <string name="settings_topic_donate_title">Dona a Fiesta</string>
     <string name="settings_topic_donate_summary">Sostieni il progetto</string>
     <string name="settings_donate_title">Fai il pieno a Fiesta</string>
-    <string name="settings_donate_message">✓ Gratis\n✓ Senza pubblicità\n✓ Senza tracciamento\n\nTi ha accompagnato in strada? Ricambia con un caffè.</string>
-    <string name="settings_donate_coffee">☕ Offrimi un caffè</string>
     <string name="settings_donate_footer_start">Fatto con</string>
     <string name="settings_donate_footer_end">nel tempo libero</string>
     <string name="settings_about_tagline">Più strada. Meno limiti.</string>

@@ -188,14 +188,19 @@
     <string name="settings_about_icons_summary">mozilla-mobile/android-components, MPL-2.0 license</string>
     <string name="settings_about_font_title">Font</string>
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
-    <string name="settings_topic_donate_title">Donate to Fiesta</string>
-    <string name="settings_topic_donate_summary">Support the project</string>
+    <string name="settings_topic_donate_title">Fuel up Fiesta</string>
+    <string name="settings_topic_donate_summary">Keep Fiesta on the road</string>
     <string name="settings_donate_title">Fuel up Fiesta</string>
-    <string name="settings_donate_message">✓ Free\n✓ No ads\n✓ No tracking\n\nKept you company on the road? Give back with a coffee.</string>
-    <string name="settings_donate_coffee">☕ Buy me a coffee</string>
+    <string name="settings_donate_reason_free">Free</string>
+    <string name="settings_donate_reason_no_ads">No ads</string>
+    <string name="settings_donate_reason_no_telemetry">No telemetry</string>
+    <string name="settings_donate_purpose">Donations pay for fixes when a site changes, new plugins and testing in a real car.</string>
+    <string name="settings_donate_page">Pick how to fuel up ↗</string>
+    <string name="settings_donate_page_a11y">Pick how to fuel up, opens in the browser</string>
+    <string name="settings_donate_no_browser">No browser found to open the page</string>
     <string name="settings_donate_footer_start">Made with</string>
     <string name="settings_donate_footer_end">in spare time</string>
-    <string name="settings_donate_coffee_url" translatable="false">https://ko-fi.com/println</string>
+    <string name="settings_donate_footer_a11y">Made with love in spare time</string>
     <string name="settings_about_website_url">https://println.github.io/fiesta/</string>
     <string name="settings_about_license_url" translatable="false">https://github.com/println/fiesta/blob/main/LICENSE</string>
     <string name="settings_about_website_title">Website</string>

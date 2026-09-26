@@ -180,8 +180,6 @@
     <string name="settings_topic_donate_title">Fiesta\'ya bağış yap</string>
     <string name="settings_topic_donate_summary">Projeyi destekle</string>
     <string name="settings_donate_title">Fiesta\'nın deposunu doldur</string>
-    <string name="settings_donate_message">✓ Ücretsiz\n✓ Reklamsız\n✓ Takipsiz\n\nYolda sana eşlik etti mi? Bir kahveyle karşılık ver.</string>
-    <string name="settings_donate_coffee">☕ Bana bir kahve ısmarla</string>
     <string name="settings_donate_footer_start">Boş zamanlarda</string>
     <string name="settings_donate_footer_end">ile yapıldı</string>
     <string name="settings_about_tagline">Daha çok yol. Daha az sınır.</string>

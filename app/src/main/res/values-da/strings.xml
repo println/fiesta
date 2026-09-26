@@ -180,8 +180,6 @@
     <string name="settings_topic_donate_title">Donér til Fiesta</string>
     <string name="settings_topic_donate_summary">Støt projektet</string>
     <string name="settings_donate_title">Tank Fiesta op</string>
-    <string name="settings_donate_message">✓ Gratis\n✓ Ingen reklamer\n✓ Ingen sporing\n\nHar den holdt dig med selskab på vejen? Giv igen med en kop kaffe.</string>
-    <string name="settings_donate_coffee">☕ Giv mig en kop kaffe</string>
     <string name="settings_donate_footer_start">Lavet med</string>
     <string name="settings_donate_footer_end">i fritiden</string>
     <string name="settings_about_tagline">Mere vej. Færre grænser.</string>

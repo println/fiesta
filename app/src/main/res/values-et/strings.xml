@@ -180,8 +180,6 @@
     <string name="settings_topic_donate_title">Anneta Fiestale</string>
     <string name="settings_topic_donate_summary">Toeta projekti</string>
     <string name="settings_donate_title">Tangi Fiesta täis</string>
-    <string name="settings_donate_message">✓ Tasuta\n✓ Reklaamideta\n✓ Jälgimiseta\n\nOli see sulle teel seltsiks? Tänu kohviga.</string>
-    <string name="settings_donate_coffee">☕ Osta mulle kohv</string>
     <string name="settings_donate_footer_start">Tehtud</string>
     <string name="settings_donate_footer_end">vabal ajal</string>
     <string name="settings_about_tagline">Rohkem teed. Vähem piire.</string>

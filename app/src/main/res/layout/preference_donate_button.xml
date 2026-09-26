@@ -12,9 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="@drawable/donate_button_background"
+        android:contentDescription="@string/settings_donate_page_a11y"
+        android:drawableEnd="@drawable/donate_button_open_icon"
+        android:drawablePadding="8dp"
         android:duplicateParentState="true"
         android:gravity="center"
-        android:textColor="@android:color/white"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:textColor="@color/onDonateButton"
         android:textSize="18sp"
         android:textStyle="bold" />
 

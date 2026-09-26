@@ -180,8 +180,6 @@
     <string name="settings_topic_donate_title">Donează pentru Fiesta</string>
     <string name="settings_topic_donate_summary">Susține proiectul</string>
     <string name="settings_donate_title">Alimentează Fiesta</string>
-    <string name="settings_donate_message">✓ Gratuit\n✓ Fără reclame\n✓ Fără urmărire\n\nȚi-a ținut companie la drum? Răsplătește cu o cafea.</string>
-    <string name="settings_donate_coffee">☕ Cumpără-mi o cafea</string>
     <string name="settings_donate_footer_start">Făcut cu</string>
     <string name="settings_donate_footer_end">în timpul liber</string>
     <string name="settings_about_tagline">Mai mult drum. Mai puține limite.</string>

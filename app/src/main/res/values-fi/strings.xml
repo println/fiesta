@@ -180,8 +180,6 @@
     <string name="settings_topic_donate_title">Lahjoita Fiestalle</string>
     <string name="settings_topic_donate_summary">Tue projektia</string>
     <string name="settings_donate_title">Tankkaa Fiesta</string>
-    <string name="settings_donate_message">✓ Ilmainen\n✓ Ei mainoksia\n✓ Ei seurantaa\n\nOliko se seuranasi tiellä? Anna takaisin kahvilla.</string>
-    <string name="settings_donate_coffee">☕ Tarjoa minulle kahvi</string>
     <string name="settings_donate_footer_start">Tehty</string>
     <string name="settings_donate_footer_end">vapaa-ajalla</string>
     <string name="settings_about_tagline">Enemmän tietä. Vähemmän rajoja.</string>

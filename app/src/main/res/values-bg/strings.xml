@@ -180,8 +180,6 @@
     <string name="settings_topic_donate_title">Дарете за Fiesta</string>
     <string name="settings_topic_donate_summary">Подкрепете проекта</string>
     <string name="settings_donate_title">Заредете Fiesta</string>
-    <string name="settings_donate_message">✓ Безплатно\n✓ Без реклами\n✓ Без проследяване\n\nПравил ви е компания на пътя? Почерпете с кафе.</string>
-    <string name="settings_donate_coffee">☕ Почерпи ме с кафе</string>
     <string name="settings_donate_footer_start">Направено с</string>
     <string name="settings_donate_footer_end">в свободното време</string>
     <string name="settings_about_tagline">Повече път. По-малко граници.</string>

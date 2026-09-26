@@ -180,8 +180,6 @@
     <string name="settings_topic_donate_title">捐助 Fiesta</string>
     <string name="settings_topic_donate_summary">支持這個專案</string>
     <string name="settings_donate_title">為 Fiesta 加油</string>
-    <string name="settings_donate_message">✓ 免費\n✓ 無廣告\n✓ 無追蹤\n\n它曾在路上陪伴你嗎？請我喝杯咖啡作為回報吧。</string>
-    <string name="settings_donate_coffee">☕ 請我喝杯咖啡</string>
     <string name="settings_donate_footer_start">用</string>
     <string name="settings_donate_footer_end">在業餘時間製作</string>
     <string name="settings_about_tagline">更多道路，更少限制。</string>
