@@ -29,6 +29,9 @@
     <color name="secondaryText">#FFC0C0C0</color>
     <color name="urlBarHintText">@color/secondaryText</color>
     <color name="removeButtonText">@color/brandPrimary</color>
+    <color name="donateButtonBackground">#FFC8067D</color>
+    <color name="onDonateButton">#FFFFFFFF</color>
+    <color name="donateButtonRipple">#33FFFFFF</color>
 
     <!-- Not every usage tints mozac icons; a black fill made nav buttons and the shield invisible. -->
     <color name="mozac_ui_icons_fill">@color/primaryText</color>

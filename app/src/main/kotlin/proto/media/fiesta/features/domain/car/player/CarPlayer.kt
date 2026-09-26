@@ -238,7 +238,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
     }
 
     fun attach(container: ViewGroup, activity: Context, ui: UiCallbacks) {
-        PlaybackBrowserService.obtainMediaSession(activity)
+        PlaybackBrowserService.onCarEntered(activity)
         handler.removeCallbacks(destroyWhenIdle)
         browser.attach(container, activity)
         this.ui = ui
@@ -477,6 +477,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
         focusRegain.cancel()
         destroy("car mode exited")
         stateStore.playbackInterrupted = wasPlaying
+        PlaybackBrowserService.onCarLeft(appContext)
     }
 
     private fun dispatch(event: CarEvent, argument: String? = null): Boolean =
