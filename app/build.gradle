@@ -10,6 +10,18 @@ if (localPropertiesFile.exists()) {
 }
 def releaseKeystore = localProperties.getProperty('fiesta.keystore')
 
+def gitDescribe = providers.exec {
+    commandLine 'git', 'describe', '--tags', '--match', 'v[0-9]*'
+    ignoreExitValue = true
+}.standardOutput.asText.get().trim()
+def releaseTag = gitDescribe =~ /^v(\d+)\.(\d+)\.(\d+)/
+if (!releaseTag.find()) {
+    throw new GradleException("No vX.Y.Z tag reachable from HEAD; run: git fetch --tags")
+}
+def (major, minor, patch) = (1..3).collect { releaseTag.group(it) as int }
+def appVersionName = gitDescribe.substring(1)
+def appVersionCode = major * 10000 + minor * 100 + patch
+
 android {
     namespace "proto.media.fiesta"
     lintOptions {
@@ -23,8 +35,8 @@ android {
         applicationId "stream.qorvanel.media"
         minSdkVersion 23
         targetSdkVersion 34
-        versionCode 49
-        versionName "1.0.1"
+        versionCode appVersionCode
+        versionName appVersionName
         buildConfigField "String", "VERSION_CODENAME", "\"Akira\""
         vectorDrawables.useSupportLibrary = true
     }
@@ -59,13 +71,9 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
-    // dexOptions/jumboMode (workaround para "Cannot merge new index 65536 into
-    // a non-jumbo instruction!") removido no AGP 8 - a DSL some e o dexer
-    // atual ja lida com isso sozinho (Estagio 2.6 do plano de migracao).
-    // (Duplicate class android.support.v4.app.INotificationSideChannel* entre
-    // support-compat e androidx.core - ver dependencySubstitution no
-    // build.gradle raiz - packagingOptions.exclude NAO resolve isso, o
-    // checkDebugDuplicateClasses do AGP ignora packagingOptions.)
+    // Duplicate android.support.v4.app.INotificationSideChannel* between support-compat and
+    // androidx.core is solved by the dependencySubstitution in the root build.gradle;
+    // packagingOptions.exclude does not work, checkDebugDuplicateClasses ignores it.
 }
 
 // kotlinx-coroutines (pulled in by AndroidX) upgrades this to 23.x, where @Nullable is
