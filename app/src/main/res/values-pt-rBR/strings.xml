@@ -209,7 +209,6 @@
     <string name="settings_about_website_url">https://println.github.io/fiesta/pt-br/</string>
     <string name="settings_about_credits_category">Créditos</string>
     <string name="settings_about_license_title">Licença</string>
-    <string name="settings_about_license_summary">Apache License 2.0</string>
 
     <string name="browser_suggestion_fill">Preencher a caixa de pesquisa</string>
 
