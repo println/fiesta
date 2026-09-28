@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plano 16, A15: fundo circular do "x" de limpar, so aplicado no modo de
+     edicao (ver btn_clear em WebViewPhoneFragment) - alvo de toque maior,
+     como o do Focus. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/clearButtonCircleBackground" />
+</shape>

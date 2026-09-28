@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:tag="mirrorWithDriver">
+
+    <ScrollView
+        android:layout_width="@dimen/car_search_engine_column_width"
+        android:layout_height="match_parent"
+        android:background="@color/car_settings_panel"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/go_to_address_engines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/car_search_spacing" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/car_search_spacing">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/car_search_box_height"
+            android:background="@drawable/car_search_box_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="4dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/mozac_ic_search"
+                android:tint="@color/car_settings_active" />
+
+            <proto.media.fiesta.features.domain.car.browser.CarEditText
+                android:id="@+id/go_to_address_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:imeOptions="actionGo"
+                android:inputType="textUri"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/car_settings_text_secondary"
+                android:textSize="22sp" />
+
+            <ImageButton
+                android:id="@+id/go_to_address_voice_button"
+                style="@style/CarSettingsHeaderButton"
+                android:contentDescription="@string/voice_search"
+                android:src="@drawable/ic_car_voice" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/car_search_spacing"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/go_to_address_modes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:tag="mirrorWithDriver">
+
+                <FrameLayout
+                    android:id="@+id/go_to_address_voice_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/car_search_half_spacing"
+                    android:layout_weight="1"
+                    android:background="@drawable/car_settings_tonal_background"
+                    android:contentDescription="@string/voice_search"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/car_search_mode_icon_size"
+                        android:layout_height="@dimen/car_search_mode_icon_size"
+                        android:layout_gravity="center"
+                        android:duplicateParentState="true"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_car_voice"
+                        android:tint="@color/car_settings_on_active" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/go_to_address_keyboard_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/car_search_half_spacing"
+                    android:layout_weight="1"
+                    android:background="@drawable/car_settings_tonal_background"
+                    android:contentDescription="@string/car_search_keyboard"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/car_search_mode_icon_size"
+                        android:layout_height="@dimen/car_search_mode_icon_size"
+                        android:layout_gravity="center"
+                        android:duplicateParentState="true"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_car_keyboard"
+                        android:tint="@color/car_settings_on_active" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/go_to_address_suggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <FrameLayout
+                android:id="@+id/go_to_address_voice_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/car_search_voice_background"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <com.github.zagum.speechrecognitionview.RecognitionProgressView
+                    android:id="@+id/go_to_address_speech_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:padding="20dp" />
+
+                <TextView
+                    android:id="@+id/go_to_address_voice_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="24dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <ImageButton
+                    android:id="@+id/go_to_address_voice_close"
+                    android:layout_width="@dimen/car_toolbar_thickness"
+                    android:layout_height="@dimen/car_toolbar_thickness"
+                    android:layout_gravity="top|end"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/close"
+                    android:src="@drawable/ic_car_close" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

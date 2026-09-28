@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plano 20, Etapa 1: configuracoes do YouTube no carro. Sao especificas do
+     navegador na tela do carro, nao aparecem no celular. -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_restore_last_url"
+        android:defaultValue="true"
+        android:title="@string/settings_restore_last_url_title"
+        android:summary="@string/settings_restore_last_url_summary" />
+
+    <CheckBoxPreference
+        android:key="pref_resume_on_focus"
+        android:defaultValue="true"
+        android:title="@string/settings_resume_on_focus_title"
+        android:summary="@string/settings_resume_on_focus_summary" />
+
+</PreferenceScreen>

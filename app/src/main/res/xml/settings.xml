@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="topic_general"
+        android:title="@string/settings_topic_general_title"
+        android:summary="@string/settings_topic_general_summary" />
+
+    <Preference
+        android:key="topic_privacy"
+        android:title="@string/settings_topic_privacy_title"
+        android:summary="@string/settings_topic_privacy_summary" />
+
+    <Preference
+        android:key="topic_car_general"
+        android:title="@string/settings_topic_car_general_title"
+        android:summary="@string/settings_topic_car_general_summary" />
+
+    <Preference
+        android:key="topic_car_youtube"
+        android:title="@string/settings_topic_car_youtube_title"
+        android:summary="@string/settings_topic_car_youtube_summary" />
+
+    <Preference
+        android:key="topic_plugins"
+        android:title="@string/settings_topic_plugins_title"
+        android:summary="@string/settings_topic_plugins_summary" />
+
+    <Preference
+        android:key="topic_hack"
+        android:title="@string/settings_topic_hack_title"
+        android:summary="@string/settings_topic_hack_summary" />
+
+    <Preference
+        android:key="topic_about"
+        android:title="@string/settings_topic_about_title"
+        android:summary="@string/settings_topic_about_summary" />
+
+    <Preference
+        android:key="topic_donate"
+        android:title="@string/settings_topic_donate_title"
+        android:summary="@string/settings_topic_donate_summary" />
+
+</PreferenceScreen>

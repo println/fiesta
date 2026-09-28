@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plano 17, B8: o Focus usa canto reto, encostado nas bordas (era
+     assumido arredondado no Plano 16, mas a comparacao mostrou o oposto). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/menuBackground" />
+</shape>

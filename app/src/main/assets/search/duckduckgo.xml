@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:cs="urn:fiesta:search:1">
+  <ShortName>DuckDuckGo</ShortName>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" template="https://duckduckgo.com/?q={searchTerms}"/>
+  <Url type="application/x-suggestions+json"
+       template="https://duckduckgo.com/ac/?q={searchTerms}&amp;type=list"/>
+  <cs:Id>duckduckgo</cs:Id>
+  <cs:Version>1</cs:Version>
+  <cs:Host>duckduckgo.com</cs:Host>
+  <cs:Host>*.duckduckgo.com</cs:Host>
+</OpenSearchDescription>

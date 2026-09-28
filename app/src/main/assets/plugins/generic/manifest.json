@@ -1,0 +1,10 @@
+{
+  "id": "generic",
+  "name": "Generic",
+  "version": 1,
+  "fallback": true,
+  "voice": { "search": "google" },
+  "rules": [
+    { "match": ["*"], "events": "generic.events.js" }
+  ]
+}

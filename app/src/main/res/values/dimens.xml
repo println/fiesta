@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="car_toolbar_thickness">76dp</dimen>
+    <dimen name="car_toolbar_button_spacing">24dp</dimen>
+    <dimen name="car_settings_panel_margin">12dp</dimen>
+    <dimen name="car_settings_jump_key_margin">4dp</dimen>
+    <dimen name="car_search_engine_circle_size">52dp</dimen>
+    <dimen name="car_search_engine_icon_padding">12dp</dimen>
+    <dimen name="car_search_engine_column_width">112dp</dimen>
+    <dimen name="car_search_engine_tile_height">104dp</dimen>
+    <dimen name="car_search_box_height">64dp</dimen>
+    <dimen name="car_search_box_radius">32dp</dimen>
+    <dimen name="car_search_mode_icon_size">64dp</dimen>
+    <dimen name="car_search_spacing">12dp</dimen>
+    <dimen name="car_search_half_spacing">6dp</dimen>
+    <dimen name="car_menu_bubble_size">64dp</dimen>
+    <dimen name="car_menu_bubble_icon_padding">18dp</dimen>
+    <dimen name="car_menu_bubble_margin">12dp</dimen>
+    <dimen name="car_favorites_bar_width">56dp</dimen>
+    <dimen name="car_favorite_monogram_size">48dp</dimen>
+    <dimen name="car_favorite_monogram_spacing">12dp</dimen>
+    <dimen name="car_favorites_bar_side_padding">4dp</dimen>
+    <dimen name="car_fullscreen_menu_margin">12dp</dimen>
+    <dimen name="car_fullscreen_menu_icon_size">32dp</dimen>
+</resources>

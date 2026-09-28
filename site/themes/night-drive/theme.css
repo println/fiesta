@@ -1,0 +1,18 @@
+:root {
+  --bg: 0, 9, 19;
+  --bg-raised: 6, 20, 42;
+  --night: 10, 47, 75;
+  --panel: rgba(var(--night), .28);
+  --line: rgba(142, 110, 214, .22);
+  --primary: 250, 8, 157;
+  --primary-deep: 194, 27, 200;
+  --secondary: 2, 204, 254;
+  --tertiary: 104, 37, 176;
+  --highlight: 252, 160, 86;
+  --donate: 200, 6, 125;
+  --neon: linear-gradient(90deg, #FA089D, #CE4EF6 50%, #02CCFE);
+  --text: 243, 236, 255;
+  --muted: 169, 159, 196;
+  --bezel: #1b1430, #05060d 55%, #120a22;
+  --device: #221a3a, #07070f 50%, #150b28;
+}

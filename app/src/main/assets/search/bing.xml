@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:cs="urn:fiesta:search:1">
+  <ShortName>Bing</ShortName>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" template="https://www.bing.com/search?q={searchTerms}"/>
+  <Url type="application/x-suggestions+json"
+       template="https://api.bing.com/osjson.aspx?query={searchTerms}"/>
+  <cs:Id>bing</cs:Id>
+  <cs:Version>1</cs:Version>
+  <cs:Host>bing.com</cs:Host>
+  <cs:Host>*.bing.com</cs:Host>
+</OpenSearchDescription>

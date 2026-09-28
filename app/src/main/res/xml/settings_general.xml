@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_strip_wv_user_agent"
+        android:defaultValue="false"
+        android:title="@string/settings_strip_wv_ua_title"
+        android:summary="@string/settings_strip_wv_ua_summary" />
+
+    <CheckBoxPreference
+        android:key="pref_protected_content"
+        android:defaultValue="true"
+        android:title="@string/settings_protected_content_title"
+        android:summary="@string/settings_protected_content_summary" />
+
+    <CheckBoxPreference
+        android:key="pref_update_notice"
+        android:defaultValue="true"
+        android:title="@string/settings_update_notice_title"
+        android:summary="@string/settings_update_notice_summary" />
+
+</PreferenceScreen>
