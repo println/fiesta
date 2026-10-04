@@ -1,6 +1,6 @@
 # Plugins por URL
 
-Referência para quem escreve um plugin do Fiesta. Histórico da decisão:
+Referência para quem escreve um plugin do Fiezta D1. Histórico da decisão:
 `docs/plans/35-plugins-por-url.md`.
 
 ## O que é um plugin
@@ -108,7 +108,7 @@ chega com a URL daquele documento, e é `committed` que zera o que já rodou nes
 - Um script só é entregue ao documento para o qual foi pedido; se a página trocou no meio, ele é descartado.
 - Um tweak só é marcado como executado quando a injeção de fato aconteceu (`rerun: "load"` não é consumido por uma passagem que caiu no vazio).
 - O bootstrap oferece `window.__webviewex.waitFor(selector, timeoutMillis)` (Promise que resolve com o elemento ou `null`) e `window.__webviewex.once(key, fn)` (idempotência por documento).
-- `fiesta.on('renderModeChanged', fn)` é opcional: recebe `'foreground'` ou `'background'` quando a tela do carro é anexada ou destacada. Um site com modo áudio de verdade pode usá-lo; quem não implementa usa o comportamento genérico da camada.
+- `fiezta.on('renderModeChanged', fn)` é opcional: recebe `'foreground'` ou `'background'` quando a tela do carro é anexada ou destacada. Um site com modo áudio de verdade pode usá-lo; quem não implementa usa o comportamento genérico da camada.
 
 ### Padrão de URL (`UrlMatch`)
 
@@ -197,7 +197,7 @@ volta da faixa atual — e so isso; os recem-tocados nunca entram nela, vivem na
 ### `setQueueProvider` e os três formatos
 
 ```js
-fiesta.setQueueProvider(function () {
+fiezta.setQueueProvider(function () {
   return { shape, title, entries, cursor };
 });
 ```
@@ -223,7 +223,7 @@ tem próximo sem ter lista, e isso é normal.
 ### `id` no metadata
 
 ```js
-fiesta.setMetadataProvider(function () {
+fiezta.setMetadataProvider(function () {
   return { id, title, artist, artwork };   // id é opcional
 });
 ```
@@ -272,7 +272,7 @@ seletores de YouTube, Instagram ou Twitter, e não devem ser copiados como se fo
     return window.__meusitePlaylist || { items: [], index: -1 };
   }
 
-  fiesta.setQueueProvider(function () {
+  fiezta.setQueueProvider(function () {
     var playlist = currentPlaylist();
     return {
       shape: 'list',
@@ -284,7 +284,7 @@ seletores de YouTube, Instagram ou Twitter, e não devem ser copiados como se fo
     };
   });
 
-  fiesta.on('queueItem', function (index) {
+  fiezta.on('queueItem', function (index) {
     var playlist = currentPlaylist();
     var item = playlist.items[Number(index)];
     if (item) { location.href = item.url; }
@@ -300,13 +300,13 @@ seletores de YouTube, Instagram ou Twitter, e não devem ser copiados como se fo
     return window.__meusiteFeedItem || null;
   }
 
-  fiesta.setMetadataProvider(function () {
+  fiezta.setMetadataProvider(function () {
     var item = currentItem();
     if (!item) { return null; }
     return { id: item.id, title: item.title, artist: item.author, artwork: item.thumbnail };
   });
 
-  fiesta.setQueueProvider(function () {
+  fiezta.setQueueProvider(function () {
     var item = currentItem();
     if (!item) { return null; }
     return {
@@ -316,8 +316,8 @@ seletores de YouTube, Instagram ou Twitter, e não devem ser copiados como se fo
     };
   });
 
-  fiesta.on('nextClick', function () { window.scrollBy(0, window.innerHeight); });
-  fiesta.on('previousClick', function () { window.scrollBy(0, -window.innerHeight); });
+  fiezta.on('nextClick', function () { window.scrollBy(0, window.innerHeight); });
+  fiezta.on('previousClick', function () { window.scrollBy(0, -window.innerHeight); });
 })();
 ```
 
@@ -328,64 +328,64 @@ Nada declarado: sem `setQueueProvider`, a fila publicada é o histórico do `Web
 host; sem handlers de `nextClick`/`previousClick`, não há próximo/anterior. O app cobre os dez
 comandos e as dez informações sozinho.
 
-## Runtime JS (`fiesta`)
+## Runtime JS (`fiezta`)
 
-Todo script de eventos roda depois de `assets/plugins/fiesta-runtime.js`, que expõe
-`window.fiesta`:
+Todo script de eventos roda depois de `assets/plugins/fiezta-runtime.js`, que expõe
+`window.fiezta` (`window.fiesta` continua existindo como alias do mesmo objeto, para plugins instalados antes da renomeação):
 
-- `fiesta.on(nome, fn)` — nome é um dos eventos do carro:
+- `fiezta.on(nome, fn)` — nome é um dos eventos do carro:
   `nextClick`, `previousClick`, `nextLongPress`, `previousLongPress`, `play`, `pause`
   (também disparado pelo stop do painel). Sem handler para `play`/`pause`, o app toca ou pausa
   o `<video>` da página. Registrar de novo substitui o handler.
-- `fiesta.setAvailable({ next, previous })` — reporta se cada tecla tem efeito agora. A queda
+- `fiezta.setAvailable({ next, previous })` — reporta se cada tecla tem efeito agora. A queda
   para o site é por chave: a que o plugin informar vale, e a que ele **omitir** vem do que o
   site registrou em `navigator.mediaSession.setActionHandler('nexttrack'/'previoustrack', fn)`,
   capturado pelo runtime. Omitir não é o mesmo que responder `false`.
-- `fiesta.setMetadataProvider(fn)` — `fn()` devolve `{ title, artist, artwork }` (ou `null`) e é
+- `fiezta.setMetadataProvider(fn)` — `fn()` devolve `{ title, artist, artwork }` (ou `null`) e é
   consultada a cada segundo. A metadata da leitura é resolvida nesta ordem: o provider do
   plugin → `navigator.mediaSession.metadata` (título, artista e a maior `artwork`) → título da
   página e host, campo a campo: o que o provider deixar vazio vem do site, e só então da
   página. Aceita um `id` opcional (informação 5 do contrato de controle remoto, ver
   acima); sem ele a identidade da faixa é `url + título + autor`.
-- `fiesta.setQueueProvider(fn)` — `fn()` devolve `{ shape, title, entries, cursor }` (ou `null`,
+- `fiezta.setQueueProvider(fn)` — `fn()` devolve `{ shape, title, entries, cursor }` (ou `null`,
   equivalente a `shape: 'none'`); ver "O contrato de controle remoto" acima para os três
   formatos. Consultada a cada segundo, publicada via `mediacontrol.onQueue(json)` só quando o
   JSON muda. `MediaQueueJson` (`shared/media`) faz o parse do lado Kotlin.
-- `fiesta.matchesVoiceQuery(texto)` — compara `texto` com a busca por voz pendente
-  (`window.__fiestaVoiceSearch.query`) normalizando acentos, pontuação e caixa; usado por
+- `fiezta.matchesVoiceQuery(texto)` — compara `texto` com a busca por voz pendente
+  (`window.__fieztaVoiceSearch.query`) normalizando acentos, pontuação e caixa; usado por
   scripts de evento para não perder a busca quando o site corrige a ortografia do termo.
 - Uma leitura completa da mídia (título, artista, capa, posição, duração, velocidade,
   tocando/pausado e as duas teclas de faixa) não precisa de plugin: o runtime elege o elemento
-  de mídia ativo (`window.__fiestaMedia()`, exposto também para scripts de evento) e publica a
+  de mídia ativo (`window.__fieztaMedia()`, exposto também para scripts de evento) e publica a
   leitura via `mediacontrol.onReading(json)` sempre que ela muda, e no mínimo a cada 5s enquanto
   há mídia. Sem elemento ativo mas com `navigator.mediaSession.playbackState === 'playing'`
   (vídeo dentro de iframe), a leitura reporta tocando sem posição - o card para de mentir
   "pausado" mesmo sem poder controlar. A leitura também traz `isTrack` (Plano 58): verdadeiro
   se o elemento eleito está audível agora, ou o site diz `playbackState === 'playing'`, ou algum
   elemento já foi audível nesta mesma `location.href` (pegajoso por URL, zerado só na troca de
-  `href` — `fiesta.reset()` não mexe nisso). Trocar de `href` saindo de uma faixa mantém
+  `href` — `fiezta.reset()` não mexe nisso). Trocar de `href` saindo de uma faixa mantém
   `isTrack` por até 15 s, para a troca de faixa do YouTube não virar página comum até o áudio
   do próximo vídeo começar. Ter `<video>`/`<audio>` na página não basta, nem
-  `mediaSession.metadata`/handlers do site, nem `fiesta.on`/`setAvailable` do plugin `generic`:
+  `mediaSession.metadata`/handlers do site, nem `fiezta.on`/`setAvailable` do plugin `generic`:
   uma página sem nada tocando é `isTrack: false`, mesmo cheia de prévias mudas (o exemplo é a
   página de vídeos de um canal do YouTube). `MediaReadingJson` (`shared/media`) faz o parse do
   lado Kotlin; `core/media` (`NowPlaying`/`NowPlayingProjection`) é quem decide o que publicar.
-- `fiesta.toast(texto)` — toast do Android.
-- `fiesta.setInterval(fn, ms)` — como `window.setInterval`, mas o timer é limpo
-  automaticamente por `fiesta.reset()` quando o plugin de eventos troca.
-- `fiesta.dispatch(nome, argumento?)` — chamado pelo lado Kotlin (`PluginInjector.dispatch`), não
+- `fiezta.toast(texto)` — toast do Android.
+- `fiezta.setInterval(fn, ms)` — como `window.setInterval`, mas o timer é limpo
+  automaticamente por `fiezta.reset()` quando o plugin de eventos troca.
+- `fiezta.dispatch(nome, argumento?)` — chamado pelo lado Kotlin (`PluginInjector.dispatch`), não
   pelo plugin.
-- `window.__fiestaVoiceSearch` — contexto opcional de uma busca por voz pendente, com `id`,
+- `window.__fieztaVoiceSearch` — contexto opcional de uma busca por voz pendente, com `id`,
   `generation` e `query`. O plugin confirma que a URL de resultados corresponde a `query` antes
   de selecionar qualquer resultado e confirma cada marco com
-  `fiestaplugins.onVoiceSearchProgress(id, generation, stage)`, onde `stage` é `confirmed`,
+  `fieztaplugins.onVoiceSearchProgress(id, generation, stage)`, onde `stage` é `confirmed`,
   `searching`, `result`, `playRequested` ou `failed`. O contexto é invalidado em cancelamento,
   troca de documento e fim do pedido; confirmações de outro id ou geração são ignoradas. Plugin
   que não reporta nada apenas deixa a busca por voz expirar no tempo do app.
-- `fiesta.reset()` — chamado pelo lado Kotlin ao trocar de script de eventos; limpa também o
+- `fiezta.reset()` — chamado pelo lado Kotlin ao trocar de script de eventos; limpa também o
   `queueProvider` e o último JSON de fila publicado.
 
-Um script de tweak não usa `fiesta` — é JS livre, avaliado uma vez (ou a cada URL,
+Um script de tweak não usa `fiezta` — é JS livre, avaliado uma vez (ou a cada URL,
 conforme `rerun`) na página.
 
 ## Onde ficam
@@ -393,7 +393,7 @@ conforme `rerun`) na página.
 | O quê | Onde |
 |---|---|
 | plugins padrão | `app/src/main/assets/plugins/<id>/` |
-| runtime | `app/src/main/assets/plugins/fiesta-runtime.js` (não é um plugin) |
+| runtime | `app/src/main/assets/plugins/fiezta-runtime.js` (não é um plugin) |
 | ordem de primeiro contato dos padrão | `app/src/main/assets/plugins/defaults.json` |
 | plugins instalados | `filesDir/plugins/<id>/` |
 | índice dos instalados | `filesDir/plugins/index.json` |
@@ -412,7 +412,7 @@ conforme `rerun`) na página.
 - `shared/plugins/` — a cola com o app: `AppPlugins` (a instância única de `PluginSource`),
   `AndroidPluginFiles` (lê assets e `filesDir/plugins`, verifica SHA-256),
   `PreferencesPluginStateStore`, `AndroidPluginLog`, `PluginHandlersBridge` (ponte
-  `fiestaplugins`, só no carro), `PluginZipInstaller` (abre o `.zip` escolhido pelo usuário e
+  `fieztaplugins`, só no carro), `PluginZipInstaller` (abre o `.zip` escolhido pelo usuário e
   delega a extração ao `ZipPluginArchive`) e `PluginLifecycleAlignment`.
 - `features/domain/phone/plugins/PluginsPhoneActivity` — tela de gerenciamento no
   celular (ativar/desativar, ligar/desligar cada tweak, apagar, instalar de `.zip`,
@@ -428,8 +428,8 @@ npm install
 npm test
 ```
 
-`tests/plugins/harness.mjs` sobe a pagina, injeta `fiesta-runtime.js` e o plugin pedido, e
-captura o que iria para as pontes nativas (`mediacontrol`, `fiestaplugins`). Os fixtures em
+`tests/plugins/harness.mjs` sobe a pagina, injeta `fiezta-runtime.js` e o plugin pedido, e
+captura o que iria para as pontes nativas (`mediacontrol`, `fieztaplugins`). Os fixtures em
 `tests/plugins/fixtures/` sao HTML copiado do YouTube movel, com as classes e os `href`
 originais — inclusive a miniatura sem `src`, que e o que obriga a arte a sair do id do video.
 
@@ -439,7 +439,7 @@ e a pagina de Shorts nao renderiza vizinho nenhum — nenhum link `/shorts/`, ne
 os dois botoes do carrossel. E por isso que a fila dessas duas paginas e a faixa atual
 sozinha.
 
-`tests/plugins/fiesta-runtime.test.mjs` cobre o contrato: a precedencia plugin sobre site
+`tests/plugins/fiezta-runtime.test.mjs` cobre o contrato: a precedencia plugin sobre site
 chave a chave, a metadata campo a campo, o `seekTo` chegando ao handler do site em segundos e
 a leitura publicada so quando muda. `tests/plugins/youtube-playlist.test.mjs` cobre a fila da
 playlist contra o DOM real.

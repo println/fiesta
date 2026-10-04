@@ -1,7 +1,7 @@
 # support/media
 
 Framework de controle remoto de mídia. Kotlin puro: sem `android.*`, sem `R`, sem dependência
-do Fiesta.
+do Fiezta D1.
 
 ## Os três papéis
 
