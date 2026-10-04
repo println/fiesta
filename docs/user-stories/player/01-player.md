@@ -23,7 +23,7 @@ same things.
 > **Then** the screen has:
 >
 > - a button that opens the queue screen (PL-3);
-> - a button that opens Fiesta, the browser;
+> - a button that opens Fiezta D1, the browser;
 > - control over the position in the video or track;
 > - an image;
 > - forward and back buttons.
@@ -82,7 +82,7 @@ On YouTube, videos and shorts have no playlist, so nothing shows for them.
 > **So that** the two things I reach for are the first ones I see.
 
 > **Given** the home screen
-> **Then** it shows the link to Fiesta, the browser,
+> **Then** it shows the link to Fiezta D1, the browser,
 > **and** what is playing now.
 
 **There, and it does what I want.**
@@ -109,7 +109,7 @@ touched and nothing starts when I open it: it does not show up in the player.
 
 > **Given** something is playing
 > **When** I go to a page with no media
-> **Then** it is as if I had pressed stop: the player stops, Fiesta does not ask for the audio
+> **Then** it is as if I had pressed stop: the player stops, Fiezta D1 does not ask for the audio
 > focus, and it does not resume that playback on its own later.
 
 **There, and it does what I want.**

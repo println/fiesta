@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application>
         <receiver
-            android:name="proto.media.fiesta.features.domain.car.app.DebugPlayFromSearchReceiver"
+            android:name="proto.media.fiezta.features.domain.car.app.DebugPlayFromSearchReceiver"
             android:exported="true" />
     </application>
 </manifest>

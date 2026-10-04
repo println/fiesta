@@ -42,7 +42,7 @@
                 android:src="@drawable/mozac_ic_search"
                 android:tint="@color/car_settings_active" />
 
-            <proto.media.fiesta.features.domain.car.browser.CarEditText
+            <proto.media.fiezta.features.domain.car.browser.CarEditText
                 android:id="@+id/go_to_address_edittext"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

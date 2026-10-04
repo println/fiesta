@@ -9,7 +9,7 @@
   }
 
   unmuteIfPlayerVideo(document.querySelector('#movie_player video'));
-  if (window.__fiestaUnmutePlayer) { return; }
-  window.__fiestaUnmutePlayer = true;
+  if (window.__fieztaUnmutePlayer) { return; }
+  window.__fieztaUnmutePlayer = true;
   document.addEventListener('playing', function(e) { unmuteIfPlayerVideo(e.target); }, true);
 })();

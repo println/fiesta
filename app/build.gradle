@@ -8,7 +8,7 @@ def localPropertiesFile = rootProject.file('local.properties')
 if (localPropertiesFile.exists()) {
     localPropertiesFile.withInputStream { localProperties.load(it) }
 }
-def releaseKeystore = localProperties.getProperty('fiesta.keystore')
+def releaseKeystore = localProperties.getProperty('fiezta.keystore')
 
 def gitDescribe = providers.exec {
     commandLine 'git', 'describe', '--tags', '--match', 'v[0-9]*'
@@ -23,7 +23,7 @@ def appVersionName = gitDescribe.substring(1)
 def appVersionCode = major * 10000 + minor * 100 + patch
 
 android {
-    namespace "proto.media.fiesta"
+    namespace "proto.media.fiezta"
     lintOptions {
         abortOnError false
     }
@@ -44,9 +44,9 @@ android {
         if (releaseKeystore) {
             release {
                 storeFile file(releaseKeystore)
-                storePassword localProperties.getProperty('fiesta.keystore.password')
-                keyAlias localProperties.getProperty('fiesta.keystore.alias')
-                keyPassword localProperties.getProperty('fiesta.keystore.keyPassword')
+                storePassword localProperties.getProperty('fiezta.keystore.password')
+                keyAlias localProperties.getProperty('fiezta.keystore.alias')
+                keyPassword localProperties.getProperty('fiezta.keystore.keyPassword')
             }
         }
     }

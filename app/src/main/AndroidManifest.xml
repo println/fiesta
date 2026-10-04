@@ -23,7 +23,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:theme="@style/Theme.Car">
         <service
-            android:name="proto.media.fiesta.features.domain.car.app.CarService"
+            android:name="proto.media.fiezta.features.domain.car.app.CarService"
             android:label="@string/car_service_name"
             android:exported="true"
             tools:ignore="ExportedService">
@@ -35,7 +35,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="proto.media.fiesta.features.domain.mediaserver.PlaybackBrowserService"
+            android:name="proto.media.fiezta.features.domain.mediaserver.PlaybackBrowserService"
             android:label="@string/car_media_service_name"
             android:icon="@mipmap/ic_csmedia"
             android:exported="true"
@@ -56,7 +56,7 @@
             android:resource="@drawable/ic_csmedia_mark" />
 
         <activity
-            android:name="proto.media.fiesta.features.layout.MainPhoneActivity"
+            android:name="proto.media.fiezta.features.layout.MainPhoneActivity"
             android:exported="true"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|uiMode|navigation|density"
             android:theme="@style/Theme.Browser"
@@ -68,7 +68,7 @@
         </activity>
 
         <activity
-            android:name="proto.media.fiesta.features.domain.phone.settings.SettingsPhoneActivity"
+            android:name="proto.media.fiezta.features.domain.phone.settings.SettingsPhoneActivity"
             android:label="@string/settings"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|uiMode|navigation|density"
             android:theme="@style/Theme.Settings"
@@ -76,27 +76,27 @@
         </activity>
 
         <activity
-            android:name="proto.media.fiesta.features.domain.phone.browser.SiteStorageActivity"
+            android:name="proto.media.fiezta.features.domain.phone.browser.SiteStorageActivity"
             android:label="@string/settings_site_storage_title"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|uiMode|navigation|density"
             android:theme="@style/Theme.Settings"
             android:parentActivityName=".features.domain.phone.settings.SettingsPhoneActivity" />
 
         <activity
-            android:name="proto.media.fiesta.features.domain.phone.plugins.PluginsPhoneActivity"
+            android:name="proto.media.fiezta.features.domain.phone.plugins.PluginsPhoneActivity"
             android:label="@string/plugins_title"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|uiMode|navigation|density"
             android:theme="@style/Theme.Settings"
             android:parentActivityName=".features.domain.phone.settings.SettingsPhoneActivity" />
         <activity
-            android:name="proto.media.fiesta.features.domain.phone.plugins.VoiceListenerPhoneActivity"
+            android:name="proto.media.fiezta.features.domain.phone.plugins.VoiceListenerPhoneActivity"
             android:label="@string/voice_listener_title"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|uiMode|navigation|density"
             android:theme="@style/Theme.Settings"
             android:parentActivityName=".features.domain.phone.plugins.PluginsPhoneActivity" />
 
         <activity
-            android:name="proto.media.fiesta.features.domain.phone.plugins.PluginDetailsPhoneActivity"
+            android:name="proto.media.fiezta.features.domain.phone.plugins.PluginDetailsPhoneActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|uiMode|navigation|density"
             android:theme="@style/Theme.Settings"
             android:parentActivityName=".features.domain.phone.plugins.PluginsPhoneActivity" />

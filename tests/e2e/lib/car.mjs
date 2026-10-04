@@ -8,9 +8,9 @@ import { HeadUnit } from './dhu.mjs';
 
 const run = promisify(execFile);
 
-const LAUNCHER_FIESTA_ICON = { x: 633, y: 70 };
+const LAUNCHER_FIEZTA_ICON = { x: 165, y: 228 };
 const LAUNCHER_COMPONENT = 'com.google.android.projection.gearhead/com.google.android.projection.gearhead.system.applauncher.GhAppLauncherService';
-const FIESTA_CAR_COMPONENT = `${config.packageName}/proto.media.fiesta.features.domain.car.app.CarService`;
+const FIEZTA_CAR_COMPONENT = `${config.packageName}/proto.media.fiezta.features.domain.car.app.CarService`;
 const FOREGROUND = /CAR\.CAM\s*: makeForeground for component ComponentInfo\{([^}]+)\}/;
 
 const TAGS = ['CarPlayer', 'WebViewExGearhead', 'PlaybackSession', 'WebViewEx', 'MediaServer', 'CarScreenLauncher', 'CAR.CAM'];
@@ -80,11 +80,11 @@ export class CarSession {
   async openCarScreen(attempts = 5) {
     await this.openLauncher();
     const mark = this.log.mark();
-    this.unit.tap(LAUNCHER_FIESTA_ICON.x, LAUNCHER_FIESTA_ICON.y);
-    const opened = await this.waitForForeground((component) => component === FIESTA_CAR_COMPONENT, mark, 5_000)
+    this.unit.tap(LAUNCHER_FIEZTA_ICON.x, LAUNCHER_FIEZTA_ICON.y);
+    const opened = await this.waitForForeground((component) => component === FIEZTA_CAR_COMPONENT, mark, 15_000)
       .catch(() => null);
     if (!opened) {
-      if (attempts <= 1) throw new Error('the Fiesta icon of the launcher never brought the car screen up');
+      if (attempts <= 1) throw new Error('the Fiezta icon of the launcher never brought the car screen up');
       return this.openCarScreen(attempts - 1);
     }
     await this.log.waitFor(/CarPlayer: attach/, { from: mark, timeout: 30_000 });

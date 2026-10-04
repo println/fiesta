@@ -6,7 +6,7 @@
     android:background="@android:color/background_dark"
     android:clipChildren="false">
 
-    <proto.media.fiesta.support.webviewex.video.FullscreenVideoContainer
+    <proto.media.fiezta.support.webviewex.video.FullscreenVideoContainer
         android:id="@+id/full_screen_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -112,7 +112,7 @@
                 android:layout_gravity="top"
                 android:indeterminate="true" />
 
-            <proto.media.fiesta.features.domain.car.browser.CarEditText
+            <proto.media.fiezta.features.domain.car.browser.CarEditText
                 android:id="@+id/fake_edittext"
                 android:layout_width="1px"
                 android:layout_height="1px"

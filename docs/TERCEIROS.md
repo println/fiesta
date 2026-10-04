@@ -2,13 +2,13 @@
 
 Registro de assets copiados de outros projetos, exigido pelas respectivas licenças.
 
-O Fiesta é GPL-3.0-or-later (`LICENSE`), com a permissão adicional de
+O Fiezta D1 é GPL-3.0-or-later (`LICENSE`), com a permissão adicional de
 `LICENSES/GPL-3.0-aauto-sdk-exception.txt`. As partes abaixo mantêm as próprias licenças.
 
 ## Código — CarStream
 
 - **Origem:** [`thekirankumar/carstream-android-auto`](https://github.com/thekirankumar/carstream-android-auto),
-  de onde o Fiesta foi criado como fork, modificado desde então por println
+  de onde o Fiezta D1 foi criado como fork, modificado desde então por println
 - **Licença:** Apache License 2.0 (texto em `LICENSES/Apache-2.0.txt`; o upstream não tem `NOTICE`)
 
 ## Código — VideoEnabledWebView
@@ -23,7 +23,7 @@ O Fiesta é GPL-3.0-or-later (`LICENSE`), com a permissão adicional de
 - **Origem:** `com.github.martoreto:aauto-sdk:v4.7`, via JitPack
   ([`martoreto/aauto-sdk`](https://github.com/martoreto/aauto-sdk))
 - **Licença:** nenhuma declarada; o autor retirou o SDK a pedido do Google. A permissão
-  adicional da GPL cobre só a combinação com o Fiesta, não a redistribuição do SDK.
+  adicional da GPL cobre só a combinação com o Fiezta D1, não a redistribuição do SDK.
 
 ## Ícones — Material Symbols
 

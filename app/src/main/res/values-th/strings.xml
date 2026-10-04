@@ -151,7 +151,7 @@
     <string name="browser_open_in">เปิดด้วย…</string>
     <string name="browser_desktop_site">เว็บไซต์เวอร์ชันเดสก์ท็อป</string>
 
-    <string name="car_media_open_browser">เปิด Fiesta</string>
+    <string name="car_media_open_browser">เปิด Fiezta</string>
     <string name="browser_send_to_car_done">ส่งไปยังหน้าจอรถแล้ว</string>
 
     <string name="browser_send_to_car_message">หน้าจอรถจะเปิดลิงก์นี้ โดยโหลดหน้าเว็บเอง — หน้าจอโทรศัพท์จะไม่ถูกมิเรอร์ และการเล่นจะไม่ถูกโอนไป</string>
@@ -182,9 +182,9 @@
     <string name="settings_about_icons_summary">mozilla-mobile/android-components, สัญญาอนุญาต MPL-2.0</string>
     <string name="settings_about_font_title">แบบอักษร</string>
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
-    <string name="settings_topic_donate_title">เติมน้ำมันให้ Fiesta</string>
-    <string name="settings_topic_donate_summary">ให้ Fiesta วิ่งต่อไปได้</string>
-    <string name="settings_donate_title">เติมน้ำมันให้ Fiesta</string>
+    <string name="settings_topic_donate_title">เติมน้ำมันให้ Fiezta</string>
+    <string name="settings_topic_donate_summary">ให้ Fiezta วิ่งต่อไปได้</string>
+    <string name="settings_donate_title">เติมน้ำมันให้ Fiezta</string>
     <string name="settings_donate_reason_free">ฟรี</string>
     <string name="settings_donate_reason_no_ads">ไม่มีโฆษณา</string>
     <string name="settings_donate_reason_no_telemetry">ไม่มีการเก็บข้อมูลการใช้งาน</string>

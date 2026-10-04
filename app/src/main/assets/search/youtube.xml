@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
-                       xmlns:cs="urn:fiesta:search:1">
+                       xmlns:cs="urn:fiezta:search:1">
   <ShortName>YouTube</ShortName>
   <InputEncoding>UTF-8</InputEncoding>
   <Url type="text/html" template="https://www.youtube.com/results?search_query={searchTerms}"/>

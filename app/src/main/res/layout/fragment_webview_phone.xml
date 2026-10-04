@@ -57,7 +57,7 @@
                     android:visibility="gone"
                     app:srcCompat="@drawable/mozac_ic_shield" />
 
-                <proto.media.fiesta.features.domain.phone.browser.UrlEditText
+                <proto.media.fiezta.features.domain.phone.browser.UrlEditText
                     android:id="@+id/edittext_url"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

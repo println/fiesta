@@ -151,7 +151,7 @@
     <string name="browser_open_in">Deschide în…</string>
     <string name="browser_desktop_site">Site pentru desktop</string>
 
-    <string name="car_media_open_browser">Deschide Fiesta</string>
+    <string name="car_media_open_browser">Deschide Fiezta</string>
     <string name="browser_send_to_car_done">Trimis pe ecranul mașinii</string>
 
     <string name="browser_send_to_car_message">Ecranul mașinii va deschide acest link. Încarcă pagina pe cont propriu — ecranul telefonului nu este oglindit, iar redarea nu se transferă.</string>
@@ -182,9 +182,9 @@
     <string name="settings_about_icons_summary">mozilla-mobile/android-components, licență MPL-2.0</string>
     <string name="settings_about_font_title">Font</string>
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
-    <string name="settings_topic_donate_title">Alimentează Fiesta</string>
-    <string name="settings_topic_donate_summary">Ține Fiesta pe drum</string>
-    <string name="settings_donate_title">Alimentează Fiesta</string>
+    <string name="settings_topic_donate_title">Alimentează Fiezta</string>
+    <string name="settings_topic_donate_summary">Ține Fiezta pe drum</string>
+    <string name="settings_donate_title">Alimentează Fiezta</string>
     <string name="settings_donate_reason_free">Gratuit</string>
     <string name="settings_donate_reason_no_ads">Fără reclame</string>
     <string name="settings_donate_reason_no_telemetry">Fără telemetrie</string>

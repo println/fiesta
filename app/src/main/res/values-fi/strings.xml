@@ -151,7 +151,7 @@
     <string name="browser_open_in">Avaa sovelluksessa…</string>
     <string name="browser_desktop_site">Työpöytäsivusto</string>
 
-    <string name="car_media_open_browser">Avaa Fiesta</string>
+    <string name="car_media_open_browser">Avaa Fiezta</string>
     <string name="browser_send_to_car_done">Lähetetty auton näytölle</string>
 
     <string name="browser_send_to_car_message">Auton näyttö avaa tämän linkin. Se lataa sivun itse — puhelimen näyttöä ei peilata eikä toisto siirry mukana.</string>
@@ -182,9 +182,9 @@
     <string name="settings_about_icons_summary">mozilla-mobile/android-components, MPL-2.0-lisenssi</string>
     <string name="settings_about_font_title">Fontti</string>
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
-    <string name="settings_topic_donate_title">Tankkaa Fiesta</string>
-    <string name="settings_topic_donate_summary">Pidä Fiesta tiellä</string>
-    <string name="settings_donate_title">Tankkaa Fiesta</string>
+    <string name="settings_topic_donate_title">Tankkaa Fiezta</string>
+    <string name="settings_topic_donate_summary">Pidä Fiezta tiellä</string>
+    <string name="settings_donate_title">Tankkaa Fiezta</string>
     <string name="settings_donate_reason_free">Ilmainen</string>
     <string name="settings_donate_reason_no_ads">Ei mainoksia</string>
     <string name="settings_donate_reason_no_telemetry">Ei telemetriaa</string>

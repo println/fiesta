@@ -151,7 +151,7 @@
     <string name="browser_open_in">Ava rakenduses…</string>
     <string name="browser_desktop_site">Arvutiversioon</string>
 
-    <string name="car_media_open_browser">Ava Fiesta</string>
+    <string name="car_media_open_browser">Ava Fiezta</string>
     <string name="browser_send_to_car_done">Saadetud auto ekraanile</string>
 
     <string name="browser_send_to_car_message">Auto ekraan avab selle lingi. See laadib lehe ise — telefoni ekraani ei peegeldata ja esitus ei kandu üle.</string>
@@ -182,9 +182,9 @@
     <string name="settings_about_icons_summary">mozilla-mobile/android-components, MPL-2.0 litsents</string>
     <string name="settings_about_font_title">Font</string>
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
-    <string name="settings_topic_donate_title">Tangi Fiesta täis</string>
-    <string name="settings_topic_donate_summary">Hoia Fiesta teel</string>
-    <string name="settings_donate_title">Tangi Fiesta täis</string>
+    <string name="settings_topic_donate_title">Tangi Fiezta täis</string>
+    <string name="settings_topic_donate_summary">Hoia Fiezta teel</string>
+    <string name="settings_donate_title">Tangi Fiezta täis</string>
     <string name="settings_donate_reason_free">Tasuta</string>
     <string name="settings_donate_reason_no_ads">Reklaamideta</string>
     <string name="settings_donate_reason_no_telemetry">Telemeetriata</string>

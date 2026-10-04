@@ -1,10 +1,10 @@
 <div align="center">
 
-🌐 **[println.github.io/fiesta](https://println.github.io/fiesta/)**
+🌐 **[println.github.io/fiezta](https://println.github.io/fiezta/)**
 
 🇺🇸 English · [🇧🇷 Português](README.pt-BR.md)
 
-<img src="docs/images/logo.svg" alt="Fiesta" width="480">
+<img src="docs/images/logo.svg" alt="Fiezta D1" width="480">
 
 # More road. Fewer limits.
 
@@ -17,10 +17,10 @@ Drive. Explore. Play.
 ---
 
 You start the car, and the music picks up where it left off. You press the steering wheel
-button, and the track skips. You say "Hey Google, play synthwave on Fiesta", and it's playing.
+button, and the track skips. You say "Hey Google, play synthwave on Fiezta", and it's playing.
 The map stays on screen, the sound stays on air.
 
-This is **Fiesta**: a **driving-first** app for Android Auto, made for people who love to
+This is **Fiezta D1** (said like *fiesta*, fee-ES-tuh; D1 stands for *Driver First*): a **driving-first** app for Android Auto, made for people who love to
 drive. Fewer taps. More road.
 
 ## Made for driving
@@ -29,47 +29,47 @@ drive. Fewer taps. More road.
 Play, pause, next and previous straight from the car's buttons. No hunting on the screen.
 
 ### 🎙️ Just ask
-"Play X on Fiesta" through Google Assistant. You ask, Fiesta finds it and plays it.
+"Play X on Fiezta" through Google Assistant. You ask, Fiezta D1 finds it and plays it.
 
 ### 🌙 Screen off, sound on
-Fiesta plays in the background, in the Android Auto media card, with artwork, title and queue.
+Fiezta D1 plays in the background, in the Android Auto media card, with artwork, title and queue.
 The map in front; the soundtrack behind it.
 
 ### 🔁 Picks up where you left off
 Turned the car off mid-song? On your next drive, it comes back on its own, from the same spot.
 
 ### 🧭 Your dashboard, your way
-Every car has its own screen, and Fiesta fits it. The toolbar goes to the top, bottom, left or
+Every car has its own screen, and Fiezta D1 fits it. The toolbar goes to the top, bottom, left or
 right, and can hide so the page takes the whole screen, coming back with a tap on the edge.
 The **bookmarks bar** keeps your sites one tap away, and any bookmark becomes the home page
 right there. Zoom to read from the driver's seat. And all of it can be tuned **from your
 phone, live**.
 
 ### 🛡️ Yours, and only yours
-No telemetry: CarStream shipped Firebase, Fiesta sends nothing, to anyone. Known ad and
+No telemetry: CarStream shipped Firebase, Fiezta D1 sends nothing, to anyone. Known ad and
 tracking domains are blocked by default, per site. Sites you sign into still know it's you.
 
 ### 🧩 Ready for any site
-Per-site plugins teach Fiesta how to talk to each page: what the wheel does, what the screen
+Per-site plugins teach Fiezta D1 how to talk to each page: what the wheel does, what the screen
 shows. Pluggable search engines and per-site desktop mode round it out.
 
 ## The look
 
-Fiesta is born from the **Night Drive** mood: roads at night, **JDM** culture and
+Fiezta D1 is born from the **Night Drive** mood: roads at night, **JDM** culture and
 **retrofuturism**, with influences from **Akira, Midnight Club, Enduro, synthwave and Vice
 City**. Neon, speed and freedom: a look inspired by the past, made for the road.
 
 Every version carries a codename from that road. The first one is **1.0.0 · Akira**.
 
-## Fiesta × CarStream
+## Fiezta D1 × CarStream
 
-Fiesta was born from [CarStream](https://github.com/thekirankumar/carstream-android-auto) and
+Fiezta D1 was born from [CarStream](https://github.com/thekirankumar/carstream-android-auto) and
 rebuilt with the road in mind.
 
-| Feature | **Fiesta** | CarStream |
+| Feature | **Fiezta D1** | CarStream |
 | --- | :---: | :---: |
 | Controls from the steering wheel buttons | **✅** | — |
-| "Play X on Fiesta" through Google Assistant | **✅** | — |
+| "Play X on Fiezta" through Google Assistant | **✅** | — |
 | Music and video in the Android Auto media card | **✅** | — |
 | Keeps playing with the map on screen | **✅** | — |
 | Resumes where it stopped when you start the car | **✅** | — |
@@ -97,7 +97,7 @@ rebuilt with the road in mind.
 | Local file player | **—** | ✅ |
 | Night mode through remote CSS | **—** | ✅ |
 
-## ⛽ Fuel up Fiesta
+## ⛽ Fuel up Fiezta D1
 
 <div align="center">
 
@@ -105,7 +105,7 @@ rebuilt with the road in mind.
 
 </div>
 
-Fiesta is **free**, with **no ads** and **no telemetry**. It's made in spare time, running on
+Fiezta D1 is **free**, with **no ads** and **no telemetry**. It's made in spare time, running on
 coffee and on the joy of seeing everything work on the road.
 
 If it has kept you company on a trip, give back with a coffee. Every donation turns into road
@@ -119,17 +119,17 @@ time:
 
 **☕ [Buy me a coffee](https://ko-fi.com/println)** · **💖 [GitHub Sponsors](https://github.com/sponsors/println)**
 
-Can't donate right now? Leaving a ⭐ on GitHub and showing Fiesta to a friend fuels it too.
+Can't donate right now? Leaving a ⭐ on GitHub and showing Fiezta D1 to a friend fuels it too.
 
 </div>
 
 ## Before you install
 
-Fiesta is for people who already sideload Android Auto apps: CarStream, AAAD, AA Browser,
-Fermata Auto. If that sentence means nothing to you, Fiesta isn't for you yet. There's no
+Fiezta D1 is for people who already sideload Android Auto apps: CarStream, AAAD, AA Browser,
+Fermata Auto. If that sentence means nothing to you, Fiezta D1 isn't for you yet. There's no
 install guide or install support.
 
-Fiesta is an **experimental** app, just like CarStream. It's not on Google Play and doesn't
+Fiezta D1 is an **experimental** app, just like CarStream. It's not on Google Play and doesn't
 install like a regular app: to show up on Android Auto, it needs a special install. Use it at
 your own risk, and never touch the screen while driving.
 
@@ -146,7 +146,7 @@ npm run e2e                    # end to end (emulator + DHU, set ANDROID_SDK)
 
 ## Credits
 
-Fiesta started as a fork of
+Fiezta D1 started as a fork of
 [`thekirankumar/carstream-android-auto`](https://github.com/thekirankumar/carstream-android-auto).
 
 - [`cprcrack/VideoEnabledWebView`](https://github.com/cprcrack/VideoEnabledWebView) — the base
@@ -156,7 +156,7 @@ Fiesta started as a fork of
 ## License
 
 [GPL-3.0-or-later](LICENSE), with an [additional permission](LICENSES/GPL-3.0-aauto-sdk-exception.txt)
-to combine Fiesta with the unofficial Android Auto SDK (`aauto-sdk`).
+to combine Fiezta D1 with the unofficial Android Auto SDK (`aauto-sdk`).
 
 Code inherited from CarStream stays under [Apache 2.0](LICENSES/Apache-2.0.txt), and the code
 based on VideoEnabledWebView under [MIT](LICENSES/MIT-VideoEnabledWebView.txt). Releases
@@ -166,7 +166,7 @@ already published under Apache 2.0 keep that license.
 
 <div align="center">
 
-Enjoying it? Leave a ⭐ on [GitHub](https://github.com/println/fiesta) or [fuel up Fiesta](#-fuel-up-fiesta) ⛽.
+Enjoying it? Leave a ⭐ on [GitHub](https://github.com/println/fiezta) or [fuel up Fiezta D1](#-fuel-up-fiezta-d1) ⛽.
 
 **Drive. Explore. Play.**
 

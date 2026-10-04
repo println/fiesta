@@ -70,17 +70,17 @@ export function startPage({ fixture, url = 'https://m.youtube.com/', plugin = nu
     onQueue: (json) => queues.push(JSON.parse(json)),
     onSearchResult: (found) => searchResults.push(found)
   };
-  window.fiestaplugins = {
+  window.fieztaplugins = {
     onHandlersChanged: (names) => handlerNames.push(names === '' ? [] : names.split(','))
   };
 
-  window.eval(scriptOf('fiesta-runtime.js'));
+  window.eval(scriptOf('fiezta-runtime.js'));
   if (plugin) window.eval(scriptOf(...plugin));
 
   return {
     window,
     document: window.document,
-    fiesta: window.fiesta,
+    fiezta: window.fiezta,
     readings,
     queues,
     searchResults,

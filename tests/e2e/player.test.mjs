@@ -5,7 +5,7 @@ import { pageSession } from './lib/devtools.mjs';
 import { config } from './lib/config.mjs';
 import { shell } from './lib/adb.mjs';
 
-test('PL-2 and PL-3: while a playlist plays, the player offers position, skipping, Fiesta and the queue', async () => {
+test('PL-2 and PL-3: while a playlist plays, the player offers position, skipping, Fiezta and the queue', async () => {
   const car = await CarSession.start();
   try {
     await car.playFromCar();
@@ -18,7 +18,7 @@ test('PL-2 and PL-3: while a playlist plays, the player offers position, skippin
     assert.ok(session.actions & MediaAction.SEEK_TO, 'control over the position');
     assert.ok(session.actions & MediaAction.SKIP_TO_NEXT, 'forward button');
     assert.ok(session.actions & MediaAction.SKIP_TO_PREVIOUS, 'back button');
-    assert.match(session.customActions, /Abrir Fiesta/, 'button that opens Fiesta');
+    assert.match(session.customActions, /Abrir Fiezta/, 'button that opens Fiezta');
     assert.ok(session.description, 'what is playing is described');
 
     if (new URL(media.url).searchParams.has('list')) {
@@ -55,7 +55,7 @@ async function playAndPauseMutedVideoOnThePage() {
   page.close();
 }
 
-async function focusHeldByFiesta() {
+async function focusHeldByFiezta() {
   const dump = await shell('dumpsys audio');
   const stack = dump.slice(dump.indexOf('Audio Focus stack entries'), dump.indexOf('No external focus policy'));
   return stack.includes(config.packageName);
@@ -74,7 +74,7 @@ async function assertLeftMediaForPlainPage(car, mark, what) {
 
   await car.log.waitFor(/CarPlayer: left media for a plain page/, { from: mark, timeout: 30_000 });
   assert.deepEqual(car.linesSince(mark, /focus is held by someone else|CarPlayer: paused$/), [], `${what}: no pause, no focus request`);
-  assert.equal(await focusHeldByFiesta(), false, `${what}: Fiesta is not on the audio focus stack`);
+  assert.equal(await focusHeldByFiezta(), false, `${what}: Fiezta is not on the audio focus stack`);
 
   const prefs = await car.carPrefs();
   assert.equal(prefs.playbackInterrupted, false, `${what}: nothing to resume later`);

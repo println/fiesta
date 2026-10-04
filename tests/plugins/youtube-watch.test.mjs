@@ -64,7 +64,7 @@ test('picking the next item in the queue clicks the next button', async () => {
   const page = watchPage();
   const clicks = [];
   page.document.querySelector('.ytp-next-button').addEventListener('click', () => clicks.push('next'));
-  page.fiesta.dispatch('queueItem', '1');
+  page.fiezta.dispatch('queueItem', '1');
   assert.deepEqual(clicks, ['next']);
   page.close();
 });
@@ -91,7 +91,7 @@ test('next clicks the button the page offers', async () => {
   const page = watchPage();
   const clicks = [];
   page.document.querySelector('.ytp-next-button').addEventListener('click', () => clicks.push('next'));
-  page.fiesta.dispatch('nextClick');
+  page.fiezta.dispatch('nextClick');
   assert.deepEqual(clicks, ['next']);
   page.close();
 });
@@ -100,7 +100,7 @@ test('previous restarts the track when the page says there is none', async () =>
   const page = watchPage();
   const media = page.document.querySelector('video');
   media.currentTime = 42;
-  page.fiesta.dispatch('previousClick');
+  page.fiezta.dispatch('previousClick');
   assert.equal(media.currentTime, 0);
   page.close();
 });

@@ -10,7 +10,7 @@ const SILENCE_BEFORE_SPEAKING_MILLIS = 1_500;
 const SILENCE_AFTER_SPEAKING_MILLIS = 1_000;
 
 export async function spokenWav(name, sentence) {
-  const directory = join(tmpdir(), 'fiesta-e2e-voice');
+  const directory = join(tmpdir(), 'fiezta-e2e-voice');
   mkdirSync(directory, { recursive: true });
   const path = join(directory, `${name}.wav`);
   if (existsSync(path)) return path;

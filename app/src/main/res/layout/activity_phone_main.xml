@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="proto.media.fiesta.features.layout.MainPhoneActivity">
+    tools:context="proto.media.fiezta.features.layout.MainPhoneActivity">
 
     <fragment
         android:id="@+id/demo"
-        android:name="proto.media.fiesta.features.domain.phone.browser.WebViewPhoneFragment"
+        android:name="proto.media.fiezta.features.domain.phone.browser.WebViewPhoneFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></fragment>
 </androidx.constraintlayout.widget.ConstraintLayout>
