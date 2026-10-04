@@ -100,7 +100,7 @@ class AndroidAutoBrowseTree(private val context: Context, server: MediaServer) :
         val description = MediaDescriptionCompat.Builder()
             .setMediaId(PlaybackSession.OPEN_BROWSER_ID)
             .setTitle(context.getString(R.string.car_media_open_browser))
-            .setIconBitmap(drawableBitmap(R.drawable.ic_fiesta_mark))
+            .setIconBitmap(drawableBitmap(R.drawable.ic_fiezta_mark))
             .build()
         return MediaBrowserCompat.MediaItem(description, MediaBrowserCompat.MediaItem.FLAG_PLAYABLE)
     }

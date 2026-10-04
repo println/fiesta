@@ -55,7 +55,7 @@ async function playAndPauseMutedVideoOnThePage() {
   page.close();
 }
 
-async function focusHeldByFiesta() {
+async function focusHeldByFiezta() {
   const dump = await shell('dumpsys audio');
   const stack = dump.slice(dump.indexOf('Audio Focus stack entries'), dump.indexOf('No external focus policy'));
   return stack.includes(config.packageName);
@@ -74,7 +74,7 @@ async function assertLeftMediaForPlainPage(car, mark, what) {
 
   await car.log.waitFor(/CarPlayer: left media for a plain page/, { from: mark, timeout: 30_000 });
   assert.deepEqual(car.linesSince(mark, /focus is held by someone else|CarPlayer: paused$/), [], `${what}: no pause, no focus request`);
-  assert.equal(await focusHeldByFiesta(), false, `${what}: Fiezta is not on the audio focus stack`);
+  assert.equal(await focusHeldByFiezta(), false, `${what}: Fiezta is not on the audio focus stack`);
 
   const prefs = await car.carPrefs();
   assert.equal(prefs.playbackInterrupted, false, `${what}: nothing to resume later`);

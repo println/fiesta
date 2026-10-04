@@ -66,7 +66,7 @@ class PlaybackSession(private val context: Context, server: MediaServer, private
     private val openBrowserAction = PlaybackStateCompat.CustomAction.Builder(
         OPEN_BROWSER_ID,
         context.getString(R.string.car_media_open_browser),
-        R.drawable.ic_fiesta_mark
+        R.drawable.ic_fiezta_mark
     ).build()
 
     private val positionSync = object : Runnable {

@@ -13,6 +13,6 @@ class MyExceptionHandler(context: Context) : Thread.UncaughtExceptionHandler {
     }
 
     companion object {
-        private const val TAG = "FiestaCrash"
+        private const val TAG = "FieztaCrash"
     }
 }
