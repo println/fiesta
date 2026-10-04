@@ -8,7 +8,7 @@ import { HeadUnit } from './dhu.mjs';
 
 const run = promisify(execFile);
 
-const LAUNCHER_FIEZTA_ICON = { x: 633, y: 70 };
+const LAUNCHER_FIEZTA_ICON = { x: 165, y: 228 };
 const LAUNCHER_COMPONENT = 'com.google.android.projection.gearhead/com.google.android.projection.gearhead.system.applauncher.GhAppLauncherService';
 const FIEZTA_CAR_COMPONENT = `${config.packageName}/proto.media.fiezta.features.domain.car.app.CarService`;
 const FOREGROUND = /CAR\.CAM\s*: makeForeground for component ComponentInfo\{([^}]+)\}/;
@@ -81,7 +81,7 @@ export class CarSession {
     await this.openLauncher();
     const mark = this.log.mark();
     this.unit.tap(LAUNCHER_FIEZTA_ICON.x, LAUNCHER_FIEZTA_ICON.y);
-    const opened = await this.waitForForeground((component) => component === FIEZTA_CAR_COMPONENT, mark, 5_000)
+    const opened = await this.waitForForeground((component) => component === FIEZTA_CAR_COMPONENT, mark, 15_000)
       .catch(() => null);
     if (!opened) {
       if (attempts <= 1) throw new Error('the Fiezta icon of the launcher never brought the car screen up');
