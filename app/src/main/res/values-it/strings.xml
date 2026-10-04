@@ -151,7 +151,7 @@
     <string name="browser_open_in">Apri in…</string>
     <string name="browser_desktop_site">Sito desktop</string>
 
-    <string name="car_media_open_browser">Apri Fiesta</string>
+    <string name="car_media_open_browser">Apri Fiezta</string>
     <string name="browser_send_to_car_done">Inviato allo schermo dell\'auto</string>
 
     <string name="browser_send_to_car_message">Lo schermo dell\'auto aprirà questo link. Carica la pagina per conto suo: lo schermo del telefono non viene duplicato e la riproduzione non viene trasferita.</string>
@@ -182,9 +182,9 @@
     <string name="settings_about_icons_summary">mozilla-mobile/android-components, licenza MPL-2.0</string>
     <string name="settings_about_font_title">Carattere</string>
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
-    <string name="settings_topic_donate_title">Fai il pieno a Fiesta</string>
-    <string name="settings_topic_donate_summary">Tieni Fiesta in strada</string>
-    <string name="settings_donate_title">Fai il pieno a Fiesta</string>
+    <string name="settings_topic_donate_title">Fai il pieno a Fiezta</string>
+    <string name="settings_topic_donate_summary">Tieni Fiezta in strada</string>
+    <string name="settings_donate_title">Fai il pieno a Fiezta</string>
     <string name="settings_donate_reason_free">Gratis</string>
     <string name="settings_donate_reason_no_ads">Senza pubblicità</string>
     <string name="settings_donate_reason_no_telemetry">Senza telemetria</string>

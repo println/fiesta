@@ -151,7 +151,7 @@
     <string name="browser_open_in">以其他應用程式開啟…</string>
     <string name="browser_desktop_site">電腦版網站</string>
 
-    <string name="car_media_open_browser">開啟 Fiesta</string>
+    <string name="car_media_open_browser">開啟 Fiezta</string>
     <string name="browser_send_to_car_done">已傳送到車機螢幕</string>
 
     <string name="browser_send_to_car_message">車機螢幕將開啟這個連結。它會自行載入頁面——手機畫面不會鏡射，播放狀態也不會延續。</string>
@@ -182,9 +182,9 @@
     <string name="settings_about_icons_summary">mozilla-mobile/android-components，MPL-2.0 授權</string>
     <string name="settings_about_font_title">字型</string>
     <string name="settings_about_font_summary">Inter (rsms/inter)，SIL Open Font License 1.1</string>
-    <string name="settings_topic_donate_title">為 Fiesta 加油</string>
-    <string name="settings_topic_donate_summary">讓 Fiesta 繼續上路</string>
-    <string name="settings_donate_title">為 Fiesta 加油</string>
+    <string name="settings_topic_donate_title">為 Fiezta 加油</string>
+    <string name="settings_topic_donate_summary">讓 Fiezta 繼續上路</string>
+    <string name="settings_donate_title">為 Fiezta 加油</string>
     <string name="settings_donate_reason_free">免費</string>
     <string name="settings_donate_reason_no_ads">無廣告</string>
     <string name="settings_donate_reason_no_telemetry">無遙測</string>

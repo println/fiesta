@@ -1,6 +1,6 @@
 # Player user stories
 
-The media player the app publishes to Android Auto, listed as **Fiesta Media**, and the media
+The media player the app publishes to Android Auto, listed as **Fiezta Media**, and the media
 server everything goes through. Ids are `PL-<n>` for the player and `MS-<n>` for the server.
 
 | Story | File |

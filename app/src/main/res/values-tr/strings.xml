@@ -151,7 +151,7 @@
     <string name="browser_open_in">Şununla aç…</string>
     <string name="browser_desktop_site">Masaüstü site</string>
 
-    <string name="car_media_open_browser">Fiesta\'yı aç</string>
+    <string name="car_media_open_browser">Fiezta\'yı aç</string>
     <string name="browser_send_to_car_done">Araç ekranına gönderildi</string>
 
     <string name="browser_send_to_car_message">Araç ekranı bu bağlantıyı açacak. Sayfayı kendisi yükler — telefon ekranı yansıtılmaz ve oynatma aktarılmaz.</string>
@@ -182,9 +182,9 @@
     <string name="settings_about_icons_summary">mozilla-mobile/android-components, MPL-2.0 lisansı</string>
     <string name="settings_about_font_title">Yazı tipi</string>
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
-    <string name="settings_topic_donate_title">Fiesta\'nın deposunu doldur</string>
-    <string name="settings_topic_donate_summary">Fiesta\'yı yolda tut</string>
-    <string name="settings_donate_title">Fiesta\'nın deposunu doldur</string>
+    <string name="settings_topic_donate_title">Fiezta\'nın deposunu doldur</string>
+    <string name="settings_topic_donate_summary">Fiezta\'yı yolda tut</string>
+    <string name="settings_donate_title">Fiezta\'nın deposunu doldur</string>
     <string name="settings_donate_reason_free">Ücretsiz</string>
     <string name="settings_donate_reason_no_ads">Reklamsız</string>
     <string name="settings_donate_reason_no_telemetry">Telemetrisiz</string>

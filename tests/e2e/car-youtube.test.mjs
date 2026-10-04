@@ -65,7 +65,7 @@ test('CR-2: the previous button of the car restarts the video, and pressed again
 test('CR-2: asking the assistant opens the first video and plays it, without the car screen', async () => {
   const car = await CarSession.start();
   try {
-    const wav = await spokenWav('play-legiao-urbana', 'Toque Legião Urbana no Fiesta');
+    const wav = await spokenWav('play-legiao-urbana', 'Toque Legião Urbana no Fiezta');
     const mark = await car.ask(wav);
     await car.log.waitFor(/command playFromSearch/, { from: mark, timeout: 30_000 });
     await car.log.waitFor(/voiceSearch id=\d+ completed/, { from: mark, timeout: 60_000 });

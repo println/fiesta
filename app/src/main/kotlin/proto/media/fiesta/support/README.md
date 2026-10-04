@@ -1,8 +1,8 @@
 # support
 
-`support/` é onde moram as libs do Fiesta — pacotes autocontidos, cada um resolvendo um problema
+`support/` é onde moram as libs do Fiezta D1 — pacotes autocontidos, cada um resolvendo um problema
 que não é específico deste app, escritos para poderem ser reaproveitados em outro projeto Android
-sem trazer o Fiesta junto.
+sem trazer o Fiezta D1 junto.
 
 ## O teste da lib
 
@@ -11,7 +11,7 @@ Um pacote só entra aqui se passar neste teste, arquivo a arquivo:
 - **não importa `androidx`** — a ilha do carro (`android.support`) e o celular (AndroidX)
   convivem no classpath por decisão de arquitetura, e nenhum dos dois lados pode vazar para
   dentro de uma lib;
-- **não importa `R`** — nada de string, drawable ou cor do Fiesta; textos e ícones entram por
+- **não importa `R`** — nada de string, drawable ou cor do Fiezta D1; textos e ícones entram por
   interface (`WebViewExTexts`) ou não fazem parte do pacote (os de `search` ficam em
   `shared/search`);
 - **o que vem de fora entra por contrato** — disco, assets, preferências, log: a lib declara a
@@ -36,13 +36,13 @@ estar em `support/`.
 ## O que não é lib
 
 `support/system` importa `android.*` e `support/plugins` usa `org.json` no parser de
-manifesto: são dependentes de plataforma, mas continuam sem depender do Fiesta. "Lib" aqui não
+manifesto: são dependentes de plataforma, mas continuam sem depender do Fiezta D1. "Lib" aqui não
 significa "Kotlin puro"; significa "app-independente". `support/media` e `support/search` são
 Kotlin puro (sem `android.*`), e por isso rodam em JUnit puro, sem Robolectric.
 
 ## Cada pacote com dono no app
 
-`support/` nunca conhece o Fiesta, mas o Fiesta precisa de textos localizados, de
+`support/` nunca conhece o Fiezta D1, mas o Fiezta D1 precisa de textos localizados, de
 `SharedPreferences`, de `AdBlockUtils` — coisas que só existem no app. Essa ligação é
 responsabilidade de `shared/`: cada lib com necessidade de cola tem uma contraparte do mesmo nome
 em `shared/` (`shared/webviewex`, `shared/media`, `shared/search`, `shared/plugins`) que

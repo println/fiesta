@@ -151,7 +151,7 @@
     <string name="browser_open_in">Открыть в…</string>
     <string name="browser_desktop_site">Версия для ПК</string>
 
-    <string name="car_media_open_browser">Открыть Fiesta</string>
+    <string name="car_media_open_browser">Открыть Fiezta</string>
     <string name="browser_send_to_car_done">Отправлено на экран автомобиля</string>
 
     <string name="browser_send_to_car_message">Экран автомобиля откроет эту ссылку. Он загружает страницу самостоятельно — экран телефона не дублируется, и воспроизведение не переносится.</string>
@@ -182,9 +182,9 @@
     <string name="settings_about_icons_summary">mozilla-mobile/android-components, лицензия MPL-2.0</string>
     <string name="settings_about_font_title">Шрифт</string>
     <string name="settings_about_font_summary">Inter (rsms/inter), SIL Open Font License 1.1</string>
-    <string name="settings_topic_donate_title">Заправьте Fiesta</string>
-    <string name="settings_topic_donate_summary">Держите Fiesta в пути</string>
-    <string name="settings_donate_title">Заправьте Fiesta</string>
+    <string name="settings_topic_donate_title">Заправьте Fiezta</string>
+    <string name="settings_topic_donate_summary">Держите Fiezta в пути</string>
+    <string name="settings_donate_title">Заправьте Fiezta</string>
     <string name="settings_donate_reason_free">Бесплатно</string>
     <string name="settings_donate_reason_no_ads">Без рекламы</string>
     <string name="settings_donate_reason_no_telemetry">Без телеметрии</string>

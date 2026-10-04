@@ -32,7 +32,7 @@ it says so and does nothing.
 > **When** I open it
 > **Then** a screen explains why donating matters
 > **When** I tap its button
-> **Then** the donate page opens in my phone's default browser, not inside Fiesta,
+> **Then** the donate page opens in my phone's default browser, not inside Fiezta D1,
 > **and** it lists the donation links, each one opening its page.
 
 > **Given** my phone is in Portuguese
