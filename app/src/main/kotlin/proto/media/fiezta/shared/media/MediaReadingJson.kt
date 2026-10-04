@@ -1,0 +1,30 @@
+package proto.media.fiezta.shared.media
+
+import org.json.JSONObject
+import proto.media.fiezta.support.media.dto.MediaReadingDto
+
+object MediaReadingJson {
+
+    fun parse(json: String): MediaReadingDto? = try {
+        val obj = JSONObject(json)
+        val empty = MediaReadingDto.EMPTY
+        val hasMedia = obj.optBoolean("hasMedia", empty.hasMedia)
+        MediaReadingDto(
+            hasMedia = hasMedia,
+            playing = obj.optBoolean("playing", empty.playing),
+            positionSeconds = obj.optDouble("positionSeconds", empty.positionSeconds),
+            durationSeconds = obj.optDouble("durationSeconds", empty.durationSeconds),
+            playbackRate = obj.optDouble("playbackRate", empty.playbackRate),
+            title = obj.optString("title", empty.title),
+            artist = obj.optString("artist", empty.artist),
+            artworkUrl = obj.optString("artworkUrl", empty.artworkUrl),
+            canSkipNext = obj.optBoolean("canSkipNext", empty.canSkipNext),
+            canSkipPrevious = obj.optBoolean("canSkipPrevious", empty.canSkipPrevious),
+            trackId = obj.optString("trackId", empty.trackId),
+            isTrack = obj.optBoolean("isTrack", hasMedia),
+            pageUrl = obj.optString("pageUrl", empty.pageUrl)
+        )
+    } catch (e: Exception) {
+        null
+    }
+}

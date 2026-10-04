@@ -22,10 +22,10 @@
 -dontwarn javax.annotation.**
 -dontwarn org.codehaus.**
 
--keep class proto.media.fiesta.support.webviewex.video.JavascriptCallback {
+-keep class proto.media.fiezta.support.webviewex.video.JavascriptCallback {
     public *;
 }
--keep class proto.media.fiesta.features.domain.core.bookmarks.Bookmark {
+-keep class proto.media.fiezta.features.domain.core.bookmarks.Bookmark {
     public *;
 }
 

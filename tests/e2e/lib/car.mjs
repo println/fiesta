@@ -10,7 +10,7 @@ const run = promisify(execFile);
 
 const LAUNCHER_FIESTA_ICON = { x: 633, y: 70 };
 const LAUNCHER_COMPONENT = 'com.google.android.projection.gearhead/com.google.android.projection.gearhead.system.applauncher.GhAppLauncherService';
-const FIESTA_CAR_COMPONENT = `${config.packageName}/proto.media.fiesta.features.domain.car.app.CarService`;
+const FIESTA_CAR_COMPONENT = `${config.packageName}/proto.media.fiezta.features.domain.car.app.CarService`;
 const FOREGROUND = /CAR\.CAM\s*: makeForeground for component ComponentInfo\{([^}]+)\}/;
 
 const TAGS = ['CarPlayer', 'WebViewExGearhead', 'PlaybackSession', 'WebViewEx', 'MediaServer', 'CarScreenLauncher', 'CAR.CAM'];

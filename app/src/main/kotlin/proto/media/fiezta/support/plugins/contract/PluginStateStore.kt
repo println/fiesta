@@ -1,0 +1,10 @@
+package proto.media.fiezta.support.plugins.contract
+
+import proto.media.fiezta.support.plugins.model.ActivationState
+
+interface PluginStateStore {
+
+    fun read(): ActivationState
+
+    fun write(state: ActivationState)
+}
