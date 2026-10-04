@@ -7,26 +7,26 @@ class DonatePageTest {
 
     @Test
     fun `lowercase Portuguese gets the Portuguese page`() {
-        assertEquals("https://println.github.io/fiezta/pt-br/donate.html", DonatePage.urlFor("pt"))
+        assertEquals("https://println.github.io/fiezta-d1/pt-br/donate.html", DonatePage.urlFor("pt"))
     }
 
     @Test
     fun `uppercase Portuguese also gets the Portuguese page`() {
-        assertEquals("https://println.github.io/fiezta/pt-br/donate.html", DonatePage.urlFor("PT"))
+        assertEquals("https://println.github.io/fiezta-d1/pt-br/donate.html", DonatePage.urlFor("PT"))
     }
 
     @Test
     fun `English gets the English page`() {
-        assertEquals("https://println.github.io/fiezta/donate.html", DonatePage.urlFor("en"))
+        assertEquals("https://println.github.io/fiezta-d1/donate.html", DonatePage.urlFor("en"))
     }
 
     @Test
     fun `any other language falls back to the English page`() {
-        assertEquals("https://println.github.io/fiezta/donate.html", DonatePage.urlFor("es"))
+        assertEquals("https://println.github.io/fiezta-d1/donate.html", DonatePage.urlFor("es"))
     }
 
     @Test
     fun `empty language falls back to the English page`() {
-        assertEquals("https://println.github.io/fiezta/donate.html", DonatePage.urlFor(""))
+        assertEquals("https://println.github.io/fiezta-d1/donate.html", DonatePage.urlFor(""))
     }
 }

@@ -218,8 +218,8 @@
     <string name="settings_donate_footer_start">Made with</string>
     <string name="settings_donate_footer_end">in spare time</string>
     <string name="settings_donate_footer_a11y">Made with love in spare time</string>
-    <string name="settings_about_website_url">https://println.github.io/fiezta/</string>
-    <string name="settings_about_license_url" translatable="false">https://github.com/println/fiezta/blob/main/LICENSE</string>
+    <string name="settings_about_website_url">https://println.github.io/fiezta-d1/</string>
+    <string name="settings_about_license_url" translatable="false">https://github.com/println/fiezta-d1/blob/main/LICENSE</string>
     <string name="settings_about_website_title">Website</string>
     <string name="settings_about_tagline">More road. Fewer limits.</string>
     <string name="settings_about_description">Hands on the wheel, eyes on the road and freedom for your media. A driving-first app, made for people who love to drive. Drive. Explore. Play.</string>
