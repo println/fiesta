@@ -7,9 +7,9 @@
     if (current) { current.currentTime = Math.max(0, current.currentTime + seconds); }
   }
 
-  fiesta.on('nextClick', function() { fiesta.toast('nextClick'); });
-  fiesta.on('previousClick', function() { fiesta.toast('previousClick'); });
-  fiesta.on('nextLongPress', function() { seekBy(10); fiesta.toast('nextLongPress'); });
-  fiesta.on('previousLongPress', function() { seekBy(-10); fiesta.toast('previousLongPress'); });
-  fiesta.setAvailable({ next: true, previous: true });
+  fiezta.on('nextClick', function() { fiezta.toast('nextClick'); });
+  fiezta.on('previousClick', function() { fiezta.toast('previousClick'); });
+  fiezta.on('nextLongPress', function() { seekBy(10); fiezta.toast('nextLongPress'); });
+  fiezta.on('previousLongPress', function() { seekBy(-10); fiezta.toast('previousLongPress'); });
+  fiezta.setAvailable({ next: true, previous: true });
 })();

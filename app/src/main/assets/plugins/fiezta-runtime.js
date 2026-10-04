@@ -1,5 +1,5 @@
 (function() {
-  if (window.fiesta) { return; }
+  if (window.fiezta) { return; }
   var handlers = {};
   var timers = [];
   var reportedNext = null, reportedPrevious = null;
@@ -16,14 +16,14 @@
   var trackCarriedUntil = 0;
 
   function publishHandlers() {
-    if (!window.fiestaplugins) { return; }
+    if (!window.fieztaplugins) { return; }
     var names = Object.keys(handlers);
     for (var event in CAPTURED_ACTION_BY_EVENT) {
       if (capturedActionHandlers[CAPTURED_ACTION_BY_EVENT[event]] && names.indexOf(event) === -1) {
         names.push(event);
       }
     }
-    window.fiestaplugins.onHandlersChanged(names.join(','));
+    window.fieztaplugins.onHandlersChanged(names.join(','));
   }
 
   function area(media) {
@@ -40,15 +40,15 @@
   }
 
   function electActiveMedia() {
-    var current = window.__fiestaActiveMedia;
+    var current = window.__fieztaActiveMedia;
     if (current && document.contains(current) && !current.ended) { return current; }
     var all = Array.prototype.slice.call(document.querySelectorAll('video, audio'));
     var elected = largest(all.filter(isAudible)) || largest(all.filter(function(media) { return media.readyState > 0; }));
-    window.__fiestaActiveMedia = elected;
+    window.__fieztaActiveMedia = elected;
     return elected;
   }
 
-  window.__fiestaMedia = electActiveMedia;
+  window.__fieztaMedia = electActiveMedia;
 
   function pageTitleMetadata() {
     return { title: document.title, artist: location.hostname, artwork: '' };
@@ -220,7 +220,7 @@
     };
   }
 
-  window.fiesta = {
+  window.fiezta = {
     on: function(name, fn) {
       handlers[name] = fn;
       publishHandlers();
@@ -253,12 +253,12 @@
       queueProvider = provider;
     },
     matchesVoiceQuery: function(text) {
-      var query = window.__fiestaVoiceSearch && window.__fiestaVoiceSearch.query;
+      var query = window.__fieztaVoiceSearch && window.__fieztaVoiceSearch.query;
       if (!query) { return false; }
       return normalizeVoiceQuery(text) === normalizeVoiceQuery(query);
     },
     toast: function(text) {
-      if (window.fiestaplugins) { window.fiestaplugins.showToast(String(text)); }
+      if (window.fieztaplugins) { window.fieztaplugins.showToast(String(text)); }
     },
     setInterval: function(fn, ms) {
       var id = window.setInterval(fn, ms);
@@ -279,6 +279,7 @@
       publishHandlers();
     }
   };
+  window.fiesta = window.fiezta;
 
   function normalizeVoiceQuery(text) {
     return String(text)

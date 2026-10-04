@@ -40,8 +40,8 @@ test('next and previous click the buttons, and a disabled one is left alone', as
   previous.addEventListener('click', () => clicks.push('previous'));
   next.addEventListener('click', () => clicks.push('next'));
 
-  page.fiesta.dispatch('previousClick');
-  page.fiesta.dispatch('nextClick');
+  page.fiezta.dispatch('previousClick');
+  page.fiezta.dispatch('nextClick');
   assert.deepEqual(clicks, ['next'], 'the previous button was disabled');
   page.close();
 });

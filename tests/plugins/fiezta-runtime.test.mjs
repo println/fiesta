@@ -34,7 +34,7 @@ test('the plugin wins over the site, key by key', () => {
   const { page, media } = playingPage();
   page.mediaSession.setActionHandler('nexttrack', () => {});
   page.mediaSession.setActionHandler('previoustrack', () => {});
-  page.fiesta.setAvailable({ next: false });
+  page.fiezta.setAvailable({ next: false });
   const reading = readingAfterMediaEvent(page, media);
   assert.equal(reading.canSkipNext, false, 'the plugin said there is no next track');
   assert.equal(reading.canSkipPrevious, true, 'the plugin said nothing about previous');
@@ -43,7 +43,7 @@ test('the plugin wins over the site, key by key', () => {
 
 test('an omitted key is not an answer of false', () => {
   const { page, media } = playingPage();
-  page.fiesta.setAvailable({ next: true });
+  page.fiezta.setAvailable({ next: true });
   const reading = readingAfterMediaEvent(page, media);
   assert.equal(reading.canSkipNext, true);
   assert.equal(reading.canSkipPrevious, false, 'nobody claimed a previous track');
@@ -53,7 +53,7 @@ test('an omitted key is not an answer of false', () => {
 test('metadata resolves field by field, plugin then site then page', () => {
   const { page, media } = playingPage();
   page.setSiteMetadata({ title: 'site title', artist: 'site artist', artwork: [{ src: 'site.jpg', sizes: '96x96' }] });
-  page.fiesta.setMetadataProvider(() => ({ title: 'plugin title' }));
+  page.fiezta.setMetadataProvider(() => ({ title: 'plugin title' }));
   const reading = readingAfterMediaEvent(page, media);
   assert.equal(reading.title, 'plugin title');
   assert.equal(reading.artist, 'site artist');
@@ -74,7 +74,7 @@ test('seekTo reaches the handler the site registered, in seconds', () => {
   const { page } = playingPage();
   const seeks = [];
   page.mediaSession.setActionHandler('seekto', (details) => seeks.push(details));
-  page.fiesta.dispatch('seekTo', '42');
+  page.fiezta.dispatch('seekTo', '42');
   assert.equal(seeks.length, 1);
   assert.equal(seeks[0].action, 'seekto');
   assert.equal(seeks[0].seekTime, 42);
@@ -86,8 +86,8 @@ test('a plugin handler shadows the one the site registered', () => {
   let siteCalls = 0;
   let pluginCalls = 0;
   page.mediaSession.setActionHandler('nexttrack', () => { siteCalls += 1; });
-  page.fiesta.on('nextClick', () => { pluginCalls += 1; });
-  page.fiesta.dispatch('nextClick');
+  page.fiezta.on('nextClick', () => { pluginCalls += 1; });
+  page.fiezta.dispatch('nextClick');
   assert.equal(pluginCalls, 1);
   assert.equal(siteCalls, 0);
   page.close();
@@ -107,7 +107,7 @@ test('the reading is published only when it changes', () => {
 
 test('a page with no media at all still reads as not playing', () => {
   const page = startPage({});
-  page.fiesta.setAvailable({ next: true });
+  page.fiezta.setAvailable({ next: true });
   const reading = page.lastReading();
   assert.equal(reading.hasMedia, false);
   assert.equal(reading.playing, false);
@@ -116,7 +116,7 @@ test('a page with no media at all still reads as not playing', () => {
 
 test('a page with no media is not a track', () => {
   const page = startPage({});
-  page.fiesta.setAvailable({});
+  page.fiezta.setAvailable({});
   const reading = page.lastReading();
   assert.equal(reading.isTrack, false);
   page.close();
@@ -183,7 +183,7 @@ test('the next track playing ends the change and stays a track', () => {
 test('the site reporting playbackState playing is a track even without an element', () => {
   const page = startPage({});
   page.mediaSession.playbackState = 'playing';
-  page.fiesta.setAvailable({});
+  page.fiezta.setAvailable({});
   const reading = page.lastReading();
   assert.equal(reading.isTrack, true);
   page.close();
@@ -193,7 +193,7 @@ test('site metadata and action handlers with nothing actually playing is not a t
   const page = startPage({});
   page.setSiteMetadata({ title: 'A channel', artist: 'Someone', artwork: [] });
   page.mediaSession.setActionHandler('nexttrack', () => {});
-  page.fiesta.setAvailable({});
+  page.fiezta.setAvailable({});
   const reading = page.lastReading();
   assert.equal(reading.isTrack, false);
   page.close();
@@ -201,8 +201,8 @@ test('site metadata and action handlers with nothing actually playing is not a t
 
 test('the generic plugin registering handlers with nothing playing is not a track', () => {
   const page = startPage({});
-  page.fiesta.on('nextClick', () => {});
-  page.fiesta.setAvailable({ next: true, previous: true });
+  page.fiezta.on('nextClick', () => {});
+  page.fiezta.setAvailable({ next: true, previous: true });
   const reading = page.lastReading();
   assert.equal(reading.isTrack, false);
   page.close();
@@ -216,5 +216,11 @@ test('a channel videos page, full of muted previews, is not a track', () => {
   mutedPreview.muted = true;
   const reading = readingAfterMediaEvent(page, mutedPreview);
   assert.equal(reading.isTrack, false);
+  page.close();
+});
+
+test('the legacy fiesta name is the same object as fiezta', () => {
+  const page = startPage({});
+  assert.equal(page.window.fiesta, page.window.fiezta);
   page.close();
 });

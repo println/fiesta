@@ -97,7 +97,7 @@ object CarPlayer : JavascriptCallback.JSCallbacks, MediaControlBridge.Callbacks,
     private const val APP_ORIGIN = "app"
     private const val JAVASCRIPT_INTERFACE = "nativecallbacks"
     private const val MEDIA_CONTROL_INTERFACE = "mediacontrol"
-    private const val PLUGIN_HANDLERS_INTERFACE = "fiestaplugins"
+    private const val PLUGIN_HANDLERS_INTERFACE = "fieztaplugins"
     private const val PENDING_PLAY_TIMEOUT_MILLIS = 15_000L
     private const val VOICE_SEARCH_FAILURE_GRACE_MILLIS = 5_000L
     private const val SAVE_WHILE_PLAYING_MILLIS = 10_000L

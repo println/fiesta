@@ -4,7 +4,7 @@ import android.view.KeyEvent
 import android.webkit.WebView
 import org.json.JSONObject
 
-private const val ACTIVE_MEDIA_JS = "(window.__fiestaMedia && window.__fiestaMedia()) || document.querySelector('video')"
+private const val ACTIVE_MEDIA_JS = "(window.__fieztaMedia && window.__fieztaMedia()) || document.querySelector('video')"
 private const val ACTIVATION_KEY_CODE = KeyEvent.KEYCODE_F10
 
 fun WebView.showCarKeyboardIfInput() {
@@ -84,7 +84,7 @@ fun WebView.requestCarFullScreen() {
             "    return list.reduce(function(best, v) { return (!best || area(v) > area(best)) ? v : best; }, null);" +
             "  }" +
             "  var all = Array.prototype.slice.call(document.querySelectorAll('video'));" +
-            "  var active = window.__fiestaActiveMedia;" +
+            "  var active = window.__fieztaActiveMedia;" +
             "  var target = (active && document.contains(active) && playable(active)) ? active : null;" +
             "  if (!target) { target = largest(all.filter(function(v) { return !v.paused && playable(v); })); }" +
             "  if (!target) { target = largest(all.filter(playable)); }" +

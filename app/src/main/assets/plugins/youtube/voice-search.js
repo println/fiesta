@@ -2,9 +2,9 @@
   var RESULT_TIMEOUT_MILLIS = 10000;
 
   function progress(stage) {
-    var context = window.__fiestaVoiceSearch;
-    if (context && window.fiestaplugins) {
-      window.fiestaplugins.onVoiceSearchProgress(String(context.id), String(context.generation), stage);
+    var context = window.__fieztaVoiceSearch;
+    if (context && window.fieztaplugins) {
+      window.fieztaplugins.onVoiceSearchProgress(String(context.id), String(context.generation), stage);
     }
   }
 
@@ -40,7 +40,7 @@
   function playFirstResult() {
     progress('confirmed');
     window.__webviewex.waitUntil(firstVideoLink, RESULT_TIMEOUT_MILLIS).then(function(link) {
-      fiesta.reportSearchResult(!!link);
+      fiezta.reportSearchResult(!!link);
       if (!link) {
         progress('failed');
         return;

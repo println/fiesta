@@ -19,7 +19,7 @@ class AndroidPluginFiles(private val context: Context, private val log: PluginLo
 
     override fun readDefault(pluginId: String, file: String): String = readAsset("$ASSETS_ROOT/$pluginId/$file")
 
-    override fun readRuntime(): String = readAsset("$ASSETS_ROOT/fiesta-runtime.js")
+    override fun readRuntime(): String = readAsset("$ASSETS_ROOT/fiezta-runtime.js")
 
     override fun readInstalled(pluginId: String, file: String): String =
         File(File(pluginsDir(), pluginId), file).readText()

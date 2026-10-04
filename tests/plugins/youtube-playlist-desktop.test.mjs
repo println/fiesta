@@ -50,7 +50,7 @@ test('picking a queue item clicks the desktop endpoint of that track', async () 
     link.addEventListener('click', () => clicked.push(link.getAttribute('href')));
   });
 
-  page.fiesta.dispatch('queueItem', '2');
+  page.fiezta.dispatch('queueItem', '2');
   assert.equal(clicked.length, 1);
   assert.match(clicked[0], /v=9jK-NcRmVcw/);
   page.close();

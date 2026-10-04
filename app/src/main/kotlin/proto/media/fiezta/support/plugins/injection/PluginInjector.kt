@@ -46,7 +46,7 @@ class PluginInjector(
 
     fun onPageVisibilityChanged(visibility: PageVisibility) {
         if (PAGE_VISIBILITY_EVENT !in handlers) return
-        evaluate("fiesta.dispatch('$PAGE_VISIBILITY_EVENT', '${visibility.jsName}');")
+        evaluate("fiezta.dispatch('$PAGE_VISIBILITY_EVENT', '${visibility.jsName}');")
     }
 
     fun onViewDestroyed() {
@@ -79,7 +79,7 @@ class PluginInjector(
     fun dispatch(event: CarEvent, argument: String? = null): Boolean {
         if (event.jsName !in handlers) return false
         val jsArgument = argument?.let { ", " + JsString.quote(it) } ?: ""
-        evaluate("fiesta.dispatch('${event.jsName}'$jsArgument);")
+        evaluate("fiezta.dispatch('${event.jsName}'$jsArgument);")
         return true
     }
 
@@ -90,7 +90,7 @@ class PluginInjector(
 
     fun clearVoiceSearchContext() {
         voiceSearchContext = null
-        evaluate("window.__fiestaVoiceSearch = null;")
+        evaluate("window.__fieztaVoiceSearch = null;")
     }
 
     override fun onHandlersChanged(events: Set<String>) {
@@ -106,7 +106,7 @@ class PluginInjector(
     private fun publishVoiceSearchContext() {
         val context = voiceSearchContext ?: return
         evaluate(
-            "window.__fiestaVoiceSearch = { id: ${context.id}, generation: ${context.generation}, " +
+            "window.__fieztaVoiceSearch = { id: ${context.id}, generation: ${context.generation}, " +
                 "query: ${JsString.quote(context.query)} };"
         )
     }
@@ -116,7 +116,7 @@ class PluginInjector(
         val resolved = PluginResolver(source.stack()).eventsFor(url)
         if (resolved == activeEvents) return
         if (activeEvents != null) {
-            evaluate("fiesta.reset();")
+            evaluate("fiezta.reset();")
             onEventsCleared()
         }
         activeEvents = resolved
