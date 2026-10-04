@@ -190,7 +190,7 @@ class OpenSearchParserTest {
 
     private companion object {
         const val OS = "http://a9.com/-/spec/opensearch/1.1/"
-        const val CS = "urn:fiesta:search:1"
+        const val CS = "urn:fiezta:search:1"
         const val SEARCH_URL = "<Url type=\"text/html\" template=\"https://e.com/?q={searchTerms}\"/>"
         const val SUGGESTIONS_URL = "<Url type=\"application/x-suggestions+json\" template=\"https://e.com/s?q={searchTerms}\"/>"
     }

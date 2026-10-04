@@ -45,7 +45,7 @@ object OpenSearchParser {
 ## O parser
 
 `http://a9.com/-/spec/opensearch/1.1/` é o namespace OpenSearch padrão (`ShortName`, `Url`,
-`InputEncoding`); `urn:fiesta:search:1` é a extensão própria (`Id`, `Version`, `Host`). Exige
+`InputEncoding`); `urn:fiezta:search:1` é a extensão própria (`Id`, `Version`, `Host`). Exige
 exatamente um `Url` `type="text/html"` (o template de busca) e no máximo um
 `type="application/x-suggestions+json"`. O template tem que começar com `https://` e conter
 **exatamente um** `{searchTerms}` — `<Param>` não é suportado e é rejeitado. `InputEncoding`,

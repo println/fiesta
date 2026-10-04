@@ -10,7 +10,7 @@ import javax.xml.parsers.ParserConfigurationException
 object OpenSearchParser {
 
     private const val OPEN_SEARCH_NS = "http://a9.com/-/spec/opensearch/1.1/"
-    private const val FIESTA_NS = "urn:fiesta:search:1"
+    private const val FIEZTA_NS = "urn:fiezta:search:1"
     private const val SEARCH_TYPE = "text/html"
     private const val SUGGESTIONS_TYPE = "application/x-suggestions+json"
     private const val HTTPS = "https://"
@@ -94,7 +94,7 @@ object OpenSearchParser {
     }
 
     private fun readId(children: List<Element>): String {
-        val id = firstText(children, FIESTA_NS, "Id")
+        val id = firstText(children, FIEZTA_NS, "Id")
             ?: throw InvalidSearchEngineException("cs:Id required")
         if (!ID_PATTERN.matches(id)) {
             throw InvalidSearchEngineException("invalid cs:Id: $id")
@@ -103,7 +103,7 @@ object OpenSearchParser {
     }
 
     private fun readVersion(children: List<Element>): Int {
-        val text = firstText(children, FIESTA_NS, "Version") ?: return 1
+        val text = firstText(children, FIEZTA_NS, "Version") ?: return 1
         val version = text.toIntOrNull()
         if (version == null || version < 1) {
             throw InvalidSearchEngineException("invalid cs:Version: $text")
@@ -113,7 +113,7 @@ object OpenSearchParser {
 
     private fun readHosts(children: List<Element>): List<String> =
         children
-            .filter { it.isIn(FIESTA_NS, "Host") }
+            .filter { it.isIn(FIEZTA_NS, "Host") }
             .map { it.textContent.trim() }
             .onEach {
                 if (!HostPattern.isValid(it)) throw InvalidSearchEngineException("invalid cs:Host: $it")
