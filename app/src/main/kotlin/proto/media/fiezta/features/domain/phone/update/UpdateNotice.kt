@@ -94,8 +94,8 @@ class UpdateNotice(private val activity: Activity) {
 
     companion object {
         private const val TAG = "UpdateNotice"
-        private const val LATEST_RELEASE_URL = "https://api.github.com/repos/println/fiezta/releases/latest"
-        private const val DOWNLOAD_PREFIX = "https://github.com/println/fiezta/releases/download/"
+        private const val LATEST_RELEASE_URL = "https://api.github.com/repos/println/fiezta-d1/releases/latest"
+        private const val DOWNLOAD_PREFIX = "https://github.com/println/fiezta-d1/releases/download/"
         private const val DIALOG_PADDING_DP = 20
     }
 }

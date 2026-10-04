@@ -1,6 +1,6 @@
 <div align="center">
 
-🌐 **[println.github.io/fiezta](https://println.github.io/fiezta/pt-br/)**
+🌐 **[println.github.io/fiezta-d1](https://println.github.io/fiezta-d1/pt-br/)**
 
 [🇺🇸 English](README.md) · 🇧🇷 Português
 
@@ -165,7 +165,7 @@ publicadas sob Apache 2.0 continuam com essa licença.
 
 <div align="center">
 
-Curtiu? Deixe uma ⭐ no [GitHub](https://github.com/println/fiezta) ou [abasteça o Fiezta D1](#-abasteça-o-fiezta-d1) ⛽.
+Curtiu? Deixe uma ⭐ no [GitHub](https://github.com/println/fiezta-d1) ou [abasteça o Fiezta D1](#-abasteça-o-fiezta-d1) ⛽.
 
 **Drive. Explore. Play.**
 
